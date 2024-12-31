@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dy8f6hge3lmt7"]
+[gd_scene load_steps=84 format=3 uid="uid://dy8f6hge3lmt7"]
 
 [ext_resource type="Texture2D" uid="uid://rrwvjeuuxra5" path="res://encounters/sprites/marcie/marcie_attack_01_00.png" id="1_5b47n"]
 [ext_resource type="Texture2D" uid="uid://bplhvvkrdnlmg" path="res://encounters/sprites/marcie/marcie_attack_01_01.png" id="2_g2nxv"]
@@ -27,9 +27,57 @@
 [ext_resource type="Texture2D" uid="uid://gbo0csqyeu3u" path="res://encounters/sprites/marcie/marcie_attack_01_24.png" id="25_584g6"]
 [ext_resource type="Texture2D" uid="uid://vbetbts8b2hv" path="res://encounters/sprites/marcie/marcie_attack_01_25.png" id="26_2jw0s"]
 [ext_resource type="Texture2D" uid="uid://bhitq67ot1fkr" path="res://encounters/sprites/marcie/marcie_attack_01_26.png" id="27_1d4hf"]
+[ext_resource type="Texture2D" uid="uid://dt71jp0sxxnv2" path="res://encounters/sprites/marcie/marcie_win1_00.png" id="28_cjgmp"]
 [ext_resource type="Script" path="res://encounters/encounter_sprite.gd" id="28_ua15p"]
+[ext_resource type="Texture2D" uid="uid://duc7ujgr2uwow" path="res://encounters/sprites/marcie/marcie_lose_01.png" id="28_uovle"]
+[ext_resource type="Texture2D" uid="uid://cbfac2uhqkmiw" path="res://encounters/sprites/marcie/marcie_lose_02.png" id="29_81oui"]
 [ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="29_icjbk"]
 [ext_resource type="Texture2D" uid="uid://3gf4gj10fgrw" path="res://ui/assets/flash-light-effect-free-png.png" id="29_mqh5m"]
+[ext_resource type="Texture2D" uid="uid://d15suxbsfbkkj" path="res://encounters/sprites/marcie/marcie_win1_01.png" id="29_ytvux"]
+[ext_resource type="Texture2D" uid="uid://cv25g0j1n8ugc" path="res://encounters/sprites/marcie/marcie_win1_02.png" id="30_0566d"]
+[ext_resource type="Texture2D" uid="uid://civln5w5mp22" path="res://encounters/sprites/marcie/marcie_lose_03.png" id="30_h2ycr"]
+[ext_resource type="Texture2D" uid="uid://givmx4bp0dqb" path="res://encounters/sprites/marcie/marcie_win1_03.png" id="31_3nvst"]
+[ext_resource type="Texture2D" uid="uid://bmej0yug0llb6" path="res://encounters/sprites/marcie/marcie_lose_04.png" id="31_yp3hy"]
+[ext_resource type="Texture2D" uid="uid://bdh4qrtxlm766" path="res://encounters/sprites/marcie/marcie_lose_05.png" id="32_iggum"]
+[ext_resource type="Texture2D" uid="uid://cxb6ndaubb3md" path="res://encounters/sprites/marcie/marcie_win1_04.png" id="32_ushg4"]
+[ext_resource type="Texture2D" uid="uid://cr1mro6tvcul8" path="res://encounters/sprites/marcie/marcie_lose_06.png" id="33_u6dqg"]
+[ext_resource type="Texture2D" uid="uid://c4qwus3m8xggj" path="res://encounters/sprites/marcie/marcie_win1_05.png" id="33_wo7u4"]
+[ext_resource type="Texture2D" uid="uid://bl3u4yqltn1e1" path="res://encounters/sprites/marcie/marcie_lose_07.png" id="34_t84q7"]
+[ext_resource type="Texture2D" uid="uid://hgy13splm0i3" path="res://encounters/sprites/marcie/marcie_win1_06.png" id="34_wrwpl"]
+[ext_resource type="Texture2D" uid="uid://bt54lbgppqnn8" path="res://encounters/sprites/marcie/marcie_win1_07.png" id="35_4pl2m"]
+[ext_resource type="Texture2D" uid="uid://mr6muqgu1eom" path="res://encounters/sprites/marcie/marcie_lose_08.png" id="35_ei0g4"]
+[ext_resource type="Texture2D" uid="uid://cxslilgn3d1y" path="res://encounters/sprites/marcie/marcie_lose_09.png" id="36_leb4v"]
+[ext_resource type="Texture2D" uid="uid://dxym766lhr7gl" path="res://encounters/sprites/marcie/marcie_win1_08.png" id="36_w1poh"]
+[ext_resource type="Texture2D" uid="uid://dtqd2h7lrm1qe" path="res://encounters/sprites/marcie/marcie_lose_10.png" id="37_516k1"]
+[ext_resource type="Texture2D" uid="uid://byj7uakutf5aq" path="res://encounters/sprites/marcie/marcie_win1_09.png" id="37_kjsaq"]
+[ext_resource type="Texture2D" uid="uid://dvj80m6lxfmob" path="res://encounters/sprites/marcie/marcie_win1_10.png" id="38_8gf6j"]
+[ext_resource type="Texture2D" uid="uid://sdkanyxk6ndd" path="res://encounters/sprites/marcie/marcie_lose_11.png" id="38_n6suv"]
+[ext_resource type="Texture2D" uid="uid://cbi0x8b6tm27a" path="res://encounters/sprites/marcie/marcie_win1_11.png" id="39_5mghc"]
+[ext_resource type="Texture2D" uid="uid://bnl1vo6nawybf" path="res://encounters/sprites/marcie/marcie_lose_12.png" id="39_tesrk"]
+[ext_resource type="Texture2D" uid="uid://bskxy5jjcm3q6" path="res://encounters/sprites/marcie/marcie_win1_12.png" id="40_8enbe"]
+[ext_resource type="Texture2D" uid="uid://c082qjsg4gvkm" path="res://encounters/sprites/marcie/marcie_win1_13.png" id="41_6sf35"]
+[ext_resource type="Texture2D" uid="uid://q6gwqjhbfdrr" path="res://encounters/sprites/marcie/marcie_win1_14.png" id="42_fang6"]
+[ext_resource type="Texture2D" uid="uid://dohl70lomvuhs" path="res://encounters/sprites/marcie/marcie_win1_15.png" id="43_ljptm"]
+[ext_resource type="Texture2D" uid="uid://6t8dygyv8pd0" path="res://encounters/sprites/marcie/marcie_win1_16.png" id="44_ivava"]
+[ext_resource type="Texture2D" uid="uid://crc0l2f4fofag" path="res://encounters/sprites/marcie/marcie_win1_17.png" id="45_ulufb"]
+[ext_resource type="Texture2D" uid="uid://to41egd8fp34" path="res://encounters/sprites/marcie/marcie_win1_18.png" id="46_b30uw"]
+[ext_resource type="Texture2D" uid="uid://ccacnoppvh6hc" path="res://encounters/sprites/marcie/marcie_win1_19.png" id="47_gs761"]
+[ext_resource type="Texture2D" uid="uid://balrdmixvmnfx" path="res://encounters/sprites/marcie/marcie_win1_20.png" id="48_8q8hq"]
+[ext_resource type="Texture2D" uid="uid://b1oncwqyt8a31" path="res://encounters/sprites/marcie/marcie_win1_21.png" id="49_dlytp"]
+[ext_resource type="Texture2D" uid="uid://dycld023o5o2x" path="res://encounters/sprites/marcie/marcie_win1_22.png" id="50_wgdm2"]
+[ext_resource type="Texture2D" uid="uid://jbsijpvn7wgv" path="res://encounters/sprites/marcie/marcie_win1_23.png" id="51_32feg"]
+[ext_resource type="Texture2D" uid="uid://bgif7v3uooabt" path="res://encounters/sprites/marcie/marcie_win1_24.png" id="52_bvodj"]
+[ext_resource type="Texture2D" uid="uid://bmpaxb5lfh3m2" path="res://encounters/sprites/marcie/marcie_win1_25.png" id="53_fc5pb"]
+[ext_resource type="Texture2D" uid="uid://dnwhmqm2rjcer" path="res://encounters/sprites/marcie/marcie_win1_26.png" id="54_5b5om"]
+[ext_resource type="Texture2D" uid="uid://cr8ad4lkhjq7c" path="res://encounters/sprites/marcie/marcie_win1_27.png" id="55_lhwja"]
+[ext_resource type="Texture2D" uid="uid://ddximuqab4fyf" path="res://encounters/sprites/marcie/marcie_win1_28.png" id="56_2g4me"]
+[ext_resource type="Texture2D" uid="uid://dj5s1co5r32ga" path="res://encounters/sprites/marcie/marcie_win1_29.png" id="57_qulho"]
+[ext_resource type="Texture2D" uid="uid://bluckfcpcrgf1" path="res://encounters/sprites/marcie/marcie_win1_30.png" id="58_r3kp7"]
+[ext_resource type="Texture2D" uid="uid://dblru87byq0mh" path="res://encounters/sprites/marcie/marcie_win1_31.png" id="59_mvds3"]
+[ext_resource type="Texture2D" uid="uid://hu0guvw0f3q" path="res://encounters/sprites/marcie/marcie_win1_32.png" id="60_iq6we"]
+[ext_resource type="Texture2D" uid="uid://bgbffas18w4v6" path="res://encounters/sprites/marcie/marcie_win1_33.png" id="61_uy4mw"]
+[ext_resource type="Texture2D" uid="uid://bp8bssobyt1iw" path="res://encounters/sprites/marcie/marcie_win1_34.png" id="62_m3v2l"]
+[ext_resource type="Texture2D" uid="uid://cm1n1065gtf56" path="res://encounters/sprites/marcie/marcie_win1_35.png" id="63_nghxo"]
 
 [sub_resource type="Shader" id="Shader_a7yu4"]
 code = "//ATTENTION:
@@ -298,6 +346,160 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_uovle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_81oui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_h2ycr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_yp3hy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_iggum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_u6dqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_t84q7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ei0g4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_leb4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_516k1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_n6suv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_tesrk")
+}],
+"loop": false,
+"name": &"lose",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_cjgmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ytvux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_0566d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_3nvst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ushg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_wo7u4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_wrwpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_4pl2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_w1poh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_kjsaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_8gf6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_5mghc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_8enbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_6sf35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_fang6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_ljptm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_ivava")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_ulufb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_b30uw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_gs761")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_8q8hq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_dlytp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_wgdm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_32feg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_bvodj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_fc5pb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_5b5om")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_lhwja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_2g4me")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_qulho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_r3kp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_mvds3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_iq6we")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_uy4mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_m3v2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_nghxo")
+}],
+"loop": false,
+"name": &"win",
+"speed": 20.0
 }]
 
 [sub_resource type="Shader" id="Shader_5fi0f"]
@@ -359,8 +561,10 @@ shader_parameter/PULSE_full_pulse_cycle = true
 material = SubResource("ShaderMaterial_e8mvv")
 position = Vector2(0, -334)
 sprite_frames = SubResource("SpriteFrames_inmsn")
-animation = &"idle"
+animation = &"lose"
 autoplay = "idle"
+frame = 11
+frame_progress = 1.0
 script = ExtResource("28_ua15p")
 impact_frame_number = 15
 

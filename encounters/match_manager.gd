@@ -192,6 +192,8 @@ func decide_winner()->void:
 
 func on_round_over()->void:
 	# TODO: either the match is over, or play another round
+	var encounter_manager: NpcEncounter = get_parent()
+	
 	print_debug("TODO: either the match is over, or play another round")
 	print("Player rounds won: ", player_rounds_won,"\nOpponent rounds won: ", opponent_rounds_won)
 	
@@ -199,8 +201,38 @@ func on_round_over()->void:
 		print_debug("No winner yet -- playing the next round")
 		next_round()
 	elif player_rounds_won >= rounds_to_win:
+		
+		var in_play_panel: Panel = encounter_manager.get_node("CanvasLayer/InPlayPanel")
+		in_play_panel.visible = false
+		
+		# TODO move all this to a better place
 		print_debug("Player wins this match")
+		var results_panel:Panel = encounter_manager.get_node("CanvasLayer/RoundResultPanel")
+		results_panel.visible = false
+		encounter_manager.player_sprite.play("win")
+		encounter_manager.opponent_sprite.play("lose")
+		
+		var sprite_shader_mat: ShaderMaterial = encounter_manager.player_sprite.material
+		sprite_shader_mat.set_shader_parameter("BORDERNOISE_active", true)
+		
+		
+		
 	elif opponent_rounds_won >= rounds_to_win:
+		
+		var in_play_panel: Panel = encounter_manager.get_node("CanvasLayer/InPlayPanel")
+		in_play_panel.visible = false
+		
+		# TODO move all this to a better place
+		print_debug("Opponent wins this match")
+		var results_panel:Panel = encounter_manager.get_node("CanvasLayer/RoundResultPanel")
+		results_panel.visible = false
+		encounter_manager.player_sprite.play("lose")
+		encounter_manager.opponent_sprite.play("win")
+		
+		var sprite_shader_mat: ShaderMaterial = encounter_manager.opponent_sprite.material
+		sprite_shader_mat.set_shader_parameter("BORDERNOISE_active", true) 
+		
+	else:
 		push_error("Something weird happened")
 		
 func next_round()->void:

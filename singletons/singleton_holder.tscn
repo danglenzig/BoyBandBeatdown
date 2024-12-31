@@ -35,6 +35,7 @@ script = ExtResource("8_nwdj1")
 
 [node name="GameSettings" type="Node" parent="."]
 script = ExtResource("9_jnmea")
+best_of_n = 5
 
 [node name="EncounterEvents" type="Node" parent="."]
 script = ExtResource("10_gkav3")

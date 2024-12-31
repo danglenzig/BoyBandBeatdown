@@ -6,8 +6,12 @@ var encounter_events: EncounterEvents
 
 @export var player_encounter_sprite_scene: 	PackedScene
 @export var card_sprite_scene: 				PackedScene
+"""
 var player_sprite: 		AnimatedSprite2D
 var opponent_sprite: 	AnimatedSprite2D
+"""
+var player_sprite: EncounterSprite
+var opponent_sprite: EncounterSprite
 
 const CARDS_IN_HAND_SCALE = Vector2(0.2, 0.2)
 const CARDS_IN_PLAY_SCALE = Vector2(0.3, 0.3)
@@ -34,7 +38,8 @@ func setup_backgrounds(environment_bg_filename: String, encounter_bg_filename: S
 func spawn_player_sprite() -> void:
 	if not player_encounter_sprite_scene:
 		return
-	var new_player_sprite: AnimatedSprite2D = player_encounter_sprite_scene.instantiate()
+	#var new_player_sprite: AnimatedSprite2D = player_encounter_sprite_scene.instantiate()
+	var new_player_sprite: EncounterSprite = player_encounter_sprite_scene.instantiate()
 	new_player_sprite.global_position = $PlayerSpriteMarker.global_position
 	add_child(new_player_sprite)
 	player_sprite = new_player_sprite
@@ -50,7 +55,8 @@ func spawn_opponent_sprite(opponent_name) -> void:
 			scene_to_instantiate = npc_scene
 			break
 	if scene_to_instantiate:
-		var new_opponent_sprite: AnimatedSprite2D = scene_to_instantiate.instantiate()
+		#var new_opponent_sprite: AnimatedSprite2D = scene_to_instantiate.instantiate()
+		var new_opponent_sprite: EncounterSprite = scene_to_instantiate.instantiate()
 		new_opponent_sprite.global_position = $OpponentSpriteMarker.global_position
 		add_child(new_opponent_sprite)
 		opponent_sprite = new_opponent_sprite
@@ -150,7 +156,29 @@ func display_result_panel(result_string: String, reason_string: String)->void:
 	await get_tree().create_timer(match_manager.display_results_delay).timeout
 	encounter_events.round_over.emit()
 
-
+func reset_encounter_sprites()->void:
+	player_sprite.attack_signal_sent 	= false
+	opponent_sprite.attack_signal_sent 	= false
+	
+func update_sprites_rounds_won(player_rounds_won: int, opponent_rounds_won: int, winner: String)->void:
+	var player_rounds_won_string = str("Rounds Won: ",str(player_rounds_won))
+	var opponent_rounds_won_string = str("Rounds Won: ", str(opponent_rounds_won))
+	player_sprite.rounds_won_label.text = player_rounds_won_string
+	opponent_sprite.rounds_won_label.text = opponent_rounds_won_string
+	
+	# play the flash effect
+	match winner:
+		"PLAYER":
+			player_sprite.label_flash_effect.visible = true
+			await  get_tree().create_timer(player_sprite.label_flash_effect_duration).timeout
+			player_sprite.label_flash_effect.visible = false
+		"OPPONENT":
+			opponent_sprite.label_flash_effect.visible = true
+			await  get_tree().create_timer(opponent_sprite.label_flash_effect_duration).timeout
+			opponent_sprite.label_flash_effect.visible = false
+		"NONE":
+			pass
+		
 	
 func on_player_attack_anim_finish()->void:
 	pass

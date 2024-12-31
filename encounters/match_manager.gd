@@ -41,6 +41,8 @@ func _ready():
 	encounter_events.round_over.connect(on_round_over)
 
 func start_match(player_power: int, opponent_power: int, npc_play_style: String) -> void:
+	var encounter_manager: NpcEncounter = get_parent()
+	encounter_manager.update_sprites_rounds_won(0,0, "NONE")
 	player_deck 	= deck_tools.build_deck(player_power)
 	opponent_deck 	= deck_tools.build_deck(opponent_power)
 	opponent_play_style = npc_play_style
@@ -51,17 +53,10 @@ func start_match(player_power: int, opponent_power: int, npc_play_style: String)
 	player_deck 	= deck_tools.deal_hand(player_deck)
 	opponent_deck 	= deck_tools.deal_hand(opponent_deck)
 	
-	var npc_encounter: NpcEncounter = get_parent()
-	npc_encounter.display_cards_in_hand(player_deck.cards_in_hand)
 	
-func next_round()->void:
-	pass
-	"""
-	player_deck = deck_tools.discard_and_draw_up(player_deck)
-	opponent_deck = deck_tools.discard_and_draw_up(opponent_deck)
-	var npc_encounter: NpcEncounter = get_parent()
-	# tell the encounter manager to set shit up on screen
-	"""
+	encounter_manager.display_cards_in_hand(player_deck.cards_in_hand)
+	
+
 	
 
 func declare_match_winner(winner: String):
@@ -156,7 +151,7 @@ func on_playerAttack_anim_impact(is_player)->void:
 func flip_in_play_cards()->void:
 	
 	var encounter_manager: NpcEncounter = get_parent()
-	var card_holder = encounter_manager.get_node("CanvasLayer").get_node("InPlayPanel").get_node("CardHolder")
+	var card_holder: Node2D = encounter_manager.get_node("CanvasLayer/InPlayPanel/CardHolder")
 	var player_card_sprite: CardSprite 		= card_holder.get_node("PlayerInPlayCardSprite")
 	var opponent_card_sprite: CardSprite 	= card_holder.get_node("OpponentInPlayCardSprite")
 	player_card_sprite.card_face_down(false)
@@ -182,88 +177,54 @@ func decide_winner()->void:
 			pass
 		"PLAYER":
 			player_rounds_won += 1
+			encounter_manager.update_sprites_rounds_won(player_rounds_won, opponent_rounds_won, "PLAYER")
+			
 		"OPPONENT":
 			opponent_rounds_won += 1
+			encounter_manager.update_sprites_rounds_won(player_rounds_won, opponent_rounds_won, "OPPONENT")
 	
 	# wait a beat then play the battle animations
 	# encounter_manager.play_battle_animations() will display the results when they're fiinished
 	# then it will emit encounter_events.round_over()
+	
 	await get_tree().create_timer(play_battle_animations_delay).timeout
 	encounter_manager.play_battle_animations(result_string, reason_string, player_card_in_play.card_uuid, opponent_card_in_play.card_uuid)
 
 func on_round_over()->void:
 	# TODO: either the match is over, or play another round
 	print_debug("TODO: either the match is over, or play another round")
-	"""
+	print("Player rounds won: ", player_rounds_won,"\nOpponent rounds won: ", opponent_rounds_won)
 	
-	# tell the encounter manager to put the selected card in the in play area
-	npc_encounter.move_card_to_in_play(card_to_play)
-	
-	# some kimd of player feedback here. for now, just wait a sec...
-	await get_tree().create_timer(2.0).timeout
-	
-	# now the opponent choses a card
-	var npc_card_chooser: NpcCardChooser = $NpcCardChooser
-	var opponent_card_uuid = npc_card_chooser.choose_card(opponent_deck.cards_in_hand, opponent_play_style)
-	var opponent_chosen_card: Card = null
-	for card: Card in opponent_deck.cards_in_hand:
-		if card.card_uuid == opponent_card_uuid:
-			opponent_chosen_card = card
-			break
-	if not opponent_chosen_card:
+	if not (player_rounds_won >= rounds_to_win or opponent_rounds_won >= rounds_to_win):
+		print_debug("No winner yet -- playing the next round")
+		next_round()
+	elif player_rounds_won >= rounds_to_win:
+		print_debug("Player wins this match")
+	elif opponent_rounds_won >= rounds_to_win:
 		push_error("Something weird happened")
-	opponent_card_in_play = opponent_chosen_card
-	opponent_deck = deck_tools.put_card_in_play(opponent_deck, opponent_chosen_card)
+		
+func next_round()->void:
+	player_deck = deck_tools.discard_and_draw_up(player_deck)
+	opponent_deck = deck_tools.discard_and_draw_up(opponent_deck)
+	var encounter_manager: NpcEncounter = get_parent()
 	
-	# tell the encounter manager to put the chosen opponent card in the in play area
-	npc_encounter.move_opponent_card_to_in_play(opponent_card_in_play)
+	# queue free the card sprites in the in_play panel
+	var in_play_card_holder: Node2D = encounter_manager.get_node("CanvasLayer/InPlayPanel/CardHolder")
+	for child in in_play_card_holder.get_children():
+		if child is not Marker2D:
+			child.queue_free()
 	
-	# wait for a beat then reveal the cards
-	await get_tree().create_timer(1.25).timeout
-	npc_encounter.flip_in_play_cards()
+	# queue free the card sprites in the in_hand panel
+	var in_hand_card_holder: Node2D = encounter_manager.get_node("CanvasLayer/HandPanel/CardHolder")
+	for child in in_hand_card_holder.get_children():
+		if child is not Marker2D:
+			child.queue_free()
 	
-	# decide the winner, and tell the encounter manager to play the
-	# appropriate animations on the in-play cards
-	
-	# wait a beat, then decide the winner
-	await get_tree().create_timer(1.0)
-	
-	var round_result:Array[String] = rules_config.decide_winner(player_card_in_play, opponent_card_in_play)
-	var result_string: String = round_result[0]
-	var reason_string: String = round_result[1]
-	
-	if result_string == "":
-		print_debug("TODO, see error...")
-		push_error("No round result from RulesConfig singleton")
-		return
-	
-	match result_string:
-		"TIE":
-			print_debug(reason_string)
-			next_round() # handle tie
-			return
-		"PLAYER":
-			print("You WIN this round!\n",reason_string)
-			player_rounds_won += 1
-			# tell the encounter manager to display reason_string and do the card battle animation
-		"OPPONENT":
-			print("You LOSE this round!\n",reason_string)
-			opponent_rounds_won += 1
-			# tell the encounter manager to display reason_string and do the card battle animation
-	
+	# wait a beat and hide the results panel
 	await get_tree().create_timer(1.0).timeout
-	npc_encounter.display_result_panel(result_string, reason_string)
+	var round_results_panel: Panel = encounter_manager.get_node("CanvasLayer/RoundResultPanel")
+	round_results_panel.visible = false
 	
-	# wait for all ^^that shit to finish, then
-	if player_rounds_won >= rounds_to_win:
-		declare_match_winner("PLAYER")
-		return
-	if opponent_rounds_won >= rounds_to_win:
-		declare_match_winner("OPPONENT")
-		return
-	# otherwise...
-	next_round()
-			
-	"""
-	
-	
+	# display the cards in hand panel with the new player deck
+	encounter_manager.display_cards_in_hand(player_deck.cards_in_hand)
+	encounter_manager.reset_encounter_sprites()

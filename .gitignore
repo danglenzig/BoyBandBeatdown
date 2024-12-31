@@ -1,0 +1,18 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+.import/
+*.import
+*.tmp
+*.tres.orig
+*.tscn.orig
+*.godot-cpp/
+export_presets.cfg
+# Build files
+*.exe
+*.dll
+*.apk
+*.ipa
+*.xcodebuild/
+# Other
+.DS_Store

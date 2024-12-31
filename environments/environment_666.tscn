@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://cm7ok8h2jaot8"]
+
+[ext_resource type="Script" path="res://environments/environment.gd" id="1_2d1hb"]
+[ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/01.png" id="2_mcxdh"]
+[ext_resource type="Script" path="res://environments/game_camera.gd" id="3_84fnh"]
+[ext_resource type="Script" path="res://environments/z_scaler.gd" id="4_1gs1i"]
+
+[node name="Environment_666" type="Node2D"]
+script = ExtResource("1_2d1hb")
+camera_upper_y = 720
+camera_lower_y = 760
+camera_left_x = 410
+camera_right_x = 1360
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_mcxdh")
+
+[node name="GameCamera" type="Camera2D" parent="."]
+position = Vector2(907, 620)
+zoom = Vector2(1.5, 1.5)
+process_callback = 0
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+script = ExtResource("3_84fnh")
+
+[node name="ZScaler" type="Node2D" parent="." node_paths=PackedStringArray("top_marker", "bottom_marker")]
+script = ExtResource("4_1gs1i")
+top_marker = NodePath("../TopMarker")
+bottom_marker = NodePath("../BottomMarker")
+scale_at_top = 0.2
+scale_at_bottom = 0.7
+
+[node name="TopMarker" type="Marker2D" parent="."]
+position = Vector2(4, 718)
+
+[node name="BottomMarker" type="Marker2D" parent="."]
+position = Vector2(-3, 1071)
+
+[node name="DefaultPlayerStart" type="Marker2D" parent="."]
+position = Vector2(1523, 817)
+
+[node name="AssStart" type="Marker2D" parent="."]
+position = Vector2(407, 946)

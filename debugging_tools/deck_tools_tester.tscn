@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dviruf4xsvlw4"]
+
+[ext_resource type="Script" path="res://debugging_tools/deck_tools_tester.gd" id="1_uayhs"]
+
+[node name="DeckToolsTester" type="Node"]
+script = ExtResource("1_uayhs")
+deck_power = 5

@@ -1,0 +1,444 @@
+[gd_scene load_steps=71 format=3 uid="uid://cahtc4x8m4wr6"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_eq5ms"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="2_g3m4l"]
+[ext_resource type="Texture2D" uid="uid://3dvgg3wkrvi8" path="res://player/sprites/player_idle_00_sharp.png" id="2_yol4e"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="3_e4ygn"]
+[ext_resource type="Texture2D" uid="uid://dn678nae5m405" path="res://player/sprites/sharpened/player_walk_down_00.png" id="3_qld7s"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="4_6haux"]
+[ext_resource type="Texture2D" uid="uid://bbx0a7ppoc7i7" path="res://player/sprites/sharpened/player_walk_down_02.png" id="4_ovh74"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="5_63rpo"]
+[ext_resource type="Texture2D" uid="uid://d1gqwv4b7of1j" path="res://player/sprites/sharpened/player_walk_down_04.png" id="5_ngbn3"]
+[ext_resource type="Texture2D" uid="uid://b8q32g2u7bxdr" path="res://player/sprites/sharpened/player_walk_down_06.png" id="6_lf7mx"]
+[ext_resource type="Texture2D" uid="uid://ddmha4p52gy3g" path="res://player/sprites/sharpened/player_walk_down_08.png" id="7_8gd4s"]
+[ext_resource type="Texture2D" uid="uid://b8qske8j14jk5" path="res://player/sprites/sharpened/player_walk_down_10.png" id="8_l4f87"]
+[ext_resource type="Texture2D" uid="uid://dv5fp01olvnkw" path="res://player/sprites/sharpened/player_walk_down_12.png" id="9_lf7cw"]
+[ext_resource type="Texture2D" uid="uid://dwk1naehdwy8s" path="res://player/sprites/sharpened/player_walk_down_14.png" id="10_exj8r"]
+[ext_resource type="Texture2D" uid="uid://jkpe1dd1r8ku" path="res://player/sprites/sharpened/player_walk_down_16.png" id="11_28qgd"]
+[ext_resource type="Texture2D" uid="uid://dob6u76gfms1y" path="res://player/sprites/sharpened/player_walk_down_18.png" id="12_vxupk"]
+[ext_resource type="Texture2D" uid="uid://bwij6y3mpf5u0" path="res://player/sprites/sharpened/player_walk_down_20.png" id="13_adu8q"]
+[ext_resource type="Texture2D" uid="uid://bdtswfeukgwiq" path="res://player/sprites/sharpened/player_walk_down_22.png" id="14_y4xw0"]
+[ext_resource type="Texture2D" uid="uid://bw23lbml2a4ih" path="res://player/sprites/sharpened/player_walk_down_side_00.png" id="15_33817"]
+[ext_resource type="Texture2D" uid="uid://w5epqvu52uxy" path="res://player/sprites/sharpened/player_walk_down_side_02.png" id="16_7avja"]
+[ext_resource type="Texture2D" uid="uid://ba5w6lmiei18w" path="res://player/sprites/sharpened/player_walk_down_side_04.png" id="17_gha0y"]
+[ext_resource type="Texture2D" uid="uid://bx8l583horb5b" path="res://player/sprites/sharpened/player_walk_down_side_06.png" id="18_laexo"]
+[ext_resource type="Texture2D" uid="uid://b6cyb2ycru5jq" path="res://player/sprites/sharpened/player_walk_down_side_08.png" id="19_082em"]
+[ext_resource type="Texture2D" uid="uid://5earklxpyvi5" path="res://player/sprites/sharpened/player_walk_down_side_10.png" id="20_twwy0"]
+[ext_resource type="Texture2D" uid="uid://3twptree7xdd" path="res://player/sprites/sharpened/player_walk_down_side_12.png" id="21_wkgbj"]
+[ext_resource type="Texture2D" uid="uid://b3cbowwb5magj" path="res://player/sprites/sharpened/player_walk_down_side_14.png" id="22_3tfee"]
+[ext_resource type="Texture2D" uid="uid://3hdf4rsufhm" path="res://player/sprites/sharpened/player_walk_down_side_16.png" id="23_31re8"]
+[ext_resource type="Texture2D" uid="uid://byfcaxii6jphr" path="res://player/sprites/sharpened/player_walk_down_side_18.png" id="24_usqp1"]
+[ext_resource type="Texture2D" uid="uid://pjytyoon1m3y" path="res://player/sprites/sharpened/player_walk_down_side_20.png" id="25_vgpsr"]
+[ext_resource type="Texture2D" uid="uid://dtqfalbr4i4lm" path="res://player/sprites/sharpened/player_walk_down_side_22.png" id="26_hp5jb"]
+[ext_resource type="Texture2D" uid="uid://b5idmnb0lwmhk" path="res://player/sprites/sharpened/player_walk_side_00.png" id="27_4hlyu"]
+[ext_resource type="Texture2D" uid="uid://coitv23400j32" path="res://player/sprites/sharpened/player_walk_side_02.png" id="28_ndkpq"]
+[ext_resource type="Texture2D" uid="uid://sddnwjqim4jw" path="res://player/sprites/sharpened/player_walk_side_04.png" id="29_qilu8"]
+[ext_resource type="Texture2D" uid="uid://bp0veyva20so1" path="res://player/sprites/sharpened/player_walk_side_06.png" id="30_4333h"]
+[ext_resource type="Texture2D" uid="uid://bqqxw7sac2n4g" path="res://player/sprites/sharpened/player_walk_side_08.png" id="31_dvbhd"]
+[ext_resource type="Texture2D" uid="uid://qgp0mkhx07m2" path="res://player/sprites/sharpened/player_walk_side_10.png" id="32_qdprn"]
+[ext_resource type="Texture2D" uid="uid://ycvc508hpbnn" path="res://player/sprites/sharpened/player_walk_side_12.png" id="33_jnbvh"]
+[ext_resource type="Texture2D" uid="uid://crfwqcg0k004e" path="res://player/sprites/sharpened/player_walk_side_14.png" id="34_jhffk"]
+[ext_resource type="Texture2D" uid="uid://cdp00sg4a6jsb" path="res://player/sprites/sharpened/player_walk_side_16.png" id="35_2qoof"]
+[ext_resource type="Texture2D" uid="uid://4487w82jupkq" path="res://player/sprites/sharpened/player_walk_side_18.png" id="36_4dlut"]
+[ext_resource type="Texture2D" uid="uid://dookpuhgf02tn" path="res://player/sprites/sharpened/player_walk_side_20.png" id="37_lpoko"]
+[ext_resource type="Texture2D" uid="uid://cxopmfh5fhath" path="res://player/sprites/sharpened/player_walk_side_22.png" id="38_indrg"]
+[ext_resource type="Texture2D" uid="uid://bj8462fms54gs" path="res://player/sprites/sharpened/player_walk_up_00.png" id="39_brghw"]
+[ext_resource type="Texture2D" uid="uid://cvfuau4vrfuqb" path="res://player/sprites/sharpened/player_walk_up_02.png" id="40_o0vjw"]
+[ext_resource type="Texture2D" uid="uid://5dtf72d0pvww" path="res://player/sprites/sharpened/player_walk_up_04.png" id="41_k2rrj"]
+[ext_resource type="Texture2D" uid="uid://5r74ngyxfj8u" path="res://player/sprites/sharpened/player_walk_up_06.png" id="42_rinnm"]
+[ext_resource type="Texture2D" uid="uid://4mud7ydp2o51" path="res://player/sprites/sharpened/player_walk_up_08.png" id="43_e5ov1"]
+[ext_resource type="Texture2D" uid="uid://bryjhb8cu1lvw" path="res://player/sprites/sharpened/player_walk_up_10.png" id="44_dsof2"]
+[ext_resource type="Texture2D" uid="uid://bq6oak3l238s2" path="res://player/sprites/sharpened/player_walk_up_12.png" id="45_786mu"]
+[ext_resource type="Texture2D" uid="uid://d1vaxh768rxgt" path="res://player/sprites/sharpened/player_walk_up_14.png" id="46_skspy"]
+[ext_resource type="Texture2D" uid="uid://b2tdhh844hwg" path="res://player/sprites/sharpened/player_walk_up_16.png" id="47_rivt1"]
+[ext_resource type="Texture2D" uid="uid://jkj1w4yc6it6" path="res://player/sprites/sharpened/player_walk_up_18.png" id="48_dl2e1"]
+[ext_resource type="Texture2D" uid="uid://ci6ynoa6l74fp" path="res://player/sprites/sharpened/player_walk_up_20.png" id="49_mc6f1"]
+[ext_resource type="Texture2D" uid="uid://tvwfxcw4exfo" path="res://player/sprites/sharpened/player_walk_up_22.png" id="50_2m41f"]
+[ext_resource type="Texture2D" uid="uid://m11s1yd8afn8" path="res://player/sprites/sharpened/player_walk_up_side_00.png" id="51_ogvlk"]
+[ext_resource type="Texture2D" uid="uid://csiuiuemyokss" path="res://player/sprites/sharpened/player_walk_up_side_02.png" id="52_25ti3"]
+[ext_resource type="Texture2D" uid="uid://dl0npahk8bb6o" path="res://player/sprites/sharpened/player_walk_up_side_04.png" id="53_rnd0v"]
+[ext_resource type="Texture2D" uid="uid://t1wovy6xbfcy" path="res://player/sprites/sharpened/player_walk_up_side_06.png" id="54_mvrar"]
+[ext_resource type="Texture2D" uid="uid://u6gkhr8q6ywi" path="res://player/sprites/sharpened/player_walk_up_side_08.png" id="55_7wse7"]
+[ext_resource type="Texture2D" uid="uid://2l7vf5mhathd" path="res://player/sprites/sharpened/player_walk_up_side_10.png" id="56_d80u0"]
+[ext_resource type="Texture2D" uid="uid://ce4m57p6u1gs0" path="res://player/sprites/sharpened/player_walk_up_side_12.png" id="57_p2cgx"]
+[ext_resource type="Texture2D" uid="uid://djhosi27jpjsj" path="res://player/sprites/sharpened/player_walk_up_side_14.png" id="58_nfhvt"]
+[ext_resource type="Texture2D" uid="uid://2bktumjya6tp" path="res://player/sprites/sharpened/player_walk_up_side_16.png" id="59_ev4i7"]
+[ext_resource type="Texture2D" uid="uid://d3bhyqeh3l6e0" path="res://player/sprites/sharpened/player_walk_up_side_18.png" id="60_x0rl0"]
+[ext_resource type="Texture2D" uid="uid://c8pcoqk0ywokg" path="res://player/sprites/sharpened/player_walk_up_side_20.png" id="61_m3mwu"]
+[ext_resource type="Texture2D" uid="uid://cm6jvvhfoveuy" path="res://player/sprites/sharpened/player_walk_up_side_22.png" id="62_kgkip"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mt65k"]
+
+[sub_resource type="Shader" id="Shader_w8kgq"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Color Manipulator,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nrbyj"]
+shader = SubResource("Shader_w8kgq")
+shader_parameter/opacity = 1.0
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.104
+shader_parameter/COLORMANIPULATOR_saturation = 0.934
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ancry"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_yol4e")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_qld7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ovh74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ngbn3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lf7mx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8gd4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_l4f87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lf7cw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_exj8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_28qgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_vxupk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_adu8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_y4xw0")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_33817")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_7avja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_gha0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_laexo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_082em")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_twwy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wkgbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_3tfee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_31re8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_usqp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_vgpsr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_hp5jb")
+}],
+"loop": true,
+"name": &"walk_down_side",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_4hlyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ndkpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_qilu8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_4333h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_dvbhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_qdprn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_jnbvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_jhffk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_2qoof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_4dlut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_lpoko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_indrg")
+}],
+"loop": true,
+"name": &"walk_side",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_brghw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_o0vjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_k2rrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_rinnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_e5ov1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_dsof2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_786mu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_skspy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_rivt1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_dl2e1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_mc6f1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_2m41f")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("51_ogvlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_25ti3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_rnd0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_mvrar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_7wse7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_d80u0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_p2cgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_nfhvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_ev4i7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_x0rl0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_m3mwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_kgkip")
+}],
+"loop": true,
+"name": &"walk_up_side",
+"speed": 12.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_eq5ms")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mt65k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_nrbyj")
+position = Vector2(0, -170)
+sprite_frames = SubResource("SpriteFrames_ancry")
+animation = &"walk_down"
+autoplay = "idle"
+
+[node name="StateChart" type="Node" parent="."]
+script = ExtResource("2_g3m4l")
+
+[node name="Root" type="Node" parent="StateChart"]
+script = ExtResource("3_e4ygn")
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node" parent="StateChart/Root"]
+script = ExtResource("4_6haux")
+
+[node name="ToMoving" type="Node" parent="StateChart/Root/Idle"]
+script = ExtResource("5_63rpo")
+to = NodePath("../../Moving")
+event = &"to_moving_event"
+delay_in_seconds = "0.0"
+
+[node name="ToEncounter" type="Node" parent="StateChart/Root/Idle"]
+script = ExtResource("5_63rpo")
+to = NodePath("../../Encounter")
+event = &"to_encounter_event"
+delay_in_seconds = "0.0"
+
+[node name="Moving" type="Node" parent="StateChart/Root"]
+script = ExtResource("4_6haux")
+
+[node name="ToIdle" type="Node" parent="StateChart/Root/Moving"]
+script = ExtResource("5_63rpo")
+to = NodePath("../../Idle")
+event = &"to_idle_event"
+delay_in_seconds = "0.0"
+
+[node name="ToEncounter" type="Node" parent="StateChart/Root/Moving"]
+script = ExtResource("5_63rpo")
+to = NodePath("../../Encounter")
+event = &"to_encounter_event"
+delay_in_seconds = "0.0"
+
+[node name="Encounter" type="Node" parent="StateChart/Root"]
+script = ExtResource("4_6haux")
+
+[node name="Idle" type="Node" parent="StateChart/Root/Encounter"]
+script = ExtResource("5_63rpo")
+to = NodePath("../../Idle")
+event = &"to_idle_event"
+delay_in_seconds = "0.0"
+
+[connection signal="state_entered" from="StateChart/Root/Idle" to="." method="on_atomic_state_entered" binds= ["IDLE"]]
+[connection signal="state_entered" from="StateChart/Root/Moving" to="." method="on_atomic_state_entered" binds= ["MOVING"]]
+[connection signal="state_entered" from="StateChart/Root/Encounter" to="." method="on_atomic_state_entered" binds= ["ENCOUNTER"]]

@@ -1,0 +1,1930 @@
+[gd_scene load_steps=313 format=3 uid="uid://cte5fobhra3n3"]
+
+[ext_resource type="Script" path="res://encounters/sprites/cards/card_sprite.gd" id="1_o7xgx"]
+[ext_resource type="Texture2D" uid="uid://434cpa8ycimd" path="res://encounters/sprites/cards/Screenshot 2024-12-27 100031.png" id="2_7twdo"]
+[ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="3_dm4al"]
+[ext_resource type="Texture2D" uid="uid://bjiaeon2of5sn" path="res://encounters/sprites/bad_boy/bad_boy_attack_31.png" id="4_25bn4"]
+[ext_resource type="Texture2D" uid="uid://cn203roligwxs" path="res://encounters/sprites/bad_boy/bad_boy_idle_00.png" id="4_aap77"]
+[ext_resource type="Texture2D" uid="uid://cn0q0ujrq0lig" path="res://encounters/sprites/bad_boy/bad_boy_attack_33.png" id="5_b4sk1"]
+[ext_resource type="Texture2D" uid="uid://iqer6r4tkkte" path="res://encounters/sprites/bad_boy/bad_boy_attack_35.png" id="6_tyjys"]
+[ext_resource type="Texture2D" uid="uid://bggduh2ij5ccc" path="res://encounters/sprites/bad_boy/bad_boy_attack_37.png" id="7_g5xve"]
+[ext_resource type="Texture2D" uid="uid://dnie1eqrvicdc" path="res://encounters/sprites/bad_boy/bad_boy_attack_39.png" id="8_t2woi"]
+[ext_resource type="Texture2D" uid="uid://qnkm8eir631b" path="res://encounters/sprites/bad_boy/bad_boy_attack_41.png" id="9_iequa"]
+[ext_resource type="Texture2D" uid="uid://bnjtrv67o3tcp" path="res://encounters/sprites/bad_boy/bad_boy_attack_43.png" id="10_fgath"]
+[ext_resource type="Texture2D" uid="uid://lejsi4hnyvp4" path="res://encounters/sprites/bad_boy/bad_boy_attack_45.png" id="11_fpthv"]
+[ext_resource type="Texture2D" uid="uid://bgsqdwc2m4pr5" path="res://encounters/sprites/bad_boy/bad_boy_attack_47.png" id="12_o3kad"]
+[ext_resource type="Texture2D" uid="uid://cvkmwu8boydqr" path="res://encounters/sprites/bad_boy/bad_boy_attack_49.png" id="13_jcchf"]
+[ext_resource type="Texture2D" uid="uid://dbubiev3ay1tq" path="res://encounters/sprites/bad_boy/bad_boy_attack_51.png" id="14_yv8u1"]
+[ext_resource type="Texture2D" uid="uid://b8hbmg6aj7x84" path="res://encounters/sprites/bad_boy/bad_boy_attack_53.png" id="15_srnwt"]
+[ext_resource type="Texture2D" uid="uid://bhd5lnaj7r6lf" path="res://encounters/sprites/bad_boy/bad_boy_attack_55.png" id="16_1q3ns"]
+[ext_resource type="Texture2D" uid="uid://ip6dtxqbh0cc" path="res://encounters/sprites/bad_boy/bad_boy_attack_57.png" id="17_82g4n"]
+[ext_resource type="Texture2D" uid="uid://b0e6vhdqa6y6r" path="res://encounters/sprites/bad_boy/bad_boy_dance_00.png" id="18_nu07c"]
+[ext_resource type="Texture2D" uid="uid://bmqv00b5p2yss" path="res://encounters/sprites/bad_boy/bad_boy_dance_02.png" id="19_t5snh"]
+[ext_resource type="Texture2D" uid="uid://crmlkwxunqjea" path="res://encounters/sprites/bad_boy/bad_boy_dance_04.png" id="20_l4h2s"]
+[ext_resource type="Texture2D" uid="uid://cubi8j6xglfkq" path="res://encounters/sprites/bad_boy/bad_boy_dance_06.png" id="21_c5r57"]
+[ext_resource type="Texture2D" uid="uid://6blwcgurnwto" path="res://encounters/sprites/bad_boy/bad_boy_dance_08.png" id="22_80g6f"]
+[ext_resource type="Texture2D" uid="uid://bv350jwq1u0m" path="res://encounters/sprites/bad_boy/bad_boy_dance_10.png" id="23_k8ad3"]
+[ext_resource type="Texture2D" uid="uid://c8ldt06f2iw82" path="res://encounters/sprites/bad_boy/bad_boy_dance_12.png" id="24_fv88h"]
+[ext_resource type="Texture2D" uid="uid://f1af7ueim4q0" path="res://encounters/sprites/bad_boy/bad_boy_dance_14.png" id="25_r7snt"]
+[ext_resource type="Texture2D" uid="uid://dst775l0e72um" path="res://encounters/sprites/bad_boy/bad_boy_dance_16.png" id="26_5v4th"]
+[ext_resource type="Texture2D" uid="uid://bebt5ss556l7g" path="res://encounters/sprites/bad_boy/bad_boy_dance_18.png" id="27_f5kj0"]
+[ext_resource type="Texture2D" uid="uid://btqeevtxea03e" path="res://encounters/sprites/bad_boy/bad_boy_dance_20.png" id="28_qniwm"]
+[ext_resource type="Texture2D" uid="uid://dhfhd03ke4gkk" path="res://encounters/sprites/bad_boy/bad_boy_dance_22.png" id="29_4iria"]
+[ext_resource type="Texture2D" uid="uid://dhqj1vntguogq" path="res://encounters/sprites/bad_boy/bad_boy_dance_24.png" id="30_ef77i"]
+[ext_resource type="Texture2D" uid="uid://b2sgn00uxck5j" path="res://encounters/sprites/bad_boy/bad_boy_dance_26.png" id="31_xd4ke"]
+[ext_resource type="Texture2D" uid="uid://dhkvbbk88gnyc" path="res://encounters/sprites/bad_boy/bad_boy_dance_28.png" id="32_3ojk2"]
+[ext_resource type="Texture2D" uid="uid://bv47y8v36vd13" path="res://encounters/sprites/bad_boy/bad_boy_dance_30.png" id="33_gipg5"]
+[ext_resource type="Texture2D" uid="uid://dnor7wd6accou" path="res://encounters/sprites/bad_boy/bad_boy_dance_32.png" id="34_mxvfe"]
+[ext_resource type="Texture2D" uid="uid://bas2rogsxrcr" path="res://encounters/sprites/bad_boy/bad_boy_dance_34.png" id="35_vcen8"]
+[ext_resource type="Texture2D" uid="uid://dd1e4t1gu8qft" path="res://encounters/sprites/bad_boy/bad_boy_dance_36.png" id="36_44fkb"]
+[ext_resource type="Texture2D" uid="uid://o0qav0q24v70" path="res://encounters/sprites/bad_boy/bad_boy_dance_38.png" id="37_1h3aq"]
+[ext_resource type="Texture2D" uid="uid://qd57pn5ib55l" path="res://encounters/sprites/bad_boy/bad_boy_dance_40.png" id="38_2dhm3"]
+[ext_resource type="Texture2D" uid="uid://b8u20am4i4k0u" path="res://encounters/sprites/bad_boy/bad_boy_die_02.png" id="39_cr554"]
+[ext_resource type="Texture2D" uid="uid://dsjlh4b30oqph" path="res://encounters/sprites/bad_boy/bad_boy_die_03.png" id="40_cl1ot"]
+[ext_resource type="Texture2D" uid="uid://cvhtp5gbrvmli" path="res://encounters/sprites/bad_boy/bad_boy_die_04.png" id="41_a2kl4"]
+[ext_resource type="Texture2D" uid="uid://dsoq6yxqr0j1g" path="res://encounters/sprites/bad_boy/bad_boy_die_05.png" id="42_1x7si"]
+[ext_resource type="Texture2D" uid="uid://dev7xxnhtului" path="res://encounters/sprites/bad_boy/bad_boy_die_06.png" id="43_cunpb"]
+[ext_resource type="Texture2D" uid="uid://cs5dgitiiqaqo" path="res://encounters/sprites/bad_boy/bad_boy_die_07.png" id="44_vph1q"]
+[ext_resource type="Texture2D" uid="uid://tuxcj0dkbu4b" path="res://encounters/sprites/bad_boy/bad_boy_die_08.png" id="45_a6jtf"]
+[ext_resource type="Texture2D" uid="uid://ca0ddq2dquyp2" path="res://encounters/sprites/bad_boy/bad_boy_die_09.png" id="46_mvi4d"]
+[ext_resource type="Texture2D" uid="uid://uk6m4twgvgw6" path="res://encounters/sprites/bad_boy/bad_boy_die_10.png" id="47_w7kv7"]
+[ext_resource type="Texture2D" uid="uid://b0wjhwwn8ux2l" path="res://encounters/sprites/bad_boy/bad_boy_die_11.png" id="48_lh40p"]
+[ext_resource type="Texture2D" uid="uid://bgc7vk51l4mpg" path="res://encounters/sprites/bad_boy/bad_boy_die_12.png" id="49_o1ici"]
+[ext_resource type="Texture2D" uid="uid://c0ejkd6ufgms0" path="res://encounters/sprites/bad_boy/bad_boy_die_13.png" id="50_khtba"]
+[ext_resource type="Texture2D" uid="uid://b3u033uoqal5u" path="res://encounters/sprites/bad_boy/bad_boy_die_14.png" id="51_sv5hv"]
+[ext_resource type="Texture2D" uid="uid://8jnffp1cydgr" path="res://encounters/sprites/bad_boy/bad_boy_die_15.png" id="52_1vn1j"]
+[ext_resource type="Texture2D" uid="uid://df5egf8dndmvq" path="res://encounters/sprites/bad_boy/bad_boy_die_16.png" id="53_5535d"]
+[ext_resource type="Texture2D" uid="uid://drl3k5dsd74h4" path="res://encounters/sprites/bad_boy/bad_boy_die_17.png" id="54_gsgmw"]
+[ext_resource type="Texture2D" uid="uid://csodr0t7uj2mk" path="res://encounters/sprites/bad_boy/bad_boy_die_18.png" id="55_55w2b"]
+[ext_resource type="Texture2D" uid="uid://basdf5l4kixno" path="res://encounters/sprites/bad_boy/bad_boy_die_19.png" id="56_8is0v"]
+[ext_resource type="Texture2D" uid="uid://cjup3o6r0uy73" path="res://encounters/sprites/heartthrob/Screenshot 2024-12-27 161850.png" id="57_l1wn6"]
+[ext_resource type="Texture2D" uid="uid://dmb6oqvsd7gse" path="res://encounters/sprites/heartthrob/heartthrob_attack30.png" id="57_mo0vt"]
+[ext_resource type="Texture2D" uid="uid://vflxgfu5pqvr" path="res://encounters/sprites/heartthrob/heartthrob_attack32.png" id="58_xmqtw"]
+[ext_resource type="Texture2D" uid="uid://dkwycriqhyrop" path="res://encounters/sprites/heartthrob/heartthrob_attack34.png" id="59_3x2wy"]
+[ext_resource type="Texture2D" uid="uid://cmvqsbq26bmjj" path="res://encounters/sprites/heartthrob/heartthrob_attack36.png" id="60_v2srh"]
+[ext_resource type="Texture2D" uid="uid://cqlx8qhidggm4" path="res://encounters/sprites/heartthrob/heartthrob_attack38.png" id="61_eilde"]
+[ext_resource type="Texture2D" uid="uid://dcx4i83s6ci66" path="res://encounters/sprites/heartthrob/heartthrob_attack40.png" id="62_s0xg4"]
+[ext_resource type="Texture2D" uid="uid://ugik8kwj3pi6" path="res://encounters/sprites/heartthrob/heartthrob_attack42.png" id="63_jnc76"]
+[ext_resource type="Texture2D" uid="uid://6o88iqnfx5bb" path="res://encounters/sprites/heartthrob/heartthrob_attack44.png" id="64_fq2jj"]
+[ext_resource type="Texture2D" uid="uid://ccskpu8pmrcww" path="res://encounters/sprites/heartthrob/heartthrob_attack46.png" id="65_xcc85"]
+[ext_resource type="Texture2D" uid="uid://dr88wkutriplm" path="res://encounters/sprites/heartthrob/heartthrob_attack48.png" id="66_q50l0"]
+[ext_resource type="Texture2D" uid="uid://cqsnlpmfth74k" path="res://encounters/sprites/heartthrob/heartthrob_attack50.png" id="67_7x226"]
+[ext_resource type="Texture2D" uid="uid://bxm30eb6hbibk" path="res://encounters/sprites/heartthrob/heartthrob_attack52.png" id="68_8rs8u"]
+[ext_resource type="Texture2D" uid="uid://ctboe2lwmqkfe" path="res://encounters/sprites/heartthrob/heartthrob_attack54.png" id="69_app3j"]
+[ext_resource type="Texture2D" uid="uid://cv8e20ewd4oxv" path="res://encounters/sprites/heartthrob/heartthrob_attack56.png" id="70_w0vxh"]
+[ext_resource type="Texture2D" uid="uid://ckamvyv6o282n" path="res://encounters/sprites/heartthrob/heartthrob_dance_00.png" id="71_arbjd"]
+[ext_resource type="Texture2D" uid="uid://c5f2ocf1r4d8c" path="res://encounters/sprites/heartthrob/heartthrob_dance_02.png" id="72_f0umd"]
+[ext_resource type="Texture2D" uid="uid://b4whhj2jj4fld" path="res://encounters/sprites/heartthrob/heartthrob_dance_04.png" id="73_xgqk0"]
+[ext_resource type="Texture2D" uid="uid://c2554hr5jonq1" path="res://encounters/sprites/heartthrob/heartthrob_dance_06.png" id="74_wgeaq"]
+[ext_resource type="Texture2D" uid="uid://bdwp7bkqt4e8o" path="res://encounters/sprites/heartthrob/heartthrob_dance_08.png" id="75_pejd2"]
+[ext_resource type="Texture2D" uid="uid://c38okj2tusris" path="res://encounters/sprites/heartthrob/heartthrob_dance_10.png" id="76_05dlx"]
+[ext_resource type="Texture2D" uid="uid://dcqfqrpqsqmqk" path="res://encounters/sprites/heartthrob/heartthrob_dance_12.png" id="77_ittnk"]
+[ext_resource type="Texture2D" uid="uid://daogffy4u8vpp" path="res://encounters/sprites/heartthrob/heartthrob_dance_14.png" id="78_etmuu"]
+[ext_resource type="Texture2D" uid="uid://dlfb341ncrfqc" path="res://encounters/sprites/heartthrob/heartthrob_dance_16.png" id="79_yr8sm"]
+[ext_resource type="Texture2D" uid="uid://duv4ypo1ufg6f" path="res://encounters/sprites/heartthrob/heartthrob_dance_18.png" id="80_t6b11"]
+[ext_resource type="Texture2D" uid="uid://cqr121frt2uus" path="res://encounters/sprites/heartthrob/heartthrob_dance_20.png" id="81_inxjy"]
+[ext_resource type="Texture2D" uid="uid://cf0618bg335ii" path="res://encounters/sprites/heartthrob/heartthrob_dance_22.png" id="82_3f5x3"]
+[ext_resource type="Texture2D" uid="uid://2pb0mb78vfxg" path="res://encounters/sprites/heartthrob/heartthrob_dance_24.png" id="83_ff3l2"]
+[ext_resource type="Texture2D" uid="uid://bb14wx1mutcwb" path="res://encounters/sprites/heartthrob/heartthrob_dance_26.png" id="84_vvbdj"]
+[ext_resource type="Texture2D" uid="uid://bjfsfdepfx5h4" path="res://encounters/sprites/heartthrob/heartthrob_dance_28.png" id="85_3se4m"]
+[ext_resource type="Texture2D" uid="uid://dsrlvicrnlc6d" path="res://encounters/sprites/heartthrob/heartthrob_dance_30.png" id="86_ir8ek"]
+[ext_resource type="Texture2D" uid="uid://erxrp5amrfvo" path="res://encounters/sprites/heartthrob/heartthrob_dance_32.png" id="87_tl860"]
+[ext_resource type="Texture2D" uid="uid://c4looudbp6jfa" path="res://encounters/sprites/heartthrob/heartthrob_dance_34.png" id="88_2qtyg"]
+[ext_resource type="Texture2D" uid="uid://x4b42b5cit4j" path="res://encounters/sprites/heartthrob/heartthrob_dance_36.png" id="89_qmto8"]
+[ext_resource type="Texture2D" uid="uid://bbmc1vqxiagg8" path="res://encounters/sprites/heartthrob/heartthrob_dance_38.png" id="90_i7vj4"]
+[ext_resource type="Texture2D" uid="uid://bqtovjrc6oo7d" path="res://encounters/sprites/heartthrob/heartthrob_dance_40.png" id="91_uedyh"]
+[ext_resource type="Texture2D" uid="uid://brxpm2yyywobh" path="res://encounters/sprites/heartthrob/heartthrob_die_00.png" id="92_hwa02"]
+[ext_resource type="Texture2D" uid="uid://dw6ebgeg0opwr" path="res://encounters/sprites/heartthrob/heartthrob_die_01.png" id="93_54f1m"]
+[ext_resource type="Texture2D" uid="uid://uj8mh15kxr7u" path="res://encounters/sprites/heartthrob/heartthrob_die_02.png" id="94_pw1gc"]
+[ext_resource type="Texture2D" uid="uid://6n2w3vqfq8ud" path="res://encounters/sprites/heartthrob/heartthrob_die_03.png" id="95_dkaeq"]
+[ext_resource type="Texture2D" uid="uid://bqu81mryl7fry" path="res://encounters/sprites/heartthrob/heartthrob_die_04.png" id="96_augbe"]
+[ext_resource type="Texture2D" uid="uid://c17q541s6noot" path="res://encounters/sprites/heartthrob/heartthrob_die_05.png" id="97_bj53f"]
+[ext_resource type="Texture2D" uid="uid://w8s126v1ym04" path="res://encounters/sprites/heartthrob/heartthrob_die_06.png" id="98_yiccd"]
+[ext_resource type="Texture2D" uid="uid://bf7yd42c5vy7m" path="res://encounters/sprites/heartthrob/heartthrob_die_07.png" id="99_qd7tq"]
+[ext_resource type="Texture2D" uid="uid://03srbtc04oc5" path="res://encounters/sprites/heartthrob/heartthrob_die_08.png" id="100_x17ug"]
+[ext_resource type="Texture2D" uid="uid://b7klledmglgp2" path="res://encounters/sprites/heartthrob/heartthrob_die_09.png" id="101_fsm0t"]
+[ext_resource type="Texture2D" uid="uid://bjndb2ubpj1b" path="res://encounters/sprites/heartthrob/heartthrob_die_10.png" id="102_suq37"]
+[ext_resource type="Texture2D" uid="uid://cm6ybhuh38f4u" path="res://encounters/sprites/heartthrob/heartthrob_die_11.png" id="103_k60kj"]
+[ext_resource type="Texture2D" uid="uid://d4j4ri36jikvt" path="res://encounters/sprites/heartthrob/heartthrob_die_12.png" id="104_xyffs"]
+[ext_resource type="Texture2D" uid="uid://dcfa0exyqi040" path="res://encounters/sprites/heartthrob/heartthrob_die_13.png" id="105_x3oex"]
+[ext_resource type="Texture2D" uid="uid://ct35al3uqmsd2" path="res://encounters/sprites/heartthrob/heartthrob_die_14.png" id="106_1ooy2"]
+[ext_resource type="Texture2D" uid="uid://br8xwnw22ik6e" path="res://encounters/sprites/heartthrob/heartthrob_die_15.png" id="107_esvoa"]
+[ext_resource type="Texture2D" uid="uid://baqd4hkme6x7h" path="res://encounters/sprites/heartthrob/heartthrob_die_16.png" id="108_vmwme"]
+[ext_resource type="Texture2D" uid="uid://jaddtel8g284" path="res://encounters/sprites/heartthrob/heartthrob_die_17.png" id="109_b2468"]
+[ext_resource type="Texture2D" uid="uid://dss2ia84epap0" path="res://encounters/sprites/heartthrob/heartthrob_die_18.png" id="110_mvr4h"]
+[ext_resource type="Texture2D" uid="uid://bj7cldr2ywmrr" path="res://encounters/sprites/heartthrob/heartthrob_die_19.png" id="111_cjucg"]
+[ext_resource type="Texture2D" uid="uid://bsis0mtwsa10h" path="res://encounters/sprites/heartthrob/heartthrob_die_20.png" id="112_hd3ff"]
+[ext_resource type="Texture2D" uid="uid://ddw1ng4eedjhf" path="res://encounters/sprites/heartthrob/heartthrob_die_21.png" id="113_wp0qt"]
+[ext_resource type="Texture2D" uid="uid://cyao7x8ou1yw0" path="res://encounters/sprites/heartthrob/heartthrob_die_22.png" id="114_68xmb"]
+[ext_resource type="Texture2D" uid="uid://4688sia3rnix" path="res://encounters/sprites/heartthrob/heartthrob_die_23.png" id="115_8xydp"]
+[ext_resource type="Texture2D" uid="uid://bhim480bt36wa" path="res://encounters/sprites/heartthrob/heartthrob_die_24.png" id="116_yhc2m"]
+[ext_resource type="Texture2D" uid="uid://c6iknpij40b2j" path="res://encounters/sprites/heartthrob/heartthrob_die_25.png" id="117_rvnpp"]
+[ext_resource type="Texture2D" uid="uid://ceemh1kx8ywnx" path="res://encounters/sprites/heartthrob/heartthrob_die_26.png" id="118_gabbd"]
+[ext_resource type="Texture2D" uid="uid://b8tqp8ofyxge5" path="res://encounters/sprites/heartthrob/heartthrob_die_27.png" id="119_mg833"]
+[ext_resource type="Texture2D" uid="uid://bmt5uj48qlf3j" path="res://encounters/sprites/heartthrob/heartthrob_die_28.png" id="120_qqr7s"]
+[ext_resource type="Texture2D" uid="uid://cmfbtpt2fld3l" path="res://encounters/sprites/heartthrob/heartthrob_die_29.png" id="121_80ar7"]
+[ext_resource type="Texture2D" uid="uid://cphh11nh2tynq" path="res://encounters/sprites/heartthrob/heartthrob_die_30.png" id="122_npfq0"]
+[ext_resource type="Texture2D" uid="uid://digd0k54yuhiq" path="res://encounters/sprites/heartthrob/heartthrob_die_31.png" id="123_1ejl8"]
+[ext_resource type="Texture2D" uid="uid://bhv760e6nkh06" path="res://encounters/sprites/heartthrob/heartthrob_die_32.png" id="124_s70n1"]
+[ext_resource type="Texture2D" uid="uid://bc8mhiwext8dl" path="res://encounters/sprites/cute_one/cute_one_attack_45.png" id="126_b4c6f"]
+[ext_resource type="Texture2D" uid="uid://b3stxili3jh71" path="res://encounters/sprites/cute_one/cute_one_idle_00.png" id="126_f3c6r"]
+[ext_resource type="Texture2D" uid="uid://brgosfbrrb2id" path="res://encounters/sprites/cute_one/cute_one_attack_46.png" id="127_x5muf"]
+[ext_resource type="Texture2D" uid="uid://dminhnjxblidj" path="res://encounters/sprites/cute_one/cute_one_attack_47.png" id="128_ghs46"]
+[ext_resource type="Texture2D" uid="uid://cupp4snsswpm2" path="res://encounters/sprites/cute_one/cute_one_attack_48.png" id="129_lmafd"]
+[ext_resource type="Texture2D" uid="uid://ddc2ywb40omwe" path="res://encounters/sprites/cute_one/cute_one_attack_49.png" id="130_1xsvp"]
+[ext_resource type="Texture2D" uid="uid://byys85l14muam" path="res://encounters/sprites/cute_one/cute_one_attack_50.png" id="131_5cs2i"]
+[ext_resource type="Texture2D" uid="uid://d213d2k8jhh7j" path="res://encounters/sprites/cute_one/cute_one_attack_51.png" id="132_jtnf1"]
+[ext_resource type="Texture2D" uid="uid://bh8qg03tx3ptx" path="res://encounters/sprites/cute_one/cute_one_attack_52.png" id="133_lacuc"]
+[ext_resource type="Texture2D" uid="uid://cjky1b13vkrlv" path="res://encounters/sprites/cute_one/cute_one_attack_53.png" id="134_8bwst"]
+[ext_resource type="Texture2D" uid="uid://barjsu2usin64" path="res://encounters/sprites/cute_one/cute_one_attack_54.png" id="135_p7u3h"]
+[ext_resource type="Texture2D" uid="uid://dacxy3eqrs2e5" path="res://encounters/sprites/cute_one/cute_one_attack_55.png" id="136_5dell"]
+[ext_resource type="Texture2D" uid="uid://blj8gvllpn3ee" path="res://encounters/sprites/cute_one/cute_one_attack_56.png" id="137_jf030"]
+[ext_resource type="Texture2D" uid="uid://du4fy3vnyghxu" path="res://encounters/sprites/cute_one/cute_one_attack_57.png" id="138_0j731"]
+[ext_resource type="Texture2D" uid="uid://bowu41l18q3d" path="res://encounters/sprites/cute_one/cute_one_attack_58.png" id="139_dkdn0"]
+[ext_resource type="Texture2D" uid="uid://bppbr8umj218p" path="res://encounters/sprites/cute_one/cute_one_attack_59.png" id="140_v3mua"]
+[ext_resource type="Texture2D" uid="uid://xouao6pk80oo" path="res://encounters/sprites/cute_one/cute_one_dance_00.png" id="141_7ptdp"]
+[ext_resource type="Texture2D" uid="uid://bsy5ypiu064g7" path="res://encounters/sprites/cute_one/cute_one_dance_02.png" id="142_rhyma"]
+[ext_resource type="Texture2D" uid="uid://cxfnhg010ru0e" path="res://encounters/sprites/cute_one/cute_one_dance_04.png" id="143_yj2dj"]
+[ext_resource type="Texture2D" uid="uid://bv05qurymkfgx" path="res://encounters/sprites/cute_one/cute_one_dance_06.png" id="144_a1tm6"]
+[ext_resource type="Texture2D" uid="uid://4q3mg7r10mtd" path="res://encounters/sprites/cute_one/cute_one_dance_08.png" id="145_hwfpa"]
+[ext_resource type="Texture2D" uid="uid://da08btwsd4ydc" path="res://encounters/sprites/cute_one/cute_one_dance_10.png" id="146_wwji8"]
+[ext_resource type="Texture2D" uid="uid://cogoyfn6tum5s" path="res://encounters/sprites/cute_one/cute_one_dance_12.png" id="147_6jrfw"]
+[ext_resource type="Texture2D" uid="uid://eu8osh8ga73s" path="res://encounters/sprites/cute_one/cute_one_dance_14.png" id="148_xv8vf"]
+[ext_resource type="Texture2D" uid="uid://cjg4btg3ovs0v" path="res://encounters/sprites/cute_one/cute_one_dance_16.png" id="149_jkf3l"]
+[ext_resource type="Texture2D" uid="uid://c15p7hkbus4tq" path="res://encounters/sprites/cute_one/cute_one_dance_18.png" id="150_diim7"]
+[ext_resource type="Texture2D" uid="uid://cyhi5bb4nis8s" path="res://encounters/sprites/cute_one/cute_one_dance_20.png" id="151_mj024"]
+[ext_resource type="Texture2D" uid="uid://d06eysuy8cb0r" path="res://encounters/sprites/cute_one/cute_one_dance_22.png" id="152_v46io"]
+[ext_resource type="Texture2D" uid="uid://bft45gk5pt4em" path="res://encounters/sprites/cute_one/cute_one_dance_24.png" id="153_b4x4t"]
+[ext_resource type="Texture2D" uid="uid://dssm4jx55dwmm" path="res://encounters/sprites/cute_one/cute_one_dance_26.png" id="154_mbnem"]
+[ext_resource type="Texture2D" uid="uid://dkkprdalxbdms" path="res://encounters/sprites/cute_one/cute_one_dance_28.png" id="155_yacmp"]
+[ext_resource type="Texture2D" uid="uid://c2he0cu0mknyl" path="res://encounters/sprites/cute_one/cute_one_dance_30.png" id="156_coc72"]
+[ext_resource type="Texture2D" uid="uid://brnppttfomplb" path="res://encounters/sprites/cute_one/cute_one_dance_32.png" id="157_wvg02"]
+[ext_resource type="Texture2D" uid="uid://bbx1t22dw4uxf" path="res://encounters/sprites/cute_one/cute_one_dance_34.png" id="158_exy2m"]
+[ext_resource type="Texture2D" uid="uid://bdakg7gg5x1r2" path="res://encounters/sprites/cute_one/cute_one_dance_36.png" id="159_jlpd3"]
+[ext_resource type="Texture2D" uid="uid://ckh2tr4rg0g1l" path="res://encounters/sprites/cute_one/cute_one_dance_38.png" id="160_qy1xi"]
+[ext_resource type="Texture2D" uid="uid://vk32mbh3mce0" path="res://encounters/sprites/cute_one/cute_one_dance_40.png" id="161_kc4l2"]
+[ext_resource type="Texture2D" uid="uid://bw5i640yebr6t" path="res://encounters/sprites/cute_one/cute_one_die01.png" id="162_upuce"]
+[ext_resource type="Texture2D" uid="uid://yokinxhym6bv" path="res://encounters/sprites/cute_one/cute_one_die02.png" id="163_xx1qv"]
+[ext_resource type="Texture2D" uid="uid://cxe43rl6gvjdd" path="res://encounters/sprites/cute_one/cute_one_die03.png" id="164_g8ipj"]
+[ext_resource type="Texture2D" uid="uid://ba00e0seawcum" path="res://encounters/sprites/cute_one/cute_one_die04.png" id="165_0af3h"]
+[ext_resource type="Texture2D" uid="uid://cg0ppxx0qgo23" path="res://encounters/sprites/cute_one/cute_one_die05.png" id="166_bini3"]
+[ext_resource type="Texture2D" uid="uid://cme6jiuu81f87" path="res://encounters/sprites/cute_one/cute_one_die06.png" id="167_8uwru"]
+[ext_resource type="Texture2D" uid="uid://baa0yojf6tmu2" path="res://encounters/sprites/cute_one/cute_one_die07.png" id="168_u61ub"]
+[ext_resource type="Texture2D" uid="uid://nmd3lp5e3abh" path="res://encounters/sprites/cute_one/cute_one_die08.png" id="169_d1830"]
+[ext_resource type="Texture2D" uid="uid://b8jnc65d8hpyu" path="res://encounters/sprites/cute_one/cute_one_die09.png" id="170_3m838"]
+[ext_resource type="Texture2D" uid="uid://4w8wrh0p1mv" path="res://encounters/sprites/cute_one/cute_one_die10.png" id="171_khr2x"]
+[ext_resource type="Texture2D" uid="uid://du5a01hw1qyu5" path="res://encounters/sprites/cute_one/cute_one_die11.png" id="172_jxx1t"]
+[ext_resource type="Texture2D" uid="uid://dvvdqpbbjgut5" path="res://encounters/sprites/cute_one/cute_one_die12.png" id="173_kxdee"]
+[ext_resource type="Texture2D" uid="uid://c8ainmv3e7jcp" path="res://encounters/sprites/cute_one/cute_one_die13.png" id="174_44u8j"]
+[ext_resource type="Texture2D" uid="uid://b6nv0d0fbp10m" path="res://encounters/sprites/cute_one/cute_one_die14.png" id="175_sad5l"]
+[ext_resource type="Texture2D" uid="uid://djryoipneh36d" path="res://encounters/sprites/cute_one/cute_one_die15.png" id="176_r6pdi"]
+[ext_resource type="Texture2D" uid="uid://0qdq7t367h3c" path="res://encounters/sprites/cute_one/cute_one_die16.png" id="177_aq6dg"]
+[ext_resource type="Texture2D" uid="uid://cgo5mwed4ccrj" path="res://encounters/sprites/cute_one/cute_one_die17.png" id="178_c88n6"]
+[ext_resource type="Texture2D" uid="uid://b7foxkacqu0wf" path="res://encounters/sprites/cute_one/cute_one_die18.png" id="179_q414f"]
+[ext_resource type="Texture2D" uid="uid://dtean1o3vbk36" path="res://encounters/sprites/cute_one/cute_one_die19.png" id="180_3naa7"]
+[ext_resource type="Texture2D" uid="uid://drl6g10wrcnr2" path="res://encounters/sprites/cute_one/cute_one_die20.png" id="181_dton3"]
+[ext_resource type="Texture2D" uid="uid://d2vh6ybcsaocq" path="res://encounters/sprites/cute_one/cute_one_die21.png" id="182_nnyfe"]
+[ext_resource type="Texture2D" uid="uid://cnvupu60vaosm" path="res://encounters/sprites/shy_one/shy_one_idle_00.png" id="184_mj0pl"]
+[ext_resource type="Texture2D" uid="uid://dgrcnlv7n0gpp" path="res://encounters/sprites/shy_one/shy_one_attack_42.png" id="184_mmoq4"]
+[ext_resource type="Texture2D" uid="uid://b02imximfumv5" path="res://encounters/sprites/shy_one/shy_one_attack_43.png" id="185_vc32e"]
+[ext_resource type="Texture2D" uid="uid://c4gyiipjdwj44" path="res://encounters/sprites/shy_one/shy_one_attack_44.png" id="186_inrkd"]
+[ext_resource type="Texture2D" uid="uid://2ueujgq2nrsg" path="res://encounters/sprites/shy_one/shy_one_attack_45.png" id="187_o7oym"]
+[ext_resource type="Texture2D" uid="uid://cxbyk85kiuu1r" path="res://encounters/sprites/shy_one/shy_one_attack_46.png" id="188_8ccs3"]
+[ext_resource type="Texture2D" uid="uid://bh4ldnfoixwi8" path="res://encounters/sprites/shy_one/shy_one_attack_47.png" id="189_fx72n"]
+[ext_resource type="Texture2D" uid="uid://bc5hoa2y7jxjs" path="res://encounters/sprites/shy_one/shy_one_attack_48.png" id="190_3yw1s"]
+[ext_resource type="Texture2D" uid="uid://yhdb8rpawi6i" path="res://encounters/sprites/shy_one/shy_one_attack_49.png" id="191_yarop"]
+[ext_resource type="Texture2D" uid="uid://cy1elih2c1gff" path="res://encounters/sprites/shy_one/shy_one_attack_50.png" id="192_7ow1u"]
+[ext_resource type="Texture2D" uid="uid://u0of33i6cj5w" path="res://encounters/sprites/shy_one/shy_one_attack_51.png" id="193_3poce"]
+[ext_resource type="Texture2D" uid="uid://b7g1v70geerur" path="res://encounters/sprites/shy_one/shy_one_attack_52.png" id="194_fxf0y"]
+[ext_resource type="Texture2D" uid="uid://dj6o17pr6auxp" path="res://encounters/sprites/shy_one/shy_one_attack_53.png" id="195_kracm"]
+[ext_resource type="Texture2D" uid="uid://cgqb5vvibv4v0" path="res://encounters/sprites/shy_one/shy_one_attack_54.png" id="196_8ndbd"]
+[ext_resource type="Texture2D" uid="uid://b50s6v51t2i5r" path="res://encounters/sprites/shy_one/shy_one_attack_55.png" id="197_802ga"]
+[ext_resource type="Texture2D" uid="uid://bk7a24urhtrqx" path="res://encounters/sprites/shy_one/shy_one_attack_56.png" id="198_b6sa2"]
+[ext_resource type="Texture2D" uid="uid://f3u103rbrw3n" path="res://encounters/sprites/shy_one/shy_one_attack_57.png" id="199_pt883"]
+[ext_resource type="Texture2D" uid="uid://bmjkkh4rg8ngj" path="res://encounters/sprites/shy_one/shy_one_dance_00.png" id="200_2ruo5"]
+[ext_resource type="Texture2D" uid="uid://c8vbwrbqij4k7" path="res://encounters/sprites/shy_one/shy_one_dance_02.png" id="201_ei8kc"]
+[ext_resource type="Texture2D" uid="uid://c70nxh57kfq2q" path="res://encounters/sprites/shy_one/shy_one_dance_04.png" id="202_oda6p"]
+[ext_resource type="Texture2D" uid="uid://b5q304w33krej" path="res://encounters/sprites/shy_one/shy_one_dance_06.png" id="203_dm52i"]
+[ext_resource type="Texture2D" uid="uid://dq8mi76pglj1t" path="res://encounters/sprites/shy_one/shy_one_dance_08.png" id="204_t6ghk"]
+[ext_resource type="Texture2D" uid="uid://c8c51qnif2iaa" path="res://encounters/sprites/shy_one/shy_one_dance_10.png" id="205_8xmts"]
+[ext_resource type="Texture2D" uid="uid://j3766h7epv5g" path="res://encounters/sprites/shy_one/shy_one_dance_12.png" id="206_1mwqc"]
+[ext_resource type="Texture2D" uid="uid://dk4c1t2exvjg2" path="res://encounters/sprites/shy_one/shy_one_dance_14.png" id="207_bkx3d"]
+[ext_resource type="Texture2D" uid="uid://dn6hrui5trdaq" path="res://encounters/sprites/shy_one/shy_one_dance_16.png" id="208_irl0p"]
+[ext_resource type="Texture2D" uid="uid://cjqj51ooetrot" path="res://encounters/sprites/shy_one/shy_one_dance_18.png" id="209_jqmvc"]
+[ext_resource type="Texture2D" uid="uid://bv23xk1jg4wf5" path="res://encounters/sprites/shy_one/shy_one_dance_20.png" id="210_ow0tw"]
+[ext_resource type="Texture2D" uid="uid://dcgf6w2a7auft" path="res://encounters/sprites/shy_one/shy_one_dance_22.png" id="211_lx3jc"]
+[ext_resource type="Texture2D" uid="uid://dqygdccsyx7hi" path="res://encounters/sprites/shy_one/shy_one_dance_24.png" id="212_8gwro"]
+[ext_resource type="Texture2D" uid="uid://bmjcpdbd8elkk" path="res://encounters/sprites/shy_one/shy_one_dance_26.png" id="213_wp6ke"]
+[ext_resource type="Texture2D" uid="uid://ielkj143hpjm" path="res://encounters/sprites/shy_one/shy_one_dance_28.png" id="214_iunc6"]
+[ext_resource type="Texture2D" uid="uid://b1nhlp0lqd23j" path="res://encounters/sprites/shy_one/shy_one_dance_30.png" id="215_s2x5t"]
+[ext_resource type="Texture2D" uid="uid://b70axqmklfbwn" path="res://encounters/sprites/shy_one/shy_one_dance_32.png" id="216_o7bb4"]
+[ext_resource type="Texture2D" uid="uid://b7iqtfm5v60gh" path="res://encounters/sprites/shy_one/shy_one_dance_34.png" id="217_puplb"]
+[ext_resource type="Texture2D" uid="uid://0pnn2vb8nbda" path="res://encounters/sprites/shy_one/shy_one_dance_36.png" id="218_f5j2h"]
+[ext_resource type="Texture2D" uid="uid://dolrb8li21tct" path="res://encounters/sprites/shy_one/shy_one_dance_38.png" id="219_1v7vd"]
+[ext_resource type="Texture2D" uid="uid://dc7xboerh60iu" path="res://encounters/sprites/shy_one/shy_one_dance_40.png" id="220_qi3uv"]
+[ext_resource type="Texture2D" uid="uid://dnxi281p5ues2" path="res://encounters/sprites/shy_one/shy_one_die_00.png" id="221_wpd8u"]
+[ext_resource type="Texture2D" uid="uid://daxy6c1yxvwjs" path="res://encounters/sprites/shy_one/shy_one_die_02.png" id="222_5uynl"]
+[ext_resource type="Texture2D" uid="uid://tnglrbh2tpqa" path="res://encounters/sprites/shy_one/shy_one_die_04.png" id="223_visy8"]
+[ext_resource type="Texture2D" uid="uid://c1reeau1qties" path="res://encounters/sprites/shy_one/shy_one_die_06.png" id="224_b36t5"]
+[ext_resource type="Texture2D" uid="uid://b4bhr2m27squf" path="res://encounters/sprites/shy_one/shy_one_die_08.png" id="225_i33ec"]
+[ext_resource type="Texture2D" uid="uid://c7q3vhowi4tgc" path="res://encounters/sprites/shy_one/shy_one_die_10.png" id="226_two1r"]
+[ext_resource type="Texture2D" uid="uid://cog67b5sf8jap" path="res://encounters/sprites/shy_one/shy_one_die_12.png" id="227_yevu8"]
+[ext_resource type="Texture2D" uid="uid://ixgyd0kt1wvj" path="res://encounters/sprites/shy_one/shy_one_die_14.png" id="228_kabxc"]
+[ext_resource type="Texture2D" uid="uid://dpjhq2wjvfisn" path="res://encounters/sprites/shy_one/shy_one_die_16.png" id="229_q75rx"]
+[ext_resource type="Texture2D" uid="uid://gdkrjalwrx1b" path="res://encounters/sprites/shy_one/shy_one_die_18.png" id="230_jdtjs"]
+[ext_resource type="Texture2D" uid="uid://8ioibe4h1caj" path="res://encounters/sprites/shy_one/shy_one_die_20.png" id="231_firj5"]
+[ext_resource type="Texture2D" uid="uid://coada5u77lomf" path="res://encounters/sprites/shy_one/shy_one_die_22.png" id="232_7l65t"]
+[ext_resource type="Texture2D" uid="uid://5d864dvw55kv" path="res://encounters/sprites/shy_one/shy_one_die_24.png" id="233_wl3mj"]
+[ext_resource type="Texture2D" uid="uid://r1l3c2tjcbq8" path="res://encounters/sprites/shy_one/shy_one_die_26.png" id="234_bn1fy"]
+[ext_resource type="Texture2D" uid="uid://305r58p7tbeq" path="res://encounters/sprites/shy_one/shy_one_die_28.png" id="235_upk4t"]
+[ext_resource type="Texture2D" uid="uid://dcepj3hbsya5g" path="res://encounters/sprites/shy_one/shy_one_die_30.png" id="236_gv7hj"]
+[ext_resource type="Texture2D" uid="uid://1748u8rog7j" path="res://encounters/sprites/shy_one/shy_one_die_32.png" id="237_n10k0"]
+[ext_resource type="Texture2D" uid="uid://cqjx7hu26wp7i" path="res://encounters/sprites/shy_one/shy_one_die_34.png" id="238_gepib"]
+[ext_resource type="Texture2D" uid="uid://b4w55rmq4mol7" path="res://encounters/sprites/shy_one/shy_one_die_36.png" id="239_ixbf3"]
+[ext_resource type="Texture2D" uid="uid://bnu114xr5lejm" path="res://encounters/sprites/shy_one/shy_one_die_38.png" id="240_ou0p1"]
+[ext_resource type="Texture2D" uid="uid://cugbedpp46s3w" path="res://encounters/sprites/shy_one/shy_one_die_40.png" id="241_fuu3q"]
+[ext_resource type="Texture2D" uid="uid://kbya38kndo3y" path="res://encounters/sprites/older_brother/older_brother_idle_00.png" id="243_8kphu"]
+[ext_resource type="Texture2D" uid="uid://dbvxvehpbrjy8" path="res://encounters/sprites/older_brother/older_brother_attack_47.png" id="243_e8rk2"]
+[ext_resource type="Texture2D" uid="uid://cif135hwb1uvx" path="res://encounters/sprites/older_brother/older_brother_attack_48.png" id="244_nnnrb"]
+[ext_resource type="Texture2D" uid="uid://dpcfnart3ic3l" path="res://encounters/sprites/older_brother/older_brother_attack_49.png" id="245_kqfvl"]
+[ext_resource type="Texture2D" uid="uid://b2flvhde7vnbf" path="res://encounters/sprites/older_brother/older_brother_attack_50.png" id="246_yfgqn"]
+[ext_resource type="Texture2D" uid="uid://dqgnl3kf6xmri" path="res://encounters/sprites/older_brother/older_brother_attack_51.png" id="247_knns5"]
+[ext_resource type="Texture2D" uid="uid://bhpt4no6due1l" path="res://encounters/sprites/older_brother/older_brother_attack_52.png" id="248_tguu6"]
+[ext_resource type="Texture2D" uid="uid://cjtheu5514h7o" path="res://encounters/sprites/older_brother/older_brother_attack_53.png" id="249_s2bg0"]
+[ext_resource type="Texture2D" uid="uid://bwusw6ly3f8yc" path="res://encounters/sprites/older_brother/older_brother_attack_54.png" id="250_frsx7"]
+[ext_resource type="Texture2D" uid="uid://brtvamjsqb722" path="res://encounters/sprites/older_brother/older_brother_attack_55.png" id="251_6xnpd"]
+[ext_resource type="Texture2D" uid="uid://04ioveq38dgm" path="res://encounters/sprites/older_brother/older_brother_attack_56.png" id="252_f4bsr"]
+[ext_resource type="Texture2D" uid="uid://cjoswjmj7sxdi" path="res://encounters/sprites/older_brother/older_brother_attack_57.png" id="253_cp0nv"]
+[ext_resource type="Texture2D" uid="uid://56jp06rptsup" path="res://encounters/sprites/older_brother/older_brother_attack_58.png" id="254_8sgm1"]
+[ext_resource type="Texture2D" uid="uid://ek4ay0xbdrrr" path="res://encounters/sprites/older_brother/older_brother_attack_59.png" id="255_ay1a7"]
+[ext_resource type="Texture2D" uid="uid://dtvrigmcdyxo1" path="res://encounters/sprites/older_brother/older_brother_attack_60.png" id="256_ifom2"]
+[ext_resource type="Texture2D" uid="uid://qvj6xu4eduv1" path="res://encounters/sprites/older_brother/older_brother_dance_00.png" id="257_6samn"]
+[ext_resource type="Texture2D" uid="uid://dd54ojvvtinpu" path="res://encounters/sprites/older_brother/older_brother_dance_02.png" id="258_fwyt7"]
+[ext_resource type="Texture2D" uid="uid://blemnww3dmubm" path="res://encounters/sprites/older_brother/older_brother_dance_04.png" id="259_hi0kp"]
+[ext_resource type="Texture2D" uid="uid://bi7c8tcncgtgw" path="res://encounters/sprites/older_brother/older_brother_dance_06.png" id="260_mjfkl"]
+[ext_resource type="Texture2D" uid="uid://d08vow7g1sicm" path="res://encounters/sprites/older_brother/older_brother_dance_08.png" id="261_p5lxu"]
+[ext_resource type="Texture2D" uid="uid://bkcup6m3381ev" path="res://encounters/sprites/older_brother/older_brother_dance_10.png" id="262_fn0oy"]
+[ext_resource type="Texture2D" uid="uid://vufojl2d7y6m" path="res://encounters/sprites/older_brother/older_brother_dance_12.png" id="263_jtnl8"]
+[ext_resource type="Texture2D" uid="uid://capeyvkpnf3sq" path="res://encounters/sprites/older_brother/older_brother_dance_14.png" id="264_0jrej"]
+[ext_resource type="Texture2D" uid="uid://c1440cp52hknb" path="res://encounters/sprites/older_brother/older_brother_dance_16.png" id="265_jc8tk"]
+[ext_resource type="Texture2D" uid="uid://cv58xdp8kxbd2" path="res://encounters/sprites/older_brother/older_brother_dance_18.png" id="266_0gof6"]
+[ext_resource type="Texture2D" uid="uid://dqwp4mn8rlf0c" path="res://encounters/sprites/older_brother/older_brother_dance_20.png" id="267_unh8x"]
+[ext_resource type="Texture2D" uid="uid://de57j04b3ge86" path="res://encounters/sprites/older_brother/older_brother_dance_22.png" id="268_5ovmm"]
+[ext_resource type="Texture2D" uid="uid://dhvtyx0ybjrbm" path="res://encounters/sprites/older_brother/older_brother_dance_24.png" id="269_sjfh7"]
+[ext_resource type="Texture2D" uid="uid://bxvjb5x1o601b" path="res://encounters/sprites/older_brother/older_brother_dance_26.png" id="270_j0dce"]
+[ext_resource type="Texture2D" uid="uid://bw32otyyrc3fo" path="res://encounters/sprites/older_brother/older_brother_dance_28.png" id="271_sfsav"]
+[ext_resource type="Texture2D" uid="uid://snqwvce1bgra" path="res://encounters/sprites/older_brother/older_brother_dance_30.png" id="272_8qj33"]
+[ext_resource type="Texture2D" uid="uid://br5u8fyyqfh34" path="res://encounters/sprites/older_brother/older_brother_dance_32.png" id="273_aydpn"]
+[ext_resource type="Texture2D" uid="uid://dri2sxf81jlus" path="res://encounters/sprites/older_brother/older_brother_dance_34.png" id="274_gnt7n"]
+[ext_resource type="Texture2D" uid="uid://cr2g6p0rrjutu" path="res://encounters/sprites/older_brother/older_brother_dance_36.png" id="275_218rb"]
+[ext_resource type="Texture2D" uid="uid://br318uogksa6i" path="res://encounters/sprites/older_brother/older_brother_dance_38.png" id="276_8rs1d"]
+[ext_resource type="Texture2D" uid="uid://dfif2masd1cjo" path="res://encounters/sprites/older_brother/older_brother_dance_40.png" id="277_mdker"]
+[ext_resource type="Texture2D" uid="uid://buqbnkeemnvpj" path="res://encounters/sprites/older_brother/older_brother_die_00.png" id="278_k0i85"]
+[ext_resource type="Texture2D" uid="uid://bchwt5lxv51eo" path="res://encounters/sprites/older_brother/older_brother_die_02.png" id="279_5hvxb"]
+[ext_resource type="Texture2D" uid="uid://bdb2fisbmdmck" path="res://encounters/sprites/older_brother/older_brother_die_04.png" id="280_32aom"]
+[ext_resource type="Texture2D" uid="uid://bn1xqpfnrp4jg" path="res://encounters/sprites/older_brother/older_brother_die_06.png" id="281_f3060"]
+[ext_resource type="Texture2D" uid="uid://beoj7hbsii5lf" path="res://encounters/sprites/older_brother/older_brother_die_08.png" id="282_4bc25"]
+[ext_resource type="Texture2D" uid="uid://xdtwdhg4mo6q" path="res://encounters/sprites/older_brother/older_brother_die_10.png" id="283_kda6e"]
+[ext_resource type="Texture2D" uid="uid://g1i7uxwa63u4" path="res://encounters/sprites/older_brother/older_brother_die_12.png" id="284_lcfvm"]
+[ext_resource type="Texture2D" uid="uid://blb5vluwph4ql" path="res://encounters/sprites/older_brother/older_brother_die_14.png" id="285_sumrt"]
+[ext_resource type="Texture2D" uid="uid://cc8w53rn1utan" path="res://encounters/sprites/older_brother/older_brother_die_16.png" id="286_snb60"]
+[ext_resource type="Texture2D" uid="uid://ctxx6vtdl2rj6" path="res://encounters/sprites/older_brother/older_brother_die_18.png" id="287_w7arj"]
+[ext_resource type="Texture2D" uid="uid://nbny3jmy2ujl" path="res://encounters/sprites/older_brother/older_brother_die_20.png" id="288_ibkdq"]
+[ext_resource type="Texture2D" uid="uid://bm8dl1dojf1hp" path="res://encounters/sprites/older_brother/older_brother_die_22.png" id="289_5l8vl"]
+[ext_resource type="Texture2D" uid="uid://c3xv3x20q2da5" path="res://encounters/sprites/older_brother/older_brother_die_24.png" id="290_s5fa1"]
+[ext_resource type="Texture2D" uid="uid://06tse6h428vn" path="res://encounters/sprites/older_brother/older_brother_die_26.png" id="291_fbwnm"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="294_t810l"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="295_gtv32"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="296_wvw3i"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="297_lgx8j"]
+
+[sub_resource type="Shader" id="Shader_jwvby"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Color Manipulator,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gq0bb"]
+shader = SubResource("Shader_jwvby")
+shader_parameter/opacity = 1.0
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.061
+shader_parameter/COLORMANIPULATOR_saturation = 0.972
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_70kts"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_25bn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_b4sk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tyjys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_g5xve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_t2woi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_iequa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_fgath")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fpthv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_o3kad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_jcchf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yv8u1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_srnwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_1q3ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_82g4n")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_nu07c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_t5snh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_l4h2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_c5r57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_80g6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_k8ad3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_fv88h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_r7snt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_5v4th")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_f5kj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_qniwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_4iria")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ef77i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_xd4ke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_3ojk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_gipg5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_mxvfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_vcen8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_44fkb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_1h3aq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_2dhm3")
+}],
+"loop": true,
+"name": &"dance",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_cr554")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_cl1ot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_a2kl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_1x7si")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_cunpb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_vph1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_a6jtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_mvi4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_w7kv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_lh40p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_o1ici")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_khtba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_sv5hv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_1vn1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_5535d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_gsgmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_55w2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_8is0v")
+}],
+"loop": false,
+"name": &"die",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_aap77")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="Shader" id="Shader_xjvtn"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Color Manipulator,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jh27w"]
+shader = SubResource("Shader_xjvtn")
+shader_parameter/opacity = 1.0
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lrcwh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("57_mo0vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_xmqtw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_3x2wy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_v2srh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_eilde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_s0xg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_jnc76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_fq2jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_xcc85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_q50l0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_7x226")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_8rs8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_app3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_w0vxh")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71_arbjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_f0umd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_xgqk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_wgeaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_pejd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_05dlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_ittnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_etmuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_yr8sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_t6b11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_inxjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_3f5x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ff3l2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_vvbdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_3se4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_ir8ek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_tl860")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_2qtyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_qmto8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_i7vj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_uedyh")
+}],
+"loop": true,
+"name": &"dance",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("92_hwa02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_54f1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_pw1gc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_dkaeq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_augbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_bj53f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_yiccd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_qd7tq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_x17ug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_fsm0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_suq37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_k60kj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_xyffs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_x3oex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_1ooy2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_esvoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_vmwme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_b2468")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_mvr4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_cjucg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_hd3ff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_wp0qt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_68xmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_8xydp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_yhc2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_rvnpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_gabbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_mg833")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_qqr7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_80ar7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_npfq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_1ejl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_s70n1")
+}],
+"loop": false,
+"name": &"die",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("57_l1wn6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="Shader" id="Shader_oeyvp"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Color Manipulator,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_co05w"]
+shader = SubResource("Shader_oeyvp")
+shader_parameter/opacity = 1.0
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.0
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cox0k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("126_b4c6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_x5muf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_ghs46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_lmafd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_1xsvp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_5cs2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_jtnf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_lacuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_8bwst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_p7u3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_5dell")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_jf030")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_0j731")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_dkdn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_v3mua")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("141_7ptdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_rhyma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_yj2dj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_a1tm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_hwfpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_wwji8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_6jrfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_xv8vf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_jkf3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_diim7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_mj024")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_v46io")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_b4x4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_mbnem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_yacmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_coc72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_wvg02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_exy2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_jlpd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_qy1xi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_kc4l2")
+}],
+"loop": true,
+"name": &"dance",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("162_upuce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_xx1qv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_g8ipj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_0af3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_bini3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_8uwru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_u61ub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_d1830")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_3m838")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_khr2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_jxx1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_kxdee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_44u8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_sad5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_r6pdi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_aq6dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_c88n6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_q414f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_3naa7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_dton3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_nnyfe")
+}],
+"loop": false,
+"name": &"die",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("126_f3c6r")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="Shader" id="Shader_2nugl"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Color Manipulator,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d0wd3"]
+shader = SubResource("Shader_2nugl")
+shader_parameter/opacity = 1.0
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 0.873
+shader_parameter/COLORMANIPULATOR_saturation = 1.863
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ph2q0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("184_mmoq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_vc32e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_inrkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_o7oym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_8ccs3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_fx72n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_3yw1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_yarop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_7ow1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_3poce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("194_fxf0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_kracm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_8ndbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_802ga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_b6sa2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_pt883")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("200_2ruo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_ei8kc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_oda6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_dm52i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_t6ghk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_8xmts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_1mwqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_bkx3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_irl0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_jqmvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_ow0tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_lx3jc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_8gwro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("213_wp6ke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("214_iunc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("215_s2x5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("216_o7bb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("217_puplb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("218_f5j2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("219_1v7vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("220_qi3uv")
+}],
+"loop": true,
+"name": &"dance",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("221_wpd8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("222_5uynl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("223_visy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("224_b36t5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("225_i33ec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("226_two1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("227_yevu8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("228_kabxc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("229_q75rx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("230_jdtjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("231_firj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("232_7l65t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("233_wl3mj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("234_bn1fy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("235_upk4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("236_gv7hj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("237_n10k0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("238_gepib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("239_ixbf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("240_ou0p1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("241_fuu3q")
+}],
+"loop": false,
+"name": &"die",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("184_mj0pl")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="Shader" id="Shader_6piyy"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Color Manipulator,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4s0xf"]
+shader = SubResource("Shader_6piyy")
+shader_parameter/opacity = 1.0
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6kyhv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("243_e8rk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("244_nnnrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("245_kqfvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("246_yfgqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("247_knns5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("248_tguu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("249_s2bg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("250_frsx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("251_6xnpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("252_f4bsr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("253_cp0nv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("254_8sgm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("255_ay1a7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("256_ifom2")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 17.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("257_6samn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("258_fwyt7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("259_hi0kp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("260_mjfkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("261_p5lxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("262_fn0oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("263_jtnl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("264_0jrej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("265_jc8tk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("266_0gof6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("267_unh8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("268_5ovmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("269_sjfh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("270_j0dce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("271_sfsav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("272_8qj33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("273_aydpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("274_gnt7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("275_218rb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("276_8rs1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("277_mdker")
+}],
+"loop": true,
+"name": &"dance",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("278_k0i85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("279_5hvxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("280_32aom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("281_f3060")
+}, {
+"duration": 1.0,
+"texture": ExtResource("282_4bc25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("283_kda6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("284_lcfvm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("285_sumrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("286_snb60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("287_w7arj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("288_ibkdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("289_5l8vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("290_s5fa1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("291_fbwnm")
+}],
+"loop": false,
+"name": &"die",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("243_8kphu")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="CardSprite" type="Node2D"]
+position = Vector2(0, -122)
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_o7xgx")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(0, -202)
+texture = ExtResource("2_7twdo")
+
+[node name="SpriteHolder" type="Node2D" parent="."]
+
+[node name="BadBoySprite" type="AnimatedSprite2D" parent="SpriteHolder"]
+material = SubResource("ShaderMaterial_gq0bb")
+position = Vector2(0, -325)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_70kts")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="HeartthrobSprite" type="AnimatedSprite2D" parent="SpriteHolder"]
+material = SubResource("ShaderMaterial_jh27w")
+position = Vector2(-30, -220)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_lrcwh")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.660686
+
+[node name="CuteOneSprite" type="AnimatedSprite2D" parent="SpriteHolder"]
+material = SubResource("ShaderMaterial_co05w")
+position = Vector2(0, -250)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_cox0k")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="ShyOneSprite" type="AnimatedSprite2D" parent="SpriteHolder"]
+material = SubResource("ShaderMaterial_d0wd3")
+position = Vector2(0, -320)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_ph2q0")
+animation = &"die"
+autoplay = "idle"
+
+[node name="OlderBrotherSprite" type="AnimatedSprite2D" parent="SpriteHolder"]
+material = SubResource("ShaderMaterial_4s0xf")
+position = Vector2(0, -300)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_6kyhv")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="RankLabel" type="Label" parent="."]
+offset_left = -510.0
+offset_top = -970.0
+offset_right = 503.0
+offset_bottom = -789.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_dm4al")
+theme_override_font_sizes/font_size = 100
+text = "NN"
+horizontal_alignment = 2
+
+[node name="SuitLabel" type="Label" parent="."]
+offset_left = -420.0
+offset_top = -370.0
+offset_right = 425.0
+offset_bottom = -249.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_offset_y = 8
+theme_override_fonts/font = ExtResource("3_dm4al")
+theme_override_font_sizes/font_size = 100
+text = "Suit Label"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BackSide" type="Node2D" parent="."]
+visible = false
+
+[node name="Panel" type="Panel" parent="BackSide"]
+self_modulate = Color(0, 0, 0, 1)
+offset_left = -540.0
+offset_top = -1010.0
+offset_right = 540.0
+offset_bottom = 610.0
+
+[node name="Label" type="Label" parent="BackSide"]
+offset_left = -330.0
+offset_top = -765.0
+offset_right = 333.0
+offset_bottom = 324.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 20
+theme_override_constants/shadow_offset_y = 20
+theme_override_fonts/font = ExtResource("3_dm4al")
+theme_override_font_sizes/font_size = 300
+text = "B
+  B
+    B"
+
+[node name="StateChart" type="Node" parent="."]
+script = ExtResource("294_t810l")
+
+[node name="Root" type="Node" parent="StateChart"]
+script = ExtResource("295_gtv32")
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node" parent="StateChart/Root"]
+script = ExtResource("296_wvw3i")
+
+[node name="ToAttack" type="Node" parent="StateChart/Root/Idle"]
+script = ExtResource("297_lgx8j")
+to = NodePath("../../Attack")
+event = &"to_attack_event"
+delay_in_seconds = "0.0"
+
+[node name="ToDie" type="Node" parent="StateChart/Root/Idle"]
+script = ExtResource("297_lgx8j")
+to = NodePath("../../Die")
+event = &"to_die_event"
+delay_in_seconds = "0.0"
+
+[node name="Dance" type="Node" parent="StateChart/Root"]
+script = ExtResource("296_wvw3i")
+
+[node name="ToIdle" type="Node" parent="StateChart/Root/Dance"]
+script = ExtResource("297_lgx8j")
+to = NodePath("../../Idle")
+event = &"to_idle_event"
+delay_in_seconds = "0.0"
+
+[node name="Attack" type="Node" parent="StateChart/Root"]
+script = ExtResource("296_wvw3i")
+
+[node name="ToDance" type="Node" parent="StateChart/Root/Attack"]
+script = ExtResource("297_lgx8j")
+to = NodePath("../../Dance")
+event = &"to_dance_event"
+delay_in_seconds = "0.0"
+
+[node name="Die" type="Node" parent="StateChart/Root"]
+script = ExtResource("296_wvw3i")
+
+[node name="ToIdle" type="Node" parent="StateChart/Root/Die"]
+script = ExtResource("297_lgx8j")
+to = NodePath("../../Idle")
+event = &"to_idle_event"
+delay_in_seconds = "0.0"
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -495.0
+offset_top = -955.0
+offset_right = 505.0
+offset_bottom = 545.0
+
+[connection signal="state_entered" from="StateChart/Root/Idle" to="." method="on_atomic_state_entered" binds= ["IDLE"]]
+[connection signal="state_entered" from="StateChart/Root/Dance" to="." method="on_atomic_state_entered" binds= ["DANCE"]]
+[connection signal="state_entered" from="StateChart/Root/Attack" to="." method="on_atomic_state_entered" binds= ["ATTACK"]]
+[connection signal="state_entered" from="StateChart/Root/Die" to="." method="on_atomic_state_entered" binds= ["DIE"]]
+[connection signal="pressed" from="Button" to="." method="on_card_clicked"]

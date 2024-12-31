@@ -1,0 +1,137 @@
+[gd_scene load_steps=7 format=3 uid="uid://ndpd1xkg8gor"]
+
+[ext_resource type="Script" path="res://encounters/npc_encounter.gd" id="1_yjsga"]
+[ext_resource type="PackedScene" uid="uid://mmrra37cl3q8" path="res://encounters/sprites/player/player_encounter_sprite.tscn" id="3_rtsqb"]
+[ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="4_76n45"]
+[ext_resource type="Script" path="res://encounters/match_manager.gd" id="4_t3d5t"]
+[ext_resource type="Script" path="res://encounters/NpcCardChooser.gd" id="5_jr7a2"]
+[ext_resource type="PackedScene" uid="uid://cte5fobhra3n3" path="res://encounters/sprites/cards/card_sprite.tscn" id="6_upkv7"]
+
+[node name="NpcEncounter" type="Node2D"]
+script = ExtResource("1_yjsga")
+player_encounter_sprite_scene = ExtResource("3_rtsqb")
+card_sprite_scene = ExtResource("6_upkv7")
+
+[node name="EncounterCamera" type="Camera2D" parent="."]
+position = Vector2(968, 540)
+zoom = Vector2(0.75, 0.75)
+
+[node name="EnvironmentRect" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="BackgroundRect" type="TextureRect" parent="."]
+self_modulate = Color(1, 1, 1, 0.784314)
+offset_right = 1920.0
+offset_bottom = 1080.0
+stretch_mode = 4
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HandPanel" type="Panel" parent="CanvasLayer"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 16.0
+offset_top = 602.0
+offset_right = 1138.0
+offset_bottom = 857.0
+
+[node name="CardHolder" type="Node2D" parent="CanvasLayer/HandPanel"]
+
+[node name="CardMarker_1" type="Marker2D" parent="CanvasLayer/HandPanel/CardHolder"]
+position = Vector2(108, 134)
+
+[node name="CardMarker_2" type="Marker2D" parent="CanvasLayer/HandPanel/CardHolder"]
+position = Vector2(333, 134)
+
+[node name="CardMarker_3" type="Marker2D" parent="CanvasLayer/HandPanel/CardHolder"]
+position = Vector2(558, 134)
+
+[node name="CardMarker_4" type="Marker2D" parent="CanvasLayer/HandPanel/CardHolder"]
+position = Vector2(783, 134)
+
+[node name="CardMarker_5" type="Marker2D" parent="CanvasLayer/HandPanel/CardHolder"]
+position = Vector2(1008, 134)
+
+[node name="InPlayPanel" type="Panel" parent="CanvasLayer"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 194.0
+offset_top = 102.0
+offset_right = 1142.0
+offset_bottom = 440.0
+
+[node name="CardHolder" type="Node2D" parent="CanvasLayer/InPlayPanel"]
+
+[node name="PlayerCardMarker" type="Marker2D" parent="CanvasLayer/InPlayPanel/CardHolder"]
+position = Vector2(294, 272)
+
+[node name="OpponentCardMarker" type="Marker2D" parent="CanvasLayer/InPlayPanel/CardHolder"]
+position = Vector2(661, 272)
+
+[node name="RoundResultPanel" type="Panel" parent="CanvasLayer"]
+offset_right = 1893.0
+offset_bottom = 1072.0
+
+[node name="ResultLabel" type="Label" parent="CanvasLayer/RoundResultPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -820.5
+offset_top = -413.0
+offset_right = 288.5
+offset_bottom = -232.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 12
+theme_override_constants/shadow_offset_y = 12
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_76n45")
+theme_override_font_sizes/font_size = 100
+text = "You wose this round!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ReasonLabel" type="Label" parent="CanvasLayer/RoundResultPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -846.5
+offset_top = -169.0
+offset_right = 327.5
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 12
+theme_override_constants/shadow_offset_y = 12
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_76n45")
+theme_override_font_sizes/font_size = 60
+text = "Lorem ipsum dolor sit amet, consectetur!!"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="PlayerSpriteMarker" type="Marker2D" parent="."]
+position = Vector2(278, 693)
+
+[node name="OpponentSpriteMarker" type="Marker2D" parent="."]
+position = Vector2(1663, 679)
+
+[node name="MatchManager" type="Node" parent="."]
+script = ExtResource("4_t3d5t")
+
+[node name="NpcCardChooser" type="Node" parent="MatchManager"]
+script = ExtResource("5_jr7a2")

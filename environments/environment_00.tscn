@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://c57c2dxwox1c4"]
+
+[ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
+[ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/00.png" id="2_26yqy"]
+[ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_27gv0"]
+[ext_resource type="Script" path="res://environments/game_camera.gd" id="3_4x8bs"]
+[ext_resource type="Script" path="res://environments/z_scaler.gd" id="4_w8wgp"]
+[ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="5_l8edr"]
+
+[node name="Environment_00" type="Node2D"]
+position = Vector2(7, -40)
+script = ExtResource("1_ot0or")
+camera_upper_y = 720
+camera_lower_y = 760
+camera_left_x = 410
+camera_right_x = 1360
+encounter_scene = ExtResource("2_27gv0")
+background_filename = "00.png"
+encounter_background_filename = "00.png"
+
+[node name="BackgroundRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_26yqy")
+
+[node name="GameCamera" type="Camera2D" parent="."]
+position = Vector2(907, 620)
+zoom = Vector2(2, 2)
+process_callback = 0
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+script = ExtResource("3_4x8bs")
+
+[node name="ZScaler" type="Node2D" parent="." node_paths=PackedStringArray("top_marker", "bottom_marker")]
+script = ExtResource("4_w8wgp")
+top_marker = NodePath("../TopMarker")
+bottom_marker = NodePath("../BottomMarker")
+scale_at_top = 0.2
+scale_at_bottom = 0.7
+
+[node name="TopMarker" type="Marker2D" parent="."]
+position = Vector2(4, 718)
+
+[node name="BottomMarker" type="Marker2D" parent="."]
+position = Vector2(-3, 1071)
+
+[node name="DefaultPlayerStart" type="Marker2D" parent="."]
+position = Vector2(701, 785)
+
+[node name="StairsPlayerStart" type="Marker2D" parent="."]
+position = Vector2(899, 728)
+
+[node name="NpcHolder" type="Node2D" parent="."]
+
+[node name="MarcieSprite" parent="NpcHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("5_l8edr")]
+position = Vector2(1011, 792)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="PropHolder" type="Node2D" parent="."]

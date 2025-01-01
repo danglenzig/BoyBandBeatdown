@@ -35,6 +35,8 @@ func _process(delta):
 
 func _physics_process(delta):
 	
+	# print(z_index)
+	
 	match current_state:
 		"IDLE":
 			if input_handler.move_input != Vector2.ZERO:

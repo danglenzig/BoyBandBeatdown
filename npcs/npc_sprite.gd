@@ -27,6 +27,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	
 	handle_scaling()
 	handle_facing()
 	handle_layering()
@@ -49,7 +50,7 @@ func handle_ui()->void:
 func is_player_inside_detect_radius() -> bool:
 	var player: Player = misc_tools.current_player
 	var distance_to_player = global_position.distance_to(player.global_position)
-	return distance_to_player <= player_detect_radius
+	return distance_to_player <= player_detect_radius and player.global_position.y >= global_position.y
 	
 func handle_layering():
 	z_index = int(global_position.y / 10)

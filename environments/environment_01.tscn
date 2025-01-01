@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnc0he5ytku37"]
+
+[ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
+[ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/01.png" id="2_it8mk"]
+
+[node name="Environment_01" type="Node2D"]
+script = ExtResource("1_4h4a2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_it8mk")

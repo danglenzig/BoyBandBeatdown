@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://daf8pwkm7rt2u"]
+
+[ext_resource type="Script" path="res://environments/prop_sprite.gd" id="1_rvfyj"]
+[ext_resource type="Texture2D" uid="uid://suqb0yismo63" path="res://environments/assets/props/environment_00_west_wall_02.png" id="2_kp7y2"]
+
+[node name="Environment_00_WestWall_02" type="Node2D"]
+script = ExtResource("1_rvfyj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -44)
+texture = ExtResource("2_kp7y2")

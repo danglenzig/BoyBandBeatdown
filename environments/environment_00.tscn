@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=29 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
 [ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/00.png" id="2_26yqy"]
@@ -6,6 +6,60 @@
 [ext_resource type="Script" path="res://environments/game_camera.gd" id="3_4x8bs"]
 [ext_resource type="Script" path="res://environments/z_scaler.gd" id="4_w8wgp"]
 [ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="5_l8edr"]
+[ext_resource type="PackedScene" uid="uid://bml4x556hxm2o" path="res://environments/prop_scenes/walk_sign_prop.tscn" id="7_0uwxj"]
+[ext_resource type="PackedScene" uid="uid://yqws4qxfvbnv" path="res://environments/prop_scenes/street_light_prop.tscn" id="8_pn5p6"]
+[ext_resource type="PackedScene" uid="uid://cj6egg8wsaeb7" path="res://environments/prop_scenes/environment_00_east_wall_prop.tscn" id="9_o3bbv"]
+[ext_resource type="PackedScene" uid="uid://dpujp5fqkb7na" path="res://environments/prop_scenes/environment_00_west_wall_01.tscn" id="10_m8m0l"]
+[ext_resource type="PackedScene" uid="uid://daf8pwkm7rt2u" path="res://environments/prop_scenes/environment_00_west_wall_02.tscn" id="11_g6qy6"]
+[ext_resource type="PackedScene" uid="uid://e764oh542ijq" path="res://environments/exit_triggers/environment_00_north_exit.tscn" id="12_xg8ui"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hau2o"]
+size = Vector2(914, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_or0wh"]
+size = Vector2(710, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jgump"]
+size = Vector2(104, 312)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jo30j"]
+size = Vector2(1958, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3y8jf"]
+size = Vector2(266, 309)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jwvd3"]
+size = Vector2(202, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gbu0v"]
+size = Vector2(23, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7c6vy"]
+size = Vector2(20, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ly12h"]
+size = Vector2(57, 113)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cb82b"]
+size = Vector2(406, 34.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r3rvh"]
+size = Vector2(82.0244, 67.2756)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_quecn"]
+size = Vector2(137, 41)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_blprf"]
+size = Vector2(222, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n20kn"]
+size = Vector2(258, 44.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_baw0i"]
+size = Vector2(20, 84)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iiqmb"]
+size = Vector2(16, 24)
 
 [node name="Environment_00" type="Node2D"]
 position = Vector2(7, -40)
@@ -46,15 +100,103 @@ position = Vector2(4, 718)
 position = Vector2(-3, 1071)
 
 [node name="DefaultPlayerStart" type="Marker2D" parent="."]
-position = Vector2(701, 785)
+position = Vector2(336, 815)
 
 [node name="StairsPlayerStart" type="Marker2D" parent="."]
-position = Vector2(899, 728)
+position = Vector2(897, 711)
 
 [node name="NpcHolder" type="Node2D" parent="."]
 
 [node name="MarcieSprite" parent="NpcHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("5_l8edr")]
-position = Vector2(1011, 792)
+position = Vector2(1011, 834)
 z_scaler = NodePath("../../ZScaler")
 
 [node name="PropHolder" type="Node2D" parent="."]
+
+[node name="WalkSignProp" parent="PropHolder" instance=ExtResource("7_0uwxj")]
+position = Vector2(1395, 847)
+
+[node name="StreetLightProp" parent="PropHolder" instance=ExtResource("8_pn5p6")]
+position = Vector2(269, 850)
+
+[node name="Environment_00_EastWallProp" parent="PropHolder" instance=ExtResource("9_o3bbv")]
+position = Vector2(1166, 792)
+
+[node name="Environment_00_WestWall_01" parent="PropHolder" instance=ExtResource("10_m8m0l")]
+position = Vector2(780, 783)
+
+[node name="Environment_00_WestWall_02" parent="PropHolder" instance=ExtResource("11_g6qy6")]
+position = Vector2(611, 787)
+
+[node name="EnvironmentBlockers" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1460, 781)
+shape = SubResource("RectangleShape2D_hau2o")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(351, 780)
+shape = SubResource("RectangleShape2D_or0wh")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(16, 930)
+shape = SubResource("RectangleShape2D_jgump")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(954, 1083.5)
+shape = SubResource("RectangleShape2D_jo30j")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1803, 920.5)
+shape = SubResource("RectangleShape2D_3y8jf")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(759, 773.5)
+shape = SubResource("RectangleShape2D_jwvd3")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(265.5, 844.5)
+shape = SubResource("RectangleShape2D_gbu0v")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1392, 843)
+shape = SubResource("RectangleShape2D_7c6vy")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1333.5, 719.5)
+shape = SubResource("RectangleShape2D_ly12h")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1160, 683.25)
+shape = SubResource("RectangleShape2D_cb82b")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1299.29, 698.714)
+rotation = 0.785398
+shape = SubResource("RectangleShape2D_r3rvh")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1069.5, 704)
+shape = SubResource("RectangleShape2D_quecn")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(849, 672)
+shape = SubResource("RectangleShape2D_blprf")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(680, 694.75)
+shape = SubResource("RectangleShape2D_n20kn")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(565, 734)
+shape = SubResource("RectangleShape2D_baw0i")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(965, 711)
+shape = SubResource("RectangleShape2D_iiqmb")
+
+[node name="ExitTriggerHolder" type="Node2D" parent="."]
+
+[node name="Environment_00_NorthExit" parent="ExitTriggerHolder" instance=ExtResource("12_xg8ui")]
+position = Vector2(883, 691)
+scale = Vector2(0.655, 0.655)

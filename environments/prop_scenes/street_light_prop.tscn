@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://yqws4qxfvbnv"]
+
+[ext_resource type="Script" path="res://environments/prop_sprite.gd" id="1_j3rhl"]
+[ext_resource type="Texture2D" uid="uid://bivfi5esscuhr" path="res://environments/assets/props/environment_00_street_light.png" id="2_oraav"]
+
+[node name="StreetLightProp" type="Node2D"]
+script = ExtResource("1_j3rhl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -130)
+texture = ExtResource("2_oraav")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bml4x556hxm2o"]
+
+[ext_resource type="Script" path="res://environments/prop_sprite.gd" id="1_pybyh"]
+[ext_resource type="Texture2D" uid="uid://dk288nxtnsnoy" path="res://environments/assets/props/environment_00_walk_signal.png" id="2_ueuec"]
+
+[node name="WalkSignProp" type="Node2D"]
+script = ExtResource("1_pybyh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -80)
+texture = ExtResource("2_ueuec")

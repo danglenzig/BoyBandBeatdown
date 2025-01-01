@@ -63,7 +63,7 @@ func spawn_opponent_sprite(opponent_name) -> void:
 			
 func begin_encounter(opponent_name: String, opponent_power: int, opponent_play_style: String, environment_bg_filename: String, encounter_bg_filename: String) -> void:
 	
-	setup_backgrounds(encounter_bg_filename,encounter_bg_filename)
+	setup_backgrounds(environment_bg_filename,encounter_bg_filename)
 	spawn_player_sprite()
 	spawn_opponent_sprite(opponent_name)
 	

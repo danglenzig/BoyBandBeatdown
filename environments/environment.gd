@@ -12,7 +12,7 @@ var player: Player 			= null
 @export var camera_right_x: int 	= 0
 
 @export var encounter_scene: PackedScene
-@export var background_filename: String 			= ""
+@export var environment_background_filename: String	= ""
 @export var encounter_background_filename: String 	= ""
 
 #var start_marker: Marker2D  = null
@@ -79,5 +79,5 @@ func on_begin_encounter(npc_name: String, npc_display_name: String, npc_power: i
 	# instantiate the encounter scene
 	var new_encounter: NpcEncounter = encounter_scene.instantiate()
 	add_child(new_encounter)
-	new_encounter.begin_encounter(npc_name,npc_power,npc_play_style,background_filename,encounter_background_filename)
+	new_encounter.begin_encounter(npc_name,npc_power,npc_play_style,environment_background_filename,encounter_background_filename)
 	

@@ -1,12 +1,76 @@
-[gd_scene load_steps=3 format=3 uid="uid://bnc0he5ytku37"]
+[gd_scene load_steps=9 format=3 uid="uid://bnc0he5ytku37"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
-[ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/01.png" id="2_it8mk"]
+[ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/env_01.png" id="2_it8mk"]
+[ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_mlaec"]
+[ext_resource type="Script" path="res://environments/game_camera.gd" id="3_3hvqu"]
+[ext_resource type="Script" path="res://environments/z_scaler.gd" id="4_jwenf"]
+[ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="5_lb3wf"]
+[ext_resource type="Script" path="res://environments/exit_trigger.gd" id="7_n6j3s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e3gjf"]
+size = Vector2(171, 1119)
 
 [node name="Environment_01" type="Node2D"]
 script = ExtResource("1_4h4a2")
+camera_upper_y = 720
+camera_lower_y = 760
+camera_left_x = 410
+camera_right_x = 1360
+encounter_scene = ExtResource("2_mlaec")
+environment_background_filename = "env_01.png"
+encounter_background_filename = "01.png"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_it8mk")
+
+[node name="GameCamera" type="Camera2D" parent="."]
+zoom = Vector2(1.25, 1.25)
+process_callback = 0
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+script = ExtResource("3_3hvqu")
+
+[node name="ZScaler" type="Node2D" parent="." node_paths=PackedStringArray("top_marker", "bottom_marker")]
+script = ExtResource("4_jwenf")
+top_marker = NodePath("../TopMarker")
+bottom_marker = NodePath("../BottomMarker")
+scale_at_top = 0.18
+
+[node name="TopMarker" type="Marker2D" parent="."]
+position = Vector2(1334, 638)
+
+[node name="BottomMarker" type="Marker2D" parent="."]
+position = Vector2(1380, 1082)
+
+[node name="DefaultPlayerStart" type="Marker2D" parent="."]
+position = Vector2(664, 962)
+
+[node name="EastPlayerStart" type="Marker2D" parent="."]
+position = Vector2(1701, 880)
+
+[node name="NpcHolder" type="Node2D" parent="."]
+
+[node name="MarcieSprite" parent="NpcHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("5_lb3wf")]
+position = Vector2(1137, 831)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="PropHolder" type="Node2D" parent="."]
+
+[node name="EnvironmentBlockers" type="Node2D" parent="."]
+
+[node name="ExitTriggerHolder" type="Node2D" parent="."]
+
+[node name="ExitTrigger" type="Area2D" parent="ExitTriggerHolder"]
+script = ExtResource("7_n6j3s")
+exit_to_scene_name = "environment_00.tscn"
+player_start_name = "StairsPlayerStart"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/ExitTrigger"]
+position = Vector2(1853.5, 549.5)
+shape = SubResource("RectangleShape2D_e3gjf")
+
+[connection signal="body_entered" from="ExitTriggerHolder/ExitTrigger" to="ExitTriggerHolder/ExitTrigger" method="_on_body_entered"]

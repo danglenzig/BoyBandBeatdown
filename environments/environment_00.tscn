@@ -1,7 +1,7 @@
-[gd_scene load_steps=29 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=30 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
-[ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/00.png" id="2_26yqy"]
+[ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_26yqy"]
 [ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_27gv0"]
 [ext_resource type="Script" path="res://environments/game_camera.gd" id="3_4x8bs"]
 [ext_resource type="Script" path="res://environments/z_scaler.gd" id="4_w8wgp"]
@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cj6egg8wsaeb7" path="res://environments/prop_scenes/environment_00_east_wall_prop.tscn" id="9_o3bbv"]
 [ext_resource type="PackedScene" uid="uid://dpujp5fqkb7na" path="res://environments/prop_scenes/environment_00_west_wall_01.tscn" id="10_m8m0l"]
 [ext_resource type="PackedScene" uid="uid://daf8pwkm7rt2u" path="res://environments/prop_scenes/environment_00_west_wall_02.tscn" id="11_g6qy6"]
-[ext_resource type="PackedScene" uid="uid://e764oh542ijq" path="res://environments/exit_triggers/environment_00_north_exit.tscn" id="12_xg8ui"]
+[ext_resource type="Script" path="res://environments/exit_trigger.gd" id="12_jf4gw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hau2o"]
 size = Vector2(914, 26)
@@ -61,6 +61,9 @@ size = Vector2(20, 84)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iiqmb"]
 size = Vector2(16, 24)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3say"]
+size = Vector2(193.59, 13)
+
 [node name="Environment_00" type="Node2D"]
 position = Vector2(7, -40)
 script = ExtResource("1_ot0or")
@@ -69,7 +72,7 @@ camera_lower_y = 760
 camera_left_x = 410
 camera_right_x = 1360
 encounter_scene = ExtResource("2_27gv0")
-background_filename = "00.png"
+environment_background_filename = "env_00.png"
 encounter_background_filename = "00.png"
 
 [node name="BackgroundRect" type="TextureRect" parent="."]
@@ -103,7 +106,7 @@ position = Vector2(-3, 1071)
 position = Vector2(336, 815)
 
 [node name="StairsPlayerStart" type="Marker2D" parent="."]
-position = Vector2(897, 711)
+position = Vector2(901, 707)
 
 [node name="NpcHolder" type="Node2D" parent="."]
 
@@ -196,7 +199,16 @@ position = Vector2(965, 711)
 shape = SubResource("RectangleShape2D_iiqmb")
 
 [node name="ExitTriggerHolder" type="Node2D" parent="."]
+position = Vector2(906, 689)
+scale = Vector2(0.78, 1)
 
-[node name="Environment_00_NorthExit" parent="ExitTriggerHolder" instance=ExtResource("12_xg8ui")]
-position = Vector2(883, 691)
-scale = Vector2(0.655, 0.655)
+[node name="NorthExitTrigger" type="Area2D" parent="ExitTriggerHolder"]
+script = ExtResource("12_jf4gw")
+exit_to_scene_name = "environment_01.tscn"
+player_start_name = "EastPlayerStart"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger"]
+position = Vector2(-27.5641, -4.5)
+shape = SubResource("RectangleShape2D_i3say")
+
+[connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger" to="ExitTriggerHolder/NorthExitTrigger" method="_on_body_entered"]

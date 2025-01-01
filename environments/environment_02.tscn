@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b05i67tp5inti"]
+
+[ext_resource type="Texture2D" uid="uid://bt2onc7k5tskk" path="res://environments/assets/env_03.png" id="1_06u37"]
+[ext_resource type="Script" path="res://environments/game_camera.gd" id="2_ucf6c"]
+
+[node name="Environment_02" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_06u37")
+
+[node name="GameCamera" type="Camera2D" parent="."]
+position = Vector2(804, 612)
+zoom = Vector2(0.865, 0.865)
+script = ExtResource("2_ucf6c")

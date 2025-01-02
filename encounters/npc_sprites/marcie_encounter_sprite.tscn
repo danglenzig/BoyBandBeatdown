@@ -388,6 +388,11 @@ animations = [{
 "name": &"lose",
 "speed": 12.0
 }, {
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("28_cjgmp")
@@ -563,8 +568,6 @@ position = Vector2(0, -334)
 sprite_frames = SubResource("SpriteFrames_inmsn")
 animation = &"lose"
 autoplay = "idle"
-frame = 11
-frame_progress = 1.0
 script = ExtResource("28_ua15p")
 impact_frame_number = 15
 

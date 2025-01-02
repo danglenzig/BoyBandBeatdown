@@ -3,6 +3,8 @@ class_name NpcEncounter
 
 var misc_tools: MiscTools
 var encounter_events: EncounterEvents
+var main: Main
+var hud_panel: HudPanel
 
 @export var player_encounter_sprite_scene: 	PackedScene
 @export var card_sprite_scene: 				PackedScene
@@ -21,6 +23,8 @@ var opponent_in_play_card: CardSprite 	= null
 
 
 func _ready():
+	main = $"/root/Main"
+	hud_panel = main.get_node("CanvasLayer").get_node("HudPanel")
 	misc_tools = SingletonHolder.get_node("MiscTools")
 	encounter_events = SingletonHolder.get_node("EncounterEvents")
 	$CanvasLayer/HandPanel.visible 				= false
@@ -62,7 +66,7 @@ func spawn_opponent_sprite(opponent_name) -> void:
 		opponent_sprite = new_opponent_sprite
 			
 func begin_encounter(opponent_name: String, opponent_power: int, opponent_play_style: String, environment_bg_filename: String, encounter_bg_filename: String) -> void:
-	
+	hud_panel.display_toggle_help_button(true)
 	setup_backgrounds(environment_bg_filename,encounter_bg_filename)
 	spawn_player_sprite()
 	spawn_opponent_sprite(opponent_name)

@@ -139,6 +139,7 @@ animations = [{
 [node name="MarcieSprite" type="Node2D"]
 script = ExtResource("2_0fk45")
 player_detect_radius = 100
+play_style = "FAVOR_WATER"
 npc_name = "marcie"
 npc_display_name = "Marcie"
 

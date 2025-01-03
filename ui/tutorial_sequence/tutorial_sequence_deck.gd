@@ -2,24 +2,30 @@ extends Node2D
 
 class_name TutorialSequenceDeck
 
-const last_step: int = 13
+const last_step: int = 14
 
 var current_step: int = 0
 
 var captions_panel: 	Panel
 var diagram_panel: 		Panel
+var cards_panel: 		Panel
 var portraits_holder: 	Node2D
 var arrows_holder: 		Node2D
 
+var countinue_button_armed: bool = true
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	captions_panel = $CanvasLayer/RootPanel/CaptionsPanel
-	diagram_panel = $CanvasLayer/RootPanel/DiagramPanel
-	portraits_holder = $CanvasLayer/RootPanel/DiagramPanel/Portraits
-	arrows_holder = $CanvasLayer/RootPanel/DiagramPanel/Arrows
+	captions_panel 		= $CanvasLayer/RootPanel/CaptionsPanel
+	diagram_panel 		= $CanvasLayer/RootPanel/DiagramPanel
+	cards_panel 		= $CanvasLayer/RootPanel/CardsPanel
+	
+	portraits_holder 	= $CanvasLayer/RootPanel/DiagramPanel/Portraits
+	arrows_holder 		= $CanvasLayer/RootPanel/DiagramPanel/Arrows
 	
 	diagram_panel.visible = 	false
 	captions_panel.visible = 	false
+	cards_panel.visible = 		false
 	
 	hide_all_captions()
 	highlight_portraits(["NONE"])
@@ -78,31 +84,46 @@ func highlight_arrows(arrow_strings: Array[String]):
 		this_arrow.self_modulate = Color(1.0,1.0,0.0,1.0)
 
 func step_0():
+	countinue_button_armed = false
 	show_step_caption(0)
-
+	countinue_button_armed = true
+	
 func step_1():
+	countinue_button_armed = false
 	diagram_panel.visible = true
 	show_step_caption(1)
 	
+	countinue_button_armed = true
+	
 func step_2():
+	countinue_button_armed = false
 	highlight_portraits(["ShyOneSprite"])
 	display_arrow("ShyOneToCuteOne")
 	highlight_arrows(["ShyOneToCuteOne"])
 	show_step_caption(2)
 	
+	countinue_button_armed = true
+	
 func step_3():
+	countinue_button_armed = false
 	highlight_portraits(["CuteOneSprite"])
 	display_arrow("CuteOneToOlderBrother")
 	highlight_arrows(["CuteOneToOlderBrother"])
 	show_step_caption(3)
+	
+	countinue_button_armed = true
 
 func step_4():
+	countinue_button_armed = false
 	highlight_portraits(["OlderBrotherSprite"])
 	display_arrow("OlderBrotherToShyOne")
 	highlight_arrows(["OlderBrotherToShyOne"])
 	show_step_caption(4)
 	
+	countinue_button_armed = true
+	
 func step_5():
+	countinue_button_armed = false
 	highlight_portraits([
 		"ShyOneSprite",
 		"CuteOneSprite",
@@ -115,7 +136,10 @@ func step_5():
 	])
 	show_step_caption(5)
 	
+	countinue_button_armed = true
+	
 func step_6():
+	countinue_button_armed = false
 	highlight_arrows(["NONE"])
 	highlight_portraits([
 		"HeartthrobSprite",
@@ -123,23 +147,35 @@ func step_6():
 	])
 	show_step_caption(6)
 	
+	countinue_button_armed = true
+	
 func step_7():
+	countinue_button_armed = false
 	highlight_portraits(["HeartthrobSprite"])
 	display_arrow("HeartthrobToShyOne")
 	highlight_arrows(["HeartthrobToShyOne"])
 	show_step_caption(7)
 	
+	countinue_button_armed = true
+	
 func step_8():
+	countinue_button_armed = false
 	display_arrow("HeartthrobToCuteOne")
 	highlight_arrows(["HeartthrobToCuteOne"])
 	show_step_caption(8)
+	
+	countinue_button_armed = true
 
 func step_9():
+	countinue_button_armed = false
 	display_arrow("HeartthrobToOlderBrother")
 	highlight_arrows(["HeartthrobToOlderBrother"])
 	show_step_caption(9)
 	
+	countinue_button_armed = true
+	
 func step_10():
+	countinue_button_armed = false
 	highlight_portraits([
 		"ShyOneSprite",
 		"CuteOneSprite",
@@ -155,16 +191,25 @@ func step_10():
 	])
 	show_step_caption(10)
 	
+	countinue_button_armed = true
+	
 func step_11():
+	countinue_button_armed = false
 	highlight_portraits(["BadBoySprite"])
 	display_arrow("BadBoyToHeartthrob")
 	highlight_arrows(["BadBoyToHeartthrob"])
 	show_step_caption(11)
 	
+	countinue_button_armed = true
+	
 func step_12():
+	countinue_button_armed = false
 	show_step_caption(12)
 	
+	countinue_button_armed = true
+	
 func step_13():
+	countinue_button_armed = false
 	captions_panel.visible = false
 	highlight_portraits(["NONE"])
 	highlight_arrows([
@@ -179,7 +224,19 @@ func step_13():
 		"ShyOneToCuteOne",
 		"OlderBrotherToShyOne",
 	])
-
+	
+	await get_tree().create_timer(1.0).timeout
+	diagram_panel.visible = false
+	await get_tree().create_timer(0.5).timeout
+	cards_panel.visible = true
+	show_step_caption(13)
+	
+	countinue_button_armed = true
+	
+func step_14():
+	countinue_button_armed = false
+	show_step_caption(14)
+	
 func play_step(step_number: int):
 	match step_number:
 		1:
@@ -208,11 +265,15 @@ func play_step(step_number: int):
 			step_12()
 		13:
 			step_13()
+		14:
+			step_14()
 			
 
 func _on_continue_button_pressed():
 	if current_step + 1 > last_step:
 		print_debug("There are no more steps")
+		return
+	if not countinue_button_armed:
 		return
 	current_step += 1
 	play_step(current_step)

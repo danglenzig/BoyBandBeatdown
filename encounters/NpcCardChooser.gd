@@ -33,7 +33,13 @@ func choose_card(cards: Array[Card], play_style)->String:
 		"FAVOR_FIRE":
 			pass
 		"FAVOR_WATER":
-			pass
+			for card:Card in cards:
+				if card.suit_name == "BAD_BOY":
+					return card.card_uuid
+					break
+			
+			var a_rando = randi_range(0,cards.size()-1)
+			return cards[a_rando].card_uuid
 	
 	
 	var chosen_card_uuid: String = ""

@@ -72,6 +72,7 @@ start_scene_name = "environment_00.tscn"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2
+visible = false
 
 [node name="HelpRect" type="TextureRect" parent="CanvasLayer"]
 visible = false

@@ -1,14 +1,16 @@
-[gd_scene load_steps=20 format=3 uid="uid://c0etkvben6vtp"]
+[gd_scene load_steps=22 format=3 uid="uid://c0etkvben6vtp"]
 
 [ext_resource type="Script" path="res://ui/tutorial_sequence/tutorial_sequence_deck.gd" id="1_vkuta"]
 [ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="2_2itq6"]
 [ext_resource type="Texture2D" uid="uid://cppecdseuwynr" path="res://encounters/encounter_backgrounds/00.png" id="2_j0hih"]
+[ext_resource type="FontFile" uid="uid://baihxtltbmli8" path="res://fonts/VIPNAGORGIALLA RG.OTF" id="3_3h46e"]
 [ext_resource type="Texture2D" uid="uid://c5v2xxccyj7e8" path="res://ui/tutorial_sequence/HeartthrobPortrait.png" id="3_ccpuj"]
 [ext_resource type="Texture2D" uid="uid://bvsjsk3fnnl65" path="res://ui/tutorial_sequence/BadBoyPortrait.png" id="4_j7prw"]
 [ext_resource type="Texture2D" uid="uid://cmpjfubp28y0n" path="res://ui/tutorial_sequence/ShyOnePortrait.png" id="5_5co5o"]
 [ext_resource type="Texture2D" uid="uid://dj0lllpx8e1st" path="res://ui/tutorial_sequence/CuteOnePortrait.png" id="6_vlfo0"]
 [ext_resource type="Texture2D" uid="uid://q8ighcf0dnym" path="res://ui/tutorial_sequence/OlderBrotherPortrait.png" id="7_0f40m"]
 [ext_resource type="Texture2D" uid="uid://i3ch74j41xou" path="res://ui/tutorial_sequence/arrow.png" id="8_ku3iw"]
+[ext_resource type="Texture2D" uid="uid://c1il42xf7gbbh" path="res://ui/tutorial_sequence/Screenshot 2025-01-03 183027.png" id="10_w7gxw"]
 
 [sub_resource type="Shader" id="Shader_2a1ia"]
 code = "//ATTENTION:
@@ -317,6 +319,7 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="Step0" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -331,7 +334,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "Welcome to the Boy Band Beatdown Tutorial!"
 horizontal_alignment = 1
@@ -339,6 +342,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step1" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -353,7 +357,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "These are the five suits in your deck. Each suit has a win-or-lose relationship with the others"
 horizontal_alignment = 1
@@ -361,6 +365,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step2" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -375,7 +380,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "The Shy One's mysterious depth defeats the Cute One's superficial charm."
 horizontal_alignment = 1
@@ -383,6 +388,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step3" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -397,7 +403,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "The Cute One's irresistible charm melts the Older Brother's cynical resistance."
 horizontal_alignment = 1
@@ -405,6 +411,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step4" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -419,7 +426,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "Older Brother's discipline and experience overpower the Shy One's self-doubt."
 horizontal_alignment = 1
@@ -427,6 +434,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step5" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -441,7 +449,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "These are the three balanced suits—each one wins against one and loses against the other."
 horizontal_alignment = 1
@@ -449,6 +457,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step6" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -463,7 +472,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "These are the two dominant suits."
 horizontal_alignment = 1
@@ -471,6 +480,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step7" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -485,7 +495,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "The Heartthrob's polished charisma overpowers the Shy One's meekness."
 horizontal_alignment = 1
@@ -493,6 +503,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step8" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -507,7 +518,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "The Heartthrob's star power eclipses the Cute One's boyish charm."
 horizontal_alignment = 1
@@ -515,6 +526,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step9" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -529,7 +541,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "The Heartthrob's youthful energy outshines the Older Brother's cynicism."
 horizontal_alignment = 1
@@ -537,6 +549,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step10" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -551,7 +564,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "The three balanced suits all defeat the Bad Boy's impulsive bravado."
 horizontal_alignment = 1
@@ -559,6 +572,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step11" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -573,7 +587,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "...But the Bad Boy's raw authenticity shatters the Heartthrob's manufactured perfection."
 horizontal_alignment = 1
@@ -581,6 +595,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="Step12" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -595,14 +610,61 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
+theme_override_fonts/font = ExtResource("3_3h46e")
 theme_override_font_sizes/font_size = 20
 text = "The Bad Boy is the only suit that can defeat the Heartthrob!"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
+[node name="Step13" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_3h46e")
+theme_override_font_sizes/font_size = 20
+text = "If two cards face off with the same suit, their rank determines the winner. Higher-ranked cards always beat lower-ranked ones."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Step14" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_3h46e")
+theme_override_font_sizes/font_size = 20
+text = "As you level up in the game, your deck will contain more higher-ranked cards, making you a more powerful player!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
 [node name="DiagramPanel" type="Panel" parent="CanvasLayer/RootPanel"]
+visible = false
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_right = 40.0
@@ -747,5 +809,16 @@ theme_override_fonts/font = ExtResource("2_2itq6")
 theme_override_font_sizes/font_size = 12
 text = "Exit
 Tutorial"
+
+[node name="CardsPanel" type="Panel" parent="CanvasLayer/RootPanel"]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TieSprite" type="Sprite2D" parent="CanvasLayer/RootPanel/CardsPanel"]
+position = Vector2(691, 367)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("10_w7gxw")
 
 [connection signal="pressed" from="CanvasLayer/RootPanel/ContinueButton" to="." method="_on_continue_button_pressed"]

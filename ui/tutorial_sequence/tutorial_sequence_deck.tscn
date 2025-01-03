@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://c0etkvben6vtp"]
 
-[ext_resource type="Script" path="res://ui/tutorial_sequence/tutorial_sequence.gd" id="1_vkuta"]
+[ext_resource type="Script" path="res://ui/tutorial_sequence/tutorial_sequence_deck.gd" id="1_vkuta"]
 [ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="2_2itq6"]
 [ext_resource type="Texture2D" uid="uid://cppecdseuwynr" path="res://encounters/encounter_backgrounds/00.png" id="2_j0hih"]
 [ext_resource type="Texture2D" uid="uid://c5v2xxccyj7e8" path="res://ui/tutorial_sequence/HeartthrobPortrait.png" id="3_ccpuj"]
@@ -285,7 +285,7 @@ shader_parameter/PULSE_alpha_limit = 0.0
 shader_parameter/PULSE_cycle_speed = 6.0
 shader_parameter/PULSE_full_pulse_cycle = true
 
-[node name="TutorialSequence" type="Node2D"]
+[node name="TutorialSequenceDeck" type="Node2D"]
 script = ExtResource("1_vkuta")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -355,7 +355,7 @@ theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
 theme_override_fonts/font = ExtResource("2_2itq6")
 theme_override_font_sizes/font_size = 20
-text = "These are the five suits in your deck. Each suit has a win-or-lose relationship with the others\""
+text = "These are the five suits in your deck. Each suit has a win-or-lose relationship with the others"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3

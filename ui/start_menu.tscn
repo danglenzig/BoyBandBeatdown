@@ -1,0 +1,130 @@
+[gd_scene load_steps=5 format=3 uid="uid://b243as163oakm"]
+
+[ext_resource type="Script" path="res://ui/start_menu.gd" id="1_eq3g7"]
+[ext_resource type="Texture2D" uid="uid://cppecdseuwynr" path="res://encounters/encounter_backgrounds/00.png" id="2_b0ggh"]
+[ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="2_yqx8s"]
+[ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="4_dgc4o"]
+
+[node name="StartMenu" type="Node2D"]
+script = ExtResource("1_eq3g7")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 1366.0
+offset_bottom = 768.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel"]
+offset_left = -57.0
+offset_top = -51.0
+offset_right = 1863.0
+offset_bottom = 1029.0
+texture = ExtResource("2_b0ggh")
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = -1366.0
+offset_bottom = 365.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 20
+theme_override_constants/shadow_offset_y = 20
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_yqx8s")
+theme_override_font_sizes/font_size = 150
+text = "Boy Band Beatdown!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="StartButtonPanel" type="Panel" parent="CanvasLayer/Panel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -1366.0
+offset_top = 400.0
+offset_bottom = 500.0
+
+[node name="StartButton" type="Button" parent="CanvasLayer/Panel/StartButtonPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_dgc4o")
+theme_override_font_sizes/font_size = 50
+text = "Start"
+flat = true
+
+[node name="AboutButtonPanel" type="Panel" parent="CanvasLayer/Panel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -1366.0
+offset_top = 500.0
+offset_bottom = 600.0
+
+[node name="AboutButton" type="Button" parent="CanvasLayer/Panel/AboutButtonPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_dgc4o")
+theme_override_font_sizes/font_size = 50
+text = "About
+"
+flat = true
+
+[node name="QuitButtonPanel" type="Panel" parent="CanvasLayer/Panel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -1366.0
+offset_top = 600.0
+offset_bottom = 700.0
+
+[node name="QuitButton" type="Button" parent="CanvasLayer/Panel/QuitButtonPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_dgc4o")
+theme_override_font_sizes/font_size = 50
+text = "Quit
+"
+flat = true
+
+[connection signal="pressed" from="CanvasLayer/Panel/StartButtonPanel/StartButton" to="." method="on_menu_button_pressed" binds= ["START"]]
+[connection signal="pressed" from="CanvasLayer/Panel/AboutButtonPanel/AboutButton" to="." method="on_menu_button_pressed" binds= ["ABOUT"]]
+[connection signal="pressed" from="CanvasLayer/Panel/QuitButtonPanel/QuitButton" to="." method="on_menu_button_pressed" binds= ["QUIT"]]

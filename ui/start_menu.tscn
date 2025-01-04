@@ -16,6 +16,7 @@ offset_right = 1366.0
 offset_bottom = 768.0
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel"]
+layout_mode = 0
 offset_left = -57.0
 offset_top = -51.0
 offset_right = 1863.0
@@ -43,8 +44,8 @@ autowrap_mode = 3
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = -1366.0
-offset_top = 400.0
-offset_bottom = 500.0
+offset_top = 375.0
+offset_bottom = 475.0
 
 [node name="StartButton" type="Button" parent="CanvasLayer/Panel/StartButtonPanel"]
 layout_mode = 1
@@ -67,12 +68,41 @@ theme_override_font_sizes/font_size = 50
 text = "Start"
 flat = true
 
+[node name="HowToButtonPanel" type="Panel" parent="CanvasLayer/Panel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -1366.0
+offset_top = 450.0
+offset_bottom = 550.0
+
+[node name="HowToButton" type="Button" parent="CanvasLayer/Panel/HowToButtonPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -238.43
+offset_top = -34.5
+offset_right = 261.57
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_dgc4o")
+theme_override_font_sizes/font_size = 50
+text = "How To Play
+"
+flat = true
+
 [node name="AboutButtonPanel" type="Panel" parent="CanvasLayer/Panel"]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = -1366.0
-offset_top = 500.0
-offset_bottom = 600.0
+offset_top = 525.0
+offset_bottom = 625.0
 
 [node name="AboutButton" type="Button" parent="CanvasLayer/Panel/AboutButtonPanel"]
 layout_mode = 1
@@ -126,5 +156,6 @@ text = "Quit
 flat = true
 
 [connection signal="pressed" from="CanvasLayer/Panel/StartButtonPanel/StartButton" to="." method="on_menu_button_pressed" binds= ["START"]]
+[connection signal="pressed" from="CanvasLayer/Panel/HowToButtonPanel/HowToButton" to="." method="on_menu_button_pressed" binds= ["HOWTO"]]
 [connection signal="pressed" from="CanvasLayer/Panel/AboutButtonPanel/AboutButton" to="." method="on_menu_button_pressed" binds= ["ABOUT"]]
 [connection signal="pressed" from="CanvasLayer/Panel/QuitButtonPanel/QuitButton" to="." method="on_menu_button_pressed" binds= ["QUIT"]]

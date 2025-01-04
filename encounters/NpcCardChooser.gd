@@ -5,13 +5,13 @@ var play_styles = [
 	# just choose a random card
 	"BASIC_1",
 	# choose randomly from highest ranked cards
-	# "BASIC_2",
+	"BASIC_2",
 	# choose randomly from highest ranked balanced suits, else BASIC_2 behavior
-	#"FAVOR_BALANCED", 
+	"FAVOR_BALANCED", 
 	# choose randomly from highest ranked fire suit cards, else BASIC_2 behavior
-	# "FAVOR_FIRE", 
+	"FAVOR_FIRE", 
 	# choose randomly from highest ranked water suit cards, else BASIC_2 behavior
-	# "FAVOR_WATER",
+	"FAVOR_WATER",
 ]
 
 func choose_card(cards: Array[Card], play_style)->String:

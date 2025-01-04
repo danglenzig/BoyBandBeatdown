@@ -14,8 +14,12 @@ var arrows_holder: 		Node2D
 
 var countinue_button_armed: bool = true
 
+enum enum_called_from {START, ENVIRONMENT, ENCOUNTER, NONE}
+var called_from: enum_called_from = enum_called_from.NONE
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	
 	captions_panel 		= $CanvasLayer/RootPanel/CaptionsPanel
 	diagram_panel 		= $CanvasLayer/RootPanel/DiagramPanel
 	cards_panel 		= $CanvasLayer/RootPanel/CardsPanel
@@ -270,10 +274,36 @@ func play_step(step_number: int):
 			
 
 func _on_continue_button_pressed():
-	if current_step + 1 > last_step:
+	if current_step  + 1 > last_step:
 		print_debug("There are no more steps")
+		
+		# TODO: fix this
+		var continute_button: Button = $CanvasLayer/RootPanel/ContinueButton
+		continute_button.visible = false
+		
 		return
+		
 	if not countinue_button_armed:
 		return
 	current_step += 1
 	play_step(current_step)
+
+func _on_skip_button_pressed():
+	
+	print(called_from)
+	
+	var main: Main = $"/root/Main"
+	match called_from:
+		0:
+			# was called from start menu
+			main.display_start_menu()
+			self.call_deferred("queue_free")
+		1:
+			# was called from exploration mode
+			pass
+		2:
+			# was called from encounter mode
+			pass
+		3:
+			# was called from none -- this should not happen
+			push_warning("Something weird happened")

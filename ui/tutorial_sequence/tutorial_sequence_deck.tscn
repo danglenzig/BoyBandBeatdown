@@ -291,6 +291,7 @@ shader_parameter/PULSE_full_pulse_cycle = true
 script = ExtResource("1_vkuta")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 3
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
 self_modulate = Color(1, 1, 1, 0.156863)
@@ -823,3 +824,4 @@ scale = Vector2(0.9, 0.9)
 texture = ExtResource("10_w7gxw")
 
 [connection signal="pressed" from="CanvasLayer/RootPanel/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/RootPanel/SkipButton" to="." method="_on_skip_button_pressed"]

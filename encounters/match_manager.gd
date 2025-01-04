@@ -10,6 +10,7 @@ var rules_config: 		RulesConfig
 var player_deck: Deck 			= null
 var opponent_deck: Deck 		= null
 var opponent_play_style: String = ""
+var opponent_power_level: int
 
 var rounds_to_win: int
 var player_rounds_won: int 		= 0
@@ -19,11 +20,12 @@ var tied_rounds: int 			= 0
 var player_card_in_play: Card 	= null
 var opponent_card_in_play: Card = null
 
-const decide_winner_delay = 1.0
-const opponent_turn_delay 	= 1.0
-const reveal_cards_delay 	= 1.25
-const play_battle_animations_delay = 0.1
-const display_results_delay = 2.0
+const decide_winner_delay 			= 1.0
+const opponent_turn_delay 			= 1.0
+const reveal_cards_delay 			= 1.25
+const play_battle_animations_delay 	= 0.1
+const display_results_delay 		= 2.0
+const end_match_delay 				= 1.0
 
 
 func _ready():
@@ -46,14 +48,13 @@ func start_match(player_power: int, opponent_power: int, npc_play_style: String)
 	player_deck 	= deck_tools.build_deck(player_power)
 	opponent_deck 	= deck_tools.build_deck(opponent_power)
 	opponent_play_style = npc_play_style
+	opponent_power_level = opponent_power
 	# do a flashy intro cutscene here
 	# for now, just wait 0.5 seconds, then proceed
 	await get_tree().create_timer(0.5).timeout
 	
 	player_deck 	= deck_tools.deal_hand(player_deck)
 	opponent_deck 	= deck_tools.deal_hand(opponent_deck)
-	
-	
 	encounter_manager.display_cards_in_hand(player_deck.cards_in_hand)
 	
 
@@ -190,6 +191,16 @@ func decide_winner()->void:
 	await get_tree().create_timer(play_battle_animations_delay).timeout
 	encounter_manager.play_battle_animations(result_string, reason_string, player_card_in_play.card_uuid, opponent_card_in_play.card_uuid)
 
+
+func end_match(winner: String):
+	var encounter_manager: NpcEncounter = get_parent()
+	var progression_manager: ProgressionManager = SingletonHolder.get_node("ProgressionManager")
+	var player_power = progression_manager.player_power
+	
+	# award xp:
+	progression_manager.player_current_xp += progression_manager.calculate_match_xp_award(winner, opponent_power_level)
+	encounter_manager.end_match()
+
 func on_round_over()->void:
 	# TODO: either the match is over, or play another round
 	var encounter_manager: NpcEncounter = get_parent()
@@ -215,6 +226,10 @@ func on_round_over()->void:
 		var sprite_shader_mat: ShaderMaterial = encounter_manager.player_sprite.material
 		sprite_shader_mat.set_shader_parameter("BORDERNOISE_active", true)
 		
+		await get_tree().create_timer(end_match_delay).timeout
+		sprite_shader_mat.set_shader_parameter("BORDERNOISE_active", false)
+		# end the match
+		end_match("PLAYER")
 		
 		
 	elif opponent_rounds_won >= rounds_to_win:
@@ -231,6 +246,11 @@ func on_round_over()->void:
 		
 		var sprite_shader_mat: ShaderMaterial = encounter_manager.opponent_sprite.material
 		sprite_shader_mat.set_shader_parameter("BORDERNOISE_active", true) 
+		
+		await get_tree().create_timer(end_match_delay).timeout
+		sprite_shader_mat.set_shader_parameter("BORDERNOISE_active", false) 
+		# end the match
+		end_match("OPPONENT")
 		
 	else:
 		push_error("Something weird happened")

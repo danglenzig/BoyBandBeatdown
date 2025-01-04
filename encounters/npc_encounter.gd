@@ -66,10 +66,10 @@ func spawn_opponent_sprite(opponent_name) -> void:
 		opponent_sprite = new_opponent_sprite
 			
 func begin_encounter(opponent_name: String, opponent_power: int, opponent_play_style: String, environment_bg_filename: String, encounter_bg_filename: String) -> void:
-	hud_panel.display_toggle_help_button(true)
 	setup_backgrounds(environment_bg_filename,encounter_bg_filename)
 	spawn_player_sprite()
 	spawn_opponent_sprite(opponent_name)
+	
 	
 	var progression_manager: ProgressionManager = SingletonHolder.get_node("ProgressionManager")
 	var player_power = progression_manager.player_power
@@ -182,8 +182,12 @@ func update_sprites_rounds_won(player_rounds_won: int, opponent_rounds_won: int,
 			opponent_sprite.label_flash_effect.visible = false
 		"NONE":
 			pass
-		
-	
+
+func end_match():
+	var game_environment: GameEnvironment = get_parent()
+	game_environment.on_end_encounter()
+	self.call_deferred("queue_free")
+
 func on_player_attack_anim_finish()->void:
 	pass
 

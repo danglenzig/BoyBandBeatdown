@@ -96,6 +96,7 @@ func handle_scaling() -> void:
 func on_atomic_state_entered(new_state: String):
 	match new_state:
 		"IDLE":
+			player_sprite.visible = true
 			player_sprite.play("idle")
 			if use_z_scaling:
 				handle_scaling()

@@ -22,8 +22,13 @@ var start_marker_name: String = ""
 var z_scaler: ZScaler 		= null
 var game_camera: GameCamera = null
 
+var main: Main
+var hud_panel: HudPanel
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	main = $"/root/Main"
+	hud_panel = main.get_hud_panel()
 	misc_tools = SingletonHolder.get_node("MiscTools")
 	input_handler = SingletonHolder.get_node("InputHandler")
 	encounter_events = SingletonHolder.get_node("EncounterEvents")
@@ -58,10 +63,8 @@ func setup_player() -> void:
 	
 func on_begin_encounter(npc_name: String, npc_display_name: String, npc_power: int, npc_play_style: String) -> void:
 	
-	
 	if player.current_state == "ENCOUNTER":
 		return
-		
 	# hide the player and freeze movement
 	player.player_state_chart.send_event("to_encounter_event")
 	
@@ -78,6 +81,25 @@ func on_begin_encounter(npc_name: String, npc_display_name: String, npc_power: i
 	
 	# instantiate the encounter scene
 	var new_encounter: NpcEncounter = encounter_scene.instantiate()
+	hud_panel.visible = false
 	add_child(new_encounter)
 	new_encounter.begin_encounter(npc_name,npc_power,npc_play_style,environment_background_filename,encounter_background_filename)
+	
+func on_end_encounter():
+	pass
+	# normalize everything we changed in on_begin_encounter()
+	player.player_state_chart.send_event("to_idle_event")
+	for npc_sprite: NpcSprite in $NpcHolder.get_children():
+		npc_sprite.visible = true
+	for prop: CanvasItem in $PropHolder.get_children():
+		prop.visible = true
+	game_camera.enabled = true
+	hud_panel.visible = true
+	
+	
+	hud_panel.tween_up_xp_meter()
+	
+	# check if the player has leveled up
+	
+	# if so, do the level up stuff
 	

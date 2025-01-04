@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dlaoxsh4nrl4r"]
+[gd_scene load_steps=12 format=3 uid="uid://dlaoxsh4nrl4r"]
 
 [ext_resource type="Script" path="res://singletons/misc_tools.gd" id="1_ji376"]
 [ext_resource type="PackedScene" uid="uid://cahtc4x8m4wr6" path="res://player/player.tscn" id="2_o61aj"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://singletons/progression_manager.gd" id="8_nwdj1"]
 [ext_resource type="Script" path="res://singletons/game_settings.gd" id="9_jnmea"]
 [ext_resource type="Script" path="res://singletons/encounter_events.gd" id="10_gkav3"]
+[ext_resource type="Script" path="res://audio/footstep_player.gd" id="11_2qhi3"]
 
 [node name="SingletonHolder" type="Node"]
 
@@ -39,3 +40,6 @@ best_of_n = 5
 
 [node name="EncounterEvents" type="Node" parent="."]
 script = ExtResource("10_gkav3")
+
+[node name="FootstepPlayer" type="AudioStreamPlayer" parent="."]
+script = ExtResource("11_2qhi3")

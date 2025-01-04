@@ -3,11 +3,13 @@ class_name Player
 
 @export var move_speed: float 	= 300.0
 @export var use_z_scaling: bool = true
+@export var footstep_frames: Array[int]
 
 var adjusted_move_speed: float
 
 # singletons
 var input_handler: InputHandler
+var footstep_player: FootstepPlayer
 
 # child nodes
 var z_scaler: ZScaler 				= null
@@ -18,7 +20,8 @@ var current_state: String 	= ""
 var previous_state: String 	= ""
 
 func _ready():
-	input_handler = SingletonHolder.get_node("InputHandler")
+	input_handler 		= SingletonHolder.get_node("InputHandler")
+	footstep_player 	= SingletonHolder.get_node("FootstepPlayer")
 	player_sprite 		= $AnimatedSprite2D
 	player_state_chart 	= $StateChart
 	adjusted_move_speed = move_speed
@@ -32,6 +35,11 @@ func _process(delta):
 				handle_scaling()
 		"ENCOUNTER":
 			pass
+
+func handle_footsteps():
+	var current_frame = player_sprite.frame
+	if footstep_frames.has(current_frame):
+		footstep_player.play_random_footstep_sound()
 
 func _physics_process(delta):
 	
@@ -47,6 +55,7 @@ func _physics_process(delta):
 				player_state_chart.send_event("to_idle_event")
 				return
 			handle_movement(input_handler.move_input)
+			handle_footsteps()
 			move_and_slide()
 		"ENCOUNTER":
 			pass

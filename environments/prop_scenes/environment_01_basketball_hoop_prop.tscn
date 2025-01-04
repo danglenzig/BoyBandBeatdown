@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://o24c0cdr71es"]
+
+[ext_resource type="Script" path="res://environments/prop_sprite.gd" id="1_2477u"]
+[ext_resource type="Texture2D" uid="uid://c34lfnv0tkdgr" path="res://environments/assets/props/environment_01_basketball_hoop.png" id="2_guicf"]
+
+[node name="Environment_01_BasketballHoopProp" type="Node2D"]
+script = ExtResource("1_2477u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -175)
+texture = ExtResource("2_guicf")

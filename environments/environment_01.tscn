@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://bnc0he5ytku37"]
+[gd_scene load_steps=28 format=3 uid="uid://bnc0he5ytku37"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
 [ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/env_01.png" id="2_it8mk"]
@@ -16,6 +16,8 @@
 [ext_resource type="PackedScene" uid="uid://cwpcgtxs6yrja" path="res://environments/prop_scenes/environment_01_bush_01_prop.tscn" id="13_bmcxs"]
 [ext_resource type="PackedScene" uid="uid://d2yhir3ns1ki5" path="res://environments/prop_scenes/environmrnt_01_bush_02_prop.tscn" id="14_04rml"]
 [ext_resource type="PackedScene" uid="uid://bcjvr5a4jhat1" path="res://environments/prop_scenes/environment_01_bush_03_prop.tscn" id="15_0lphk"]
+[ext_resource type="PackedScene" uid="uid://bakgo3hlf5dh0" path="res://environments/prop_scenes/environment_01_bush_04_prop.tscn" id="16_bvwmp"]
+[ext_resource type="PackedScene" uid="uid://bvj7m38twjg61" path="res://environments/prop_scenes/environment_01_bush_05.tscn" id="17_jkyb5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wegb6"]
 size = Vector2(165, 50.5)
@@ -121,6 +123,12 @@ position = Vector2(854, 697)
 [node name="Environment_01_Bush03_Prop" parent="PropHolder" instance=ExtResource("15_0lphk")]
 position = Vector2(776, 703)
 
+[node name="Environment_01_Bush04_Prop" parent="PropHolder" instance=ExtResource("16_bvwmp")]
+position = Vector2(545, 733)
+
+[node name="Environment_01_Bush05" parent="PropHolder" instance=ExtResource("17_jkyb5")]
+position = Vector2(420, 746)
+
 [node name="EnvironmentBlockers" type="Node2D" parent="."]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="EnvironmentBlockers"]
@@ -148,7 +156,6 @@ debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
 position = Vector2(891, 640)
 rotation = -0.0855211
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_g4l65")
 debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 
@@ -166,7 +173,6 @@ debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
 position = Vector2(1053.39, 670.26)
 rotation = -0.171042
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_vcxpo")
 debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 

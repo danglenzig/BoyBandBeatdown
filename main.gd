@@ -15,6 +15,8 @@ signal change_scene()
 signal start_button_pressed()
 signal howto_button_pressed()
 
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	hud_panel = $CanvasLayer/HudPanel
@@ -55,7 +57,9 @@ func load_environment(scene_name: String, start_marker_name: String):
 	if current_environment:
 		current_environment.call_deferred("queue_free")
 	var new_environment: GameEnvironment = scene_to_instantiate.instantiate()
+	
 	new_environment.start_marker_name = start_marker_name
+	
 	call_deferred("add_child", new_environment)
 	current_environment = new_environment
 	hud_panel.visible = true

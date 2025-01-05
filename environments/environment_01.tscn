@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bnc0he5ytku37"]
+[gd_scene load_steps=33 format=3 uid="uid://bnc0he5ytku37"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
 [ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/env_01.png" id="2_it8mk"]
@@ -46,6 +46,21 @@ size = Vector2(130.898, 10.3912)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3gjf"]
 size = Vector2(171, 433)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_21fdk"]
+size = Vector2(75.7794, 30.7749)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tnput"]
+size = Vector2(75.153, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2sraq"]
+size = Vector2(38, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wnwl5"]
+size = Vector2(34.125, 15.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1gmgg"]
+size = Vector2(20.3844, 6.73175)
+
 [node name="Environment_01" type="Node2D"]
 script = ExtResource("1_4h4a2")
 camera_upper_y = 720
@@ -87,6 +102,9 @@ position = Vector2(664, 962)
 
 [node name="EastPlayerStart" type="Marker2D" parent="."]
 position = Vector2(1701, 880)
+
+[node name="WestExitPlaceholderMarker" type="Marker2D" parent="."]
+position = Vector2(712, 688)
 
 [node name="NpcHolder" type="Node2D" parent="."]
 
@@ -178,13 +196,46 @@ debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 
 [node name="ExitTriggerHolder" type="Node2D" parent="."]
 
-[node name="ExitTrigger" type="Area2D" parent="ExitTriggerHolder"]
+[node name="EastExitTrigger" type="Area2D" parent="ExitTriggerHolder"]
 script = ExtResource("7_n6j3s")
 exit_to_scene_name = "environment_00.tscn"
 player_start_name = "StairsPlayerStart"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/ExitTrigger"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/EastExitTrigger"]
 position = Vector2(1853.5, 892.5)
 shape = SubResource("RectangleShape2D_e3gjf")
 
-[connection signal="body_entered" from="ExitTriggerHolder/ExitTrigger" to="ExitTriggerHolder/ExitTrigger" method="_on_body_entered"]
+[node name="WestExitTrigger" type="Area2D" parent="ExitTriggerHolder" node_paths=PackedStringArray("exit_placeholder_marker")]
+script = ExtResource("7_n6j3s")
+exit_to_scene_name = "environment_02.tscn"
+player_start_name = "SouthPlayerStart"
+exit_placeholder_marker = NodePath("../../WestExitPlaceholderMarker")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger"]
+position = Vector2(291.868, 701.128)
+rotation = -0.0855211
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("RectangleShape2D_21fdk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger"]
+position = Vector2(148.476, 717.216)
+rotation = -0.0855211
+shape = SubResource("RectangleShape2D_tnput")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger"]
+position = Vector2(706, 669)
+rotation = -0.10472
+shape = SubResource("RectangleShape2D_2sraq")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger"]
+position = Vector2(794, 663)
+rotation = -0.0872665
+shape = SubResource("RectangleShape2D_wnwl5")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger"]
+position = Vector2(1127.78, 639.302)
+rotation = -0.10472
+shape = SubResource("RectangleShape2D_1gmgg")
+
+[connection signal="body_entered" from="ExitTriggerHolder/EastExitTrigger" to="ExitTriggerHolder/EastExitTrigger" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger" to="ExitTriggerHolder/WestExitTrigger" method="_on_body_entered"]

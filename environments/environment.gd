@@ -53,9 +53,9 @@ func setup_player() -> void:
 	player.z_scaler = $ZScaler
 	add_child(player)
 	
-	if start_marker_name == "" or not get_node(start_marker_name):
+	if start_marker_name == "" or not has_node(start_marker_name):
 		player.global_position = $DefaultPlayerStart.global_position
-	elif get_node(start_marker_name):
+	elif has_node(start_marker_name):
 		var start_marker: Marker2D = get_node(start_marker_name)
 		player.global_position = start_marker.global_position
 	

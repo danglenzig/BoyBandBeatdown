@@ -82,7 +82,7 @@ texture = ExtResource("2_26yqy")
 
 [node name="GameCamera" type="Camera2D" parent="."]
 position = Vector2(907, 620)
-zoom = Vector2(2, 2)
+zoom = Vector2(2.5, 2.5)
 process_callback = 0
 position_smoothing_enabled = true
 drag_horizontal_enabled = true

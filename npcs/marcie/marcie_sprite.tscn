@@ -120,7 +120,7 @@ shader_parameter/COLORMANIPULATOR_blueVal = 1.0
 shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
 shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
 shader_parameter/OUTLINE_active = true
-shader_parameter/OUTLINE_thickness = 1.0
+shader_parameter/OUTLINE_thickness = 1.5
 shader_parameter/OUTLINE_color = Color(0, 0, 0, 1)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3lblo"]

@@ -23,6 +23,8 @@ func _ready():
 	$EncounterUI/StartEncounterLabel.visible 	= false
 	$EncounterUI/LevelLabel.visible 			= true
 	
+	var my_mat: ShaderMaterial = $AnimatedSprite2D.material
+	my_mat.set_shader_parameter("BORDERNOISE_active", false)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -41,11 +43,18 @@ func handle_ui()->void:
 			return
 		$EncounterUI/LevelLabel.visible 			= false
 		$EncounterUI/StartEncounterLabel.visible 	= true
+		
+		var my_mat: ShaderMaterial = $AnimatedSprite2D.material
+		my_mat.set_shader_parameter("BORDERNOISE_active", true)
+		
 	else:
 		if not $EncounterUI/StartEncounterLabel.visible:
 			return
 		$EncounterUI/LevelLabel.visible 			= true
 		$EncounterUI/StartEncounterLabel.visible 	= false
+		
+		var my_mat: ShaderMaterial = $AnimatedSprite2D.material
+		my_mat.set_shader_parameter("BORDERNOISE_active", false)
 	
 func is_player_inside_detect_radius() -> bool:
 	var player: Player = misc_tools.current_player

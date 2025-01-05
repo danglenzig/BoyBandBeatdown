@@ -504,7 +504,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"win",
-"speed": 20.0
+"speed": 26.0
 }]
 
 [sub_resource type="Shader" id="Shader_5fi0f"]
@@ -566,8 +566,10 @@ shader_parameter/PULSE_full_pulse_cycle = true
 material = SubResource("ShaderMaterial_e8mvv")
 position = Vector2(0, -334)
 sprite_frames = SubResource("SpriteFrames_inmsn")
-animation = &"lose"
+animation = &"win"
 autoplay = "idle"
+frame = 35
+frame_progress = 1.0
 script = ExtResource("28_ua15p")
 impact_frame_number = 15
 

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwpcgtxs6yrja"]
+
+[ext_resource type="Script" path="res://environments/prop_sprite.gd" id="1_rptvq"]
+[ext_resource type="Texture2D" uid="uid://4cwvssvol00y" path="res://environments/assets/props/environment_01_bush_01.png" id="2_fdkxj"]
+
+[node name="Environment_01_Bush01_Prop" type="Node2D"]
+script = ExtResource("1_rptvq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -27)
+texture = ExtResource("2_fdkxj")

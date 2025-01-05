@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bnc0he5ytku37"]
+[gd_scene load_steps=26 format=3 uid="uid://bnc0he5ytku37"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
 [ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/env_01.png" id="2_it8mk"]
@@ -8,12 +8,38 @@
 [ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="5_lb3wf"]
 [ext_resource type="Script" path="res://environments/exit_trigger.gd" id="7_n6j3s"]
 [ext_resource type="PackedScene" uid="uid://o24c0cdr71es" path="res://environments/prop_scenes/environment_01_basketball_hoop_prop.tscn" id="7_w26um"]
+[ext_resource type="PackedScene" uid="uid://ru26bw57lyag" path="res://environments/prop_scenes/environment_01_tree_01_prop.tscn" id="8_xbhcq"]
+[ext_resource type="PackedScene" uid="uid://df13ft8cvya67" path="res://environments/prop_scenes/environment_01_tree_02_prop.tscn" id="9_qefcq"]
+[ext_resource type="PackedScene" uid="uid://cf2bkdtr4vmt7" path="res://environments/prop_scenes/environment_01_tree_03_prop.tscn" id="10_kravs"]
+[ext_resource type="PackedScene" uid="uid://coyhnnecgeqq6" path="res://environments/prop_scenes/environment_01_tree_04_prop.tscn" id="11_qydge"]
+[ext_resource type="PackedScene" uid="uid://bui4brkgvo8le" path="res://environments/prop_scenes/environment_01_tree_05_prop.tscn" id="12_h5g36"]
+[ext_resource type="PackedScene" uid="uid://cwpcgtxs6yrja" path="res://environments/prop_scenes/environment_01_bush_01_prop.tscn" id="13_bmcxs"]
+[ext_resource type="PackedScene" uid="uid://d2yhir3ns1ki5" path="res://environments/prop_scenes/environmrnt_01_bush_02_prop.tscn" id="14_04rml"]
+[ext_resource type="PackedScene" uid="uid://bcjvr5a4jhat1" path="res://environments/prop_scenes/environment_01_bush_03_prop.tscn" id="15_0lphk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wegb6"]
 size = Vector2(165, 50.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u2cs8"]
-size = Vector2(181, 685)
+size = Vector2(174, 688)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_silrh"]
+size = Vector2(1812, 85)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3w7s3"]
+size = Vector2(87, 400)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4l65"]
+size = Vector2(1757.24, 41.5268)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ao37"]
+size = Vector2(472.398, 66.7465)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bsvti"]
+size = Vector2(68, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vcxpo"]
+size = Vector2(130.898, 10.3912)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3gjf"]
 size = Vector2(171, 433)
@@ -22,7 +48,7 @@ size = Vector2(171, 433)
 script = ExtResource("1_4h4a2")
 camera_upper_y = 720
 camera_lower_y = 760
-camera_left_x = 410
+camera_left_x = 550
 camera_right_x = 1360
 encounter_scene = ExtResource("2_mlaec")
 environment_background_filename = "env_01.png"
@@ -34,6 +60,7 @@ offset_bottom = 40.0
 texture = ExtResource("2_it8mk")
 
 [node name="GameCamera" type="Camera2D" parent="."]
+position = Vector2(550, 0)
 zoom = Vector2(1.25, 1.25)
 process_callback = 0
 position_smoothing_enabled = true
@@ -70,6 +97,30 @@ z_scaler = NodePath("../../ZScaler")
 [node name="Environment_01_BasketballHoopProp" parent="PropHolder" instance=ExtResource("7_w26um")]
 position = Vector2(1026, 831)
 
+[node name="Environment01_Tree01_Prop" parent="PropHolder" instance=ExtResource("8_xbhcq")]
+position = Vector2(213, 766)
+
+[node name="environment_01_tree_02_prop" parent="PropHolder" instance=ExtResource("9_qefcq")]
+position = Vector2(654, 713)
+
+[node name="Environment_01_Tree03_Prop" parent="PropHolder" instance=ExtResource("10_kravs")]
+position = Vector2(919, 682)
+
+[node name="Environment_01_Tree04_Prop" parent="PropHolder" instance=ExtResource("11_qydge")]
+position = Vector2(1212, 647)
+
+[node name="Environment_01_Tree05_Prop" parent="PropHolder" instance=ExtResource("12_h5g36")]
+position = Vector2(1270, 642)
+
+[node name="Environment_01_Bush01_Prop" parent="PropHolder" instance=ExtResource("13_bmcxs")]
+position = Vector2(1050, 676)
+
+[node name="Environmrnt_01_Bush02_Prop" parent="PropHolder" instance=ExtResource("14_04rml")]
+position = Vector2(854, 697)
+
+[node name="Environment_01_Bush03_Prop" parent="PropHolder" instance=ExtResource("15_0lphk")]
+position = Vector2(776, 703)
+
 [node name="EnvironmentBlockers" type="Node2D" parent="."]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="EnvironmentBlockers"]
@@ -80,8 +131,43 @@ shape = SubResource("RectangleShape2D_wegb6")
 debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
-position = Vector2(1847.5, 333.5)
+position = Vector2(1851, 335)
 shape = SubResource("RectangleShape2D_u2cs8")
+debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
+position = Vector2(879, 1109.5)
+shape = SubResource("RectangleShape2D_silrh")
+debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
+position = Vector2(30.5, 881)
+shape = SubResource("RectangleShape2D_3w7s3")
+debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
+position = Vector2(891, 640)
+rotation = -0.0855211
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_g4l65")
+debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
+position = Vector2(1529.82, 619.964)
+rotation = 0.0418879
+shape = SubResource("RectangleShape2D_6ao37")
+debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
+position = Vector2(1552, 662.5)
+shape = SubResource("RectangleShape2D_bsvti")
+debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
+position = Vector2(1053.39, 670.26)
+rotation = -0.171042
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_vcxpo")
 debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 
 [node name="ExitTriggerHolder" type="Node2D" parent="."]

@@ -20,12 +20,12 @@ var called_from: enum_called_from = enum_called_from.NONE
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
-	captions_panel 		= $CanvasLayer/RootPanel/CaptionsPanel
-	diagram_panel 		= $CanvasLayer/RootPanel/DiagramPanel
-	cards_panel 		= $CanvasLayer/RootPanel/CardsPanel
+	captions_panel 		= $RootPanel/CaptionsPanel
+	diagram_panel 		= $RootPanel/DiagramPanel
+	cards_panel 		= $RootPanel/CardsPanel
 	
-	portraits_holder 	= $CanvasLayer/RootPanel/DiagramPanel/Portraits
-	arrows_holder 		= $CanvasLayer/RootPanel/DiagramPanel/Arrows
+	portraits_holder 	= $RootPanel/DiagramPanel/Portraits
+	arrows_holder 		= $RootPanel/DiagramPanel/Arrows
 	
 	diagram_panel.visible = 	false
 	captions_panel.visible = 	false
@@ -274,11 +274,14 @@ func play_step(step_number: int):
 			
 
 func _on_continue_button_pressed():
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.card_select.play()
+	
 	if current_step  + 1 > last_step:
 		print_debug("There are no more steps")
 		
 		# TODO: fix this
-		var continute_button: Button = $CanvasLayer/RootPanel/ContinueButton
+		var continute_button: Button = $RootPanel/ContinueButton
 		continute_button.visible = false
 		
 		return
@@ -287,7 +290,9 @@ func _on_continue_button_pressed():
 		return
 	current_step += 1
 	play_step(current_step)
-
+	
+# this functionality is now in tutorial_canvas.gd
+"""
 func _on_skip_button_pressed():
 	
 	print(called_from)
@@ -307,3 +312,9 @@ func _on_skip_button_pressed():
 		3:
 			# was called from none -- this should not happen
 			push_warning("Something weird happened")
+"""
+
+
+func _on_continue_button_mouse_entered():
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.card_hover.play()

@@ -292,19 +292,20 @@ script = ExtResource("1_vkuta")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 3
+visible = false
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+[node name="TextureRect" type="TextureRect" parent="."]
 self_modulate = Color(1, 1, 1, 0.156863)
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_j0hih")
 
-[node name="RootPanel" type="Panel" parent="CanvasLayer"]
+[node name="RootPanel" type="Panel" parent="."]
 self_modulate = Color(1, 1, 1, 0)
 offset_right = 1366.0
-offset_bottom = 768.0
+offset_bottom = 750.0
 
-[node name="CaptionsPanel" type="Panel" parent="CanvasLayer/RootPanel"]
+[node name="CaptionsPanel" type="Panel" parent="RootPanel"]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 7
@@ -319,7 +320,7 @@ offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="Step0" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step0" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -342,7 +343,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step1" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step1" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -365,7 +366,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step2" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step2" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -388,7 +389,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step3" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step3" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -411,7 +412,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step4" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step4" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -434,7 +435,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step5" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step5" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -457,7 +458,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step6" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step6" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -480,7 +481,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step7" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step7" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -503,7 +504,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step8" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step8" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -526,7 +527,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step9" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step9" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -549,7 +550,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step10" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step10" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -572,7 +573,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step11" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step11" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -595,7 +596,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step12" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step12" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -618,7 +619,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step13" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step13" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -641,7 +642,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Step14" type="Label" parent="CanvasLayer/RootPanel/CaptionsPanel"]
+[node name="Step14" type="Label" parent="RootPanel/CaptionsPanel"]
 visible = false
 layout_mode = 1
 anchors_preset = 5
@@ -664,48 +665,48 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="DiagramPanel" type="Panel" parent="CanvasLayer/RootPanel"]
+[node name="DiagramPanel" type="Panel" parent="RootPanel"]
 visible = false
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Portraits" type="Node2D" parent="CanvasLayer/RootPanel/DiagramPanel"]
+[node name="Portraits" type="Node2D" parent="RootPanel/DiagramPanel"]
 
-[node name="HeartthrobSprite" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Portraits"]
+[node name="HeartthrobSprite" type="Sprite2D" parent="RootPanel/DiagramPanel/Portraits"]
 material = SubResource("ShaderMaterial_3dnc2")
 position = Vector2(342, 125)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("3_ccpuj")
 
-[node name="BadBoySprite" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Portraits"]
+[node name="BadBoySprite" type="Sprite2D" parent="RootPanel/DiagramPanel/Portraits"]
 material = SubResource("ShaderMaterial_fo03i")
 position = Vector2(1026, 125)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_j7prw")
 
-[node name="ShyOneSprite" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Portraits"]
+[node name="ShyOneSprite" type="Sprite2D" parent="RootPanel/DiagramPanel/Portraits"]
 material = SubResource("ShaderMaterial_d0don")
 position = Vector2(684, 275)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("5_5co5o")
 
-[node name="CuteOneSprite" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Portraits"]
+[node name="CuteOneSprite" type="Sprite2D" parent="RootPanel/DiagramPanel/Portraits"]
 material = SubResource("ShaderMaterial_01bgt")
 position = Vector2(513, 550)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("6_vlfo0")
 
-[node name="OlderBrotherSprite" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Portraits"]
+[node name="OlderBrotherSprite" type="Sprite2D" parent="RootPanel/DiagramPanel/Portraits"]
 material = SubResource("ShaderMaterial_c1tqt")
 position = Vector2(855, 550)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("7_0f40m")
 
-[node name="Arrows" type="Node2D" parent="CanvasLayer/RootPanel/DiagramPanel"]
+[node name="Arrows" type="Node2D" parent="RootPanel/DiagramPanel"]
 
-[node name="BadBoyToHeartthrob" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Arrows"]
+[node name="BadBoyToHeartthrob" type="Sprite2D" parent="RootPanel/DiagramPanel/Arrows"]
 visible = false
 self_modulate = Color(0.501961, 0.501961, 0.501961, 1)
 position = Vector2(682.25, 119)
@@ -713,7 +714,7 @@ scale = Vector2(2.61518, 1)
 texture = ExtResource("8_ku3iw")
 flip_h = true
 
-[node name="HeartthrobToShyOne" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Arrows"]
+[node name="HeartthrobToShyOne" type="Sprite2D" parent="RootPanel/DiagramPanel/Arrows"]
 visible = false
 self_modulate = Color(0.501961, 0.501961, 0.501961, 1)
 position = Vector2(513.58, 225.041)
@@ -721,7 +722,7 @@ rotation = 0.527089
 scale = Vector2(1.08227, 1)
 texture = ExtResource("8_ku3iw")
 
-[node name="ShyOneToBadBoy" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Arrows"]
+[node name="ShyOneToBadBoy" type="Sprite2D" parent="RootPanel/DiagramPanel/Arrows"]
 visible = false
 self_modulate = Color(0.501961, 0.501961, 0.501961, 1)
 position = Vector2(855, 228)
@@ -729,7 +730,7 @@ rotation = -0.527089
 scale = Vector2(1.08227, 1)
 texture = ExtResource("8_ku3iw")
 
-[node name="HeartthrobToOlderBrother" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Arrows"]
+[node name="HeartthrobToOlderBrother" type="Sprite2D" parent="RootPanel/DiagramPanel/Arrows"]
 visible = false
 self_modulate = Color(0.501961, 0.501961, 0.501961, 1)
 position = Vector2(592.477, 373.851)
@@ -737,7 +738,7 @@ rotation = 0.679258
 scale = Vector2(2.37935, 1)
 texture = ExtResource("8_ku3iw")
 
-[node name="CuteOneToBadBoy" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Arrows"]
+[node name="CuteOneToBadBoy" type="Sprite2D" parent="RootPanel/DiagramPanel/Arrows"]
 visible = false
 self_modulate = Color(0.501961, 0.501961, 0.501961, 1)
 position = Vector2(776, 366)
@@ -745,7 +746,7 @@ rotation = -0.678933
 scale = Vector2(2.37935, 1)
 texture = ExtResource("8_ku3iw")
 
-[node name="HeartthrobToCuteOne" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Arrows"]
+[node name="HeartthrobToCuteOne" type="Sprite2D" parent="RootPanel/DiagramPanel/Arrows"]
 visible = false
 self_modulate = Color(0.501961, 0.501961, 0.501961, 1)
 position = Vector2(417.948, 335.498)
@@ -753,7 +754,7 @@ rotation = 1.00705
 scale = Vector2(1.32014, 1)
 texture = ExtResource("8_ku3iw")
 
-[node name="OlderBrotherToBadBoy" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Arrows"]
+[node name="OlderBrotherToBadBoy" type="Sprite2D" parent="RootPanel/DiagramPanel/Arrows"]
 visible = false
 self_modulate = Color(0.501961, 0.501961, 0.501961, 1)
 position = Vector2(973, 347)
@@ -761,14 +762,14 @@ rotation = -1.00705
 scale = Vector2(1.32014, 1)
 texture = ExtResource("8_ku3iw")
 
-[node name="CuteOneToOlderBrother" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Arrows"]
+[node name="CuteOneToOlderBrother" type="Sprite2D" parent="RootPanel/DiagramPanel/Arrows"]
 visible = false
 self_modulate = Color(1, 1, 0, 1)
 position = Vector2(683, 570)
 scale = Vector2(0.932323, 1)
 texture = ExtResource("8_ku3iw")
 
-[node name="ShyOneToCuteOne" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Arrows"]
+[node name="ShyOneToCuteOne" type="Sprite2D" parent="RootPanel/DiagramPanel/Arrows"]
 visible = false
 self_modulate = Color(1, 1, 0, 1)
 position = Vector2(558, 383)
@@ -776,7 +777,7 @@ rotation = 2.17119
 scale = Vector2(0.771618, 1)
 texture = ExtResource("8_ku3iw")
 
-[node name="OlderBrotherToShyOne" type="Sprite2D" parent="CanvasLayer/RootPanel/DiagramPanel/Arrows"]
+[node name="OlderBrotherToShyOne" type="Sprite2D" parent="RootPanel/DiagramPanel/Arrows"]
 visible = false
 self_modulate = Color(1, 1, 0, 1)
 position = Vector2(814, 385)
@@ -784,12 +785,12 @@ rotation = -2.17119
 scale = Vector2(0.771618, 1)
 texture = ExtResource("8_ku3iw")
 
-[node name="ContinueButton" type="Button" parent="CanvasLayer/RootPanel"]
+[node name="ContinueButton" type="Button" parent="RootPanel"]
 layout_mode = 0
-offset_left = 1223.0
-offset_top = 719.0
-offset_right = 1354.0
-offset_bottom = 752.0
+offset_left = 1210.0
+offset_top = 677.0
+offset_right = 1341.0
+offset_bottom = 710.0
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 1
@@ -797,31 +798,17 @@ theme_override_fonts/font = ExtResource("2_2itq6")
 theme_override_font_sizes/font_size = 16
 text = "Continue"
 
-[node name="SkipButton" type="Button" parent="CanvasLayer/RootPanel"]
-layout_mode = 0
-offset_left = 28.0
-offset_top = 33.0
-offset_right = 121.0
-offset_bottom = 81.0
-theme_override_colors/font_color = Color(1, 1, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("2_2itq6")
-theme_override_font_sizes/font_size = 12
-text = "Exit
-Tutorial"
-
-[node name="CardsPanel" type="Panel" parent="CanvasLayer/RootPanel"]
+[node name="CardsPanel" type="Panel" parent="RootPanel"]
 visible = false
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="TieSprite" type="Sprite2D" parent="CanvasLayer/RootPanel/CardsPanel"]
+[node name="TieSprite" type="Sprite2D" parent="RootPanel/CardsPanel"]
 position = Vector2(691, 367)
 scale = Vector2(0.9, 0.9)
 texture = ExtResource("10_w7gxw")
 
-[connection signal="pressed" from="CanvasLayer/RootPanel/ContinueButton" to="." method="_on_continue_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/RootPanel/SkipButton" to="." method="_on_skip_button_pressed"]
+[connection signal="mouse_entered" from="RootPanel/ContinueButton" to="." method="_on_continue_button_mouse_entered"]
+[connection signal="pressed" from="RootPanel/ContinueButton" to="." method="_on_continue_button_pressed"]

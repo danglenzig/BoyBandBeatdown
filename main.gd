@@ -4,7 +4,8 @@ class_name Main
 #@export var temp_start_environment: PackedScene
 @export var start_menu_scene: PackedScene
 @export var environment_scenes: Array[PackedScene]
-@export var tutorial_scene: PackedScene
+#@export var tutorial_scene: PackedScene
+@export var tutorial_canvas_scene: PackedScene
 @export var start_scene_name: String = ""
 
 
@@ -14,6 +15,8 @@ var hud_panel: HudPanel
 signal change_scene()
 signal start_button_pressed()
 signal howto_button_pressed()
+
+var environment_01_exit_placeholder_marker_name = ""
 
 
 
@@ -45,6 +48,7 @@ func fucking_test(test_1: String, test_2: String):
 	print(test_1," -- ", test_2)
 
 func load_environment(scene_name: String, start_marker_name: String):
+	
 	var resource_path_string: String = str("res://environments/",scene_name)
 	var scene_to_instantiate: PackedScene = null
 	for packed_scene: PackedScene in environment_scenes:
@@ -56,23 +60,47 @@ func load_environment(scene_name: String, start_marker_name: String):
 		return
 	if current_environment:
 		current_environment.call_deferred("queue_free")
+	
 	var new_environment: GameEnvironment = scene_to_instantiate.instantiate()
 	
-	new_environment.start_marker_name = start_marker_name
+	# deal with the Environment_01 situation (multiple exits got to the same place)
+	if new_environment.name == "Environment_01":
+		
+		print_debug(environment_01_exit_placeholder_marker_name)
+		
+		if environment_01_exit_placeholder_marker_name != "":
+			new_environment.start_marker_name = environment_01_exit_placeholder_marker_name
+			environment_01_exit_placeholder_marker_name = ""
+		else:
+			new_environment.start_marker_name = start_marker_name
+	else:
+		new_environment.start_marker_name = start_marker_name
 	
+		
 	call_deferred("add_child", new_environment)
 	current_environment = new_environment
 	hud_panel.visible = true
 	
 func start_tutorial_sequence(called_from: String):
-	var tutorial_sequence: TutorialSequenceDeck = tutorial_scene.instantiate()
+	#var tutorial_sequence: TutorialSequenceDeck = tutorial_scene.instantiate()
+	var tutorial_canvas: TutorialCanvas = tutorial_canvas_scene.instantiate()
 	hud_panel.visible = false
 	match called_from:
 		"START":
+			# old:
+			"""
 			var start_menu: StartMenu = get_node("StartMenu")
 			start_menu.call_deferred("queue_free")
 			tutorial_sequence.called_from = tutorial_sequence.enum_called_from.START
 			call_deferred("add_child", tutorial_sequence)
+			"""
+			var start_menu: StartMenu = get_node("StartMenu")
+			start_menu.call_deferred("queue_free")
+			tutorial_canvas.called_from = tutorial_canvas.enum_called_from.START
+			call_deferred("add_child", tutorial_canvas)
+			
+			
+			
 		"ENVIRONMENT":
 			pass
 		"ENCOUNTER":

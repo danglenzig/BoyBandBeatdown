@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://bnc0he5ytku37" path="res://environments/environment_01.tscn" id="3_df7po"]
 [ext_resource type="Script" path="res://ui/hud_panel.gd" id="4_8yxfh"]
 [ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="4_bj6ew"]
-[ext_resource type="PackedScene" uid="uid://c0etkvben6vtp" path="res://ui/tutorial_sequence/tutorial_sequence_deck.tscn" id="5_l0c5h"]
 [ext_resource type="PackedScene" uid="uid://b05i67tp5inti" path="res://environments/environment_02.tscn" id="5_lrfvk"]
+[ext_resource type="PackedScene" uid="uid://bnd2dswtstgvb" path="res://ui/tutorial_sequence/tutorial_canvas.tscn" id="6_ppfua"]
 [ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="8_ahwc8"]
 [ext_resource type="Script" path="res://ui/level_up_alert_node.gd" id="8_n1g8s"]
 [ext_resource type="Texture2D" uid="uid://3gf4gj10fgrw" path="res://ui/assets/flash-light-effect-free-png.png" id="8_rhnxp"]
@@ -71,7 +71,7 @@ shader_parameter/PULSE_full_pulse_cycle = true
 script = ExtResource("1_dohkk")
 start_menu_scene = ExtResource("2_io0c7")
 environment_scenes = Array[PackedScene]([ExtResource("2_k7bvf"), ExtResource("3_df7po"), ExtResource("5_lrfvk")])
-tutorial_scene = ExtResource("5_l0c5h")
+tutorial_canvas_scene = ExtResource("6_ppfua")
 start_scene_name = "environment_00.tscn"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -187,4 +187,5 @@ theme_override_font_sizes/font_size = 51
 text = "LEVEL UP!!!
 "
 
+[connection signal="mouse_entered" from="CanvasLayer/HudPanel/MainMenuButton" to="CanvasLayer/HudPanel" method="_on_main_menu_button_mouse_entered"]
 [connection signal="pressed" from="CanvasLayer/HudPanel/MainMenuButton" to="CanvasLayer/HudPanel" method="_on_main_menu_button_pressed"]

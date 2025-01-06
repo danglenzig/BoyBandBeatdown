@@ -23,6 +23,8 @@ var active_sprite: AnimatedSprite2D = null
 var current_state 	= ""
 var previous_state 	= ""
 
+var my_pos: Vector2
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	deck_tools = SingletonHolder.get_node("DeckTools")
@@ -42,6 +44,8 @@ func _ready():
 	
 	for sprite:AnimatedSprite2D in sprites:
 		sprite.visible = false
+		
+	my_pos = position
 	
 	
 	
@@ -115,6 +119,8 @@ func on_atomic_state_entered(new_state) -> void:
 
 func on_card_clicked() -> void:
 	encounter_events.card_selected.emit(card_uuid)
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.card_select.play()
 	
 func card_face_down(the_bool: bool) ->void:
 	if the_bool:
@@ -128,27 +134,14 @@ func card_face_down(the_bool: bool) ->void:
 		$SuitLabel.visible 		= true
 		$BackSide.visible 		= false
 
-"""	
-func debug_helper() -> void:
-	
-	const PAUSE = 1.5
-	
-	var a_card: Card = Card.new()
-	a_card.make_card("OLDER_BROTHER", 4)
-	add_child(a_card)
-	setup_card(a_card)
-	
-	while true:
-		await get_tree().create_timer(PAUSE).timeout
-		card_sprite_state_chart.send_event("to_attack_event")
-		await get_tree().create_timer(PAUSE).timeout
-		card_sprite_state_chart.send_event("to_attack_event")
-		await get_tree().create_timer(PAUSE).timeout
-		card_sprite_state_chart.send_event("to_dance_event")
-		await get_tree().create_timer(PAUSE*2).timeout
-		card_sprite_state_chart.send_event("to_idle_event")
-		await get_tree().create_timer(PAUSE).timeout
-		card_sprite_state_chart.send_event("to_die_event")
-		await get_tree().create_timer(PAUSE).timeout
-		card_sprite_state_chart.send_event("to_idle_event")
-"""
+
+
+
+func _on_button_mouse_entered():
+	position = Vector2(my_pos.x, my_pos.y - 30)
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.card_hover.play()
+
+
+func _on_button_mouse_exited():
+	position = my_pos

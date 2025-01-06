@@ -55,6 +55,7 @@ position = Vector2(626, 1207)
 [node name="MarcieSprite" parent="NpcHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("6_rig6d")]
 position = Vector2(929, 835)
 z_scaler = NodePath("../../ZScaler")
+player_detect_radius = 150
 
 [node name="PropHolder" type="Node2D" parent="."]
 

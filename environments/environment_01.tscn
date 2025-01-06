@@ -49,17 +49,17 @@ size = Vector2(171, 433)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_21fdk"]
 size = Vector2(75.7794, 30.7749)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tnput"]
-size = Vector2(75.153, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j7b2o"]
+size = Vector2(70.0347, 15.4415)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2sraq"]
-size = Vector2(38, 20)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a85lh"]
+size = Vector2(41.1935, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wnwl5"]
-size = Vector2(34.125, 15.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pc2pr"]
+size = Vector2(34.9677, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1gmgg"]
-size = Vector2(20.3844, 6.73175)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vpugc"]
+size = Vector2(20, 6.91199)
 
 [node name="Environment_01" type="Node2D"]
 script = ExtResource("1_4h4a2")
@@ -103,10 +103,23 @@ position = Vector2(664, 962)
 [node name="EastPlayerStart" type="Marker2D" parent="."]
 position = Vector2(1701, 880)
 
-[node name="WestExitPlaceholderMarker" type="Marker2D" parent="."]
-position = Vector2(712, 688)
+[node name="WestExitPlaceholderMarker01" type="Marker2D" parent="."]
+position = Vector2(317, 738)
+
+[node name="WestExitPlaceholderMarker02" type="Marker2D" parent="."]
+position = Vector2(157, 751)
+
+[node name="WestExitPlaceholderMarker03" type="Marker2D" parent="."]
+position = Vector2(720, 693)
+
+[node name="WestExitPlaceholderMarker04" type="Marker2D" parent="."]
+position = Vector2(808, 680)
+
+[node name="WestExitPlaceholderMarker05" type="Marker2D" parent="."]
+position = Vector2(1132, 648)
 
 [node name="NpcHolder" type="Node2D" parent="."]
+visible = false
 
 [node name="MarcieSprite" parent="NpcHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("5_lb3wf")]
 position = Vector2(1137, 831)
@@ -197,45 +210,75 @@ debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 [node name="ExitTriggerHolder" type="Node2D" parent="."]
 
 [node name="EastExitTrigger" type="Area2D" parent="ExitTriggerHolder"]
+position = Vector2(1847, 870)
 script = ExtResource("7_n6j3s")
 exit_to_scene_name = "environment_00.tscn"
 player_start_name = "StairsPlayerStart"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/EastExitTrigger"]
-position = Vector2(1853.5, 892.5)
 shape = SubResource("RectangleShape2D_e3gjf")
 
-[node name="WestExitTrigger" type="Area2D" parent="ExitTriggerHolder" node_paths=PackedStringArray("exit_placeholder_marker")]
+[node name="WestExitTrigger_01" type="Area2D" parent="ExitTriggerHolder" node_paths=PackedStringArray("exit_placeholder_marker")]
+position = Vector2(290, 699)
 script = ExtResource("7_n6j3s")
 exit_to_scene_name = "environment_02.tscn"
 player_start_name = "SouthPlayerStart"
-exit_placeholder_marker = NodePath("../../WestExitPlaceholderMarker")
+exit_placeholder_marker = NodePath("../../WestExitPlaceholderMarker01")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger"]
-position = Vector2(291.868, 701.128)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger_01"]
 rotation = -0.0855211
 scale = Vector2(0.999999, 0.999999)
 shape = SubResource("RectangleShape2D_21fdk")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger"]
-position = Vector2(148.476, 717.216)
-rotation = -0.0855211
-shape = SubResource("RectangleShape2D_tnput")
+[node name="WestExitTrigger_02" type="Area2D" parent="ExitTriggerHolder" node_paths=PackedStringArray("exit_placeholder_marker")]
+position = Vector2(136, 723)
+script = ExtResource("7_n6j3s")
+exit_to_scene_name = "environment_02.tscn"
+player_start_name = "SouthPlayerStart"
+exit_placeholder_marker = NodePath("../../WestExitPlaceholderMarker02")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger"]
-position = Vector2(706, 669)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger_02"]
+position = Vector2(11.6306, -3.51422)
 rotation = -0.10472
-shape = SubResource("RectangleShape2D_2sraq")
+shape = SubResource("RectangleShape2D_j7b2o")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger"]
-position = Vector2(794, 663)
-rotation = -0.0872665
-shape = SubResource("RectangleShape2D_wnwl5")
+[node name="WestExitTrigger_03" type="Area2D" parent="ExitTriggerHolder" node_paths=PackedStringArray("exit_placeholder_marker")]
+position = Vector2(705, 669)
+script = ExtResource("7_n6j3s")
+exit_to_scene_name = "environment_02.tscn"
+player_start_name = "SouthPlayerStart"
+exit_placeholder_marker = NodePath("../../WestExitPlaceholderMarker03")
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger"]
-position = Vector2(1127.78, 639.302)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger_03"]
 rotation = -0.10472
-shape = SubResource("RectangleShape2D_1gmgg")
+shape = SubResource("RectangleShape2D_a85lh")
+
+[node name="WestExitTrigger_04" type="Area2D" parent="ExitTriggerHolder" node_paths=PackedStringArray("exit_placeholder_marker")]
+position = Vector2(787, 662)
+script = ExtResource("7_n6j3s")
+exit_to_scene_name = "environment_02.tscn"
+player_start_name = "SouthPlayerStart"
+exit_placeholder_marker = NodePath("../../WestExitPlaceholderMarker04")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger_04"]
+position = Vector2(7.44281, -0.782288)
+rotation = -0.10472
+shape = SubResource("RectangleShape2D_pc2pr")
+
+[node name="WestExitTrigger_05" type="Area2D" parent="ExitTriggerHolder" node_paths=PackedStringArray("exit_placeholder_marker")]
+script = ExtResource("7_n6j3s")
+exit_to_scene_name = "environment_02.tscn"
+player_start_name = "SouthPlayerStart"
+exit_placeholder_marker = NodePath("../../WestExitPlaceholderMarker05")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/WestExitTrigger_05"]
+position = Vector2(1127.68, 638.508)
+rotation = -0.10472
+shape = SubResource("RectangleShape2D_vpugc")
 
 [connection signal="body_entered" from="ExitTriggerHolder/EastExitTrigger" to="ExitTriggerHolder/EastExitTrigger" method="_on_body_entered"]
-[connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger" to="ExitTriggerHolder/WestExitTrigger" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_01" to="ExitTriggerHolder/WestExitTrigger_01" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_02" to="ExitTriggerHolder/WestExitTrigger_02" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_03" to="ExitTriggerHolder/WestExitTrigger_03" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_04" to="ExitTriggerHolder/WestExitTrigger_04" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_05" to="ExitTriggerHolder/WestExitTrigger_05" method="_on_body_entered"]

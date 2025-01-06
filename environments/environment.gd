@@ -44,9 +44,7 @@ func _ready():
 	
 	encounter_events.begin_npc_encounter.connect(on_begin_encounter)
 	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+
 	
 func setup_player() -> void:
 	player = misc_tools.player_scene.instantiate()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dlaoxsh4nrl4r"]
+[gd_scene load_steps=18 format=3 uid="uid://dlaoxsh4nrl4r"]
 
 [ext_resource type="Script" path="res://singletons/misc_tools.gd" id="1_ji376"]
 [ext_resource type="PackedScene" uid="uid://cahtc4x8m4wr6" path="res://player/player.tscn" id="2_o61aj"]
@@ -11,6 +11,12 @@
 [ext_resource type="Script" path="res://singletons/game_settings.gd" id="9_jnmea"]
 [ext_resource type="Script" path="res://singletons/encounter_events.gd" id="10_gkav3"]
 [ext_resource type="Script" path="res://audio/footstep_player.gd" id="11_2qhi3"]
+[ext_resource type="Script" path="res://singletons/ui_sound_manager.gd" id="12_xm623"]
+[ext_resource type="AudioStream" uid="uid://c1l4704riw5jy" path="res://audio/assets/ui/GUI_Cancel_7.wav" id="13_es2g3"]
+[ext_resource type="AudioStream" uid="uid://b88pdad0a4lbl" path="res://audio/assets/ui/GUI_Cancel_4.wav" id="13_psm8y"]
+[ext_resource type="Script" path="res://singletons/encounter_sound_manager.gd" id="15_dnmvw"]
+[ext_resource type="AudioStream" uid="uid://b3yleeglgjs41" path="res://audio/assets/ui/GUI_Scroll_Short_11.wav" id="15_eb3nk"]
+[ext_resource type="AudioStream" uid="uid://be50paww2jfnk" path="res://audio/assets/encounter/slap.wav" id="16_0082g"]
 
 [node name="SingletonHolder" type="Node"]
 
@@ -43,3 +49,27 @@ script = ExtResource("10_gkav3")
 
 [node name="FootstepPlayer" type="AudioStreamPlayer" parent="."]
 script = ExtResource("11_2qhi3")
+
+[node name="UiSoundManager" type="Node" parent="."]
+script = ExtResource("12_xm623")
+
+[node name="AudioStreamPlayers" type="Node" parent="UiSoundManager"]
+
+[node name="CardHover" type="AudioStreamPlayer" parent="UiSoundManager/AudioStreamPlayers"]
+stream = ExtResource("13_es2g3")
+bus = &"UISounds"
+
+[node name="CardSelect" type="AudioStreamPlayer" parent="UiSoundManager/AudioStreamPlayers"]
+stream = ExtResource("13_psm8y")
+bus = &"UISounds"
+
+[node name="SlideSound" type="AudioStreamPlayer" parent="UiSoundManager/AudioStreamPlayers"]
+stream = ExtResource("15_eb3nk")
+
+[node name="EncounterSoundManager" type="Node" parent="."]
+script = ExtResource("15_dnmvw")
+
+[node name="AudioStreamPlayers" type="Node" parent="EncounterSoundManager"]
+
+[node name="SlapSound" type="AudioStreamPlayer" parent="EncounterSoundManager/AudioStreamPlayers"]
+stream = ExtResource("16_0082g")

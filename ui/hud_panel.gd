@@ -44,6 +44,8 @@ func update_level_labels():
 	xp_meter_rect.scale.x = displayed_xp
 
 func _on_main_menu_button_pressed():
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.card_select.play()
 	if get_parent().get_parent().name != "Main":
 		return
 	var main: Main = get_parent().get_parent()
@@ -67,3 +69,8 @@ func tween_up_xp_meter():
 	xp_meter_tween = get_tree().create_tween()
 	xp_meter_tween.tween_property(xp_meter_rect, "scale", new_rect_scale, TWEEN_DURATION)
 	xp_meter_tween.finished.connect(func(): on_tween_finished())
+
+
+func _on_main_menu_button_mouse_entered():
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.card_hover.play()

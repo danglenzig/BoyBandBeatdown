@@ -1,0 +1,276 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5esr8tgpc6nq"]
+
+[ext_resource type="Script" path="res://ui/tutorial_sequence/tutorial_sequence_encounter.gd" id="1_d3frd"]
+[ext_resource type="Texture2D" uid="uid://cppecdseuwynr" path="res://encounters/encounter_backgrounds/00.png" id="1_vx0f5"]
+[ext_resource type="FontFile" uid="uid://baihxtltbmli8" path="res://fonts/VIPNAGORGIALLA RG.OTF" id="3_jivc8"]
+[ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="4_m1me6"]
+
+[node name="TutorialSequenceEncounter" type="Node2D"]
+script = ExtResource("1_d3frd")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color(1, 1, 1, 0.156863)
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_vx0f5")
+
+[node name="RootPanel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 1366.0
+offset_bottom = 750.0
+
+[node name="DiagramsPanel" type="Panel" parent="RootPanel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Step0" type="Node2D" parent="RootPanel/DiagramsPanel"]
+
+[node name="Step1" type="Node2D" parent="RootPanel/DiagramsPanel"]
+
+[node name="Step2" type="Node2D" parent="RootPanel/DiagramsPanel"]
+
+[node name="Step3" type="Node2D" parent="RootPanel/DiagramsPanel"]
+
+[node name="Step4" type="Node2D" parent="RootPanel/DiagramsPanel"]
+
+[node name="Step5" type="Node2D" parent="RootPanel/DiagramsPanel"]
+
+[node name="Step6" type="Node2D" parent="RootPanel/DiagramsPanel"]
+
+[node name="Step7" type="Node2D" parent="RootPanel/DiagramsPanel"]
+
+[node name="CaptionsPanel" type="Panel" parent="RootPanel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -683.0
+offset_top = -103.0
+offset_right = 683.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Step0" type="Label" parent="RootPanel/CaptionsPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_jivc8")
+theme_override_font_sizes/font_size = 20
+text = "Starting an encounter initiates a one-on-one card match with your opponent"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Step1" type="Label" parent="RootPanel/CaptionsPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_jivc8")
+theme_override_font_sizes/font_size = 20
+text = "You are each dealt a hand of FIVE cards"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Step2" type="Label" parent="RootPanel/CaptionsPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_jivc8")
+theme_override_font_sizes/font_size = 20
+text = "Select which card you want to play by clicking on it. It will appear face-down in the play area."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Step3" type="Label" parent="RootPanel/CaptionsPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_jivc8")
+theme_override_font_sizes/font_size = 20
+text = "Your opponent will then select and play a card from their hand."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Step4" type="Label" parent="RootPanel/CaptionsPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_jivc8")
+theme_override_font_sizes/font_size = 20
+text = "Both cards are revealed at the same time"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Step5" type="Label" parent="RootPanel/CaptionsPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_jivc8")
+theme_override_font_sizes/font_size = 20
+text = "You will either WIN, LOSE, or TIE this round, according to the game's rules (see next tab, 'Rules')"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Step6" type="Label" parent="RootPanel/CaptionsPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_jivc8")
+theme_override_font_sizes/font_size = 20
+text = "If there's no match winner yet, the card you played is discarded, a new one is added from your deck to your hand, and the match continues with another round."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Step7" type="Label" parent="RootPanel/CaptionsPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_jivc8")
+theme_override_font_sizes/font_size = 20
+text = "The first one to win THREE rounds wins the match."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ContinueButton" type="Button" parent="RootPanel"]
+layout_mode = 0
+offset_left = 1210.0
+offset_top = 677.0
+offset_right = 1341.0
+offset_bottom = 710.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("4_m1me6")
+theme_override_font_sizes/font_size = 16
+text = "Continue"
+
+[node name="NextTabButton" type="Button" parent="RootPanel"]
+layout_mode = 0
+offset_left = 1210.0
+offset_top = 677.0
+offset_right = 1341.0
+offset_bottom = 710.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("4_m1me6")
+theme_override_font_sizes/font_size = 16
+text = "Encounters
+->"
+
+[node name="Panel" type="Panel" parent="RootPanel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="mouse_entered" from="RootPanel/ContinueButton" to="." method="_on_continue_button_mouse_entered"]
+[connection signal="pressed" from="RootPanel/ContinueButton" to="." method="_on_continue_button_pressed"]

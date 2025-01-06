@@ -76,6 +76,8 @@ func begin_encounter(opponent_name: String, opponent_power: int, opponent_play_s
 	$MatchManager.start_match(player_power, opponent_power, opponent_play_style)
 	
 func display_cards_in_hand(cards: Array[Card])->void:
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	
 	
 	var hand_panel: Panel 	= $CanvasLayer/HandPanel
 	var card_holder: Node2D = $CanvasLayer/HandPanel/CardHolder
@@ -90,6 +92,7 @@ func display_cards_in_hand(cards: Array[Card])->void:
 		this_card_sprite.scale = CARDS_IN_HAND_SCALE
 		this_card_sprite.position = this_marker.position
 		card_holder.add_child(this_card_sprite)
+		ui_sounds.slide_sound.play()
 		this_card_sprite.setup_card(this_card_data)
 		this_card_sprite.card_face_down(false)
 		await get_tree().create_timer(0.1).timeout

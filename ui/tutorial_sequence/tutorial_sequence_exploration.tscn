@@ -1,0 +1,165 @@
+[gd_scene load_steps=10 format=3 uid="uid://c17sym1qo6kdr"]
+
+[ext_resource type="Script" path="res://ui/tutorial_sequence/tutorial_sequence_exploration.gd" id="1_ud4kv"]
+[ext_resource type="Texture2D" uid="uid://cppecdseuwynr" path="res://encounters/encounter_backgrounds/00.png" id="2_3abnl"]
+[ext_resource type="FontFile" uid="uid://baihxtltbmli8" path="res://fonts/VIPNAGORGIALLA RG.OTF" id="3_ptkni"]
+[ext_resource type="Texture2D" uid="uid://cibtjuyxs30dq" path="res://ui/tutorial_sequence/walk_example.png" id="4_bbddu"]
+[ext_resource type="Texture2D" uid="uid://1pmd51sperqo" path="res://ui/tutorial_sequence/WASD.png" id="5_61iew"]
+[ext_resource type="Texture2D" uid="uid://c3iu3qsgd1aac" path="res://ui/tutorial_sequence/_approach_example.png" id="6_04ndd"]
+[ext_resource type="Texture2D" uid="uid://dp0kmbnwxppig" path="res://ui/tutorial_sequence/_challenge_example.png" id="7_t4jod"]
+[ext_resource type="Texture2D" uid="uid://ccpsfcskisi4d" path="res://ui/tutorial_sequence/left_click.png" id="8_fduvo"]
+[ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="9_ppyny"]
+
+[node name="TutorialSequenceExploration" type="Node2D"]
+script = ExtResource("1_ud4kv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color(1, 1, 1, 0.156863)
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_3abnl")
+
+[node name="RootPanel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 1366.0
+offset_bottom = 750.0
+
+[node name="CaptionsPanel" type="Panel" parent="RootPanel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -683.0
+offset_top = -103.0
+offset_right = 683.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Step0" type="Label" parent="RootPanel/CaptionsPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_ptkni")
+theme_override_font_sizes/font_size = 20
+text = "Use WASD to move around and explore your new school"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Step1" type="Label" parent="RootPanel/CaptionsPanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -517.5
+offset_right = 516.5
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_ptkni")
+theme_override_font_sizes/font_size = 20
+text = "Approach an opponent and left-click on them to start a match"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="DiagramStep0" type="Node2D" parent="RootPanel"]
+visible = false
+
+[node name="BackgroundSprite" type="Sprite2D" parent="RootPanel/DiagramStep0"]
+position = Vector2(683, 325)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_bbddu")
+
+[node name="WASDPanel" type="Panel" parent="RootPanel/DiagramStep0"]
+self_modulate = Color(0, 0, 1, 1)
+offset_left = 708.0
+offset_top = 397.0
+offset_right = 824.0
+offset_bottom = 479.0
+
+[node name="Sprite2D" type="Sprite2D" parent="RootPanel/DiagramStep0/WASDPanel"]
+position = Vector2(57, 42)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_61iew")
+
+[node name="DiagramStep1" type="Node2D" parent="RootPanel"]
+visible = false
+
+[node name="ApproachSprite" type="Sprite2D" parent="RootPanel/DiagramStep1"]
+position = Vector2(683, 325)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_04ndd")
+
+[node name="ChallengeSprite" type="Sprite2D" parent="RootPanel/DiagramStep1"]
+visible = false
+position = Vector2(683, 325)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_t4jod")
+
+[node name="LeftClickPanel" type="Panel" parent="RootPanel/DiagramStep1/ChallengeSprite"]
+self_modulate = Color(0, 0, 1, 1)
+offset_left = 192.0
+offset_top = -112.0
+offset_right = 326.0
+offset_bottom = 66.0
+
+[node name="LeftClickSprite" type="Sprite2D" parent="RootPanel/DiagramStep1/ChallengeSprite/LeftClickPanel"]
+position = Vector2(68, 90)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("8_fduvo")
+
+[node name="ContinueButton" type="Button" parent="RootPanel"]
+visible = false
+layout_mode = 0
+offset_left = 1210.0
+offset_top = 677.0
+offset_right = 1341.0
+offset_bottom = 710.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("9_ppyny")
+theme_override_font_sizes/font_size = 16
+text = "Continue"
+
+[node name="NextTabButton" type="Button" parent="RootPanel"]
+visible = false
+layout_mode = 0
+offset_left = 1210.0
+offset_top = 677.0
+offset_right = 1341.0
+offset_bottom = 710.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("9_ppyny")
+theme_override_font_sizes/font_size = 16
+text = "Encounters
+->"
+
+[connection signal="mouse_entered" from="RootPanel/ContinueButton" to="." method="play_hover_sound"]
+[connection signal="pressed" from="RootPanel/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="mouse_entered" from="RootPanel/NextTabButton" to="." method="play_hover_sound"]
+[connection signal="pressed" from="RootPanel/NextTabButton" to="." method="_on_next_tab_button_pressed"]

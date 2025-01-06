@@ -1927,4 +1927,6 @@ offset_bottom = 545.0
 [connection signal="state_entered" from="StateChart/Root/Dance" to="." method="on_atomic_state_entered" binds= ["DANCE"]]
 [connection signal="state_entered" from="StateChart/Root/Attack" to="." method="on_atomic_state_entered" binds= ["ATTACK"]]
 [connection signal="state_entered" from="StateChart/Root/Die" to="." method="on_atomic_state_entered" binds= ["DIE"]]
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
 [connection signal="pressed" from="Button" to="." method="on_card_clicked"]

@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnd2dswtstgvb"]
+
+[ext_resource type="Script" path="res://ui/tutorial_sequence/tutorial_canvas.gd" id="1_ughcx"]
+[ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="1_uq0go"]
+[ext_resource type="PackedScene" uid="uid://dood73hahpch1" path="res://ui/help_tabs.tscn" id="3_gmcml"]
+
+[node name="TutorialCanvas" type="Node2D"]
+script = ExtResource("1_ughcx")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HelpTabs" parent="CanvasLayer" instance=ExtResource("3_gmcml")]
+
+[node name="SkipButton" type="Button" parent="CanvasLayer"]
+offset_left = 1242.0
+offset_top = 63.0
+offset_right = 1335.0
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("1_uq0go")
+theme_override_font_sizes/font_size = 12
+text = "Exit
+Help"
+
+[connection signal="mouse_entered" from="CanvasLayer/SkipButton" to="." method="_on_skip_button_mouse_entered"]
+[connection signal="pressed" from="CanvasLayer/SkipButton" to="." method="_on_skip_button_pressed"]

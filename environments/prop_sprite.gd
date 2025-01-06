@@ -7,8 +7,3 @@ var sprite: Sprite2D
 func _ready():
 	sprite = $Sprite2D
 	z_index = int(global_position.y / 10)
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass

@@ -155,7 +155,11 @@ text = "Quit
 "
 flat = true
 
+[connection signal="mouse_entered" from="CanvasLayer/Panel/StartButtonPanel/StartButton" to="." method="play_card_hover_sound"]
 [connection signal="pressed" from="CanvasLayer/Panel/StartButtonPanel/StartButton" to="." method="on_menu_button_pressed" binds= ["START"]]
+[connection signal="mouse_entered" from="CanvasLayer/Panel/HowToButtonPanel/HowToButton" to="." method="play_card_hover_sound"]
 [connection signal="pressed" from="CanvasLayer/Panel/HowToButtonPanel/HowToButton" to="." method="on_menu_button_pressed" binds= ["HOWTO"]]
+[connection signal="mouse_entered" from="CanvasLayer/Panel/AboutButtonPanel/AboutButton" to="." method="play_card_hover_sound"]
 [connection signal="pressed" from="CanvasLayer/Panel/AboutButtonPanel/AboutButton" to="." method="on_menu_button_pressed" binds= ["ABOUT"]]
+[connection signal="mouse_entered" from="CanvasLayer/Panel/QuitButtonPanel/QuitButton" to="." method="play_card_hover_sound"]
 [connection signal="pressed" from="CanvasLayer/Panel/QuitButtonPanel/QuitButton" to="." method="on_menu_button_pressed" binds= ["QUIT"]]

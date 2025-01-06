@@ -34,5 +34,8 @@ func _process(delta):
 				return
 			attack_signal_sent = true
 			encounter_events.encounter_sprite_attack_anim_impact.emit(is_player)
+			var encounter_sounds: EncounterSoundManager = SingletonHolder.get_node("EncounterSoundManager")
+			encounter_sounds.slap_sound.play()
+			
 		if frame == last_frame:
 			play("idle")

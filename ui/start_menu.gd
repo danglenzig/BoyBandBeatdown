@@ -20,6 +20,8 @@ var quit_button_armed = 	false
 
 var main: Main = null
 
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
@@ -45,24 +47,34 @@ func _ready():
 	do_quit_button_tween()
 	
 func do_title_tween():
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.slide_sound.play()
 	title_tween = get_tree().create_tween()
 	title_tween.tween_property(title_label, "position", Vector2.ZERO, 0.25).set_ease(Tween.EASE_IN)
 	
 func do_start_button_tween():
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.slide_sound.play()
 	start_button_tween = get_tree().create_tween()
 	start_button_tween.tween_property(start_button_panel, "position", Vector2(0, start_button_panel.position.y), 0.25).set_ease(Tween.EASE_IN)
 	start_button_tween.finished.connect(func(): on_tween_finished("START"))
 	
 func do_howto_button_tween():
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.slide_sound.play()
 	howto_button_tween = get_tree().create_tween()
 	howto_button_tween.tween_property(howto_button_panel, "position", Vector2(0, howto_button_panel.position.y), 0.25).set_ease(Tween.EASE_IN)
 	howto_button_tween.finished.connect(func(): on_tween_finished("HOWTO"))
 	
 func do_about_button_tween():
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.slide_sound.play()
 	about_button_tween = get_tree().create_tween()
 	about_button_tween.tween_property(about_button_panel, "position", Vector2(0, about_button_panel.position.y), 0.25).set_ease(Tween.EASE_IN)
 	about_button_tween.finished.connect(func(): on_tween_finished("ABOUT"))
 func do_quit_button_tween():
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.slide_sound.play()
 	quit_button_tween = get_tree().create_tween()
 	quit_button_tween.tween_property(quit_button_panel, "position", Vector2(0, quit_button_panel.position.y), 0.25).set_ease(Tween.EASE_IN)
 	quit_button_tween.finished.connect(func(): on_tween_finished("QUIT"))
@@ -88,22 +100,31 @@ func play_tutorial_from_start_menu():
 	if not main:
 		return
 	main.howto_button_pressed.emit("START")
+	
+func play_card_hover_sound():
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
+	ui_sounds.card_hover.play()
 
 func on_menu_button_pressed(button_string: String):
+	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
 	match button_string:
 		"START":
 			if not start_button_armed:
 				return
+			ui_sounds.card_select.play()
 			start_new_game()
 		"HOWTO":
 			if not howto_button_armed:
 				return
+			ui_sounds.card_select.play()
 			play_tutorial_from_start_menu()
 		"ABOUT":
 			if not about_button_armed:
 				return
+			ui_sounds.card_select.play()
 			print("ABOUT")
 		"QUIT":
 			if not quit_button_armed:
 				return
+			ui_sounds.card_select.play()
 			get_tree().quit()

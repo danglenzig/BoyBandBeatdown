@@ -84,7 +84,7 @@ func on_begin_encounter(npc_name: String, npc_display_name: String, npc_power: i
 	new_encounter.begin_encounter(npc_name,npc_power,npc_play_style,environment_background_filename,encounter_background_filename)
 	
 func on_end_encounter():
-	pass
+	#pass
 	# normalize everything we changed in on_begin_encounter()
 	player.player_state_chart.send_event("to_idle_event")
 	for npc_sprite: NpcSprite in $NpcHolder.get_children():
@@ -94,6 +94,9 @@ func on_end_encounter():
 	game_camera.enabled = true
 	hud_panel.visible = true
 	
+	var music_manager: MusicManager = SingletonHolder.get_node("MusicManager")
+	if music_manager.current_music != music_manager.overworld_theme:
+		music_manager.play_music(music_manager.overworld_theme)
 	
 	hud_panel.tween_up_xp_meter()
 	

@@ -70,6 +70,10 @@ func begin_encounter(opponent_name: String, opponent_power: int, opponent_play_s
 	spawn_player_sprite()
 	spawn_opponent_sprite(opponent_name)
 	
+	var music_manager: MusicManager = SingletonHolder.get_node("MusicManager")
+	if music_manager.current_music != music_manager.encounter_theme:
+		music_manager.play_music(music_manager.encounter_theme)
+	
 	
 	var progression_manager: ProgressionManager = SingletonHolder.get_node("ProgressionManager")
 	var player_power = progression_manager.player_power

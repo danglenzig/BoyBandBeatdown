@@ -1,5 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://dlaoxsh4nrl4r"]
+[gd_scene load_steps=21 format=3 uid="uid://dlaoxsh4nrl4r"]
 
+[ext_resource type="Script" path="res://singletons/singleton_holder.gd" id="1_4ae2a"]
 [ext_resource type="Script" path="res://singletons/misc_tools.gd" id="1_ji376"]
 [ext_resource type="PackedScene" uid="uid://cahtc4x8m4wr6" path="res://player/player.tscn" id="2_o61aj"]
 [ext_resource type="Script" path="res://singletons/deck_tools.gd" id="2_ups0p"]
@@ -17,8 +18,11 @@
 [ext_resource type="Script" path="res://singletons/encounter_sound_manager.gd" id="15_dnmvw"]
 [ext_resource type="AudioStream" uid="uid://b3yleeglgjs41" path="res://audio/assets/ui/GUI_Scroll_Short_11.wav" id="15_eb3nk"]
 [ext_resource type="AudioStream" uid="uid://be50paww2jfnk" path="res://audio/assets/encounter/slap.wav" id="16_0082g"]
+[ext_resource type="Script" path="res://singletons/music_manager.gd" id="19_2q3lk"]
+[ext_resource type="AudioStream" uid="uid://cxkdf063okeur" path="res://audio/assets/music/bbb overworld.mp3" id="20_r065e"]
 
 [node name="SingletonHolder" type="Node"]
+script = ExtResource("1_4ae2a")
 
 [node name="MiscTools" type="Node" parent="."]
 script = ExtResource("1_ji376")
@@ -73,3 +77,18 @@ script = ExtResource("15_dnmvw")
 
 [node name="SlapSound" type="AudioStreamPlayer" parent="EncounterSoundManager/AudioStreamPlayers"]
 stream = ExtResource("16_0082g")
+
+[node name="MusicManager" type="Node" parent="."]
+script = ExtResource("19_2q3lk")
+
+[node name="AudioStreamPlayers" type="Node" parent="MusicManager"]
+
+[node name="overworld_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
+stream = ExtResource("20_r065e")
+bus = &"Music"
+
+[node name="encounter_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
+stream = ExtResource("20_r065e")
+
+[node name="start_menu_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
+stream = ExtResource("20_r065e")

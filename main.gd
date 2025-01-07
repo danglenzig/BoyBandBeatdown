@@ -81,6 +81,10 @@ func load_environment(scene_name: String, start_marker_name: String):
 	current_environment = new_environment
 	hud_panel.visible = true
 	
+	var music_manager: MusicManager = SingletonHolder.get_node("MusicManager")
+	if music_manager.current_music != music_manager.overworld_theme:
+		music_manager.play_music(music_manager.overworld_theme)
+	
 func start_tutorial_sequence(called_from: String):
 	#var tutorial_sequence: TutorialSequenceDeck = tutorial_scene.instantiate()
 	var tutorial_canvas: TutorialCanvas = tutorial_canvas_scene.instantiate()

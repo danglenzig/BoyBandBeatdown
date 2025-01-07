@@ -1,0 +1,40 @@
+[gd_scene load_steps=12 format=3 uid="uid://bds4rp4ak34so"]
+
+[ext_resource type="Texture2D" uid="uid://cj1560pswtnej" path="res://fireball/textures/T_1_pixel.jpg" id="1_1bux8"]
+[ext_resource type="Shader" uid="uid://ccrqorngec4b3" path="res://fireball/fireball.tres" id="1_g8dtn"]
+[ext_resource type="Texture2D" uid="uid://cvdg2m4beufy8" path="res://fireball/textures/T_VFX_Noise_12.PNG" id="2_epwlp"]
+[ext_resource type="Texture2D" uid="uid://1yuwu5wfmx81" path="res://fireball/textures/T_Gradient_circle22.jpg" id="3_kk0n6"]
+
+[sub_resource type="Gradient" id="Gradient_jko52"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_82l1a"]
+gradient = SubResource("Gradient_jko52")
+
+[sub_resource type="Gradient" id="Gradient_igbbj"]
+offsets = PackedFloat32Array(0.0891365, 0.32312, 1)
+colors = PackedColorArray(1, 0.568627, 0, 0, 1, 0.698039, 0, 1, 1, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ol05m"]
+gradient = SubResource("Gradient_igbbj")
+
+[sub_resource type="Gradient" id="Gradient_qbx45"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_d182v"]
+gradient = SubResource("Gradient_qbx45")
+fill_from = Vector2(1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cgwoj"]
+shader = ExtResource("1_g8dtn")
+shader_parameter/Scale = Vector2(5, 1)
+shader_parameter/Speed = Vector2(0, 2)
+shader_parameter/Texture_Main = ExtResource("2_epwlp")
+shader_parameter/Texture_Add = SubResource("GradientTexture2D_82l1a")
+shader_parameter/Texture_Multiply = ExtResource("3_kk0n6")
+shader_parameter/Texture_Subtract = SubResource("GradientTexture2D_d182v")
+shader_parameter/Texture_Color = SubResource("GradientTexture1D_ol05m")
+
+[node name="Fireball" type="Sprite2D"]
+material = SubResource("ShaderMaterial_cgwoj")
+rotation = -1.5708
+scale = Vector2(666, 666)
+texture = ExtResource("1_1bux8")

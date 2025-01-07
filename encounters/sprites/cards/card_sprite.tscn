@@ -1,7 +1,8 @@
-[gd_scene load_steps=313 format=3 uid="uid://cte5fobhra3n3"]
+[gd_scene load_steps=314 format=3 uid="uid://cte5fobhra3n3"]
 
 [ext_resource type="Script" path="res://encounters/sprites/cards/card_sprite.gd" id="1_o7xgx"]
 [ext_resource type="Texture2D" uid="uid://434cpa8ycimd" path="res://encounters/sprites/cards/Screenshot 2024-12-27 100031.png" id="2_7twdo"]
+[ext_resource type="PackedScene" uid="uid://bds4rp4ak34so" path="res://fireball/fireball.tscn" id="2_apq2y"]
 [ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="3_dm4al"]
 [ext_resource type="Texture2D" uid="uid://bjiaeon2of5sn" path="res://encounters/sprites/bad_boy/bad_boy_attack_31.png" id="4_25bn4"]
 [ext_resource type="Texture2D" uid="uid://cn203roligwxs" path="res://encounters/sprites/bad_boy/bad_boy_idle_00.png" id="4_aap77"]
@@ -440,7 +441,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack",
-"speed": 15.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -720,7 +721,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack",
-"speed": 15.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1048,7 +1049,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack",
-"speed": 15.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1343,7 +1344,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack",
-"speed": 15.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1632,7 +1633,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack",
-"speed": 17.0
+"speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -1762,6 +1763,9 @@ animations = [{
 position = Vector2(0, -122)
 scale = Vector2(0.2, 0.2)
 script = ExtResource("1_o7xgx")
+fireball_scene = ExtResource("2_apq2y")
+attack_impact_frame = 1
+fireball_tween_duration = 0.2
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(0, -202)
@@ -1774,41 +1778,65 @@ material = SubResource("ShaderMaterial_gq0bb")
 position = Vector2(0, -325)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_70kts")
-animation = &"idle"
+animation = &"attack"
 autoplay = "idle"
+frame = 13
+frame_progress = 1.0
+
+[node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/BadBoySprite"]
+position = Vector2(210, -26)
 
 [node name="HeartthrobSprite" type="AnimatedSprite2D" parent="SpriteHolder"]
 material = SubResource("ShaderMaterial_jh27w")
 position = Vector2(-30, -220)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_lrcwh")
-animation = &"idle"
+animation = &"attack"
 autoplay = "idle"
-frame_progress = 0.660686
+frame = 13
+frame_progress = 1.0
+
+[node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/HeartthrobSprite"]
+position = Vector2(220, -116)
 
 [node name="CuteOneSprite" type="AnimatedSprite2D" parent="SpriteHolder"]
 material = SubResource("ShaderMaterial_co05w")
 position = Vector2(0, -250)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_cox0k")
-animation = &"idle"
+animation = &"attack"
 autoplay = "idle"
+frame = 14
+frame_progress = 1.0
+
+[node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/CuteOneSprite"]
+position = Vector2(200, -74)
 
 [node name="ShyOneSprite" type="AnimatedSprite2D" parent="SpriteHolder"]
 material = SubResource("ShaderMaterial_d0wd3")
 position = Vector2(0, -320)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_ph2q0")
-animation = &"die"
+animation = &"attack"
 autoplay = "idle"
+frame = 15
+frame_progress = 1.0
+
+[node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/ShyOneSprite"]
+position = Vector2(202, -64)
 
 [node name="OlderBrotherSprite" type="AnimatedSprite2D" parent="SpriteHolder"]
 material = SubResource("ShaderMaterial_4s0xf")
 position = Vector2(0, -300)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_6kyhv")
-animation = &"idle"
+animation = &"attack"
 autoplay = "idle"
+frame = 13
+frame_progress = 1.0
+
+[node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/OlderBrotherSprite"]
+position = Vector2(194, -44)
 
 [node name="RankLabel" type="Label" parent="."]
 offset_left = -510.0

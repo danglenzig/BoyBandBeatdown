@@ -23,6 +23,13 @@ var active_sprite: AnimatedSprite2D = null
 var current_state 	= ""
 var previous_state 	= ""
 
+@export var fireball_scene: PackedScene
+@export var attack_impact_frame: int = 13
+@export var fireball_move_x: float = 300
+@export var fireball_tween_duration: float = 0.5
+var fireball_tween
+var fireball_launched = false
+
 var my_pos: Vector2
 
 # Called when the node enters the scene tree for the first time.
@@ -57,12 +64,49 @@ func _process(delta):
 		"DANCE":
 			pass
 		"ATTACK":
+			
+			# if the attacking sprite is the opponent, then flip_h will be true
+			
 			var last_frame = active_sprite.sprite_frames.get_frame_count("attack") - 1
+			if active_sprite.frame == attack_impact_frame:
+				if not fireball_launched:
+					fireball_launched = true
+					launch_fireball()
 			if active_sprite.frame == last_frame:
 				card_sprite_state_chart.send_event("to_dance_event")
 		"DIE":
 			pass
 
+func launch_fireball():
+	var fly_distance = fireball_move_x
+	
+	var fly_left = false
+	if active_sprite.flip_h:
+		fly_left = true
+	
+	var new_fireball: Sprite2D = fireball_scene.instantiate()
+	
+	if fly_left:
+		new_fireball.rotation *= -1
+		fly_distance *= -1
+	
+		
+	var fireball_source_marker: Marker2D = active_sprite.get_node("FireballSourceMarker")
+	
+	new_fireball.z_index = z_index + 1
+	active_sprite.call_deferred("add_child", new_fireball)
+	
+	new_fireball.position = active_sprite.get_node("FireballSourceMarker").position
+	if fly_left:
+		new_fireball.position.x = -new_fireball.position.x
+		
+	var fireball_target_pos = Vector2(new_fireball.position.x + fly_distance, new_fireball.position.y)
+	fireball_tween = get_tree().create_tween()
+	fireball_tween.tween_property(new_fireball, "position", fireball_target_pos, fireball_tween_duration).set_ease(Tween.EASE_IN)
+	fireball_tween.finished.connect(func(): on_fireball_tween_finished(new_fireball))
+
+func on_fireball_tween_finished(new_fireball: Sprite2D):
+	new_fireball.call_deferred("queue_free")
 
 func activate_sprite(suit_name) -> void :
 	if not suit_name in deck_tools.suits.keys():

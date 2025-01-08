@@ -1809,7 +1809,8 @@ scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_70kts")
 animation = &"dance"
 autoplay = "idle"
-frame_progress = 0.963325
+frame = 36
+frame_progress = 0.00665096
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/BadBoySprite"]
 position = Vector2(210, -26)

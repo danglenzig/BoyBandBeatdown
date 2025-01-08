@@ -33,10 +33,9 @@ func _ready():
 	howto_button_panel 	= $CanvasLayer/Panel/HowToButtonPanel
 	about_button_panel 	= $CanvasLayer/Panel/AboutButtonPanel
 	quit_button_panel	= $CanvasLayer/Panel/QuitButtonPanel
-	
+
 	var music_manager: MusicManager = SingletonHolder.get_node("MusicManager")
-	if music_manager.current_music != music_manager.start_menu_theme:
-		music_manager.play_music(music_manager.start_menu_theme)
+	music_manager.play_music("StartMenuMusic")
 	
 	do_title_tween()
 	await  get_tree().create_timer(0.25).timeout

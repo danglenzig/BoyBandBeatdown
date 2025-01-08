@@ -20,6 +20,7 @@ camera_right_x = 820
 encounter_scene = ExtResource("2_v0oil")
 environment_background_filename = "env_03.png"
 encounter_background_filename = "00.png"
+is_indoor = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0

@@ -80,10 +80,16 @@ func load_environment(scene_name: String, start_marker_name: String):
 	call_deferred("add_child", new_environment)
 	current_environment = new_environment
 	hud_panel.visible = true
-	
+	"""
 	var music_manager: MusicManager = SingletonHolder.get_node("MusicManager")
 	if music_manager.current_music != music_manager.overworld_theme:
 		music_manager.play_music(music_manager.overworld_theme)
+	"""
+	var music_manager: MusicManager = SingletonHolder.get_node("MusicManager")
+	if new_environment.is_indoor:
+		music_manager.play_music("IndoorMusic")
+	else :
+		music_manager.play_music("OutdoorMusic")
 	
 func start_tutorial_sequence(called_from: String):
 	#var tutorial_sequence: TutorialSequenceDeck = tutorial_scene.instantiate()

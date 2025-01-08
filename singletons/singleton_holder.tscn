@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dlaoxsh4nrl4r"]
+[gd_scene load_steps=22 format=3 uid="uid://dlaoxsh4nrl4r"]
 
 [ext_resource type="Script" path="res://singletons/singleton_holder.gd" id="1_4ae2a"]
 [ext_resource type="Script" path="res://singletons/misc_tools.gd" id="1_ji376"]
@@ -20,6 +20,7 @@
 [ext_resource type="AudioStream" uid="uid://be50paww2jfnk" path="res://audio/assets/encounter/slap.wav" id="16_0082g"]
 [ext_resource type="Script" path="res://singletons/music_manager.gd" id="19_2q3lk"]
 [ext_resource type="AudioStream" uid="uid://cxkdf063okeur" path="res://audio/assets/music/bbb overworld.mp3" id="20_r065e"]
+[ext_resource type="Script" path="res://singletons/cross_fader.gd" id="21_ju0ja"]
 
 [node name="SingletonHolder" type="Node"]
 script = ExtResource("1_4ae2a")
@@ -83,12 +84,21 @@ script = ExtResource("19_2q3lk")
 
 [node name="AudioStreamPlayers" type="Node" parent="MusicManager"]
 
-[node name="overworld_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
+[node name="overworld_outdoor_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
 stream = ExtResource("20_r065e")
-bus = &"Music"
+bus = &"OutdoorMusic"
+
+[node name="overworld_indoor_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
+stream = ExtResource("20_r065e")
+bus = &"IndoorMusic"
 
 [node name="encounter_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
 stream = ExtResource("20_r065e")
+bus = &"BattleMusic"
 
 [node name="start_menu_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
 stream = ExtResource("20_r065e")
+bus = &"StartMenuMusic"
+
+[node name="CrossFader" type="Node" parent="MusicManager"]
+script = ExtResource("21_ju0ja")

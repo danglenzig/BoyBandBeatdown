@@ -15,6 +15,8 @@ var player: Player 			= null
 @export var environment_background_filename: String	= ""
 @export var encounter_background_filename: String 	= ""
 
+@export var is_indoor = false
+
 #var start_marker: Marker2D  = null
 var start_marker_name: String = ""
 
@@ -93,11 +95,17 @@ func on_end_encounter():
 		prop.visible = true
 	game_camera.enabled = true
 	hud_panel.visible = true
-	
+	"""
 	var music_manager: MusicManager = SingletonHolder.get_node("MusicManager")
 	if music_manager.current_music != music_manager.overworld_theme:
 		music_manager.play_music(music_manager.overworld_theme)
-	
+	"""
+	var music_manager: MusicManager = SingletonHolder.get_node("MusicManager")
+	if is_indoor:
+		music_manager.play_music("IndoorMusic")
+	else:
+		music_manager.play_music("OutdoorMusic")
+		
 	hud_panel.tween_up_xp_meter()
 	
 	# check if the player has leveled up

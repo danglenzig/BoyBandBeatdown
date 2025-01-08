@@ -70,6 +70,7 @@ position = Vector2(294, 272)
 position = Vector2(661, 272)
 
 [node name="RoundResultPanel" type="Panel" parent="CanvasLayer"]
+z_index = 1
 offset_right = 1893.0
 offset_bottom = 1072.0
 

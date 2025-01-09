@@ -24,7 +24,7 @@ const decide_winner_delay 			= 1.0
 const opponent_turn_delay 			= 1.0
 const reveal_cards_delay 			= 1.25
 const play_battle_animations_delay 	= 0.1
-const display_results_delay 		= 2.0
+const display_results_delay 		= 3.5
 const end_match_delay 				= 1.0
 
 

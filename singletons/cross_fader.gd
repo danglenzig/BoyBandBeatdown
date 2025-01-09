@@ -40,7 +40,7 @@ var is_tweening: bool 				= false
 	set(value):
 		AudioServer.set_bus_volume_db(start_menu_index, value)
 
-const FADE_IN_MODIFIER 			= 0.075
+const FADE_IN_MODIFIER 			= .2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -67,11 +67,11 @@ func fade_to_indoor_music(indoor_tween: Tween, outdoor_tween: Tween, battle_twee
 	current_start_menu_tween 	= start_menu_tween
 	
 	# fade in...
-	indoor_tween.tween_property(self, "indoor_volume", indoor_music_db, fade_duration * FADE_IN_MODIFIER)
+	indoor_tween.tween_property(self, "indoor_volume", indoor_music_db, fade_duration * FADE_IN_MODIFIER).set_trans(Tween.TRANS_QUINT).set_ease(Tween.EASE_OUT)
 	# fade out...
-	outdoor_tween.tween_property(self, "outdoor_volume",off_db, fade_duration)
-	battle_tween.tween_property(self, "battle_volume", off_db, fade_duration)
-	start_menu_tween.tween_property(self, "start_menu_volume", off_db, fade_duration)
+	outdoor_tween.tween_property(self, "outdoor_volume",off_db, fade_duration).set_ease(Tween.EASE_OUT)
+	battle_tween.tween_property(self, "battle_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
+	start_menu_tween.tween_property(self, "start_menu_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
 	# clean up
 	start_menu_tween.tween_callback(on_tween_complete)
 	
@@ -82,11 +82,11 @@ func fade_to_outdoor_music(indoor_tween: Tween, outdoor_tween: Tween, battle_twe
 	current_start_menu_tween 	= start_menu_tween
 	
 	# fade in...
-	outdoor_tween.tween_property(self, "outdoor_volume", outdoor_music_db, fade_duration * FADE_IN_MODIFIER)
+	outdoor_tween.tween_property(self, "outdoor_volume", outdoor_music_db, fade_duration * FADE_IN_MODIFIER).set_trans(Tween.TRANS_QUINT).set_ease(Tween.EASE_OUT)
 	# fade out...
-	indoor_tween.tween_property(self, "indoor_volume", off_db, fade_duration)
-	battle_tween.tween_property(self, "battle_volume", off_db, fade_duration)
-	start_menu_tween.tween_property(self, "start_menu_volume", off_db, fade_duration)
+	indoor_tween.tween_property(self, "indoor_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
+	battle_tween.tween_property(self, "battle_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
+	start_menu_tween.tween_property(self, "start_menu_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
 	# clean up
 	start_menu_tween.tween_callback(on_tween_complete)
 	
@@ -97,11 +97,11 @@ func fade_to_battle_music(indoor_tween: Tween, outdoor_tween: Tween, battle_twee
 	current_start_menu_tween 	= start_menu_tween
 	
 	# fade in...
-	battle_tween.tween_property(self, "battle_volume", battle_music_db, fade_duration * FADE_IN_MODIFIER)
+	battle_tween.tween_property(self, "battle_volume", battle_music_db, fade_duration * FADE_IN_MODIFIER).set_trans(Tween.TRANS_QUINT).set_ease(Tween.EASE_OUT)
 	# fade out...
-	indoor_tween.tween_property(self, "indoor_volume", off_db, fade_duration)
-	outdoor_tween.tween_property(self, "outdoor_volume", off_db, fade_duration)
-	start_menu_tween.tween_property(self, "start_menu_volume", off_db, fade_duration)
+	indoor_tween.tween_property(self, "indoor_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
+	outdoor_tween.tween_property(self, "outdoor_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
+	start_menu_tween.tween_property(self, "start_menu_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
 	# clean up
 	start_menu_tween.tween_callback(on_tween_complete)
 	
@@ -112,11 +112,11 @@ func fade_to_start_menu_music(indoor_tween: Tween, outdoor_tween: Tween, battle_
 	current_start_menu_tween 	= start_menu_tween
 	
 	# fade in...
-	start_menu_tween.tween_property(self, "start_menu_volume", start_menu_music_db, fade_duration * FADE_IN_MODIFIER)
+	start_menu_tween.tween_property(self, "start_menu_volume", start_menu_music_db, fade_duration * FADE_IN_MODIFIER).set_trans(Tween.TRANS_QUINT).set_ease(Tween.EASE_OUT)
 	# fade out...
-	indoor_tween.tween_property(self, "indoor_volume", off_db, fade_duration)
-	outdoor_tween.tween_property(self, "outdoor_volume", off_db, fade_duration)
-	battle_tween.tween_property(self, "battle_volume", off_db, fade_duration)
+	indoor_tween.tween_property(self, "indoor_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
+	outdoor_tween.tween_property(self, "outdoor_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
+	battle_tween.tween_property(self, "battle_volume", off_db, fade_duration).set_ease(Tween.EASE_OUT)
 	# clean up
 	battle_tween.tween_callback(on_tween_complete)
 

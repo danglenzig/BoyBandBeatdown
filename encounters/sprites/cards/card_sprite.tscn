@@ -1,4 +1,4 @@
-[gd_scene load_steps=321 format=3 uid="uid://cte5fobhra3n3"]
+[gd_scene load_steps=543 format=3 uid="uid://cte5fobhra3n3"]
 
 [ext_resource type="Script" path="res://encounters/sprites/cards/card_sprite.gd" id="1_o7xgx"]
 [ext_resource type="Texture2D" uid="uid://434cpa8ycimd" path="res://encounters/sprites/cards/Screenshot 2024-12-27 100031.png" id="2_7twdo"]
@@ -21,71 +21,119 @@
 [ext_resource type="Texture2D" uid="uid://h75b2om0obhp" path="res://encounters/sprites/bad_boy/cropped_square/bad_boy_attack2_13.png" id="17_tudi6"]
 [ext_resource type="Texture2D" uid="uid://cchgmea1318nu" path="res://encounters/sprites/bad_boy/cropped_square/bad_boy_attack2_14.png" id="18_t6b7q"]
 [ext_resource type="Texture2D" uid="uid://b7u4x8itna787" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_05.png" id="19_dsecb"]
+[ext_resource type="Texture2D" uid="uid://nikufp1rbp2k" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_00.png" id="19_nbx38"]
+[ext_resource type="Texture2D" uid="uid://dhe4mbrnyl3b" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_02.png" id="20_qls0l"]
 [ext_resource type="Texture2D" uid="uid://da5jgatg3k4ie" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_13.png" id="20_qyi8f"]
+[ext_resource type="Texture2D" uid="uid://bvfv5n3mgs7mp" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_04.png" id="21_6yhts"]
 [ext_resource type="Texture2D" uid="uid://bftjqp18jhe5l" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_21.png" id="21_jtdaq"]
 [ext_resource type="Texture2D" uid="uid://bkggdei2glbyy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_29.png" id="22_ocbmb"]
+[ext_resource type="Texture2D" uid="uid://bk1lailr47dpf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_06.png" id="22_vpx6u"]
 [ext_resource type="Texture2D" uid="uid://cj0kf118hommx" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_37.png" id="23_25ewu"]
+[ext_resource type="Texture2D" uid="uid://duvthvuh781gd" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_08.png" id="23_xlett"]
 [ext_resource type="Texture2D" uid="uid://ciue4a2ue12dy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_45.png" id="24_3hoog"]
+[ext_resource type="Texture2D" uid="uid://dwtmwjfuvn27e" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_10.png" id="24_ppu38"]
 [ext_resource type="Texture2D" uid="uid://bc20cnexh833t" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_53.png" id="25_08wuy"]
+[ext_resource type="Texture2D" uid="uid://cc7h13ufxa6tf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_12.png" id="25_cpmuy"]
 [ext_resource type="Texture2D" uid="uid://csk6rupomxxpw" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_61.png" id="26_6nmoq"]
+[ext_resource type="Texture2D" uid="uid://cfasbxljuwypy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_14.png" id="26_rko2h"]
 [ext_resource type="Texture2D" uid="uid://1u8vfc8ks63i" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_69.png" id="27_dqj2u"]
+[ext_resource type="Texture2D" uid="uid://stet5ujkgdvy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_16.png" id="27_wcvrx"]
+[ext_resource type="Texture2D" uid="uid://c73ftjq246sgk" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_18.png" id="28_78g18"]
 [ext_resource type="Texture2D" uid="uid://busfhadp6uyoi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_77.png" id="28_g6jyf"]
+[ext_resource type="Texture2D" uid="uid://cxfhqoo5rljbo" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_20.png" id="29_1wd0n"]
 [ext_resource type="Texture2D" uid="uid://e3bi8vi5enbu" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_85.png" id="29_rheu3"]
 [ext_resource type="Texture2D" uid="uid://bgmu0xwtog1on" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_93.png" id="30_64qop"]
+[ext_resource type="Texture2D" uid="uid://c40hck7pgm2bi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_22.png" id="30_dwbq1"]
 [ext_resource type="Texture2D" uid="uid://do0vdx8nna1i4" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_101.png" id="31_dhlvk"]
+[ext_resource type="Texture2D" uid="uid://cnavh6uefen38" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_24.png" id="31_kev51"]
+[ext_resource type="Texture2D" uid="uid://d1wjm42t50dd5" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_26.png" id="32_3rwve"]
 [ext_resource type="Texture2D" uid="uid://vl1ngenb1qyd" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_109.png" id="32_q6q2y"]
+[ext_resource type="Texture2D" uid="uid://c70s0jhtsgv41" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_28.png" id="33_u6jwt"]
 [ext_resource type="Texture2D" uid="uid://b4npcv4ippx4u" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_117.png" id="33_ucwn8"]
 [ext_resource type="Texture2D" uid="uid://f4skx6yvh5h2" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_125.png" id="34_21sgs"]
+[ext_resource type="Texture2D" uid="uid://dr8s4p3b2osky" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_30.png" id="34_mfoyk"]
+[ext_resource type="Texture2D" uid="uid://bclxothgq55lm" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_32.png" id="35_0v1jh"]
 [ext_resource type="Texture2D" uid="uid://ftg27d05dwmh" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_133.png" id="35_guxbx"]
 [ext_resource type="Texture2D" uid="uid://cjq4d2fqc8qcq" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_141.png" id="36_f8xm4"]
+[ext_resource type="Texture2D" uid="uid://8emqitucvvki" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_34.png" id="36_lojij"]
+[ext_resource type="Texture2D" uid="uid://cfuusgwbdwkwh" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_36.png" id="37_c8rfd"]
 [ext_resource type="Texture2D" uid="uid://cpbko0gr8trdj" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_149.png" id="37_xguq2"]
 [ext_resource type="Texture2D" uid="uid://da5404ot5g5yt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_157.png" id="38_caim4"]
+[ext_resource type="Texture2D" uid="uid://ljctyt2ocvru" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_38.png" id="38_r3qq2"]
 [ext_resource type="Texture2D" uid="uid://b8u20am4i4k0u" path="res://encounters/sprites/bad_boy/bad_boy_die_02.png" id="39_cr554"]
 [ext_resource type="Texture2D" uid="uid://balekmfkf5mxn" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_165.png" id="39_u3ocg"]
+[ext_resource type="Texture2D" uid="uid://bufv74kuw205f" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_40.png" id="39_v4noj"]
 [ext_resource type="Texture2D" uid="uid://d2vjumqsyp6p3" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_173.png" id="40_0g2st"]
 [ext_resource type="Texture2D" uid="uid://dsjlh4b30oqph" path="res://encounters/sprites/bad_boy/bad_boy_die_03.png" id="40_cl1ot"]
+[ext_resource type="Texture2D" uid="uid://mavpgu1jjatw" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_42.png" id="40_ml8qf"]
 [ext_resource type="Texture2D" uid="uid://biasi56ghb84i" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_181.png" id="41_54guv"]
 [ext_resource type="Texture2D" uid="uid://cvhtp5gbrvmli" path="res://encounters/sprites/bad_boy/bad_boy_die_04.png" id="41_a2kl4"]
+[ext_resource type="Texture2D" uid="uid://b6a28pdow2vdp" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_44.png" id="41_idtwj"]
 [ext_resource type="Texture2D" uid="uid://sgxmskw4wagt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_189.png" id="42_1uwdu"]
 [ext_resource type="Texture2D" uid="uid://dsoq6yxqr0j1g" path="res://encounters/sprites/bad_boy/bad_boy_die_05.png" id="42_1x7si"]
+[ext_resource type="Texture2D" uid="uid://c5xo8uhfr88kr" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_46.png" id="42_idwnl"]
 [ext_resource type="Texture2D" uid="uid://c56tnnkva7eyi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_197.png" id="43_2l1k8"]
 [ext_resource type="Texture2D" uid="uid://dev7xxnhtului" path="res://encounters/sprites/bad_boy/bad_boy_die_06.png" id="43_cunpb"]
+[ext_resource type="Texture2D" uid="uid://dossqlnfwsjdp" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_48.png" id="43_gimpe"]
 [ext_resource type="Texture2D" uid="uid://bk741axkg331w" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_205.png" id="44_1odwy"]
+[ext_resource type="Texture2D" uid="uid://bddslnncdreh7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_50.png" id="44_3cvfo"]
 [ext_resource type="Texture2D" uid="uid://cs5dgitiiqaqo" path="res://encounters/sprites/bad_boy/bad_boy_die_07.png" id="44_vph1q"]
+[ext_resource type="Texture2D" uid="uid://cvupevyswyg1n" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_52.png" id="45_3fdvj"]
 [ext_resource type="Texture2D" uid="uid://tuxcj0dkbu4b" path="res://encounters/sprites/bad_boy/bad_boy_die_08.png" id="45_a6jtf"]
 [ext_resource type="Texture2D" uid="uid://dpxb1l0g0wcbi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_213.png" id="45_ksre1"]
+[ext_resource type="Texture2D" uid="uid://du000lrs3a2pf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_54.png" id="46_cwevk"]
 [ext_resource type="Texture2D" uid="uid://ca0ddq2dquyp2" path="res://encounters/sprites/bad_boy/bad_boy_die_09.png" id="46_mvi4d"]
 [ext_resource type="Texture2D" uid="uid://cgoqsqttuewih" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_221.png" id="46_r7grc"]
+[ext_resource type="Texture2D" uid="uid://cdk6scx2mjenj" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_56.png" id="47_8thad"]
 [ext_resource type="Texture2D" uid="uid://cr2w87v1ec2ok" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_229.png" id="47_lpcq0"]
 [ext_resource type="Texture2D" uid="uid://uk6m4twgvgw6" path="res://encounters/sprites/bad_boy/bad_boy_die_10.png" id="47_w7kv7"]
 [ext_resource type="Texture2D" uid="uid://b0wjhwwn8ux2l" path="res://encounters/sprites/bad_boy/bad_boy_die_11.png" id="48_lh40p"]
 [ext_resource type="Texture2D" uid="uid://daq8pyuenmr3r" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_237.png" id="48_pifbv"]
+[ext_resource type="Texture2D" uid="uid://jf3vws6g3fjf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_58.png" id="48_t2i7p"]
+[ext_resource type="Texture2D" uid="uid://wcq2m1bclruj" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_60.png" id="49_ah368"]
 [ext_resource type="Texture2D" uid="uid://bgc7vk51l4mpg" path="res://encounters/sprites/bad_boy/bad_boy_die_12.png" id="49_o1ici"]
 [ext_resource type="Texture2D" uid="uid://cxhpf4qvyvmx7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_245.png" id="49_x6uqm"]
 [ext_resource type="Texture2D" uid="uid://c0ejkd6ufgms0" path="res://encounters/sprites/bad_boy/bad_boy_die_13.png" id="50_khtba"]
 [ext_resource type="Texture2D" uid="uid://u68fbnx86xnn" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_253.png" id="50_nn7yl"]
+[ext_resource type="Texture2D" uid="uid://b03axgqewkck4" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_62.png" id="50_qib04"]
 [ext_resource type="Texture2D" uid="uid://cj3bjsj460ap7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_261.png" id="51_4fsbp"]
+[ext_resource type="Texture2D" uid="uid://t3rrcaa0xa5n" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_64.png" id="51_pk1r0"]
 [ext_resource type="Texture2D" uid="uid://b3u033uoqal5u" path="res://encounters/sprites/bad_boy/bad_boy_die_14.png" id="51_sv5hv"]
 [ext_resource type="Texture2D" uid="uid://8jnffp1cydgr" path="res://encounters/sprites/bad_boy/bad_boy_die_15.png" id="52_1vn1j"]
 [ext_resource type="Texture2D" uid="uid://pqvr30i3hbyo" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_269.png" id="52_2t534"]
+[ext_resource type="Texture2D" uid="uid://cvkxdd84ktgd" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_66.png" id="52_aahqq"]
 [ext_resource type="Texture2D" uid="uid://df5egf8dndmvq" path="res://encounters/sprites/bad_boy/bad_boy_die_16.png" id="53_5535d"]
 [ext_resource type="Texture2D" uid="uid://r30ihek2b5m2" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_277.png" id="53_lgovl"]
+[ext_resource type="Texture2D" uid="uid://71ooecfmpmpt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_68.png" id="53_tde2a"]
 [ext_resource type="Texture2D" uid="uid://bufvqn1jh1mjb" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_285.png" id="54_dbnqk"]
 [ext_resource type="Texture2D" uid="uid://drl3k5dsd74h4" path="res://encounters/sprites/bad_boy/bad_boy_die_17.png" id="54_gsgmw"]
+[ext_resource type="Texture2D" uid="uid://7b7yvl3pynqn" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_70.png" id="54_vrvnt"]
 [ext_resource type="Texture2D" uid="uid://csodr0t7uj2mk" path="res://encounters/sprites/bad_boy/bad_boy_die_18.png" id="55_55w2b"]
 [ext_resource type="Texture2D" uid="uid://wse3aykuqjt7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_293.png" id="55_534fv"]
+[ext_resource type="Texture2D" uid="uid://dcgt02ga2s12f" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_72.png" id="55_cmjgy"]
 [ext_resource type="Texture2D" uid="uid://basdf5l4kixno" path="res://encounters/sprites/bad_boy/bad_boy_die_19.png" id="56_8is0v"]
 [ext_resource type="Texture2D" uid="uid://b76waqyjd56a7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_301.png" id="56_od8ah"]
+[ext_resource type="Texture2D" uid="uid://kcyqkdq676d1" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_74.png" id="56_rihhg"]
+[ext_resource type="Texture2D" uid="uid://ccbdcec4fpqr7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_76.png" id="57_2wtoi"]
 [ext_resource type="Texture2D" uid="uid://cjup3o6r0uy73" path="res://encounters/sprites/heartthrob/Screenshot 2024-12-27 161850.png" id="57_l1wn6"]
 [ext_resource type="Texture2D" uid="uid://drtkydutbadx4" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_309.png" id="57_wbiyl"]
+[ext_resource type="Texture2D" uid="uid://dpw22ldacanqa" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_78.png" id="58_m1s5g"]
+[ext_resource type="Texture2D" uid="uid://bkn4m6vmlf6q6" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_80.png" id="59_lq40s"]
 [ext_resource type="Texture2D" uid="uid://wbpkar0iol5v" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_00.png" id="59_mql7m"]
+[ext_resource type="Texture2D" uid="uid://cm1btaakc3fvk" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_82.png" id="60_dhdns"]
 [ext_resource type="Texture2D" uid="uid://cvx2lipsw0mwx" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_01.png" id="60_oykta"]
 [ext_resource type="Texture2D" uid="uid://c1u3loq4ql3en" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_02.png" id="61_m2n7a"]
+[ext_resource type="Texture2D" uid="uid://dkaeqpcp3e87r" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_84.png" id="61_ta2sp"]
+[ext_resource type="Texture2D" uid="uid://cg2lxm4c2hlry" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_86.png" id="62_ctppr"]
 [ext_resource type="Texture2D" uid="uid://dwaegihlbcdh7" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_03.png" id="62_yfwrm"]
+[ext_resource type="Texture2D" uid="uid://cpu8nxy8ivfuy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_88.png" id="63_ff2ws"]
 [ext_resource type="Texture2D" uid="uid://cytvo7xyvko6i" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_04.png" id="63_laeqb"]
+[ext_resource type="Texture2D" uid="uid://cbtbc5ek7ngv3" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_90.png" id="64_es3he"]
 [ext_resource type="Texture2D" uid="uid://cviurwr1rn6ln" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_05.png" id="64_q1sk3"]
 [ext_resource type="Texture2D" uid="uid://djidiqlabsxdy" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_06.png" id="65_syfbd"]
+[ext_resource type="Texture2D" uid="uid://bake3esfempko" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_92.png" id="65_takgb"]
 [ext_resource type="Texture2D" uid="uid://knyhha0hks62" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_07.png" id="66_4niyo"]
+[ext_resource type="Texture2D" uid="uid://c1s0r4mjhhwmm" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_94.png" id="66_ld4gw"]
 [ext_resource type="Texture2D" uid="uid://cdcg2menkyao4" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_08.png" id="67_nau7f"]
 [ext_resource type="Texture2D" uid="uid://cfipnhdb8gww7" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_09.png" id="68_wm4qj"]
 [ext_resource type="Texture2D" uid="uid://iw66lleqm4p1" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_10.png" id="69_fhjp6"]
@@ -116,58 +164,112 @@
 [ext_resource type="Texture2D" uid="uid://bqtovjrc6oo7d" path="res://encounters/sprites/heartthrob/heartthrob_dance_40.png" id="91_uedyh"]
 [ext_resource type="Texture2D" uid="uid://dcfa0exyqi040" path="res://encounters/sprites/heartthrob/heartthrob_die_13.png" id="105_x3oex"]
 [ext_resource type="Texture2D" uid="uid://ct35al3uqmsd2" path="res://encounters/sprites/heartthrob/heartthrob_die_14.png" id="106_1ooy2"]
+[ext_resource type="Texture2D" uid="uid://brtntrx1psid2" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_05.png" id="106_yanoe"]
 [ext_resource type="Texture2D" uid="uid://br8xwnw22ik6e" path="res://encounters/sprites/heartthrob/heartthrob_die_15.png" id="107_esvoa"]
+[ext_resource type="Texture2D" uid="uid://cgtj1r84m0vv0" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_13.png" id="107_ji0ij"]
+[ext_resource type="Texture2D" uid="uid://bql7vb1p4dyq1" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_21.png" id="108_ejcc8"]
 [ext_resource type="Texture2D" uid="uid://baqd4hkme6x7h" path="res://encounters/sprites/heartthrob/heartthrob_die_16.png" id="108_vmwme"]
 [ext_resource type="Texture2D" uid="uid://jaddtel8g284" path="res://encounters/sprites/heartthrob/heartthrob_die_17.png" id="109_b2468"]
+[ext_resource type="Texture2D" uid="uid://bmdg1o3qs40t3" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_29.png" id="109_x7sgg"]
 [ext_resource type="Texture2D" uid="uid://dss2ia84epap0" path="res://encounters/sprites/heartthrob/heartthrob_die_18.png" id="110_mvr4h"]
+[ext_resource type="Texture2D" uid="uid://b3yu3kk0xn7ng" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_37.png" id="110_ol12x"]
+[ext_resource type="Texture2D" uid="uid://bupxfxlly0mc5" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_45.png" id="111_7au3k"]
 [ext_resource type="Texture2D" uid="uid://bj7cldr2ywmrr" path="res://encounters/sprites/heartthrob/heartthrob_die_19.png" id="111_cjucg"]
 [ext_resource type="Texture2D" uid="uid://bsis0mtwsa10h" path="res://encounters/sprites/heartthrob/heartthrob_die_20.png" id="112_hd3ff"]
+[ext_resource type="Texture2D" uid="uid://b3dbtnl0owlmt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_53.png" id="112_lghs3"]
+[ext_resource type="Texture2D" uid="uid://q7edpb7ancdu" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_61.png" id="113_qncj8"]
 [ext_resource type="Texture2D" uid="uid://ddw1ng4eedjhf" path="res://encounters/sprites/heartthrob/heartthrob_die_21.png" id="113_wp0qt"]
+[ext_resource type="Texture2D" uid="uid://bfdyifpcoo3gt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_69.png" id="114_33eo1"]
 [ext_resource type="Texture2D" uid="uid://cyao7x8ou1yw0" path="res://encounters/sprites/heartthrob/heartthrob_die_22.png" id="114_68xmb"]
 [ext_resource type="Texture2D" uid="uid://4688sia3rnix" path="res://encounters/sprites/heartthrob/heartthrob_die_23.png" id="115_8xydp"]
+[ext_resource type="Texture2D" uid="uid://qrxn2hjvo854" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_77.png" id="115_nyb3f"]
+[ext_resource type="Texture2D" uid="uid://bccagweacv6u8" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_85.png" id="116_yb2ks"]
 [ext_resource type="Texture2D" uid="uid://bhim480bt36wa" path="res://encounters/sprites/heartthrob/heartthrob_die_24.png" id="116_yhc2m"]
+[ext_resource type="Texture2D" uid="uid://b40bhed2t04sf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_93.png" id="117_ckplb"]
 [ext_resource type="Texture2D" uid="uid://c6iknpij40b2j" path="res://encounters/sprites/heartthrob/heartthrob_die_25.png" id="117_rvnpp"]
 [ext_resource type="Texture2D" uid="uid://ceemh1kx8ywnx" path="res://encounters/sprites/heartthrob/heartthrob_die_26.png" id="118_gabbd"]
+[ext_resource type="Texture2D" uid="uid://bdfi74r12pbsc" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_101.png" id="118_r7sjy"]
+[ext_resource type="Texture2D" uid="uid://ciuye8xrg17rw" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_109.png" id="119_i5bgc"]
 [ext_resource type="Texture2D" uid="uid://b8tqp8ofyxge5" path="res://encounters/sprites/heartthrob/heartthrob_die_27.png" id="119_mg833"]
+[ext_resource type="Texture2D" uid="uid://daj0boxpd17yh" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_117.png" id="120_pc2nr"]
 [ext_resource type="Texture2D" uid="uid://bmt5uj48qlf3j" path="res://encounters/sprites/heartthrob/heartthrob_die_28.png" id="120_qqr7s"]
+[ext_resource type="Texture2D" uid="uid://cn8bthxn0c3ol" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_125.png" id="121_6yby8"]
 [ext_resource type="Texture2D" uid="uid://cmfbtpt2fld3l" path="res://encounters/sprites/heartthrob/heartthrob_die_29.png" id="121_80ar7"]
+[ext_resource type="Texture2D" uid="uid://d0erqe1qc7a17" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_133.png" id="122_7isbx"]
 [ext_resource type="Texture2D" uid="uid://cphh11nh2tynq" path="res://encounters/sprites/heartthrob/heartthrob_die_30.png" id="122_npfq0"]
 [ext_resource type="Texture2D" uid="uid://digd0k54yuhiq" path="res://encounters/sprites/heartthrob/heartthrob_die_31.png" id="123_1ejl8"]
+[ext_resource type="Texture2D" uid="uid://bv57uj3nk1en8" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_141.png" id="123_47nxo"]
+[ext_resource type="Texture2D" uid="uid://xqghoo6k0yh6" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_149.png" id="124_edj74"]
 [ext_resource type="Texture2D" uid="uid://bhv760e6nkh06" path="res://encounters/sprites/heartthrob/heartthrob_die_32.png" id="124_s70n1"]
+[ext_resource type="Texture2D" uid="uid://dy6tvigcn5vr" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_157.png" id="125_4aupb"]
+[ext_resource type="Texture2D" uid="uid://crer4quqt2mr1" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_165.png" id="126_emnkt"]
 [ext_resource type="Texture2D" uid="uid://b3stxili3jh71" path="res://encounters/sprites/cute_one/cute_one_idle_00.png" id="126_f3c6r"]
+[ext_resource type="Texture2D" uid="uid://rlafmgqrgvbg" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_173.png" id="127_g5wkc"]
+[ext_resource type="Texture2D" uid="uid://qwu5omo6a6bo" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_181.png" id="128_vdsh4"]
+[ext_resource type="Texture2D" uid="uid://crlnwqxngpb3b" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_189.png" id="129_7sr8b"]
 [ext_resource type="Texture2D" uid="uid://cyh4xnl27c2fw" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_01.png" id="129_l30qm"]
 [ext_resource type="Texture2D" uid="uid://cm15p8tyijh8e" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_02.png" id="130_dkerg"]
+[ext_resource type="Texture2D" uid="uid://baklv260of36b" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_197.png" id="130_tg8la"]
 [ext_resource type="Texture2D" uid="uid://dxkmx1noenaq3" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_03.png" id="131_bn00r"]
+[ext_resource type="Texture2D" uid="uid://d4kf8eelyvi2a" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_205.png" id="131_sy81c"]
+[ext_resource type="Texture2D" uid="uid://d1hsgn6pmni4h" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_213.png" id="132_nseqc"]
 [ext_resource type="Texture2D" uid="uid://bsdwsq31mawir" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_04.png" id="132_v1ikn"]
 [ext_resource type="Texture2D" uid="uid://cbqyeyp0qwixi" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_05.png" id="133_5u75x"]
+[ext_resource type="Texture2D" uid="uid://bbob1cmxn5vii" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_221.png" id="133_ucv12"]
+[ext_resource type="Texture2D" uid="uid://gi0prln68r1" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_229.png" id="134_pdxhw"]
 [ext_resource type="Texture2D" uid="uid://cd04b7uxyklge" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_06.png" id="134_x1tyq"]
 [ext_resource type="Texture2D" uid="uid://c24nfwefdwylq" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_07.png" id="135_1majf"]
+[ext_resource type="Texture2D" uid="uid://bxstvxrdqwvvm" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_237.png" id="135_ltsf4"]
+[ext_resource type="Texture2D" uid="uid://d23vgp3mav4ow" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_245.png" id="136_3j5ra"]
 [ext_resource type="Texture2D" uid="uid://wgqam1j0nat6" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_08.png" id="136_88mmd"]
+[ext_resource type="Texture2D" uid="uid://bjlweoiu67sxy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_253.png" id="137_erlqr"]
 [ext_resource type="Texture2D" uid="uid://d1vq1qcb7ro6y" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_09.png" id="137_l5mqq"]
+[ext_resource type="Texture2D" uid="uid://ho4ni01l4u7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_261.png" id="138_4q6ho"]
 [ext_resource type="Texture2D" uid="uid://bjwn7juy5tug2" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_10.png" id="138_umlwq"]
 [ext_resource type="Texture2D" uid="uid://bt0xtscsavrlg" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_11.png" id="139_i2bui"]
+[ext_resource type="Texture2D" uid="uid://b0e6vhdqa6y6r" path="res://encounters/sprites/bad_boy/bad_boy_dance_00.png" id="139_l81s8"]
+[ext_resource type="Texture2D" uid="uid://bmqv00b5p2yss" path="res://encounters/sprites/bad_boy/bad_boy_dance_02.png" id="140_hieyn"]
 [ext_resource type="Texture2D" uid="uid://bidm3cudw7up2" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_12.png" id="140_v5ge4"]
 [ext_resource type="Texture2D" uid="uid://xouao6pk80oo" path="res://encounters/sprites/cute_one/cute_one_dance_00.png" id="141_7ptdp"]
+[ext_resource type="Texture2D" uid="uid://crmlkwxunqjea" path="res://encounters/sprites/bad_boy/bad_boy_dance_04.png" id="141_btfgr"]
 [ext_resource type="Texture2D" uid="uid://60rnr66t3lcs" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_13.png" id="141_fb15d"]
 [ext_resource type="Texture2D" uid="uid://dk3p4fjwrfha" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_14.png" id="142_2wv82"]
+[ext_resource type="Texture2D" uid="uid://cubi8j6xglfkq" path="res://encounters/sprites/bad_boy/bad_boy_dance_06.png" id="142_7qy0j"]
 [ext_resource type="Texture2D" uid="uid://bsy5ypiu064g7" path="res://encounters/sprites/cute_one/cute_one_dance_02.png" id="142_rhyma"]
 [ext_resource type="Texture2D" uid="uid://dlrhftrdw6l0" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_15.png" id="143_jb32l"]
+[ext_resource type="Texture2D" uid="uid://6blwcgurnwto" path="res://encounters/sprites/bad_boy/bad_boy_dance_08.png" id="143_tp4wt"]
 [ext_resource type="Texture2D" uid="uid://cxfnhg010ru0e" path="res://encounters/sprites/cute_one/cute_one_dance_04.png" id="143_yj2dj"]
 [ext_resource type="Texture2D" uid="uid://bv05qurymkfgx" path="res://encounters/sprites/cute_one/cute_one_dance_06.png" id="144_a1tm6"]
+[ext_resource type="Texture2D" uid="uid://bv350jwq1u0m" path="res://encounters/sprites/bad_boy/bad_boy_dance_10.png" id="144_ym5eq"]
+[ext_resource type="Texture2D" uid="uid://c8ldt06f2iw82" path="res://encounters/sprites/bad_boy/bad_boy_dance_12.png" id="145_erlha"]
 [ext_resource type="Texture2D" uid="uid://4q3mg7r10mtd" path="res://encounters/sprites/cute_one/cute_one_dance_08.png" id="145_hwfpa"]
+[ext_resource type="Texture2D" uid="uid://f1af7ueim4q0" path="res://encounters/sprites/bad_boy/bad_boy_dance_14.png" id="146_vt1kb"]
 [ext_resource type="Texture2D" uid="uid://da08btwsd4ydc" path="res://encounters/sprites/cute_one/cute_one_dance_10.png" id="146_wwji8"]
 [ext_resource type="Texture2D" uid="uid://cogoyfn6tum5s" path="res://encounters/sprites/cute_one/cute_one_dance_12.png" id="147_6jrfw"]
+[ext_resource type="Texture2D" uid="uid://dst775l0e72um" path="res://encounters/sprites/bad_boy/bad_boy_dance_16.png" id="147_kuyh3"]
+[ext_resource type="Texture2D" uid="uid://bebt5ss556l7g" path="res://encounters/sprites/bad_boy/bad_boy_dance_18.png" id="148_gaxkf"]
 [ext_resource type="Texture2D" uid="uid://eu8osh8ga73s" path="res://encounters/sprites/cute_one/cute_one_dance_14.png" id="148_xv8vf"]
 [ext_resource type="Texture2D" uid="uid://cjg4btg3ovs0v" path="res://encounters/sprites/cute_one/cute_one_dance_16.png" id="149_jkf3l"]
+[ext_resource type="Texture2D" uid="uid://btqeevtxea03e" path="res://encounters/sprites/bad_boy/bad_boy_dance_20.png" id="149_q6q31"]
+[ext_resource type="Texture2D" uid="uid://dhfhd03ke4gkk" path="res://encounters/sprites/bad_boy/bad_boy_dance_22.png" id="150_at8y6"]
 [ext_resource type="Texture2D" uid="uid://c15p7hkbus4tq" path="res://encounters/sprites/cute_one/cute_one_dance_18.png" id="150_diim7"]
 [ext_resource type="Texture2D" uid="uid://cyhi5bb4nis8s" path="res://encounters/sprites/cute_one/cute_one_dance_20.png" id="151_mj024"]
+[ext_resource type="Texture2D" uid="uid://dhqj1vntguogq" path="res://encounters/sprites/bad_boy/bad_boy_dance_24.png" id="151_shwm5"]
+[ext_resource type="Texture2D" uid="uid://b2sgn00uxck5j" path="res://encounters/sprites/bad_boy/bad_boy_dance_26.png" id="152_dt243"]
 [ext_resource type="Texture2D" uid="uid://d06eysuy8cb0r" path="res://encounters/sprites/cute_one/cute_one_dance_22.png" id="152_v46io"]
 [ext_resource type="Texture2D" uid="uid://bft45gk5pt4em" path="res://encounters/sprites/cute_one/cute_one_dance_24.png" id="153_b4x4t"]
+[ext_resource type="Texture2D" uid="uid://dhkvbbk88gnyc" path="res://encounters/sprites/bad_boy/bad_boy_dance_28.png" id="153_m6d6k"]
 [ext_resource type="Texture2D" uid="uid://dssm4jx55dwmm" path="res://encounters/sprites/cute_one/cute_one_dance_26.png" id="154_mbnem"]
+[ext_resource type="Texture2D" uid="uid://bv47y8v36vd13" path="res://encounters/sprites/bad_boy/bad_boy_dance_30.png" id="154_ptmcw"]
+[ext_resource type="Texture2D" uid="uid://dnor7wd6accou" path="res://encounters/sprites/bad_boy/bad_boy_dance_32.png" id="155_qo082"]
 [ext_resource type="Texture2D" uid="uid://dkkprdalxbdms" path="res://encounters/sprites/cute_one/cute_one_dance_28.png" id="155_yacmp"]
 [ext_resource type="Texture2D" uid="uid://c2he0cu0mknyl" path="res://encounters/sprites/cute_one/cute_one_dance_30.png" id="156_coc72"]
+[ext_resource type="Texture2D" uid="uid://bas2rogsxrcr" path="res://encounters/sprites/bad_boy/bad_boy_dance_34.png" id="156_tlyei"]
+[ext_resource type="Texture2D" uid="uid://dd1e4t1gu8qft" path="res://encounters/sprites/bad_boy/bad_boy_dance_36.png" id="157_qf5y1"]
 [ext_resource type="Texture2D" uid="uid://brnppttfomplb" path="res://encounters/sprites/cute_one/cute_one_dance_32.png" id="157_wvg02"]
 [ext_resource type="Texture2D" uid="uid://bbx1t22dw4uxf" path="res://encounters/sprites/cute_one/cute_one_dance_34.png" id="158_exy2m"]
+[ext_resource type="Texture2D" uid="uid://o0qav0q24v70" path="res://encounters/sprites/bad_boy/bad_boy_dance_38.png" id="158_h31h4"]
+[ext_resource type="Texture2D" uid="uid://qd57pn5ib55l" path="res://encounters/sprites/bad_boy/bad_boy_dance_40.png" id="159_btq2u"]
 [ext_resource type="Texture2D" uid="uid://bdakg7gg5x1r2" path="res://encounters/sprites/cute_one/cute_one_dance_36.png" id="159_jlpd3"]
 [ext_resource type="Texture2D" uid="uid://ckh2tr4rg0g1l" path="res://encounters/sprites/cute_one/cute_one_dance_38.png" id="160_qy1xi"]
 [ext_resource type="Texture2D" uid="uid://vk32mbh3mce0" path="res://encounters/sprites/cute_one/cute_one_dance_40.png" id="161_kc4l2"]
@@ -281,30 +383,150 @@
 [ext_resource type="Texture2D" uid="uid://dhvtyx0ybjrbm" path="res://encounters/sprites/older_brother/older_brother_dance_24.png" id="269_sjfh7"]
 [ext_resource type="Texture2D" uid="uid://bxvjb5x1o601b" path="res://encounters/sprites/older_brother/older_brother_dance_26.png" id="270_j0dce"]
 [ext_resource type="Texture2D" uid="uid://bw32otyyrc3fo" path="res://encounters/sprites/older_brother/older_brother_dance_28.png" id="271_sfsav"]
+[ext_resource type="Texture2D" uid="uid://b4p30h63n3vtr" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_03.png" id="272_4dqjs"]
 [ext_resource type="Texture2D" uid="uid://snqwvce1bgra" path="res://encounters/sprites/older_brother/older_brother_dance_30.png" id="272_8qj33"]
 [ext_resource type="Texture2D" uid="uid://br5u8fyyqfh34" path="res://encounters/sprites/older_brother/older_brother_dance_32.png" id="273_aydpn"]
+[ext_resource type="Texture2D" uid="uid://crhxux75f8td" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_11.png" id="273_g67ql"]
+[ext_resource type="Texture2D" uid="uid://bbwbk25731led" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_19.png" id="274_fjhg2"]
 [ext_resource type="Texture2D" uid="uid://dri2sxf81jlus" path="res://encounters/sprites/older_brother/older_brother_dance_34.png" id="274_gnt7n"]
 [ext_resource type="Texture2D" uid="uid://cr2g6p0rrjutu" path="res://encounters/sprites/older_brother/older_brother_dance_36.png" id="275_218rb"]
+[ext_resource type="Texture2D" uid="uid://cnb8bpbqqerkr" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_27.png" id="275_eei5k"]
 [ext_resource type="Texture2D" uid="uid://br318uogksa6i" path="res://encounters/sprites/older_brother/older_brother_dance_38.png" id="276_8rs1d"]
+[ext_resource type="Texture2D" uid="uid://dpne2okpv1fgt" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_35.png" id="276_r5d2h"]
+[ext_resource type="Texture2D" uid="uid://8ykv8an2wt61" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_43.png" id="277_22gsw"]
 [ext_resource type="Texture2D" uid="uid://dfif2masd1cjo" path="res://encounters/sprites/older_brother/older_brother_dance_40.png" id="277_mdker"]
+[ext_resource type="Texture2D" uid="uid://c18gh0eiqjsrp" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_51.png" id="278_05en1"]
 [ext_resource type="Texture2D" uid="uid://buqbnkeemnvpj" path="res://encounters/sprites/older_brother/older_brother_die_00.png" id="278_k0i85"]
 [ext_resource type="Texture2D" uid="uid://bchwt5lxv51eo" path="res://encounters/sprites/older_brother/older_brother_die_02.png" id="279_5hvxb"]
+[ext_resource type="Texture2D" uid="uid://p11rr8i6ry1d" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_59.png" id="279_bv27w"]
 [ext_resource type="Texture2D" uid="uid://bdb2fisbmdmck" path="res://encounters/sprites/older_brother/older_brother_die_04.png" id="280_32aom"]
+[ext_resource type="Texture2D" uid="uid://s7g6lcs2ugdj" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_67.png" id="280_wosnt"]
 [ext_resource type="Texture2D" uid="uid://bn1xqpfnrp4jg" path="res://encounters/sprites/older_brother/older_brother_die_06.png" id="281_f3060"]
+[ext_resource type="Texture2D" uid="uid://dxp3rh241silb" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_75.png" id="281_vjqds"]
+[ext_resource type="Texture2D" uid="uid://cwf04d4iwibv3" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_83.png" id="282_1t8kv"]
 [ext_resource type="Texture2D" uid="uid://beoj7hbsii5lf" path="res://encounters/sprites/older_brother/older_brother_die_08.png" id="282_4bc25"]
 [ext_resource type="Texture2D" uid="uid://xdtwdhg4mo6q" path="res://encounters/sprites/older_brother/older_brother_die_10.png" id="283_kda6e"]
+[ext_resource type="Texture2D" uid="uid://bdbdfguxuais6" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_91.png" id="283_ljbd0"]
+[ext_resource type="Texture2D" uid="uid://5h6ccjlthowm" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_99.png" id="284_4x3va"]
 [ext_resource type="Texture2D" uid="uid://g1i7uxwa63u4" path="res://encounters/sprites/older_brother/older_brother_die_12.png" id="284_lcfvm"]
+[ext_resource type="Texture2D" uid="uid://bgtm8t17dxii4" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_107.png" id="285_0cvha"]
 [ext_resource type="Texture2D" uid="uid://blb5vluwph4ql" path="res://encounters/sprites/older_brother/older_brother_die_14.png" id="285_sumrt"]
+[ext_resource type="Texture2D" uid="uid://djwufqcciqv6p" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_115.png" id="286_8d486"]
 [ext_resource type="Texture2D" uid="uid://cc8w53rn1utan" path="res://encounters/sprites/older_brother/older_brother_die_16.png" id="286_snb60"]
+[ext_resource type="Texture2D" uid="uid://b674jgxhsjnja" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_123.png" id="287_nkmuy"]
 [ext_resource type="Texture2D" uid="uid://ctxx6vtdl2rj6" path="res://encounters/sprites/older_brother/older_brother_die_18.png" id="287_w7arj"]
 [ext_resource type="Texture2D" uid="uid://nbny3jmy2ujl" path="res://encounters/sprites/older_brother/older_brother_die_20.png" id="288_ibkdq"]
+[ext_resource type="Texture2D" uid="uid://c5wco2eau0287" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_131.png" id="288_n8xjp"]
 [ext_resource type="Texture2D" uid="uid://bm8dl1dojf1hp" path="res://encounters/sprites/older_brother/older_brother_die_22.png" id="289_5l8vl"]
+[ext_resource type="Texture2D" uid="uid://cr178kd00cxrb" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_139.png" id="289_om5ch"]
+[ext_resource type="Texture2D" uid="uid://cv2qxec0it0fy" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_147.png" id="290_nsmm1"]
 [ext_resource type="Texture2D" uid="uid://c3xv3x20q2da5" path="res://encounters/sprites/older_brother/older_brother_die_24.png" id="290_s5fa1"]
 [ext_resource type="Texture2D" uid="uid://06tse6h428vn" path="res://encounters/sprites/older_brother/older_brother_die_26.png" id="291_fbwnm"]
+[ext_resource type="Texture2D" uid="uid://dkihsxxf3xqrj" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_155.png" id="291_xervk"]
+[ext_resource type="Texture2D" uid="uid://b6rnlf6lnbdxa" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_163.png" id="292_jov13"]
+[ext_resource type="Texture2D" uid="uid://bu2xydbi1c2ab" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_171.png" id="293_oseye"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="294_t810l"]
+[ext_resource type="Texture2D" uid="uid://c27ddn3gtahut" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_179.png" id="294_wtaa2"]
+[ext_resource type="Texture2D" uid="uid://e0pp5qibg30i" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_187.png" id="295_6x6v0"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="295_gtv32"]
+[ext_resource type="Texture2D" uid="uid://4erbmy5f5tad" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_195.png" id="296_04d4b"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="296_wvw3i"]
+[ext_resource type="Texture2D" uid="uid://d0bdoiw8wdlfi" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_203.png" id="297_g0160"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="297_lgx8j"]
+[ext_resource type="Texture2D" uid="uid://c2jrmkethhp" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_211.png" id="298_8gh7g"]
+[ext_resource type="Texture2D" uid="uid://bqth81csgjwbi" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_219.png" id="299_3ujhw"]
+[ext_resource type="Texture2D" uid="uid://h6rogw1vfvjh" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_227.png" id="300_6i1hk"]
+[ext_resource type="Texture2D" uid="uid://dxsu30cml3tng" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_235.png" id="301_qcbwl"]
+[ext_resource type="Texture2D" uid="uid://c1b8cknbg0ofx" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_243.png" id="302_uj68o"]
+[ext_resource type="Texture2D" uid="uid://dtsceeeks5quo" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_251.png" id="303_ydurh"]
+[ext_resource type="Texture2D" uid="uid://cgccg4nvg1i5n" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_a_259.png" id="304_g76ij"]
+[ext_resource type="Texture2D" uid="uid://cfluhnnx3cgel" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_03.png" id="305_d5x14"]
+[ext_resource type="Texture2D" uid="uid://d0di1aeo1h5b5" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_11.png" id="306_0bunb"]
+[ext_resource type="Texture2D" uid="uid://bwqr3id8865w" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_19.png" id="307_n5kep"]
+[ext_resource type="Texture2D" uid="uid://deoy56vvqce1r" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_27.png" id="308_i55ia"]
+[ext_resource type="Texture2D" uid="uid://ce3th7cf65fhw" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_35.png" id="309_h5m5c"]
+[ext_resource type="Texture2D" uid="uid://0615c1x1jesn" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_43.png" id="310_w0ph5"]
+[ext_resource type="Texture2D" uid="uid://ch1p53igxrutf" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_51.png" id="311_5nnaw"]
+[ext_resource type="Texture2D" uid="uid://dkbhpqb75cvc5" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_59.png" id="312_ccm4j"]
+[ext_resource type="Texture2D" uid="uid://2inmiqb7r7d2" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_67.png" id="313_7jgqd"]
+[ext_resource type="Texture2D" uid="uid://cfi28bo0vusto" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_75.png" id="314_bix3d"]
+[ext_resource type="Texture2D" uid="uid://cnm6fxtvd3qvk" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_83.png" id="315_yt4c0"]
+[ext_resource type="Texture2D" uid="uid://bhkhm22wxw3mx" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_91.png" id="316_nhr7f"]
+[ext_resource type="Texture2D" uid="uid://cpb6o6gku3hrc" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_99.png" id="317_xtk6j"]
+[ext_resource type="Texture2D" uid="uid://bu1jt8tf7iups" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_107.png" id="318_4iuos"]
+[ext_resource type="Texture2D" uid="uid://brovtn0p0lqo4" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_115.png" id="319_ud0ks"]
+[ext_resource type="Texture2D" uid="uid://bok2o5yqbewa" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_123.png" id="320_wge2r"]
+[ext_resource type="Texture2D" uid="uid://b27g873hfh26o" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_131.png" id="321_h2e30"]
+[ext_resource type="Texture2D" uid="uid://cujoo67vuvoxn" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_139.png" id="322_yqi8y"]
+[ext_resource type="Texture2D" uid="uid://dsn1i4yni7r8n" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_147.png" id="323_6qdhy"]
+[ext_resource type="Texture2D" uid="uid://cht5wocosx8d3" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_155.png" id="324_t14gh"]
+[ext_resource type="Texture2D" uid="uid://r68fmy8b41s5" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_163.png" id="325_lbhkf"]
+[ext_resource type="Texture2D" uid="uid://di2d7x4esldcx" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_171.png" id="326_ar1u3"]
+[ext_resource type="Texture2D" uid="uid://dn5v5iovu0r53" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_179.png" id="327_lqneb"]
+[ext_resource type="Texture2D" uid="uid://bma3ywjq6kvbw" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_187.png" id="328_3nura"]
+[ext_resource type="Texture2D" uid="uid://bh5g500pcbbj2" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_195.png" id="329_2dmir"]
+[ext_resource type="Texture2D" uid="uid://d0sdfkan5ugq" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_203.png" id="330_7nwd3"]
+[ext_resource type="Texture2D" uid="uid://bmb6j2d6g5cjs" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_211.png" id="331_6n3nv"]
+[ext_resource type="Texture2D" uid="uid://np1vnjr2iekq" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_219.png" id="332_1qfhk"]
+[ext_resource type="Texture2D" uid="uid://y8ugrsvoi8f" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_227.png" id="333_jnsh7"]
+[ext_resource type="Texture2D" uid="uid://dilnuv8ffpaah" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_235.png" id="334_wrja1"]
+[ext_resource type="Texture2D" uid="uid://mq6nofpgl2dp" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_243.png" id="335_n6hqs"]
+[ext_resource type="Texture2D" uid="uid://clle4llhn7l20" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_251.png" id="336_cfux0"]
+[ext_resource type="Texture2D" uid="uid://bnfh7rekajni5" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_259.png" id="337_8i4ou"]
+[ext_resource type="Texture2D" uid="uid://bprk8rjm623c4" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_267.png" id="338_jquku"]
+[ext_resource type="Texture2D" uid="uid://fg4vgvfc63q2" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_275.png" id="339_iu5e2"]
+[ext_resource type="Texture2D" uid="uid://bo837j78nt8mt" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_283.png" id="340_xcivh"]
+[ext_resource type="Texture2D" uid="uid://cibtx2om4lq30" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_291.png" id="341_8qtf3"]
+[ext_resource type="Texture2D" uid="uid://b6thitfour8sh" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_299.png" id="342_reh25"]
+[ext_resource type="Texture2D" uid="uid://bq5hhmf1sr8yg" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_b_307.png" id="343_j6p54"]
+[ext_resource type="Texture2D" uid="uid://c7venqcxc4q3j" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_00.png" id="344_ga3fx"]
+[ext_resource type="Texture2D" uid="uid://c7jattggunomm" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_02.png" id="345_e3gjn"]
+[ext_resource type="Texture2D" uid="uid://c4kc0u6pmqgyq" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_04.png" id="346_rf85q"]
+[ext_resource type="Texture2D" uid="uid://dfuxhynuxadpl" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_06.png" id="347_0yy21"]
+[ext_resource type="Texture2D" uid="uid://b580kwu20p83k" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_08.png" id="348_85cqw"]
+[ext_resource type="Texture2D" uid="uid://85m7mvwgaq5" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_10.png" id="349_te4k2"]
+[ext_resource type="Texture2D" uid="uid://cwdnyoqnu11xn" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_12.png" id="350_xkqnd"]
+[ext_resource type="Texture2D" uid="uid://b3n3y74ugnxch" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_14.png" id="351_n5o6n"]
+[ext_resource type="Texture2D" uid="uid://dsewyxo1860ko" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_16.png" id="352_1br5v"]
+[ext_resource type="Texture2D" uid="uid://yrj2hfvx4o1r" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_18.png" id="353_o7jk7"]
+[ext_resource type="Texture2D" uid="uid://y0eleavpvt2t" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_20.png" id="354_fhcni"]
+[ext_resource type="Texture2D" uid="uid://dx3ofe6jkjtfh" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_22.png" id="355_nx6ii"]
+[ext_resource type="Texture2D" uid="uid://ce5xp2s53txwv" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_24.png" id="356_cdfg1"]
+[ext_resource type="Texture2D" uid="uid://bujk30tdf5rr" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_26.png" id="357_dxjsp"]
+[ext_resource type="Texture2D" uid="uid://h1oe46wenq2e" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_28.png" id="358_5ff0v"]
+[ext_resource type="Texture2D" uid="uid://dqxqumq81are2" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_30.png" id="359_y2lre"]
+[ext_resource type="Texture2D" uid="uid://dco4sjakkxy62" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_32.png" id="360_tt16a"]
+[ext_resource type="Texture2D" uid="uid://1hgb67ll1ljb" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_34.png" id="361_8foae"]
+[ext_resource type="Texture2D" uid="uid://bowltpmu5ui0r" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_36.png" id="362_n0ys3"]
+[ext_resource type="Texture2D" uid="uid://dhlj2qqtqv0x8" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_38.png" id="363_hgbbn"]
+[ext_resource type="Texture2D" uid="uid://b5rhj6b0uuxlx" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_40.png" id="364_1v6i7"]
+[ext_resource type="Texture2D" uid="uid://dnkghsponhrpa" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_42.png" id="365_mwlu5"]
+[ext_resource type="Texture2D" uid="uid://ditq41sdjssuk" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_44.png" id="366_me5is"]
+[ext_resource type="Texture2D" uid="uid://dvrm87mvpg7hr" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_46.png" id="367_g4k7u"]
+[ext_resource type="Texture2D" uid="uid://cvtmirkaq73r1" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_48.png" id="368_ofhgo"]
+[ext_resource type="Texture2D" uid="uid://b5hawemclmnqy" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_50.png" id="369_2id4f"]
+[ext_resource type="Texture2D" uid="uid://dg63bdmelagqp" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_52.png" id="370_cc1rr"]
+[ext_resource type="Texture2D" uid="uid://ber0jsvwqi13c" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_54.png" id="371_0888w"]
+[ext_resource type="Texture2D" uid="uid://de8m0losi8pk3" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_56.png" id="372_06pqa"]
+[ext_resource type="Texture2D" uid="uid://btgdm4lmctdvv" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_58.png" id="373_cmmus"]
+[ext_resource type="Texture2D" uid="uid://doe3xeltxw2m2" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_60.png" id="374_of8i0"]
+[ext_resource type="Texture2D" uid="uid://by6yqhwyes2ha" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_62.png" id="375_nyg7k"]
+[ext_resource type="Texture2D" uid="uid://b4f6d7vsowlac" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_64.png" id="376_qog8l"]
+[ext_resource type="Texture2D" uid="uid://cnnrguucywf6n" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_66.png" id="377_nhcdt"]
+[ext_resource type="Texture2D" uid="uid://bwh7j024waoi3" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_68.png" id="378_ws5g0"]
+[ext_resource type="Texture2D" uid="uid://vten3utfa2qg" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_70.png" id="379_n1ye3"]
+[ext_resource type="Texture2D" uid="uid://mbsrve0s3fap" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_72.png" id="380_f5qdl"]
+[ext_resource type="Texture2D" uid="uid://dsrlwiubhkgmq" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_74.png" id="381_m0ntj"]
+[ext_resource type="Texture2D" uid="uid://b8k4bq2krkmdf" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_76.png" id="382_d01xa"]
+[ext_resource type="Texture2D" uid="uid://ctdwxm0f4drji" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_78.png" id="383_4h4c7"]
+[ext_resource type="Texture2D" uid="uid://l3ade124hse6" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_80.png" id="384_724ae"]
+[ext_resource type="Texture2D" uid="uid://334181oib8o0" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_82.png" id="385_80i1d"]
+[ext_resource type="Texture2D" uid="uid://dycbgps376hin" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_84.png" id="386_1qlnk"]
+[ext_resource type="Texture2D" uid="uid://dkt6h55gbac8t" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_86.png" id="387_wkgm1"]
+[ext_resource type="Texture2D" uid="uid://cmajix4ffv1vj" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_88.png" id="388_iuhgw"]
+[ext_resource type="Texture2D" uid="uid://c0cyov3vb38qf" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_90.png" id="389_ig8n8"]
+[ext_resource type="Texture2D" uid="uid://3dy4wcglwbsu" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_92.png" id="390_q683v"]
+[ext_resource type="Texture2D" uid="uid://bkjcqxigat7yy" path="res://encounters/sprites/cute_one/more_dancing/cute_one_dance_c_94.png" id="391_8xcvx"]
 
 [sub_resource type="Shader" id="Shader_jwvby"]
 code = "//ATTENTION:
@@ -572,8 +794,329 @@ animations = [{
 "texture": ExtResource("57_wbiyl")
 }],
 "loop": true,
-"name": &"dance",
-"speed": 5.0
+"name": &"dance1",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("106_yanoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_ji0ij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_ejcc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_x7sgg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_ol12x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_7au3k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_lghs3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_qncj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_33eo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_nyb3f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_yb2ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_ckplb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_r7sjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_i5bgc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_pc2nr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_6yby8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_7isbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_47nxo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_edj74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_4aupb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_emnkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_g5wkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_vdsh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_7sr8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_tg8la")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_sy81c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_nseqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_ucv12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_pdxhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_ltsf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_3j5ra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_erlqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_4q6ho")
+}],
+"loop": true,
+"name": &"dance2",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("139_l81s8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_hieyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_btfgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_7qy0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_tp4wt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_ym5eq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_erlha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_vt1kb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_kuyh3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_gaxkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_q6q31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_at8y6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_shwm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_dt243")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_m6d6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_ptmcw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_qo082")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_tlyei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_qf5y1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_h31h4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_btq2u")
+}],
+"loop": true,
+"name": &"dance3",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_nbx38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_qls0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6yhts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_vpx6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_xlett")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ppu38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_cpmuy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_rko2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_wcvrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_78g18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_1wd0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_dwbq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_kev51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_3rwve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_u6jwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_mfoyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_0v1jh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_lojij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_c8rfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_r3qq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_v4noj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ml8qf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_idtwj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_idwnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_gimpe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_3cvfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_3fdvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_cwevk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_8thad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_t2i7p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ah368")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_qib04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_pk1r0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_aahqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_tde2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_vrvnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_cmjgy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_rihhg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_2wtoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_m1s5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_lq40s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_dhdns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_ta2sp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_ctppr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_ff2ws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_es3he")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_takgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_ld4gw")
+}],
+"loop": true,
+"name": &"dance4",
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -855,7 +1398,211 @@ animations = [{
 "texture": ExtResource("91_uedyh")
 }],
 "loop": true,
-"name": &"dance",
+"name": &"dance1",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71_arbjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_f0umd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_xgqk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_wgeaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_pejd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_05dlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_ittnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_etmuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_yr8sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_t6b11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_inxjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_3f5x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ff3l2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_vvbdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_3se4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_ir8ek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_tl860")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_2qtyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_qmto8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_i7vj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_uedyh")
+}],
+"loop": true,
+"name": &"dance2",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71_arbjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_f0umd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_xgqk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_wgeaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_pejd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_05dlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_ittnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_etmuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_yr8sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_t6b11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_inxjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_3f5x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ff3l2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_vvbdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_3se4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_ir8ek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_tl860")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_2qtyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_qmto8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_i7vj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_uedyh")
+}],
+"loop": true,
+"name": &"dance3",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("71_arbjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_f0umd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_xgqk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_wgeaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_pejd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_05dlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_ittnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_etmuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_yr8sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_t6b11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_inxjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_3f5x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ff3l2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_vvbdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_3se4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_ir8ek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_tl860")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_2qtyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_qmto8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_i7vj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_uedyh")
+}],
+"loop": true,
+"name": &"dance4",
 "speed": 8.0
 }, {
 "frames": [{
@@ -1144,7 +1891,382 @@ animations = [{
 "texture": ExtResource("161_kc4l2")
 }],
 "loop": true,
-"name": &"dance",
+"name": &"dance1",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("272_4dqjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("273_g67ql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("274_fjhg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("275_eei5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("276_r5d2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("277_22gsw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("278_05en1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("279_bv27w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("280_wosnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("281_vjqds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("282_1t8kv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("283_ljbd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("284_4x3va")
+}, {
+"duration": 1.0,
+"texture": ExtResource("285_0cvha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("286_8d486")
+}, {
+"duration": 1.0,
+"texture": ExtResource("287_nkmuy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("288_n8xjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("289_om5ch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("290_nsmm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("291_xervk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("292_jov13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("293_oseye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("294_wtaa2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("295_6x6v0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("296_04d4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("297_g0160")
+}, {
+"duration": 1.0,
+"texture": ExtResource("298_8gh7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("299_3ujhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("300_6i1hk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("301_qcbwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("302_uj68o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("303_ydurh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("304_g76ij")
+}],
+"loop": true,
+"name": &"dance2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("305_d5x14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("306_0bunb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("307_n5kep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("308_i55ia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("309_h5m5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("310_w0ph5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("311_5nnaw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("312_ccm4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("313_7jgqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("314_bix3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("315_yt4c0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("316_nhr7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("317_xtk6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("318_4iuos")
+}, {
+"duration": 1.0,
+"texture": ExtResource("319_ud0ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("320_wge2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("321_h2e30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("322_yqi8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("323_6qdhy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("324_t14gh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("325_lbhkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("326_ar1u3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("327_lqneb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("328_3nura")
+}, {
+"duration": 1.0,
+"texture": ExtResource("329_2dmir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("330_7nwd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("331_6n3nv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("332_1qfhk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("333_jnsh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("334_wrja1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("335_n6hqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("336_cfux0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("337_8i4ou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("338_jquku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("339_iu5e2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("340_xcivh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("341_8qtf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("342_reh25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("343_j6p54")
+}],
+"loop": true,
+"name": &"dance3",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("344_ga3fx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("345_e3gjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("346_rf85q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("347_0yy21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("348_85cqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("349_te4k2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("350_xkqnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("351_n5o6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("352_1br5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("353_o7jk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("354_fhcni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("355_nx6ii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("356_cdfg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("357_dxjsp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("358_5ff0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("359_y2lre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("360_tt16a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("361_8foae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("362_n0ys3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("363_hgbbn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("364_1v6i7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("365_mwlu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("366_me5is")
+}, {
+"duration": 1.0,
+"texture": ExtResource("367_g4k7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("368_ofhgo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("369_2id4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("370_cc1rr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("371_0888w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("372_06pqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("373_cmmus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("374_of8i0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("375_nyg7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("376_qog8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("377_nhcdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("378_ws5g0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("379_n1ye3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("380_f5qdl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("381_m0ntj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("382_d01xa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("383_4h4c7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("384_724ae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("385_80i1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("386_1qlnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("387_wkgm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("388_iuhgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("389_ig8n8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("390_q683v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("391_8xcvx")
+}],
+"loop": true,
+"name": &"dance4",
 "speed": 8.0
 }, {
 "frames": [{
@@ -1436,7 +2558,211 @@ animations = [{
 "texture": ExtResource("220_qi3uv")
 }],
 "loop": true,
-"name": &"dance",
+"name": &"dance1",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("200_2ruo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_ei8kc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_oda6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_dm52i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_t6ghk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_8xmts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_1mwqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_bkx3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_irl0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_jqmvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_ow0tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_lx3jc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_8gwro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("213_wp6ke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("214_iunc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("215_s2x5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("216_o7bb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("217_puplb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("218_f5j2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("219_1v7vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("220_qi3uv")
+}],
+"loop": true,
+"name": &"dance2",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("200_2ruo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_ei8kc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_oda6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_dm52i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_t6ghk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_8xmts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_1mwqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_bkx3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_irl0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_jqmvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_ow0tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_lx3jc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_8gwro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("213_wp6ke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("214_iunc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("215_s2x5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("216_o7bb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("217_puplb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("218_f5j2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("219_1v7vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("220_qi3uv")
+}],
+"loop": true,
+"name": &"dance3",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("200_2ruo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_ei8kc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_oda6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_dm52i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_t6ghk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_8xmts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_1mwqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_bkx3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_irl0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_jqmvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_ow0tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_lx3jc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_8gwro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("213_wp6ke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("214_iunc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("215_s2x5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("216_o7bb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("217_puplb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("218_f5j2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("219_1v7vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("220_qi3uv")
+}],
+"loop": true,
+"name": &"dance4",
 "speed": 8.0
 }, {
 "frames": [{
@@ -1728,7 +3054,211 @@ animations = [{
 "texture": ExtResource("277_mdker")
 }],
 "loop": true,
-"name": &"dance",
+"name": &"dance1",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("257_6samn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("258_fwyt7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("259_hi0kp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("260_mjfkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("261_p5lxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("262_fn0oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("263_jtnl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("264_0jrej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("265_jc8tk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("266_0gof6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("267_unh8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("268_5ovmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("269_sjfh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("270_j0dce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("271_sfsav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("272_8qj33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("273_aydpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("274_gnt7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("275_218rb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("276_8rs1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("277_mdker")
+}],
+"loop": true,
+"name": &"dance2",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("257_6samn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("258_fwyt7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("259_hi0kp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("260_mjfkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("261_p5lxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("262_fn0oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("263_jtnl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("264_0jrej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("265_jc8tk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("266_0gof6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("267_unh8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("268_5ovmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("269_sjfh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("270_j0dce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("271_sfsav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("272_8qj33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("273_aydpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("274_gnt7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("275_218rb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("276_8rs1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("277_mdker")
+}],
+"loop": true,
+"name": &"dance3",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("257_6samn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("258_fwyt7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("259_hi0kp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("260_mjfkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("261_p5lxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("262_fn0oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("263_jtnl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("264_0jrej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("265_jc8tk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("266_0gof6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("267_unh8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("268_5ovmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("269_sjfh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("270_j0dce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("271_sfsav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("272_8qj33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("273_aydpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("274_gnt7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("275_218rb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("276_8rs1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("277_mdker")
+}],
+"loop": true,
+"name": &"dance4",
 "speed": 8.0
 }, {
 "frames": [{
@@ -1807,10 +3337,8 @@ material = SubResource("ShaderMaterial_gq0bb")
 position = Vector2(0, -325)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_70kts")
-animation = &"dance"
+animation = &"dance4"
 autoplay = "idle"
-frame = 36
-frame_progress = 0.00665096
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/BadBoySprite"]
 position = Vector2(210, -26)
@@ -1822,25 +3350,20 @@ material = SubResource("ShaderMaterial_jh27w")
 position = Vector2(-30, -220)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_lrcwh")
-animation = &"die"
+animation = &"dance4"
 autoplay = "idle"
-frame = 19
-frame_progress = 1.0
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/HeartthrobSprite"]
 position = Vector2(220, -116)
 
 [node name="CuteOneSprite" type="AnimatedSprite2D" parent="SpriteHolder"]
-visible = false
 z_index = 1
 material = SubResource("ShaderMaterial_co05w")
 position = Vector2(0, -250)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_cox0k")
-animation = &"attack"
+animation = &"dance1"
 autoplay = "idle"
-frame = 14
-frame_progress = 1.0
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/CuteOneSprite"]
 position = Vector2(200, -74)
@@ -1852,10 +3375,8 @@ material = SubResource("ShaderMaterial_d0wd3")
 position = Vector2(0, -320)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_ph2q0")
-animation = &"attack"
+animation = &"dance4"
 autoplay = "idle"
-frame = 14
-frame_progress = 1.0
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/ShyOneSprite"]
 position = Vector2(202, -64)
@@ -1867,10 +3388,8 @@ material = SubResource("ShaderMaterial_4s0xf")
 position = Vector2(0, -300)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_6kyhv")
-animation = &"attack"
+animation = &"dance4"
 autoplay = "idle"
-frame = 14
-frame_progress = 1.0
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/OlderBrotherSprite"]
 position = Vector2(194, -44)

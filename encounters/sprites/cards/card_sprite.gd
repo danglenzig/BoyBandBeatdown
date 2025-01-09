@@ -32,6 +32,8 @@ var fireball_launched = false
 
 var my_pos: Vector2
 
+const DANCE_ANIMS = 4
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	deck_tools = SingletonHolder.get_node("DeckTools")
@@ -138,6 +140,14 @@ func setup_card(card_data: Card) -> void:
 	card_uuid = card_data.card_uuid
 	activate_sprite(card_data.suit_name)
 
+func get_random_dance_anim()->String:
+	
+	var a_rando: int = randi_range(1,DANCE_ANIMS)
+	print(str("dance",str(a_rando)))
+	return str("dance",str(a_rando))
+	
+	
+
 func on_atomic_state_entered(new_state) -> void:
 	match new_state:
 		"IDLE":
@@ -147,7 +157,7 @@ func on_atomic_state_entered(new_state) -> void:
 		"DANCE":
 			if not active_sprite:
 				return
-			active_sprite.play("dance")
+			active_sprite.play(get_random_dance_anim())
 		"ATTACK":
 			if not active_sprite:
 				return

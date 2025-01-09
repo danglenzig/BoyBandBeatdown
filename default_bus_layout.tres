@@ -1,13 +1,6 @@
-[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://dbla6a2brxc2o"]
-
-[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_vmekl"]
-resource_name = "Reverb"
-
-[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_qrg75"]
-resource_name = "Phaser"
+[gd_resource type="AudioBusLayout" format=3 uid="uid://dbla6a2brxc2o"]
 
 [resource]
-bus/0/send = &"BattleMusic"
 bus/1/name = &"Music"
 bus/1/solo = false
 bus/1/mute = false
@@ -20,8 +13,6 @@ bus/2/mute = false
 bus/2/bypass_fx = false
 bus/2/volume_db = 0.0
 bus/2/send = &"Music"
-bus/2/effect/0/effect = SubResource("AudioEffectReverb_vmekl")
-bus/2/effect/0/enabled = true
 bus/3/name = &"OutdoorMusic"
 bus/3/solo = false
 bus/3/mute = false
@@ -34,8 +25,6 @@ bus/4/mute = false
 bus/4/bypass_fx = false
 bus/4/volume_db = 0.0
 bus/4/send = &"Music"
-bus/4/effect/0/effect = SubResource("AudioEffectPhaser_qrg75")
-bus/4/effect/0/enabled = true
 bus/5/name = &"BattleMusic"
 bus/5/solo = false
 bus/5/mute = false

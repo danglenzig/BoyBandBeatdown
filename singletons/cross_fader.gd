@@ -40,7 +40,7 @@ var is_tweening: bool 				= false
 	set(value):
 		AudioServer.set_bus_volume_db(start_menu_index, value)
 
-const FADE_IN_MODIFIER 			= 0.1
+const FADE_IN_MODIFIER 			= 0.075
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -165,6 +165,4 @@ func bus_volume_helper(bus_name: String, volume_db: float)->void:
 	
 func get_volume(bus_index: int)->float:
 	return AudioServer.get_bus_volume_db(bus_index)
-	
-
 	

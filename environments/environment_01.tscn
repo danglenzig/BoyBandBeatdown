@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bnc0he5ytku37"]
+[gd_scene load_steps=34 format=3 uid="uid://bnc0he5ytku37"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
 [ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/env_01.png" id="2_it8mk"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://environments/game_camera.gd" id="3_3hvqu"]
 [ext_resource type="Script" path="res://environments/z_scaler.gd" id="4_jwenf"]
 [ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="5_lb3wf"]
+[ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="7_4t4tq"]
 [ext_resource type="Script" path="res://environments/exit_trigger.gd" id="7_n6j3s"]
 [ext_resource type="PackedScene" uid="uid://o24c0cdr71es" path="res://environments/prop_scenes/environment_01_basketball_hoop_prop.tscn" id="7_w26um"]
 [ext_resource type="PackedScene" uid="uid://ru26bw57lyag" path="res://environments/prop_scenes/environment_01_tree_01_prop.tscn" id="8_xbhcq"]
@@ -119,10 +120,13 @@ position = Vector2(808, 680)
 position = Vector2(1132, 648)
 
 [node name="NpcHolder" type="Node2D" parent="."]
-visible = false
 
 [node name="MarcieSprite" parent="NpcHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("5_lb3wf")]
 position = Vector2(1137, 831)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="GretchenSprite" parent="NpcHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("7_4t4tq")]
+position = Vector2(1347, 730)
 z_scaler = NodePath("../../ZScaler")
 
 [node name="PropHolder" type="Node2D" parent="."]

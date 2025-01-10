@@ -86,10 +86,15 @@ func display_cards_in_hand(cards: Array[Card])->void:
 	
 	
 	var hand_panel: Panel 	= $CanvasLayer/HandPanel
+	var in_play_panel: Panel = $CanvasLayer/InPlayPanel
 	var card_holder: Node2D = $CanvasLayer/HandPanel/CardHolder
 	var card_markers = card_holder.get_children()
 	
+	in_play_panel.self_modulate = Color(1,1,1,0)
+	in_play_panel.visible = false
+	
 	hand_panel.visible = true
+	
 	
 	for i in range(0, card_markers.size()):
 		var this_marker: Marker2D = card_markers[i]

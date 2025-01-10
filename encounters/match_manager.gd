@@ -147,6 +147,7 @@ func on_playerAttack_anim_impact(is_player)->void:
 		
 		# wait for a beat then reveal the cards
 		await get_tree().create_timer(reveal_cards_delay).timeout
+		in_play_panel.self_modulate = Color(1,1,1,1)
 		flip_in_play_cards()
 		
 func flip_in_play_cards()->void:

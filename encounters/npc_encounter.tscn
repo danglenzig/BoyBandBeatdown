@@ -54,14 +54,14 @@ position = Vector2(783, 134)
 position = Vector2(1008, 134)
 
 [node name="InPlayPanel" type="Panel" parent="CanvasLayer"]
-visible = false
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 194.0
-offset_top = 102.0
-offset_right = 1142.0
-offset_bottom = 440.0
+offset_left = -47.0
+offset_top = -15.0
+offset_right = 1873.0
+offset_bottom = 1065.0
 
 [node name="CardHolder" type="Node2D" parent="CanvasLayer/InPlayPanel"]
+position = Vector2(235, 128)
 
 [node name="PlayerCardMarker" type="Marker2D" parent="CanvasLayer/InPlayPanel/CardHolder"]
 position = Vector2(294, 272)
@@ -70,6 +70,7 @@ position = Vector2(294, 272)
 position = Vector2(661, 272)
 
 [node name="RoundResultPanel" type="Panel" parent="CanvasLayer"]
+self_modulate = Color(0, 0, 0, 1)
 z_index = 1
 offset_right = 1893.0
 offset_bottom = 1072.0
@@ -113,7 +114,7 @@ offset_right = 327.5
 offset_bottom = 92.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 12

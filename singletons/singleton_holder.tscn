@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dlaoxsh4nrl4r"]
+[gd_scene load_steps=24 format=3 uid="uid://dlaoxsh4nrl4r"]
 
 [ext_resource type="Script" path="res://singletons/singleton_holder.gd" id="1_4ae2a"]
 [ext_resource type="Script" path="res://singletons/misc_tools.gd" id="1_ji376"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dy8f6hge3lmt7" path="res://encounters/npc_sprites/marcie_encounter_sprite.tscn" id="7_qgeg1"]
 [ext_resource type="Script" path="res://singletons/progression_manager.gd" id="8_nwdj1"]
 [ext_resource type="Script" path="res://singletons/game_settings.gd" id="9_jnmea"]
+[ext_resource type="PackedScene" uid="uid://juusc1s731ic" path="res://encounters/npc_sprites/gretchen_encounter_sprite.tscn" id="9_rx8br"]
 [ext_resource type="Script" path="res://singletons/encounter_events.gd" id="10_gkav3"]
 [ext_resource type="Script" path="res://audio/footstep_player.gd" id="11_2qhi3"]
 [ext_resource type="Script" path="res://singletons/ui_sound_manager.gd" id="12_xm623"]
@@ -41,7 +42,7 @@ script = ExtResource("5_0x11e")
 
 [node name="NpcEncounterSpriteScenes" type="Node" parent="."]
 script = ExtResource("6_hlet4")
-npc_encounter_sprite_scenes = Array[PackedScene]([ExtResource("7_qgeg1")])
+npc_encounter_sprite_scenes = Array[PackedScene]([ExtResource("7_qgeg1"), ExtResource("9_rx8br")])
 
 [node name="ProgressionManager" type="Node" parent="."]
 script = ExtResource("8_nwdj1")

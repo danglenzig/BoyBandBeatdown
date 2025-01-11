@@ -30,7 +30,9 @@ var environment_01_exit_placeholder_marker_name = ""
 func _ready():
 	
 	misc_tools = SingletonHolder.get_node("MiscTools")
+	misc_tools.main = self
 	misc_tools.splash_complete.connect(on_splash_complete)
+	
 	
 	hud_panel = $CanvasLayer/HudPanel
 	#display_start_menu()

@@ -16,6 +16,9 @@ var player_inside_detect_radius = false
 var misc_tools: MiscTools
 var encounter_events: EncounterEvents
 
+var npc_dialogue: NpcDialogue
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	misc_tools = SingletonHolder.get_node("MiscTools")
@@ -26,7 +29,8 @@ func _ready():
 	
 	var my_mat: ShaderMaterial = $AnimatedSprite2D.material
 	my_mat.set_shader_parameter("BORDERNOISE_active", false)
-
+	
+	npc_dialogue = $NpcDialogue
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -35,9 +39,17 @@ func _process(delta):
 	handle_facing()
 	handle_layering()
 	
-func _physics_process(delta):
-	handle_ui()
+func _physics_process(_delta):
+	if not misc_tools.dialogue_active and not npc_dialogue.on_cooldown:
+		handle_dialogue_detect()
+	#handle_ui()
 
+func handle_dialogue_detect()->void:
+	
+	if is_player_inside_detect_radius():
+		npc_dialogue.start_dialogue()
+
+"""
 func handle_ui()->void:
 	if is_player_inside_detect_radius():
 		if $EncounterUI/StartEncounterLabel.visible:
@@ -56,6 +68,7 @@ func handle_ui()->void:
 		
 		#var my_mat: ShaderMaterial = $AnimatedSprite2D.material
 		#my_mat.set_shader_parameter("BORDERNOISE_active", false)
+"""
 	
 func is_player_inside_detect_radius() -> bool:
 	var player: Player = misc_tools.current_player
@@ -87,19 +100,24 @@ func handle_scaling() -> void:
 	scale = Vector2(adjusted_scale, adjusted_scale)
 	
 func begin_encounter() -> void:
-	pass
-
+	print_debug("Begin?")
+	
+	encounter_events.begin_npc_encounter.emit(npc_name,npc_display_name, npc_power, play_style)
+	
 
 func _on_button_pressed():
-	print_debug("BEGIN")
-	encounter_events.begin_npc_encounter.emit(npc_name,npc_display_name, npc_power, play_style)
+	pass
+	#print_debug("BEGIN")
+	#encounter_events.begin_npc_encounter.emit(npc_name,npc_display_name, npc_power, play_style)
 
 
 func _on_button_mouse_entered():
-	var my_mat: ShaderMaterial = $AnimatedSprite2D.material
-	my_mat.set_shader_parameter("BORDERNOISE_active", true)
+	pass
+	#var my_mat: ShaderMaterial = $AnimatedSprite2D.material
+	#my_mat.set_shader_parameter("BORDERNOISE_active", true)
 
 
 func _on_button_mouse_exited():
-	var my_mat: ShaderMaterial = $AnimatedSprite2D.material
-	my_mat.set_shader_parameter("BORDERNOISE_active", false)
+	pass
+	#var my_mat: ShaderMaterial = $AnimatedSprite2D.material
+	#my_mat.set_shader_parameter("BORDERNOISE_active", false)

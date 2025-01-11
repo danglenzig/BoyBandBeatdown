@@ -10,6 +10,10 @@ signal splash_complete()
 
 @export var player_scene: PackedScene
 var current_player: Player = null
+var main: Main = null
+
+var dialogue_active = false
+var current_dialog: String = ""
 
 const uuid_util = preload('res://uuid.gd')
 

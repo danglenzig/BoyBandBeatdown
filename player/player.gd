@@ -35,6 +35,8 @@ func _process(delta):
 				handle_scaling()
 		"ENCOUNTER":
 			pass
+		"DIALOGUE":
+			pass
 
 func handle_footsteps():
 	var current_frame = player_sprite.frame
@@ -58,6 +60,8 @@ func _physics_process(delta):
 			handle_footsteps()
 			move_and_slide()
 		"ENCOUNTER":
+			pass
+		"DIALOGUE":
 			pass
 
 func handle_movement(move_input: Vector2) -> void:
@@ -113,6 +117,11 @@ func on_atomic_state_entered(new_state: String):
 			pass
 		"ENCOUNTER":
 			player_sprite.visible = false
+		"DIALOGUE":
+			player_sprite.visible = true
+			player_sprite.play("idle")
+			if use_z_scaling:
+				handle_scaling()
 			
 			
 	previous_state = current_state

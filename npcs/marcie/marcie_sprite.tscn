@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://draw6d8dxgu4k"]
+[gd_scene load_steps=9 format=3 uid="uid://draw6d8dxgu4k"]
 
 [ext_resource type="Texture2D" uid="uid://deu6jxy01sir1" path="res://npcs/marcie/marcie_explore_idle_00.png" id="1_ohqcv"]
 [ext_resource type="Script" path="res://npcs/npc_sprite.gd" id="2_0fk45"]
 [ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="3_yfalk"]
+[ext_resource type="Script" path="res://dialogue/npc_dialogue.gd" id="4_yejwd"]
 
 [sub_resource type="Shader" id="Shader_w000g"]
 code = "//ATTENTION:
@@ -215,7 +216,7 @@ animations = [{
 
 [node name="MarcieSprite" type="Node2D"]
 script = ExtResource("2_0fk45")
-player_detect_radius = 100
+player_detect_radius = 75
 play_style = "FAVOR_WATER"
 npc_name = "marcie"
 npc_display_name = "Marcie"
@@ -277,6 +278,12 @@ text = "Level N"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 scale = Vector2(4.805, 1.095)
 shape = SubResource("RectangleShape2D_xj3kx")
+
+[node name="NpcDialogue" type="Node" parent="."]
+script = ExtResource("4_yejwd")
+dialogue_resource_string = "res://dialogue/main_dialogue.dialogue"
+start_dialogue_tag = "marcie_challenge"
+speaker_portrait_resource = "res://dialogue/portraits/marcie_portrait.png"
 
 [connection signal="mouse_entered" from="EncounterUI/StartEncounterLabel/Button" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="EncounterUI/StartEncounterLabel/Button" to="." method="_on_button_mouse_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=32 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
 [ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_26yqy"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dpujp5fqkb7na" path="res://environments/prop_scenes/environment_00_west_wall_01.tscn" id="10_m8m0l"]
 [ext_resource type="PackedScene" uid="uid://daf8pwkm7rt2u" path="res://environments/prop_scenes/environment_00_west_wall_02.tscn" id="11_g6qy6"]
 [ext_resource type="Script" path="res://environments/exit_trigger.gd" id="12_jf4gw"]
+[ext_resource type="PackedScene" uid="uid://mc8wh7gomyal" path="res://dialogue/dialogue_trigger_area.tscn" id="13_jqwix"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hau2o"]
 size = Vector2(914, 26)
@@ -64,6 +65,9 @@ size = Vector2(16, 24)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3say"]
 size = Vector2(193.59, 13)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7m26d"]
+size = Vector2(20, 309)
+
 [node name="Environment_00" type="Node2D"]
 position = Vector2(7, -40)
 script = ExtResource("1_ot0or")
@@ -106,7 +110,7 @@ position = Vector2(-3, 1071)
 position = Vector2(336, 815)
 
 [node name="StairsPlayerStart" type="Marker2D" parent="."]
-position = Vector2(901, 707)
+position = Vector2(1470, 818)
 
 [node name="NpcHolder" type="Node2D" parent="."]
 
@@ -211,4 +215,19 @@ player_start_name = "EastPlayerStart"
 position = Vector2(-27.5641, -4.5)
 shape = SubResource("RectangleShape2D_i3say")
 
+[node name="DialogueTriggerHolder" type="Node2D" parent="."]
+
+[node name="environment_00_00" parent="DialogueTriggerHolder" instance=ExtResource("13_jqwix")]
+position = Vector2(1538, 831)
+dialogue_resource_string = "res://dialogue/main_dialogue.dialogue"
+start_dialogue_tag = "environment_00_00"
+speaker_portrait_resource = "res://dialogue/portraits/player_portrait.png"
+one_shot = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueTriggerHolder/environment_00_00"]
+position = Vector2(-208, 92.5)
+shape = SubResource("RectangleShape2D_7m26d")
+debug_color = Color(0.663075, 0.512889, 0.0136903, 0.42)
+
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger" to="ExitTriggerHolder/NorthExitTrigger" method="_on_body_entered"]
+[connection signal="body_entered" from="DialogueTriggerHolder/environment_00_00" to="DialogueTriggerHolder/environment_00_00" method="_on_body_entered"]

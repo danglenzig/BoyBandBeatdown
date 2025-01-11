@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bihf2ljwlb42y"]
+[gd_scene load_steps=9 format=3 uid="uid://bihf2ljwlb42y"]
 
 [ext_resource type="Script" path="res://npcs/npc_sprite.gd" id="1_j7l1i"]
 [ext_resource type="Texture2D" uid="uid://btyesdgflvt74" path="res://npcs/gretchen/gretchen_idle_100.png" id="2_qgkpn"]
 [ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="3_0shs6"]
+[ext_resource type="Script" path="res://dialogue/npc_dialogue.gd" id="4_5bh7o"]
 
 [sub_resource type="Shader" id="Shader_jd6xv"]
 code = "//ATTENTION:
@@ -279,6 +280,12 @@ text = "Level N"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(14.5, -2)
 shape = SubResource("RectangleShape2D_kr2rl")
+
+[node name="NpcDialogue" type="Node" parent="."]
+script = ExtResource("4_5bh7o")
+dialogue_resource_string = "res://dialogue/main_dialogue.dialogue"
+start_dialogue_tag = "gretchen_challenge"
+speaker_portrait_resource = "res://dialogue/portraits/gretchen_portrait.png"
 
 [connection signal="mouse_entered" from="EncounterUI/StartEncounterLabel/Button" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="EncounterUI/StartEncounterLabel/Button" to="." method="_on_button_mouse_exited"]

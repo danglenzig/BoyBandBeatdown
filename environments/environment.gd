@@ -63,6 +63,8 @@ func setup_player() -> void:
 	
 func on_begin_encounter(npc_name: String, npc_display_name: String, npc_power: int, npc_play_style: String) -> void:
 	
+	print_debug("BBBBEEEEGGGIIINNN")
+	
 	if player.current_state == "ENCOUNTER":
 		return
 	# hide the player and freeze movement

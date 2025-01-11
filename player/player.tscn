@@ -644,7 +644,8 @@ animations = [{
 "speed": 24.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+collision_layer = 2147483649
 script = ExtResource("1_eq5ms")
 footstep_frames = Array[int]([1, 12])
 
@@ -682,6 +683,12 @@ to = NodePath("../../Encounter")
 event = &"to_encounter_event"
 delay_in_seconds = "0.0"
 
+[node name="ToDialogue" type="Node" parent="StateChart/Root/Idle"]
+script = ExtResource("5_63rpo")
+to = NodePath("../../Dialogue")
+event = &"to_dialogue_event"
+delay_in_seconds = "0.0"
+
 [node name="Moving" type="Node" parent="StateChart/Root"]
 script = ExtResource("4_6haux")
 
@@ -697,6 +704,12 @@ to = NodePath("../../Encounter")
 event = &"to_encounter_event"
 delay_in_seconds = "0.0"
 
+[node name="ToDialogue" type="Node" parent="StateChart/Root/Moving"]
+script = ExtResource("5_63rpo")
+to = NodePath("../../Dialogue")
+event = &"to_dialogue_event"
+delay_in_seconds = "0.0"
+
 [node name="Encounter" type="Node" parent="StateChart/Root"]
 script = ExtResource("4_6haux")
 
@@ -706,6 +719,16 @@ to = NodePath("../../Idle")
 event = &"to_idle_event"
 delay_in_seconds = "0.0"
 
+[node name="Dialogue" type="Node" parent="StateChart/Root"]
+script = ExtResource("4_6haux")
+
+[node name="ToIdle" type="Node" parent="StateChart/Root/Dialogue"]
+script = ExtResource("5_63rpo")
+to = NodePath("../../Idle")
+event = &"to_idle_event"
+delay_in_seconds = "0.0"
+
 [connection signal="state_entered" from="StateChart/Root/Idle" to="." method="on_atomic_state_entered" binds= ["IDLE"]]
 [connection signal="state_entered" from="StateChart/Root/Moving" to="." method="on_atomic_state_entered" binds= ["MOVING"]]
 [connection signal="state_entered" from="StateChart/Root/Encounter" to="." method="on_atomic_state_entered" binds= ["ENCOUNTER"]]
+[connection signal="state_entered" from="StateChart/Root/Dialogue" to="." method="on_atomic_state_entered" binds= ["DIALOGUE"]]

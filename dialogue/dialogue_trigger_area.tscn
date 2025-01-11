@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://mc8wh7gomyal"]
+
+[ext_resource type="Script" path="res://dialogue/dialogue_trigger_area.gd" id="1_jmun0"]
+
+[node name="DialogueTriggerArea" type="Area2D"]
+collision_layer = 0
+collision_mask = 2147483648
+script = ExtResource("1_jmun0")

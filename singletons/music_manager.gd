@@ -9,6 +9,8 @@ var start_menu_theme: 			AudioStreamPlayer
 
 var cross_fader: CrossFader = null
 
+var music_playing = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
@@ -24,12 +26,16 @@ func _ready():
 	encounter_theme.bus 		= "BattleMusic"
 	start_menu_theme.bus 		= "StartMenuMusic"
 	
+	#start_music()
+	
+
+func start_music():
+	music_playing = true
 	overworld_indoor_theme.play()
 	overworld_outdoor_theme.play()
 	encounter_theme.play()
 	start_menu_theme.play()
-	
-	
+
 func play_music(bus_name: String) -> void:
 	cross_fader.fade_to_music(bus_name)
 	

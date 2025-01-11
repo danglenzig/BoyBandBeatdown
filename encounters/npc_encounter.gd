@@ -149,6 +149,10 @@ func play_battle_animations(result_string: String, reason_string: String, player
 		opponent_card_sprite.active_sprite.flip_h = true
 		winner_card_sprite.card_sprite_state_chart.send_event("to_attack_event")
 		loser_card_sprite.card_sprite_state_chart.send_event("to_die_event")
+	else:
+		opponent_card_sprite.active_sprite.flip_h = true
+		opponent_card_sprite.card_sprite_state_chart.send_event("to_tie_event")
+		player_card_sprite.card_sprite_state_chart.send_event("to_tie_event")
 	
 	print_debug("TODO: PLAYING BATTLE ANIMATIONS")
 	

@@ -1,12 +1,18 @@
 extends Node
 class_name Main
 
+var misc_tools: MiscTools
+
 #@export var temp_start_environment: PackedScene
 @export var start_menu_scene: PackedScene
 @export var environment_scenes: Array[PackedScene]
 #@export var tutorial_scene: PackedScene
 @export var tutorial_canvas_scene: PackedScene
+@export var splash_screen_scene: PackedScene
+var splash_screen: Control = null
+
 @export var start_scene_name: String = ""
+@export var start_with_splash: bool = false
 
 
 var current_environment: GameEnvironment = null
@@ -22,16 +28,35 @@ var environment_01_exit_placeholder_marker_name = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	
+	misc_tools = SingletonHolder.get_node("MiscTools")
+	misc_tools.splash_complete.connect(on_splash_complete)
+	
 	hud_panel = $CanvasLayer/HudPanel
-	display_start_menu()
+	#display_start_menu()
 	
 	change_scene.connect(load_environment)
 	start_button_pressed.connect(start_new_game)
 	howto_button_pressed.connect(start_tutorial_sequence)
 	
+	if start_with_splash:
+		splash_screen = splash_screen_scene.instantiate()
+		$CanvasLayer.call_deferred("add_child", splash_screen)
+	else:
+		display_start_menu()
+		
 	
 
+func on_splash_complete():
+	splash_screen.call_deferred("queue_free")
+	display_start_menu()
+
 func display_start_menu():
+	var music_manager: MusicManager = SingletonHolder.get_node("MusicManager")
+	if not music_manager.music_playing:
+		music_manager.start_music()
+		
+	
 	hud_panel.visible = false
 	var start_menu: Node2D = start_menu_scene.instantiate()
 	if current_environment:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://juusc1s731ic"]
+[gd_scene load_steps=58 format=3 uid="uid://juusc1s731ic"]
 
 [ext_resource type="Texture2D" uid="uid://cv0khgf6oga8r" path="res://encounters/sprites/gretchen/gretchen_attack_01.png" id="1_enonv"]
 [ext_resource type="Script" path="res://encounters/encounter_sprite.gd" id="1_qlg4w"]
@@ -31,8 +31,27 @@
 [ext_resource type="Texture2D" uid="uid://32mmgab17tdg" path="res://encounters/sprites/gretchen/gretchen_attack_55.png" id="28_oc25x"]
 [ext_resource type="Texture2D" uid="uid://w5o5fgpgnfkb" path="res://encounters/sprites/gretchen/gretchen_attack_57.png" id="29_7lixp"]
 [ext_resource type="Texture2D" uid="uid://c7vy5nphqnspj" path="res://encounters/sprites/gretchen/gretchen_idle_100.png" id="30_xkqwr"]
+[ext_resource type="Texture2D" uid="uid://bw0elb2lxqjlk" path="res://encounters/sprites/gretchen/gretchen_win_00.png" id="31_70m5a"]
 [ext_resource type="Texture2D" uid="uid://3gf4gj10fgrw" path="res://ui/assets/flash-light-effect-free-png.png" id="32_odapo"]
+[ext_resource type="Texture2D" uid="uid://ddjcofea4gxow" path="res://encounters/sprites/gretchen/gretchen_win_01.png" id="32_vgq4r"]
 [ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="33_2s6ps"]
+[ext_resource type="Texture2D" uid="uid://p3wgkdcifvto" path="res://encounters/sprites/gretchen/gretchen_win_02.png" id="33_diafe"]
+[ext_resource type="Texture2D" uid="uid://5f8x1f4nw3yn" path="res://encounters/sprites/gretchen/gretchen_win_03.png" id="34_m7vx6"]
+[ext_resource type="Texture2D" uid="uid://7seofc8sisn0" path="res://encounters/sprites/gretchen/gretchen_win_04.png" id="35_5fhbu"]
+[ext_resource type="Texture2D" uid="uid://dowt3h10cbvnu" path="res://encounters/sprites/gretchen/gretchen_win_05.png" id="36_olu6l"]
+[ext_resource type="Texture2D" uid="uid://4kx58qoed6ae" path="res://encounters/sprites/gretchen/gretchen_win_06.png" id="37_fht2f"]
+[ext_resource type="Texture2D" uid="uid://bvb42uqbq3h07" path="res://encounters/sprites/gretchen/gretchen_win_07.png" id="38_ao2p0"]
+[ext_resource type="Texture2D" uid="uid://dp4pn6b15atdw" path="res://encounters/sprites/gretchen/gretchen_win_08.png" id="39_dxeal"]
+[ext_resource type="Texture2D" uid="uid://cneqnjbr6kqp8" path="res://encounters/sprites/gretchen/gretchen_win_09.png" id="40_tjw2c"]
+[ext_resource type="Texture2D" uid="uid://ch5oluwsyehm1" path="res://encounters/sprites/gretchen/gretchen_win_10.png" id="41_mwfp6"]
+[ext_resource type="Texture2D" uid="uid://pqe1hougsb1j" path="res://encounters/sprites/gretchen/gretchen_win_11.png" id="42_50khu"]
+[ext_resource type="Texture2D" uid="uid://gaa1no3vil8c" path="res://encounters/sprites/gretchen/gretchen_win_12.png" id="43_kgfws"]
+[ext_resource type="Texture2D" uid="uid://dlcdeu5ruqcg8" path="res://encounters/sprites/gretchen/gretchen_win_13.png" id="44_jxfye"]
+[ext_resource type="Texture2D" uid="uid://c3b74h3t3q2bk" path="res://encounters/sprites/gretchen/gretchen_win_14.png" id="45_k1urt"]
+[ext_resource type="Texture2D" uid="uid://dc7hqdjd3ngpo" path="res://encounters/sprites/gretchen/gretchen_win_15.png" id="46_7v2f0"]
+[ext_resource type="Texture2D" uid="uid://cghn84e1j48n" path="res://encounters/sprites/gretchen/gretchen_win_16.png" id="47_vn4a3"]
+[ext_resource type="Texture2D" uid="uid://c0n866hxa2iyq" path="res://encounters/sprites/gretchen/gretchen_win_17.png" id="48_nk4wx"]
+[ext_resource type="Texture2D" uid="uid://ltcy8ow131yn" path="res://encounters/sprites/gretchen/gretchen_win_18.png" id="49_s70k8"]
 
 [sub_resource type="Shader" id="Shader_yykex"]
 code = "//ATTENTION:
@@ -350,11 +369,65 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("30_xkqwr")
+"texture": ExtResource("31_70m5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_vgq4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_diafe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_m7vx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_5fhbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_olu6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_fht2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ao2p0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_dxeal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_tjw2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_mwfp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_50khu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_kgfws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_jxfye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_k1urt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_7v2f0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_vn4a3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_nk4wx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_s70k8")
 }],
 "loop": false,
 "name": &"win",
-"speed": 5.0
+"speed": 20.0
 }]
 
 [sub_resource type="Shader" id="Shader_5fi0f"]
@@ -415,7 +488,10 @@ shader_parameter/PULSE_full_pulse_cycle = true
 [node name="GretchenEncounterSprite" type="AnimatedSprite2D"]
 material = SubResource("ShaderMaterial_1efjo")
 sprite_frames = SubResource("SpriteFrames_wx02h")
-animation = &"idle"
+animation = &"win"
+autoplay = "idle"
+frame = 18
+frame_progress = 1.0
 script = ExtResource("1_qlg4w")
 impact_frame_number = 10
 

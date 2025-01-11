@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dlaoxsh4nrl4r"]
+[gd_scene load_steps=25 format=3 uid="uid://dlaoxsh4nrl4r"]
 
 [ext_resource type="Script" path="res://singletons/singleton_holder.gd" id="1_4ae2a"]
 [ext_resource type="Script" path="res://singletons/misc_tools.gd" id="1_ji376"]
@@ -23,6 +23,7 @@
 [ext_resource type="AudioStream" uid="uid://ntjc7b3rt87x" path="res://audio/assets/music/bbb overworld_1.mp3" id="20_2sb3k"]
 [ext_resource type="AudioStream" uid="uid://cxkdf063okeur" path="res://audio/assets/music/bbb overworld.mp3" id="20_r065e"]
 [ext_resource type="Script" path="res://singletons/cross_fader.gd" id="21_ju0ja"]
+[ext_resource type="AudioStream" uid="uid://csytnllk1xihk" path="res://audio/assets/music/bbb overworld_2.mp3" id="23_am2o8"]
 
 [node name="SingletonHolder" type="Node"]
 script = ExtResource("1_4ae2a")
@@ -99,7 +100,7 @@ stream = ExtResource("20_2sb3k")
 bus = &"BattleMusic"
 
 [node name="start_menu_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
-stream = ExtResource("20_r065e")
+stream = ExtResource("23_am2o8")
 bus = &"StartMenuMusic"
 
 [node name="CrossFader" type="Node" parent="MusicManager"]

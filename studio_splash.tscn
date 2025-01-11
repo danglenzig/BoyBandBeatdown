@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbugmqogvq6wb"]
+
+[ext_resource type="Script" path="res://ui/studio_splash.gd" id="1_qi13i"]
+[ext_resource type="FontFile" uid="uid://cb5jl7fksyhv6" path="res://fonts/VTCFuzzypunkyslippers.ttf" id="1_r8f7n"]
+[ext_resource type="Texture2D" uid="uid://dbdbw3oi3khph" path="res://ui/GlamJam.png" id="2_lsbhq"]
+
+[node name="StudioSplash" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qi13i")
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 1366.0
+offset_bottom = 768.0
+
+[node name="StudioLogoLabel" type="Label" parent="Panel"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -47.0
+offset_top = -24.5
+offset_right = 47.0
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.807843, 0.678431, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("1_r8f7n")
+theme_override_font_sizes/font_size = 175
+text = "NordiPacific
+Games"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GlamJamTextureRect" type="TextureRect" parent="Panel"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -225.0
+offset_right = 400.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_lsbhq")

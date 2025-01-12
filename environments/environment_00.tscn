@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=34 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
 [ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_26yqy"]
@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://daf8pwkm7rt2u" path="res://environments/prop_scenes/environment_00_west_wall_02.tscn" id="11_g6qy6"]
 [ext_resource type="Script" path="res://environments/exit_trigger.gd" id="12_jf4gw"]
 [ext_resource type="PackedScene" uid="uid://mc8wh7gomyal" path="res://dialogue/dialogue_trigger_area.tscn" id="13_jqwix"]
+[ext_resource type="Script" path="res://environments/npc_spawner.gd" id="14_71uiw"]
+[ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="15_neqai"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hau2o"]
 size = Vector2(914, 26)
@@ -228,6 +230,24 @@ one_shot = true
 position = Vector2(-208, 92.5)
 shape = SubResource("RectangleShape2D_7m26d")
 debug_color = Color(0.663075, 0.512889, 0.0136903, 0.42)
+
+[node name="NpcSpawner" type="Node" parent="."]
+script = ExtResource("14_71uiw")
+npc_scenes = Array[PackedScene]([ExtResource("15_neqai"), ExtResource("5_l8edr")])
+
+[node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
+
+[node name="Marker2D" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(740, 760)
+
+[node name="Marker2D2" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(340, 778)
+
+[node name="Marker2D3" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(847, 685)
+
+[node name="Marker2D4" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(1218, 679)
 
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger" to="ExitTriggerHolder/NorthExitTrigger" method="_on_body_entered"]
 [connection signal="body_entered" from="DialogueTriggerHolder/environment_00_00" to="DialogueTriggerHolder/environment_00_00" method="_on_body_entered"]

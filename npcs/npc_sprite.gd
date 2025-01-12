@@ -11,18 +11,26 @@ class_name NpcSprite
 @export var npc_display_name = "Namey Nameson"
 @export var auto_face_player: bool = true
 
+@export var encounter_cooldown = 20.0
+
 var player_inside_detect_radius = false
 
 var misc_tools: MiscTools
 var encounter_events: EncounterEvents
 
 var npc_dialogue: NpcDialogue
+var npc_sprite_uuid = ""
+
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	misc_tools = SingletonHolder.get_node("MiscTools")
 	encounter_events = SingletonHolder.get_node("EncounterEvents")
+	npc_sprite_uuid = misc_tools.get_uuid()
+	
+	#name = str(name,"_",npc_sprite_uuid)
+	name = npc_sprite_uuid
 	$EncounterUI/LevelLabel.text = str("Level ", npc_power)
 	$EncounterUI/StartEncounterLabel.visible 	= false
 	$EncounterUI/LevelLabel.visible 			= true
@@ -31,7 +39,6 @@ func _ready():
 	my_mat.set_shader_parameter("BORDERNOISE_active", false)
 	
 	npc_dialogue = $NpcDialogue
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	
@@ -102,7 +109,7 @@ func handle_scaling() -> void:
 func begin_encounter() -> void:
 	print_debug("Begin?")
 	
-	encounter_events.begin_npc_encounter.emit(npc_name,npc_display_name, npc_power, play_style)
+	encounter_events.begin_npc_encounter.emit(npc_name,npc_display_name, npc_power, play_style, npc_sprite_uuid)
 	
 
 func _on_button_pressed():

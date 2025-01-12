@@ -75,7 +75,6 @@ environment_scenes = Array[PackedScene]([ExtResource("2_k7bvf"), ExtResource("3_
 tutorial_canvas_scene = ExtResource("6_ppfua")
 splash_screen_scene = ExtResource("7_qpj5w")
 start_scene_name = "environment_00.tscn"
-start_with_splash = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2

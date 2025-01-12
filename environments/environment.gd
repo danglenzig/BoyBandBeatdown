@@ -61,9 +61,9 @@ func setup_player() -> void:
 	
 	misc_tools.current_player = player
 	
-func on_begin_encounter(npc_name: String, npc_display_name: String, npc_power: int, npc_play_style: String) -> void:
+func on_begin_encounter(npc_name: String, npc_display_name: String, npc_power: int, npc_play_style: String, npc_uuid: String) -> void:
 	
-	print_debug("BBBBEEEEGGGIIINNN")
+	
 	
 	if player.current_state == "ENCOUNTER":
 		return
@@ -85,9 +85,16 @@ func on_begin_encounter(npc_name: String, npc_display_name: String, npc_power: i
 	var new_encounter: NpcEncounter = encounter_scene.instantiate()
 	hud_panel.visible = false
 	add_child(new_encounter)
-	new_encounter.begin_encounter(npc_name,npc_power,npc_play_style,environment_background_filename,encounter_background_filename)
+	new_encounter.begin_encounter(npc_name,npc_power,npc_play_style,environment_background_filename,encounter_background_filename, npc_uuid)
 	
-func on_end_encounter():
+func on_end_encounter(opponent_uuid: String):
+	
+	var opponent: NpcSprite = $NpcHolder.get_node(opponent_uuid)
+	var opponent_dialog_node: NpcDialogue = opponent.npc_dialogue
+	opponent_dialog_node.start_cooldown_timer()
+	
+	
+	
 	#pass
 	# normalize everything we changed in on_begin_encounter()
 	player.player_state_chart.send_event("to_idle_event")

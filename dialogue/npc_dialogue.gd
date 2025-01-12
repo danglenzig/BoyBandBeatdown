@@ -7,7 +7,7 @@ var misc: MiscTools
 @export var start_dialogue_tag: String 			= ""
 @export var speaker_portrait_resource: String	= ""
 
-@export var cooldown = 300.0
+var cooldown: float
 var on_cooldown = false
 var dialogue_uuid = ""
 
@@ -17,6 +17,9 @@ func _ready():
 	misc = SingletonHolder.get_node("MiscTools")
 	dialogue_uuid = misc.get_uuid()
 	DialogueManager.dialogue_ended.connect(on_dialogue_ended)
+	
+	var my_npc: NpcSprite = get_parent()
+	cooldown = my_npc.encounter_cooldown
 	
 	
 
@@ -37,6 +40,10 @@ func on_dialogue_ended(resource: DialogueResource)->void:
 	
 	#await get_tree().create_timer(cooldown).timeout
 	#on_cooldown = false
+
+func start_cooldown_timer()-> void:
+	await get_tree().create_timer(cooldown).timeout
+	on_cooldown = false
 	
 	
 	

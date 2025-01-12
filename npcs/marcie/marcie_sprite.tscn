@@ -216,10 +216,10 @@ animations = [{
 
 [node name="MarcieSprite" type="Node2D"]
 script = ExtResource("2_0fk45")
-player_detect_radius = 75
 play_style = "FAVOR_WATER"
 npc_name = "marcie"
 npc_display_name = "Marcie"
+encounter_cooldown = 10.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 material = SubResource("ShaderMaterial_l6sjs")

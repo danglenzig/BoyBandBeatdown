@@ -21,6 +21,8 @@ const CARDS_IN_PLAY_SCALE = Vector2(0.3, 0.3)
 var player_in_play_card: CardSprite 	= null
 var opponent_in_play_card: CardSprite 	= null
 
+var opponent_uuid = ""
+var npc_opponent_name = ""
 
 func _ready():
 	main = $"/root/Main"
@@ -65,7 +67,9 @@ func spawn_opponent_sprite(opponent_name) -> void:
 		add_child(new_opponent_sprite)
 		opponent_sprite = new_opponent_sprite
 			
-func begin_encounter(opponent_name: String, opponent_power: int, opponent_play_style: String, environment_bg_filename: String, encounter_bg_filename: String) -> void:
+func begin_encounter(opponent_name: String, opponent_power: int, opponent_play_style: String, environment_bg_filename: String, encounter_bg_filename: String, npc_uuid: String) -> void:
+	opponent_uuid = npc_uuid
+	npc_opponent_name = opponent_name
 	setup_backgrounds(environment_bg_filename,encounter_bg_filename)
 	spawn_player_sprite()
 	spawn_opponent_sprite(opponent_name)
@@ -203,7 +207,7 @@ func update_sprites_rounds_won(player_rounds_won: int, opponent_rounds_won: int,
 
 func end_match():
 	var game_environment: GameEnvironment = get_parent()
-	game_environment.on_end_encounter()
+	game_environment.on_end_encounter(opponent_uuid)
 	self.call_deferred("queue_free")
 
 func on_player_attack_anim_finish()->void:

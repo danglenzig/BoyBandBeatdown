@@ -218,10 +218,10 @@ size = Vector2(91, 16)
 [node name="GretchenSprite" type="Node2D"]
 script = ExtResource("1_j7l1i")
 npc_power = 3
-player_detect_radius = 150
 npc_name = "gretchen"
 npc_display_name = "Gretchen"
 auto_face_player = false
+encounter_cooldown = 10.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 material = SubResource("ShaderMaterial_5x018")

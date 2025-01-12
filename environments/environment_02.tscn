@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b05i67tp5inti"]
+[gd_scene load_steps=11 format=3 uid="uid://b05i67tp5inti"]
 
 [ext_resource type="Texture2D" uid="uid://bt2onc7k5tskk" path="res://environments/assets/env_03.png" id="1_06u37"]
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_lxl3m"]
@@ -7,6 +7,8 @@
 [ext_resource type="Script" path="res://environments/z_scaler.gd" id="5_kgyjn"]
 [ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="6_rig6d"]
 [ext_resource type="Script" path="res://environments/exit_trigger.gd" id="7_cobnl"]
+[ext_resource type="Script" path="res://environments/npc_spawner.gd" id="8_ejrya"]
+[ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="9_fkg1w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4yfy4"]
 size = Vector2(1681, 122)
@@ -72,5 +74,23 @@ player_start_name = "WestExitPlaceholderMarker"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/ExitTrigger"]
 position = Vector2(821, 1339)
 shape = SubResource("RectangleShape2D_4yfy4")
+
+[node name="NpcSpawner" type="Node" parent="."]
+script = ExtResource("8_ejrya")
+npc_scenes = Array[PackedScene]([ExtResource("9_fkg1w"), ExtResource("6_rig6d")])
+
+[node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
+
+[node name="Marker2D" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(740, 760)
+
+[node name="Marker2D2" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(340, 778)
+
+[node name="Marker2D3" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(847, 685)
+
+[node name="Marker2D4" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(1218, 679)
 
 [connection signal="body_entered" from="ExitTriggerHolder/ExitTrigger" to="ExitTriggerHolder/ExitTrigger" method="_on_body_entered"]

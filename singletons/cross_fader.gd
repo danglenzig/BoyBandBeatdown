@@ -56,7 +56,7 @@ func _process(delta):
 	time_accumulator = 0
 	
 	if is_tweening:
-		print_debug(tween_index,": ", "IndoorMusic: ", get_volume(indoor_index)," OutdoorMusic: ", get_volume(outdoor_index), " BattleMusic: ", get_volume(battle_index), " StartMenuMusic: ", get_volume(start_menu_index))
+		#print_debug(tween_index,": ", "IndoorMusic: ", get_volume(indoor_index)," OutdoorMusic: ", get_volume(outdoor_index), " BattleMusic: ", get_volume(battle_index), " StartMenuMusic: ", get_volume(start_menu_index))
 		tween_index += 1
 		
 

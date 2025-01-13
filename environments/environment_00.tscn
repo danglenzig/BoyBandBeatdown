@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=36 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
 [ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_26yqy"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://mc8wh7gomyal" path="res://dialogue/dialogue_trigger_area.tscn" id="13_jqwix"]
 [ext_resource type="Script" path="res://environments/npc_spawner.gd" id="14_71uiw"]
 [ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="15_neqai"]
+[ext_resource type="PackedScene" uid="uid://c7yj8o432g0vn" path="res://npcs/ally/nora.tscn" id="16_0mi0r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hau2o"]
 size = Vector2(914, 26)
@@ -70,6 +71,11 @@ size = Vector2(193.59, 13)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7m26d"]
 size = Vector2(20, 309)
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_dbjcs"]
+vertices = PackedVector2Array(876, 707.758, 939.344, 706.25, 937.359, 738, 876, 801.672, 1159, 739.063, 1159, 719.211, 1237.74, 720.891, 1259.79, 752.133, 1634.08, 1041.9, 112.258, 1028.09, 117.742, 819.789, 716.273, 807, 975.531, 818.023, 1635.91, 817.008, 978.438, 754.07, 978.938, 738)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7), PackedInt32Array(8, 9, 10, 11), PackedInt32Array(8, 11, 3, 12), PackedInt32Array(12, 13, 8), PackedInt32Array(14, 12, 3, 2, 15), PackedInt32Array(7, 14, 15, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(108, 810, 102, 1038, 1644, 1052, 1646, 807, 986, 808, 988, 764, 1279, 762, 1243, 711, 1149, 709, 1149, 729, 979, 728, 948, 728, 950, 696, 866, 698, 866, 792, 716, 797)])
+
 [node name="Environment_00" type="Node2D"]
 position = Vector2(7, -40)
 script = ExtResource("1_ot0or")
@@ -113,6 +119,13 @@ position = Vector2(336, 815)
 
 [node name="StairsPlayerStart" type="Marker2D" parent="."]
 position = Vector2(1470, 818)
+
+[node name="AllyHolder" type="Node2D" parent="."]
+
+[node name="Nora" parent="AllyHolder" instance=ExtResource("16_0mi0r")]
+position = Vector2(1230, 959)
+collision_layer = 0
+collision_mask = 0
 
 [node name="NpcHolder" type="Node2D" parent="."]
 
@@ -248,6 +261,9 @@ position = Vector2(621, 806)
 
 [node name="Marker2D4" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
 position = Vector2(487, 808)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_dbjcs")
 
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger" to="ExitTriggerHolder/NorthExitTrigger" method="_on_body_entered"]
 [connection signal="body_entered" from="DialogueTriggerHolder/environment_00_00" to="DialogueTriggerHolder/environment_00_00" method="_on_body_entered"]

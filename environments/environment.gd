@@ -77,6 +77,9 @@ func on_begin_encounter(npc_name: String, npc_display_name: String, npc_power: i
 	# hide the props
 	for prop: CanvasItem in $PropHolder.get_children():
 		prop.visible = false
+	if has_node("AllyHolder"):
+		for ally: NpcAlly in get_node("AllyHolder").get_children():
+			ally.visible = false
 	
 	#	turn off the environment camera
 	game_camera.enabled = false
@@ -102,6 +105,9 @@ func on_end_encounter(opponent_uuid: String):
 		npc_sprite.visible = true
 	for prop: CanvasItem in $PropHolder.get_children():
 		prop.visible = true
+	if has_node("AllyHolder"):
+		for ally: NpcAlly in get_node("AllyHolder").get_children():
+			ally.visible = true
 	game_camera.enabled = true
 	hud_panel.visible = true
 	"""

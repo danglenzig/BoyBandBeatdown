@@ -1,0 +1,471 @@
+[gd_scene load_steps=76 format=3 uid="uid://c7yj8o432g0vn"]
+
+[ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="1_70yox"]
+[ext_resource type="Script" path="res://npcs/ally/npc_ally.gd" id="1_ortcr"]
+[ext_resource type="Texture2D" uid="uid://b5adjru3cm4wl" path="res://npcs/ally/nora_sprites/nora_idle_00.png" id="2_6qsyj"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="2_a07p7"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/atomic_state.gd" id="3_q3vyu"]
+[ext_resource type="Texture2D" uid="uid://d2nyy02d6h166" path="res://npcs/ally/nora_sprites/nora_walk_down_00.png" id="3_wmy0o"]
+[ext_resource type="Texture2D" uid="uid://c5wka3r15i5tm" path="res://npcs/ally/nora_sprites/nora_walk_down_01.png" id="4_mlkm5"]
+[ext_resource type="Script" path="res://addons/godot_state_charts/transition.gd" id="4_qgxge"]
+[ext_resource type="Texture2D" uid="uid://bn5c5eq1xfbub" path="res://npcs/ally/nora_sprites/nora_walk_down_02.png" id="5_k686u"]
+[ext_resource type="Texture2D" uid="uid://co7x5piob7q7u" path="res://npcs/ally/nora_sprites/nora_walk_down_03.png" id="6_pgff8"]
+[ext_resource type="Texture2D" uid="uid://ds8v6ip4kw5bi" path="res://npcs/ally/nora_sprites/nora_walk_down_04.png" id="7_gvdll"]
+[ext_resource type="Texture2D" uid="uid://csqus3uy6npyc" path="res://npcs/ally/nora_sprites/nora_walk_down_05.png" id="8_0xnwm"]
+[ext_resource type="Texture2D" uid="uid://ix5aef08sm6v" path="res://npcs/ally/nora_sprites/nora_walk_down_06.png" id="9_76g8w"]
+[ext_resource type="Texture2D" uid="uid://dlmmpx5jvmn4k" path="res://npcs/ally/nora_sprites/nora_walk_down_07.png" id="10_k450v"]
+[ext_resource type="Texture2D" uid="uid://cv7t2wou8wrfm" path="res://npcs/ally/nora_sprites/nora_walk_down_08.png" id="11_selqp"]
+[ext_resource type="Texture2D" uid="uid://5yxgde3o0afm" path="res://npcs/ally/nora_sprites/nora_walk_down_09.png" id="12_be486"]
+[ext_resource type="Texture2D" uid="uid://bau7t4eumjcje" path="res://npcs/ally/nora_sprites/nora_walk_down_10.png" id="13_vwdan"]
+[ext_resource type="Texture2D" uid="uid://d1easqrqnus1x" path="res://npcs/ally/nora_sprites/nora_walk_down_11.png" id="14_go5ro"]
+[ext_resource type="Texture2D" uid="uid://7a22im3cwlv4" path="res://npcs/ally/nora_sprites/nora_walk_down_12.png" id="15_aaoxt"]
+[ext_resource type="Texture2D" uid="uid://dqsvriqjsj0u0" path="res://npcs/ally/nora_sprites/nora_walk_down_side_00.png" id="16_ppfwg"]
+[ext_resource type="Texture2D" uid="uid://blimvcshrad8o" path="res://npcs/ally/nora_sprites/nora_walk_down_side_01.png" id="17_h1pho"]
+[ext_resource type="Texture2D" uid="uid://dauu6g1vpbfpf" path="res://npcs/ally/nora_sprites/nora_walk_down_side_02.png" id="18_55quj"]
+[ext_resource type="Texture2D" uid="uid://dirjrigmada65" path="res://npcs/ally/nora_sprites/nora_walk_down_side_03.png" id="19_se0tw"]
+[ext_resource type="Texture2D" uid="uid://cay5duvvreswe" path="res://npcs/ally/nora_sprites/nora_walk_down_side_04.png" id="20_tujk4"]
+[ext_resource type="Texture2D" uid="uid://cstubjwqtq0st" path="res://npcs/ally/nora_sprites/nora_walk_down_side_05.png" id="21_c1mtp"]
+[ext_resource type="Texture2D" uid="uid://cpgfleca7fipn" path="res://npcs/ally/nora_sprites/nora_walk_down_side_06.png" id="22_cgcoe"]
+[ext_resource type="Texture2D" uid="uid://3yqevjioirle" path="res://npcs/ally/nora_sprites/nora_walk_down_side_07.png" id="23_n51w7"]
+[ext_resource type="Texture2D" uid="uid://c2tisssiisrrl" path="res://npcs/ally/nora_sprites/nora_walk_down_side_08.png" id="24_6nkun"]
+[ext_resource type="Texture2D" uid="uid://dmy0mkdul4ima" path="res://npcs/ally/nora_sprites/nora_walk_down_side_09.png" id="25_aoa7t"]
+[ext_resource type="Texture2D" uid="uid://bjrvp05wnsyov" path="res://npcs/ally/nora_sprites/nora_walk_down_side_10.png" id="26_i6b63"]
+[ext_resource type="Texture2D" uid="uid://dw8h0fnt4b44w" path="res://npcs/ally/nora_sprites/nora_walk_down_side_11.png" id="27_qqex2"]
+[ext_resource type="Texture2D" uid="uid://cja6ews22pmdt" path="res://npcs/ally/nora_sprites/nora_walk_down_side_12.png" id="28_4fd0s"]
+[ext_resource type="Texture2D" uid="uid://dtapsfeulpvlb" path="res://npcs/ally/nora_sprites/nora_walk_side_00.png" id="29_1gs7c"]
+[ext_resource type="Texture2D" uid="uid://252tf0noku4u" path="res://npcs/ally/nora_sprites/nora_walk_side_01.png" id="30_n71tr"]
+[ext_resource type="Texture2D" uid="uid://b1acw7t7cco4x" path="res://npcs/ally/nora_sprites/nora_walk_side_02.png" id="31_wdngd"]
+[ext_resource type="Texture2D" uid="uid://dt1q7c0edvbvb" path="res://npcs/ally/nora_sprites/nora_walk_side_03.png" id="32_0yd66"]
+[ext_resource type="Texture2D" uid="uid://bct1jkxu5maxl" path="res://npcs/ally/nora_sprites/nora_walk_side_04.png" id="33_2y2h8"]
+[ext_resource type="Texture2D" uid="uid://bfwjuhrph14c8" path="res://npcs/ally/nora_sprites/nora_walk_side_05.png" id="34_yytl5"]
+[ext_resource type="Texture2D" uid="uid://box4xgk3p4fa" path="res://npcs/ally/nora_sprites/nora_walk_side_06.png" id="35_6dgl5"]
+[ext_resource type="Texture2D" uid="uid://brv6f7ne1a5p1" path="res://npcs/ally/nora_sprites/nora_walk_side_07.png" id="36_ah268"]
+[ext_resource type="Texture2D" uid="uid://btadp5a3pto42" path="res://npcs/ally/nora_sprites/nora_walk_side_08.png" id="37_0h5p0"]
+[ext_resource type="Texture2D" uid="uid://cqx4hyxq7dd43" path="res://npcs/ally/nora_sprites/nora_walk_side_09.png" id="38_p5tlc"]
+[ext_resource type="Texture2D" uid="uid://b4yb12p88yhmw" path="res://npcs/ally/nora_sprites/nora_walk_side_10.png" id="39_2l1lv"]
+[ext_resource type="Texture2D" uid="uid://q40q2s5ub773" path="res://npcs/ally/nora_sprites/nora_walk_side_11.png" id="40_jpbwq"]
+[ext_resource type="Texture2D" uid="uid://dtf4c367k2i36" path="res://npcs/ally/nora_sprites/nora_walk_side_12.png" id="41_t84ni"]
+[ext_resource type="Texture2D" uid="uid://b70p1gdiptatq" path="res://npcs/ally/nora_sprites/nora_walk_up_00.png" id="42_dvk7u"]
+[ext_resource type="Texture2D" uid="uid://cda6fxe8fe51s" path="res://npcs/ally/nora_sprites/nora_walk_up_01.png" id="43_iv3bs"]
+[ext_resource type="Texture2D" uid="uid://c7o6br0bf2wyl" path="res://npcs/ally/nora_sprites/nora_walk_up_02.png" id="44_8ovkf"]
+[ext_resource type="Texture2D" uid="uid://db5xfq3s1uf5k" path="res://npcs/ally/nora_sprites/nora_walk_up_03.png" id="45_q6qja"]
+[ext_resource type="Texture2D" uid="uid://c5tcpd6xd74to" path="res://npcs/ally/nora_sprites/nora_walk_up_04.png" id="46_fi5mt"]
+[ext_resource type="Texture2D" uid="uid://m2mh5tv7tiw0" path="res://npcs/ally/nora_sprites/nora_walk_up_05.png" id="47_1uq0v"]
+[ext_resource type="Texture2D" uid="uid://1jbrhm3274fb" path="res://npcs/ally/nora_sprites/nora_walk_up_06.png" id="48_1t4im"]
+[ext_resource type="Texture2D" uid="uid://7fpjsi8ocdsy" path="res://npcs/ally/nora_sprites/nora_walk_up_07.png" id="49_wvbyw"]
+[ext_resource type="Texture2D" uid="uid://cgwskfirpwnxr" path="res://npcs/ally/nora_sprites/nora_walk_up_08.png" id="50_xildr"]
+[ext_resource type="Texture2D" uid="uid://d32bb21tohick" path="res://npcs/ally/nora_sprites/nora_walk_up_09.png" id="51_cunyk"]
+[ext_resource type="Texture2D" uid="uid://ciye7l6k8nik6" path="res://npcs/ally/nora_sprites/nora_walk_up_10.png" id="52_m1c0g"]
+[ext_resource type="Texture2D" uid="uid://vmnu4bft7g2s" path="res://npcs/ally/nora_sprites/nora_walk_up_11.png" id="53_fgr11"]
+[ext_resource type="Texture2D" uid="uid://rcjiibu7g5fc" path="res://npcs/ally/nora_sprites/nora_walk_up_12.png" id="54_tfmcu"]
+[ext_resource type="Texture2D" uid="uid://dy5m1ynypesjg" path="res://npcs/ally/nora_sprites/nora_walk_up_side_00.png" id="55_uvf8r"]
+[ext_resource type="Texture2D" uid="uid://ib61yv70jcqy" path="res://npcs/ally/nora_sprites/nora_walk_up_side_01.png" id="56_xob5j"]
+[ext_resource type="Texture2D" uid="uid://bvf1mkvduqnjh" path="res://npcs/ally/nora_sprites/nora_walk_up_side_02.png" id="57_epvjj"]
+[ext_resource type="Texture2D" uid="uid://bwojtvwlex7lh" path="res://npcs/ally/nora_sprites/nora_walk_up_side_03.png" id="58_ybw4p"]
+[ext_resource type="Texture2D" uid="uid://d36xybfedrxuy" path="res://npcs/ally/nora_sprites/nora_walk_up_side_04.png" id="59_uygdr"]
+[ext_resource type="Texture2D" uid="uid://dscke4ukiuimw" path="res://npcs/ally/nora_sprites/nora_walk_up_side_05.png" id="60_436oy"]
+[ext_resource type="Texture2D" uid="uid://b4mn3b4w43vff" path="res://npcs/ally/nora_sprites/nora_walk_up_side_06.png" id="61_6l3pd"]
+[ext_resource type="Texture2D" uid="uid://djb5oujjspyby" path="res://npcs/ally/nora_sprites/nora_walk_up_side_07.png" id="62_tlpo4"]
+[ext_resource type="Texture2D" uid="uid://b8t476vrnn74o" path="res://npcs/ally/nora_sprites/nora_walk_up_side_08.png" id="63_72u8m"]
+[ext_resource type="Texture2D" uid="uid://djpdjwsmp2s2x" path="res://npcs/ally/nora_sprites/nora_walk_up_side_09.png" id="64_alg6i"]
+[ext_resource type="Texture2D" uid="uid://ce23ots5f5y0c" path="res://npcs/ally/nora_sprites/nora_walk_up_side_10.png" id="65_ydu0y"]
+[ext_resource type="Texture2D" uid="uid://i8kb32wg20ft" path="res://npcs/ally/nora_sprites/nora_walk_up_side_11.png" id="66_5h5q3"]
+[ext_resource type="Texture2D" uid="uid://bx5xskgdyct1m" path="res://npcs/ally/nora_sprites/nora_walk_up_side_12.png" id="67_kbm48"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r7qhx"]
+
+[sub_resource type="Shader" id="Shader_xcesb"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d4kna"]
+shader = SubResource("Shader_xcesb")
+shader_parameter/opacity = 1.0
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 1.5
+shader_parameter/OUTLINE_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v1f8e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6qsyj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wmy0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mlkm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_k686u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pgff8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gvdll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0xnwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_76g8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_k450v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_selqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_be486")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vwdan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_go5ro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_aaoxt")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_ppfwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_h1pho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_55quj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_se0tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_tujk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_c1mtp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_cgcoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_n51w7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_6nkun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_aoa7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_i6b63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_qqex2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_4fd0s")
+}],
+"loop": true,
+"name": &"walk_down_side",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_1gs7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_n71tr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_wdngd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_0yd66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_2y2h8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_yytl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_6dgl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ah268")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_0h5p0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_p5tlc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_2l1lv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_jpbwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_t84ni")
+}],
+"loop": true,
+"name": &"walk_side",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_dvk7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_iv3bs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_8ovkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_q6qja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_fi5mt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_1uq0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_1t4im")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_wvbyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_xildr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_cunyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_m1c0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_fgr11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_tfmcu")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("55_uvf8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_xob5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_epvjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_ybw4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_uygdr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_436oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_6l3pd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_tlpo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_72u8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_alg6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_ydu0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_5h5q3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_kbm48")
+}],
+"loop": true,
+"name": &"walk_up_side",
+"speed": 12.0
+}]
+
+[node name="Nora" type="CharacterBody2D"]
+script = ExtResource("1_ortcr")
+move_speed = 200.0
+follow_activation_distance = 100
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_r7qhx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_d4kna")
+position = Vector2(0, -158)
+sprite_frames = SubResource("SpriteFrames_v1f8e")
+animation = &"walk_down"
+autoplay = "idle"
+
+[node name="StateChart" type="Node" parent="."]
+script = ExtResource("1_70yox")
+
+[node name="Root" type="Node" parent="StateChart"]
+script = ExtResource("2_a07p7")
+initial_state = NodePath("Idle")
+
+[node name="Idle" type="Node" parent="StateChart/Root"]
+script = ExtResource("3_q3vyu")
+
+[node name="ToFollow" type="Node" parent="StateChart/Root/Idle"]
+script = ExtResource("4_qgxge")
+to = NodePath("../../Follow")
+event = &"to_follow_event"
+delay_in_seconds = "0.0"
+
+[node name="Follow" type="Node" parent="StateChart/Root"]
+script = ExtResource("3_q3vyu")
+
+[node name="ToIdle" type="Node" parent="StateChart/Root/Follow"]
+script = ExtResource("4_qgxge")
+to = NodePath("../../Idle")
+event = &"to_idle_event"
+delay_in_seconds = "0.0"
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+target_desired_distance = 50.0
+
+[connection signal="state_entered" from="StateChart/Root/Idle" to="." method="on_atomic_state_entered" binds= ["IDLE"]]
+[connection signal="state_entered" from="StateChart/Root/Follow" to="." method="on_atomic_state_entered" binds= ["FOLLOW"]]

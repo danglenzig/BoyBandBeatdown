@@ -1,9 +1,14 @@
 extends CharacterBody2D
 class_name Player
 
+var misc: MiscTools = SingletonHolder.get_node("MiscTools")
+
 @export var move_speed: float 	= 300.0
 @export var use_z_scaling: bool = true
 @export var footstep_frames: Array[int]
+
+@export var ally_scene: PackedScene
+@export var ally_spawn_distance = 30
 
 var adjusted_move_speed: float
 
@@ -25,8 +30,13 @@ func _ready():
 	player_sprite 		= $AnimatedSprite2D
 	player_state_chart 	= $StateChart
 	adjusted_move_speed = move_speed
+	
+	await get_tree().create_timer(0.1).timeout
+	
+	spawn_ally()
+	
 
-func _process(delta):
+func _process(_delta):
 	match current_state:
 		"IDLE":
 			pass
@@ -38,12 +48,41 @@ func _process(delta):
 		"DIALOGUE":
 			pass
 
+func spawn_ally()->void:
+	
+	var main: Main = misc.main
+	if not main:
+		push_error("no main")
+		return
+	if not main.current_environment:
+		push_error("no environment")
+		return
+	if not main.current_environment.has_node("NavigationRegion2D") or not main.current_environment.has_node("AllyHolder"):
+		push_error("no na region or ally holder")
+		return
+	var center_marker: Marker2D = main.current_environment.get_node("NavigationRegion2D").get_node("CenterMarker")
+	var direction: Vector2 = (center_marker.global_position - global_position).normalized()
+	var spawn_pos = global_position + direction * ally_spawn_distance
+	
+	var new_ally: NpcAlly = ally_scene.instantiate()
+	new_ally.visible = false
+	await get_tree().create_timer(0.1).timeout
+	new_ally.global_position = spawn_pos
+	main.current_environment.get_node("AllyHolder").call_deferred("add_child", new_ally)
+	
+	while not new_ally.first_scaling:
+		await get_tree().create_timer(0.1).timeout
+	new_ally.visible = true
+	
+	
+	
+	
 func handle_footsteps():
 	var current_frame = player_sprite.frame
 	if footstep_frames.has(current_frame):
 		footstep_player.play_random_footstep_sound()
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	
 	# print(z_index)
 	
@@ -87,8 +126,8 @@ func handle_scaling() -> void:
 	if not z_scaler:
 		push_warning("No ZScaler present")
 		return
-	var top_pos: Vector2 	= z_scaler.top_marker.global_position
-	var bottom: Vector2 	= z_scaler.bottom_marker.global_position
+	var _top_pos: Vector2 	= z_scaler.top_marker.global_position
+	var _bottom: Vector2 	= z_scaler.bottom_marker.global_position
 	var adjusted_scale = z_scaler.get_adjusted_scale(global_position.y)
 	scale = Vector2(adjusted_scale, adjusted_scale)
 	

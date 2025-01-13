@@ -149,7 +149,7 @@ func start_new_game():
 	print_debug("Starting new game")
 	var start_menu: StartMenu = get_node("StartMenu")
 	start_menu.call_deferred("queue_free")	
-	load_environment(start_scene_name, "StairsPlayerStart")
+	load_environment(start_scene_name, "DefaultPlayerStart")
 	
 func get_hud_panel()->HudPanel:
 	return hud_panel

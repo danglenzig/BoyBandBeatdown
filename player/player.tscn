@@ -1,7 +1,8 @@
-[gd_scene load_steps=131 format=3 uid="uid://cahtc4x8m4wr6"]
+[gd_scene load_steps=132 format=3 uid="uid://cahtc4x8m4wr6"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_eq5ms"]
 [ext_resource type="Texture2D" uid="uid://dpj6efopu80t3" path="res://player/sprites/Better/player_idle_01.png" id="2_1r1om"]
+[ext_resource type="PackedScene" uid="uid://c7yj8o432g0vn" path="res://npcs/ally/nora.tscn" id="2_8tf0t"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/state_chart.gd" id="2_g3m4l"]
 [ext_resource type="Script" path="res://addons/godot_state_charts/compound_state.gd" id="3_e4ygn"]
 [ext_resource type="Texture2D" uid="uid://dfc8lcyb3srr1" path="res://player/sprites/Better/walk/down/cropped_square/smol/player_walk_down_00.png" id="3_es4w0"]
@@ -648,6 +649,8 @@ animations = [{
 collision_layer = 2147483649
 script = ExtResource("1_eq5ms")
 footstep_frames = Array[int]([1, 12])
+ally_scene = ExtResource("2_8tf0t")
+ally_spawn_distance = 70
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0)

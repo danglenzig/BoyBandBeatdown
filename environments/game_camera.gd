@@ -14,11 +14,9 @@ func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+
 	
-func _physics_process(delta):
+func _physics_process(_delta):
 	if follow_object and be_following:
 		var follow_x = follow_object.global_position.x
 		var follow_y = follow_object.global_position.y

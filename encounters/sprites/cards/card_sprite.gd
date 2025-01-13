@@ -60,7 +60,7 @@ func _ready():
 	
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	match current_state:
 		"IDLE":
 			pass
@@ -94,7 +94,7 @@ func launch_fireball():
 		fly_distance *= -1
 	
 		
-	var fireball_source_marker: Marker2D = active_sprite.get_node("FireballSourceMarker")
+	var _fireball_source_marker: Marker2D = active_sprite.get_node("FireballSourceMarker")
 	
 	new_fireball.z_index = z_index + 1
 	active_sprite.call_deferred("add_child", new_fireball)

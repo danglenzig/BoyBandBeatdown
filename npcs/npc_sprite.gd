@@ -40,7 +40,7 @@ func _ready():
 	
 	npc_dialogue = $NpcDialogue
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	
 	handle_scaling()
 	handle_facing()

@@ -14,7 +14,7 @@ var card_uuid = ""
 #var image_resource_string: String 	= ""
 
 func _ready():
-	var misc_tools = SingletonHolder.get_node("MiscTools")
+	pass
 		
 
 func make_card(suit: String, rank: int) -> void:

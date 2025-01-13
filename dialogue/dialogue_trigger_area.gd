@@ -19,7 +19,7 @@ func _ready():
 	dialogue_uuid = misc.get_uuid()
 	DialogueManager.dialogue_ended.connect(on_dialogue_ended)
 
-func on_dialogue_ended(resource: DialogueResource)->void:
+func on_dialogue_ended(_resource: DialogueResource)->void:
 	#if not resource.resource_path == dialogue_resource_string:
 	#	return
 	

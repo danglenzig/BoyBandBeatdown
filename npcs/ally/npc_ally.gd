@@ -20,6 +20,8 @@ var be_following: bool 		= true
 const MIN_VELOCITY: float			= 0.1
 const move_input_tolerance: float 	= 0.2
 
+var first_scaling = false
+
 func _ready():
 	misc 			= SingletonHolder.get_node("MiscTools")
 	npc_sprite 		= $AnimatedSprite2D
@@ -122,8 +124,11 @@ func handle_facing(move_vector: Vector2)->void:
 
 func handle_scaling(z_scaler: ZScaler)-> void:
 	
-	var top_pos: Vector2 	= z_scaler.top_marker.global_position
-	var bottom: Vector2 	= z_scaler.bottom_marker.global_position
+	if not first_scaling:
+		first_scaling = true
+	
+	var _top_pos: Vector2 	= z_scaler.top_marker.global_position
+	var _bottom: Vector2 	= z_scaler.bottom_marker.global_position
 	var adjusted_scale = z_scaler.get_adjusted_scale(global_position.y)
 	scale = Vector2(adjusted_scale, adjusted_scale)
 	

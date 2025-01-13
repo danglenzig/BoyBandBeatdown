@@ -61,7 +61,7 @@ func setup_player() -> void:
 	
 	misc_tools.current_player = player
 	
-func on_begin_encounter(npc_name: String, npc_display_name: String, npc_power: int, npc_play_style: String, npc_uuid: String) -> void:
+func on_begin_encounter(npc_name: String, _npc_display_name: String, npc_power: int, npc_play_style: String, npc_uuid: String) -> void:
 	
 	
 	

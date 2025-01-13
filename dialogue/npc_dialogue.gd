@@ -23,8 +23,7 @@ func _ready():
 	
 	
 
-func on_dialogue_ended(resource: DialogueResource)->void:
-	var misc: MiscTools = SingletonHolder.get_node("MiscTools")
+func on_dialogue_ended(_resource: DialogueResource)->void:
 	if misc.current_dialog != dialogue_uuid:
 		return
 	

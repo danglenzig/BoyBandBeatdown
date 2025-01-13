@@ -10,7 +10,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	
 	var move_x = Input.get_axis("move_left","move_right")
 	var move_y = Input.get_axis("move_up","move_down")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=35 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
 [ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_26yqy"]
@@ -15,7 +15,6 @@
 [ext_resource type="PackedScene" uid="uid://mc8wh7gomyal" path="res://dialogue/dialogue_trigger_area.tscn" id="13_jqwix"]
 [ext_resource type="Script" path="res://environments/npc_spawner.gd" id="14_71uiw"]
 [ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="15_neqai"]
-[ext_resource type="PackedScene" uid="uid://c7yj8o432g0vn" path="res://npcs/ally/nora.tscn" id="16_0mi0r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hau2o"]
 size = Vector2(914, 26)
@@ -115,17 +114,12 @@ position = Vector2(4, 718)
 position = Vector2(-3, 1071)
 
 [node name="DefaultPlayerStart" type="Marker2D" parent="."]
-position = Vector2(336, 815)
+position = Vector2(1438, 1037)
 
 [node name="StairsPlayerStart" type="Marker2D" parent="."]
-position = Vector2(1470, 818)
+position = Vector2(906, 730)
 
 [node name="AllyHolder" type="Node2D" parent="."]
-
-[node name="Nora" parent="AllyHolder" instance=ExtResource("16_0mi0r")]
-position = Vector2(1230, 959)
-collision_layer = 0
-collision_mask = 0
 
 [node name="NpcHolder" type="Node2D" parent="."]
 
@@ -246,7 +240,7 @@ debug_color = Color(0.663075, 0.512889, 0.0136903, 0.42)
 
 [node name="NpcSpawner" type="Node" parent="."]
 script = ExtResource("14_71uiw")
-npc_scenes = Array[PackedScene]([ExtResource("15_neqai"), ExtResource("5_l8edr")])
+npc_scenes = Array[PackedScene]([ExtResource("15_neqai")])
 
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 
@@ -264,6 +258,9 @@ position = Vector2(487, 808)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_dbjcs")
+
+[node name="CenterMarker" type="Marker2D" parent="NavigationRegion2D"]
+position = Vector2(925, 948)
 
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger" to="ExitTriggerHolder/NorthExitTrigger" method="_on_body_entered"]
 [connection signal="body_entered" from="DialogueTriggerHolder/environment_00_00" to="DialogueTriggerHolder/environment_00_00" method="_on_body_entered"]

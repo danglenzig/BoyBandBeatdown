@@ -196,7 +196,7 @@ func decide_winner()->void:
 func end_match(winner: String):
 	var encounter_manager: NpcEncounter = get_parent()
 	var progression_manager: ProgressionManager = SingletonHolder.get_node("ProgressionManager")
-	var player_power = progression_manager.player_power
+	var _player_power = progression_manager.player_power
 	
 	# award xp:
 	progression_manager.player_current_xp += progression_manager.calculate_match_xp_award(winner, opponent_power_level)

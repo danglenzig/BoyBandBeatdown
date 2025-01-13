@@ -30,9 +30,7 @@ func _ready():
 	
 	update_level_labels()
 	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+
 
 func update_level_labels():
 	var current_level_text: String = str("Level\n", str(progression_manager.player_power))

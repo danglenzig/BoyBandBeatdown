@@ -7,7 +7,3 @@ const min_best_of_n = 3
 func _ready():
 	if best_of_n < min_best_of_n:
 		best_of_n = min_best_of_n
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass

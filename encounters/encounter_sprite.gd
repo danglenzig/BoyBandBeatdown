@@ -24,7 +24,7 @@ func _ready():
 	label_flash_effect.visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	
 	var current_animation = animation
 	

@@ -82,15 +82,15 @@ npc_scenes = Array[PackedScene]([ExtResource("9_fkg1w"), ExtResource("6_rig6d")]
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 
 [node name="Marker2D" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(740, 760)
+position = Vector2(679, 747)
 
 [node name="Marker2D2" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(340, 778)
+position = Vector2(1289, 946)
 
 [node name="Marker2D3" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(847, 685)
+position = Vector2(1121, 677)
 
 [node name="Marker2D4" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(1218, 679)
+position = Vector2(496, 917)
 
 [connection signal="body_entered" from="ExitTriggerHolder/ExitTrigger" to="ExitTriggerHolder/ExitTrigger" method="_on_body_entered"]

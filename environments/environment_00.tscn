@@ -114,7 +114,7 @@ position = Vector2(4, 718)
 position = Vector2(-3, 1071)
 
 [node name="DefaultPlayerStart" type="Marker2D" parent="."]
-position = Vector2(1438, 1037)
+position = Vector2(1457, 888)
 
 [node name="StairsPlayerStart" type="Marker2D" parent="."]
 position = Vector2(906, 730)

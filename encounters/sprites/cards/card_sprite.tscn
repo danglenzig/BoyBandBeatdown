@@ -1,4 +1,4 @@
-[gd_scene load_steps=716 format=3 uid="uid://cte5fobhra3n3"]
+[gd_scene load_steps=729 format=3 uid="uid://cte5fobhra3n3"]
 
 [ext_resource type="Script" path="res://encounters/sprites/cards/card_sprite.gd" id="1_o7xgx"]
 [ext_resource type="Texture2D" uid="uid://434cpa8ycimd" path="res://encounters/sprites/cards/Screenshot 2024-12-27 100031.png" id="2_7twdo"]
@@ -20,256 +20,269 @@
 [ext_resource type="Texture2D" uid="uid://cvd85r4e50uv6" path="res://encounters/sprites/bad_boy/cropped_square/bad_boy_attack2_12.png" id="16_o18tx"]
 [ext_resource type="Texture2D" uid="uid://h75b2om0obhp" path="res://encounters/sprites/bad_boy/cropped_square/bad_boy_attack2_13.png" id="17_tudi6"]
 [ext_resource type="Texture2D" uid="uid://cchgmea1318nu" path="res://encounters/sprites/bad_boy/cropped_square/bad_boy_attack2_14.png" id="18_t6b7q"]
-[ext_resource type="Texture2D" uid="uid://b7u4x8itna787" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_05.png" id="19_dsecb"]
 [ext_resource type="Texture2D" uid="uid://nikufp1rbp2k" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_00.png" id="19_nbx38"]
+[ext_resource type="Texture2D" uid="uid://bexf36o5j7mnc" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_03.png" id="19_wb54f"]
+[ext_resource type="Texture2D" uid="uid://d5f7xcimn5dt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_07.png" id="20_a2qv2"]
 [ext_resource type="Texture2D" uid="uid://dhe4mbrnyl3b" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_02.png" id="20_qls0l"]
-[ext_resource type="Texture2D" uid="uid://da5jgatg3k4ie" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_13.png" id="20_qyi8f"]
 [ext_resource type="Texture2D" uid="uid://bvfv5n3mgs7mp" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_04.png" id="21_6yhts"]
-[ext_resource type="Texture2D" uid="uid://bftjqp18jhe5l" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_21.png" id="21_jtdaq"]
-[ext_resource type="Texture2D" uid="uid://bkggdei2glbyy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_29.png" id="22_ocbmb"]
+[ext_resource type="Texture2D" uid="uid://bcq4xe1g1oduf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_11.png" id="21_amn20"]
+[ext_resource type="Texture2D" uid="uid://bos6rd8o7hj8r" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_15.png" id="22_axb8v"]
 [ext_resource type="Texture2D" uid="uid://bk1lailr47dpf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_06.png" id="22_vpx6u"]
-[ext_resource type="Texture2D" uid="uid://cj0kf118hommx" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_37.png" id="23_25ewu"]
+[ext_resource type="Texture2D" uid="uid://bk7opsupnc7rc" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_19.png" id="23_bhvyq"]
 [ext_resource type="Texture2D" uid="uid://duvthvuh781gd" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_08.png" id="23_xlett"]
-[ext_resource type="Texture2D" uid="uid://ciue4a2ue12dy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_45.png" id="24_3hoog"]
+[ext_resource type="Texture2D" uid="uid://divomolg8eark" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_23.png" id="24_454ny"]
 [ext_resource type="Texture2D" uid="uid://dwtmwjfuvn27e" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_10.png" id="24_ppu38"]
-[ext_resource type="Texture2D" uid="uid://bc20cnexh833t" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_53.png" id="25_08wuy"]
 [ext_resource type="Texture2D" uid="uid://cc7h13ufxa6tf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_12.png" id="25_cpmuy"]
-[ext_resource type="Texture2D" uid="uid://csk6rupomxxpw" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_61.png" id="26_6nmoq"]
+[ext_resource type="Texture2D" uid="uid://bef1klhmbgkf5" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_27.png" id="25_rogmh"]
+[ext_resource type="Texture2D" uid="uid://dql6l1miyloep" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_31.png" id="26_g3epx"]
 [ext_resource type="Texture2D" uid="uid://cfasbxljuwypy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_14.png" id="26_rko2h"]
-[ext_resource type="Texture2D" uid="uid://1u8vfc8ks63i" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_69.png" id="27_dqj2u"]
+[ext_resource type="Texture2D" uid="uid://bkc0h5cpnhxo0" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_35.png" id="27_b2j1t"]
 [ext_resource type="Texture2D" uid="uid://stet5ujkgdvy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_16.png" id="27_wcvrx"]
 [ext_resource type="Texture2D" uid="uid://c73ftjq246sgk" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_18.png" id="28_78g18"]
-[ext_resource type="Texture2D" uid="uid://busfhadp6uyoi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_77.png" id="28_g6jyf"]
+[ext_resource type="Texture2D" uid="uid://calxd81ynt4i4" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_39.png" id="28_qfvkg"]
 [ext_resource type="Texture2D" uid="uid://cxfhqoo5rljbo" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_20.png" id="29_1wd0n"]
-[ext_resource type="Texture2D" uid="uid://e3bi8vi5enbu" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_85.png" id="29_rheu3"]
-[ext_resource type="Texture2D" uid="uid://bgmu0xwtog1on" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_93.png" id="30_64qop"]
+[ext_resource type="Texture2D" uid="uid://dqp7enw3fxsda" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_43.png" id="29_33dts"]
+[ext_resource type="Texture2D" uid="uid://ppc1ed1pe8v8" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_47.png" id="30_avkgf"]
 [ext_resource type="Texture2D" uid="uid://c40hck7pgm2bi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_22.png" id="30_dwbq1"]
-[ext_resource type="Texture2D" uid="uid://do0vdx8nna1i4" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_101.png" id="31_dhlvk"]
+[ext_resource type="Texture2D" uid="uid://ccoub5xj2la4o" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_51.png" id="31_6x16o"]
 [ext_resource type="Texture2D" uid="uid://cnavh6uefen38" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_24.png" id="31_kev51"]
 [ext_resource type="Texture2D" uid="uid://d1wjm42t50dd5" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_26.png" id="32_3rwve"]
-[ext_resource type="Texture2D" uid="uid://vl1ngenb1qyd" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_109.png" id="32_q6q2y"]
+[ext_resource type="Texture2D" uid="uid://pwxessxrti8n" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_55.png" id="32_17fks"]
+[ext_resource type="Texture2D" uid="uid://ck5pju7dx002g" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_59.png" id="33_ekesn"]
 [ext_resource type="Texture2D" uid="uid://c70s0jhtsgv41" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_28.png" id="33_u6jwt"]
-[ext_resource type="Texture2D" uid="uid://b4npcv4ippx4u" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_117.png" id="33_ucwn8"]
-[ext_resource type="Texture2D" uid="uid://f4skx6yvh5h2" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_125.png" id="34_21sgs"]
+[ext_resource type="Texture2D" uid="uid://78o4jn574cfd" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_63.png" id="34_3qr3r"]
 [ext_resource type="Texture2D" uid="uid://dr8s4p3b2osky" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_30.png" id="34_mfoyk"]
 [ext_resource type="Texture2D" uid="uid://bclxothgq55lm" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_32.png" id="35_0v1jh"]
-[ext_resource type="Texture2D" uid="uid://ftg27d05dwmh" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_133.png" id="35_guxbx"]
-[ext_resource type="Texture2D" uid="uid://cjq4d2fqc8qcq" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_141.png" id="36_f8xm4"]
+[ext_resource type="Texture2D" uid="uid://bavt0n0h6aek3" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_67.png" id="35_tpaiu"]
 [ext_resource type="Texture2D" uid="uid://8emqitucvvki" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_34.png" id="36_lojij"]
+[ext_resource type="Texture2D" uid="uid://brrxuki2i0lkf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_71.png" id="36_r8vtj"]
+[ext_resource type="Texture2D" uid="uid://cg7ubo8ohylok" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_75.png" id="37_71des"]
 [ext_resource type="Texture2D" uid="uid://cfuusgwbdwkwh" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_36.png" id="37_c8rfd"]
-[ext_resource type="Texture2D" uid="uid://cpbko0gr8trdj" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_149.png" id="37_xguq2"]
-[ext_resource type="Texture2D" uid="uid://da5404ot5g5yt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_157.png" id="38_caim4"]
+[ext_resource type="Texture2D" uid="uid://bf8llnfpnsyqi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_79.png" id="38_gus6p"]
 [ext_resource type="Texture2D" uid="uid://ljctyt2ocvru" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_38.png" id="38_r3qq2"]
 [ext_resource type="Texture2D" uid="uid://b8u20am4i4k0u" path="res://encounters/sprites/bad_boy/bad_boy_die_02.png" id="39_cr554"]
-[ext_resource type="Texture2D" uid="uid://balekmfkf5mxn" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_165.png" id="39_u3ocg"]
+[ext_resource type="Texture2D" uid="uid://bv77etjxtdmax" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_83.png" id="39_oovip"]
 [ext_resource type="Texture2D" uid="uid://bufv74kuw205f" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_40.png" id="39_v4noj"]
-[ext_resource type="Texture2D" uid="uid://d2vjumqsyp6p3" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_173.png" id="40_0g2st"]
+[ext_resource type="Texture2D" uid="uid://ctrn4a7qkh22a" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_87.png" id="40_61pdv"]
 [ext_resource type="Texture2D" uid="uid://dsjlh4b30oqph" path="res://encounters/sprites/bad_boy/bad_boy_die_03.png" id="40_cl1ot"]
 [ext_resource type="Texture2D" uid="uid://mavpgu1jjatw" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_42.png" id="40_ml8qf"]
-[ext_resource type="Texture2D" uid="uid://biasi56ghb84i" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_181.png" id="41_54guv"]
 [ext_resource type="Texture2D" uid="uid://cvhtp5gbrvmli" path="res://encounters/sprites/bad_boy/bad_boy_die_04.png" id="41_a2kl4"]
+[ext_resource type="Texture2D" uid="uid://bgerrobyxdg7a" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_91.png" id="41_eqexy"]
 [ext_resource type="Texture2D" uid="uid://b6a28pdow2vdp" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_44.png" id="41_idtwj"]
-[ext_resource type="Texture2D" uid="uid://sgxmskw4wagt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_189.png" id="42_1uwdu"]
 [ext_resource type="Texture2D" uid="uid://dsoq6yxqr0j1g" path="res://encounters/sprites/bad_boy/bad_boy_die_05.png" id="42_1x7si"]
 [ext_resource type="Texture2D" uid="uid://c5xo8uhfr88kr" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_46.png" id="42_idwnl"]
-[ext_resource type="Texture2D" uid="uid://c56tnnkva7eyi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_197.png" id="43_2l1k8"]
+[ext_resource type="Texture2D" uid="uid://yq4odhp57eln" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_95.png" id="42_v0l8e"]
+[ext_resource type="Texture2D" uid="uid://cf2fgdsgc4nue" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_99.png" id="43_5j5td"]
 [ext_resource type="Texture2D" uid="uid://dev7xxnhtului" path="res://encounters/sprites/bad_boy/bad_boy_die_06.png" id="43_cunpb"]
 [ext_resource type="Texture2D" uid="uid://dossqlnfwsjdp" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_48.png" id="43_gimpe"]
-[ext_resource type="Texture2D" uid="uid://bk741axkg331w" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_205.png" id="44_1odwy"]
 [ext_resource type="Texture2D" uid="uid://bddslnncdreh7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_50.png" id="44_3cvfo"]
+[ext_resource type="Texture2D" uid="uid://b100cj2ksm68o" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_103.png" id="44_bgh3j"]
 [ext_resource type="Texture2D" uid="uid://cs5dgitiiqaqo" path="res://encounters/sprites/bad_boy/bad_boy_die_07.png" id="44_vph1q"]
 [ext_resource type="Texture2D" uid="uid://cvupevyswyg1n" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_52.png" id="45_3fdvj"]
 [ext_resource type="Texture2D" uid="uid://tuxcj0dkbu4b" path="res://encounters/sprites/bad_boy/bad_boy_die_08.png" id="45_a6jtf"]
-[ext_resource type="Texture2D" uid="uid://dpxb1l0g0wcbi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_213.png" id="45_ksre1"]
+[ext_resource type="Texture2D" uid="uid://d0wqbkn4yo6tm" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_107.png" id="45_qgjow"]
+[ext_resource type="Texture2D" uid="uid://d2sittveefgm0" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_111.png" id="46_6lg07"]
 [ext_resource type="Texture2D" uid="uid://du000lrs3a2pf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_54.png" id="46_cwevk"]
 [ext_resource type="Texture2D" uid="uid://ca0ddq2dquyp2" path="res://encounters/sprites/bad_boy/bad_boy_die_09.png" id="46_mvi4d"]
-[ext_resource type="Texture2D" uid="uid://cgoqsqttuewih" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_221.png" id="46_r7grc"]
 [ext_resource type="Texture2D" uid="uid://cdk6scx2mjenj" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_56.png" id="47_8thad"]
-[ext_resource type="Texture2D" uid="uid://cr2w87v1ec2ok" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_229.png" id="47_lpcq0"]
 [ext_resource type="Texture2D" uid="uid://uk6m4twgvgw6" path="res://encounters/sprites/bad_boy/bad_boy_die_10.png" id="47_w7kv7"]
+[ext_resource type="Texture2D" uid="uid://d1h6fxd3rj0xp" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_115.png" id="47_xyy80"]
+[ext_resource type="Texture2D" uid="uid://dkura7yagh2e1" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_119.png" id="48_cqisc"]
 [ext_resource type="Texture2D" uid="uid://b0wjhwwn8ux2l" path="res://encounters/sprites/bad_boy/bad_boy_die_11.png" id="48_lh40p"]
-[ext_resource type="Texture2D" uid="uid://daq8pyuenmr3r" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_237.png" id="48_pifbv"]
 [ext_resource type="Texture2D" uid="uid://jf3vws6g3fjf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_58.png" id="48_t2i7p"]
 [ext_resource type="Texture2D" uid="uid://wcq2m1bclruj" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_60.png" id="49_ah368"]
+[ext_resource type="Texture2D" uid="uid://b6o381f2ce1y5" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_123.png" id="49_dcmi2"]
 [ext_resource type="Texture2D" uid="uid://bgc7vk51l4mpg" path="res://encounters/sprites/bad_boy/bad_boy_die_12.png" id="49_o1ici"]
-[ext_resource type="Texture2D" uid="uid://cxhpf4qvyvmx7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_245.png" id="49_x6uqm"]
 [ext_resource type="Texture2D" uid="uid://c0ejkd6ufgms0" path="res://encounters/sprites/bad_boy/bad_boy_die_13.png" id="50_khtba"]
-[ext_resource type="Texture2D" uid="uid://u68fbnx86xnn" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_253.png" id="50_nn7yl"]
 [ext_resource type="Texture2D" uid="uid://b03axgqewkck4" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_62.png" id="50_qib04"]
-[ext_resource type="Texture2D" uid="uid://cj3bjsj460ap7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_261.png" id="51_4fsbp"]
+[ext_resource type="Texture2D" uid="uid://0ftx7d1qj36m" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_127.png" id="50_rnvll"]
+[ext_resource type="Texture2D" uid="uid://4m2bp1ea7cum" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_131.png" id="51_3re4w"]
 [ext_resource type="Texture2D" uid="uid://t3rrcaa0xa5n" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_64.png" id="51_pk1r0"]
 [ext_resource type="Texture2D" uid="uid://b3u033uoqal5u" path="res://encounters/sprites/bad_boy/bad_boy_die_14.png" id="51_sv5hv"]
+[ext_resource type="Texture2D" uid="uid://ccqqoyexb8ism" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_135.png" id="52_1rfhw"]
 [ext_resource type="Texture2D" uid="uid://8jnffp1cydgr" path="res://encounters/sprites/bad_boy/bad_boy_die_15.png" id="52_1vn1j"]
-[ext_resource type="Texture2D" uid="uid://pqvr30i3hbyo" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_269.png" id="52_2t534"]
 [ext_resource type="Texture2D" uid="uid://cvkxdd84ktgd" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_66.png" id="52_aahqq"]
+[ext_resource type="Texture2D" uid="uid://cpk5jop2kc36g" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_139.png" id="53_2b66b"]
 [ext_resource type="Texture2D" uid="uid://df5egf8dndmvq" path="res://encounters/sprites/bad_boy/bad_boy_die_16.png" id="53_5535d"]
-[ext_resource type="Texture2D" uid="uid://r30ihek2b5m2" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_277.png" id="53_lgovl"]
 [ext_resource type="Texture2D" uid="uid://71ooecfmpmpt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_68.png" id="53_tde2a"]
-[ext_resource type="Texture2D" uid="uid://bufvqn1jh1mjb" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_285.png" id="54_dbnqk"]
+[ext_resource type="Texture2D" uid="uid://b673ka3aj2m0r" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_143.png" id="54_g6yo3"]
 [ext_resource type="Texture2D" uid="uid://drl3k5dsd74h4" path="res://encounters/sprites/bad_boy/bad_boy_die_17.png" id="54_gsgmw"]
 [ext_resource type="Texture2D" uid="uid://7b7yvl3pynqn" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_70.png" id="54_vrvnt"]
 [ext_resource type="Texture2D" uid="uid://csodr0t7uj2mk" path="res://encounters/sprites/bad_boy/bad_boy_die_18.png" id="55_55w2b"]
-[ext_resource type="Texture2D" uid="uid://wse3aykuqjt7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_293.png" id="55_534fv"]
 [ext_resource type="Texture2D" uid="uid://dcgt02ga2s12f" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_72.png" id="55_cmjgy"]
+[ext_resource type="Texture2D" uid="uid://c63kgtuj1duv1" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_147.png" id="55_s1fa0"]
 [ext_resource type="Texture2D" uid="uid://basdf5l4kixno" path="res://encounters/sprites/bad_boy/bad_boy_die_19.png" id="56_8is0v"]
-[ext_resource type="Texture2D" uid="uid://b76waqyjd56a7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_301.png" id="56_od8ah"]
+[ext_resource type="Texture2D" uid="uid://dxlqpwy71qtsi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_151.png" id="56_cgxdt"]
 [ext_resource type="Texture2D" uid="uid://kcyqkdq676d1" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_74.png" id="56_rihhg"]
+[ext_resource type="Texture2D" uid="uid://wrm608l7xow2" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_155.png" id="57_1ynyg"]
 [ext_resource type="Texture2D" uid="uid://ccbdcec4fpqr7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_76.png" id="57_2wtoi"]
 [ext_resource type="Texture2D" uid="uid://cjup3o6r0uy73" path="res://encounters/sprites/heartthrob/Screenshot 2024-12-27 161850.png" id="57_l1wn6"]
-[ext_resource type="Texture2D" uid="uid://drtkydutbadx4" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_b_309.png" id="57_wbiyl"]
+[ext_resource type="Texture2D" uid="uid://d1cninxaal6qi" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_159.png" id="58_h3ua1"]
 [ext_resource type="Texture2D" uid="uid://dpw22ldacanqa" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_78.png" id="58_m1s5g"]
 [ext_resource type="Texture2D" uid="uid://bkn4m6vmlf6q6" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_80.png" id="59_lq40s"]
 [ext_resource type="Texture2D" uid="uid://wbpkar0iol5v" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_00.png" id="59_mql7m"]
+[ext_resource type="Texture2D" uid="uid://dug6yny2mxgxb" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_163.png" id="59_vkj41"]
 [ext_resource type="Texture2D" uid="uid://cm1btaakc3fvk" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_82.png" id="60_dhdns"]
+[ext_resource type="Texture2D" uid="uid://bj5yuscdc50la" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_167.png" id="60_fo83o"]
 [ext_resource type="Texture2D" uid="uid://cvx2lipsw0mwx" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_01.png" id="60_oykta"]
+[ext_resource type="Texture2D" uid="uid://dnpaf2og7pov0" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_171.png" id="61_2pdhh"]
 [ext_resource type="Texture2D" uid="uid://c1u3loq4ql3en" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_02.png" id="61_m2n7a"]
 [ext_resource type="Texture2D" uid="uid://dkaeqpcp3e87r" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_84.png" id="61_ta2sp"]
 [ext_resource type="Texture2D" uid="uid://cg2lxm4c2hlry" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_86.png" id="62_ctppr"]
+[ext_resource type="Texture2D" uid="uid://u2vqbop0s0e" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_175.png" id="62_pa0ts"]
 [ext_resource type="Texture2D" uid="uid://dwaegihlbcdh7" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_03.png" id="62_yfwrm"]
 [ext_resource type="Texture2D" uid="uid://cpu8nxy8ivfuy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_88.png" id="63_ff2ws"]
+[ext_resource type="Texture2D" uid="uid://d2cea227meewy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_179.png" id="63_hebp4"]
 [ext_resource type="Texture2D" uid="uid://cytvo7xyvko6i" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_04.png" id="63_laeqb"]
+[ext_resource type="Texture2D" uid="uid://u7pige8bkrgk" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_183.png" id="64_8uhgb"]
 [ext_resource type="Texture2D" uid="uid://cbtbc5ek7ngv3" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_90.png" id="64_es3he"]
 [ext_resource type="Texture2D" uid="uid://cviurwr1rn6ln" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_05.png" id="64_q1sk3"]
+[ext_resource type="Texture2D" uid="uid://gurakqrhtyyf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_187.png" id="65_302rx"]
 [ext_resource type="Texture2D" uid="uid://djidiqlabsxdy" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_06.png" id="65_syfbd"]
 [ext_resource type="Texture2D" uid="uid://bake3esfempko" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_92.png" id="65_takgb"]
 [ext_resource type="Texture2D" uid="uid://knyhha0hks62" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_07.png" id="66_4niyo"]
 [ext_resource type="Texture2D" uid="uid://c1s0r4mjhhwmm" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_c_94.png" id="66_ld4gw"]
+[ext_resource type="Texture2D" uid="uid://xfwyd1ad74p" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_191.png" id="66_sggfn"]
+[ext_resource type="Texture2D" uid="uid://taj6v3ygtxym" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_195.png" id="67_lxh2d"]
 [ext_resource type="Texture2D" uid="uid://cdcg2menkyao4" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_08.png" id="67_nau7f"]
+[ext_resource type="Texture2D" uid="uid://diureumq5saqy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_199.png" id="68_oiv8d"]
 [ext_resource type="Texture2D" uid="uid://cfipnhdb8gww7" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_09.png" id="68_wm4qj"]
 [ext_resource type="Texture2D" uid="uid://iw66lleqm4p1" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_10.png" id="69_fhjp6"]
+[ext_resource type="Texture2D" uid="uid://m2j7mjnbyren" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_203.png" id="69_ols1p"]
+[ext_resource type="Texture2D" uid="uid://drpkaoeabo1r5" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_new_dance_207.png" id="70_5ep1c"]
 [ext_resource type="Texture2D" uid="uid://ci0wfqr1rafft" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_11.png" id="70_y8p0d"]
 [ext_resource type="Texture2D" uid="uid://ckamvyv6o282n" path="res://encounters/sprites/heartthrob/heartthrob_dance_00.png" id="71_arbjd"]
+[ext_resource type="Texture2D" uid="uid://dsqbti8upfvip" path="res://dance_scene/bad_boy/bad_boy_thriller_a_01.png" id="71_fai6f"]
 [ext_resource type="Texture2D" uid="uid://dvh3yfvlxh3dt" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_12.png" id="71_us0os"]
+[ext_resource type="Texture2D" uid="uid://btii11trtj16y" path="res://dance_scene/bad_boy/bad_boy_thriller_a_03.png" id="72_3hu0c"]
 [ext_resource type="Texture2D" uid="uid://c5f2ocf1r4d8c" path="res://encounters/sprites/heartthrob/heartthrob_dance_02.png" id="72_f0umd"]
 [ext_resource type="Texture2D" uid="uid://ix7ms67d4uh8" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_13.png" id="72_qhjrm"]
 [ext_resource type="Texture2D" uid="uid://cl8nuld4tls4c" path="res://encounters/sprites/heartthrob/cropped_square/heartthrob_attack2_14.png" id="73_ok5o5"]
+[ext_resource type="Texture2D" uid="uid://b0hqx7mdn5b2h" path="res://dance_scene/bad_boy/bad_boy_thriller_a_05.png" id="73_q0ngp"]
 [ext_resource type="Texture2D" uid="uid://b4whhj2jj4fld" path="res://encounters/sprites/heartthrob/heartthrob_dance_04.png" id="73_xgqk0"]
+[ext_resource type="Texture2D" uid="uid://bd87cdkqxjcjf" path="res://dance_scene/bad_boy/bad_boy_thriller_a_07.png" id="74_86mt5"]
 [ext_resource type="Texture2D" uid="uid://c2554hr5jonq1" path="res://encounters/sprites/heartthrob/heartthrob_dance_06.png" id="74_wgeaq"]
+[ext_resource type="Texture2D" uid="uid://cfxg2u303bbjk" path="res://dance_scene/bad_boy/bad_boy_thriller_a_09.png" id="75_gkexm"]
 [ext_resource type="Texture2D" uid="uid://bdwp7bkqt4e8o" path="res://encounters/sprites/heartthrob/heartthrob_dance_08.png" id="75_pejd2"]
 [ext_resource type="Texture2D" uid="uid://c38okj2tusris" path="res://encounters/sprites/heartthrob/heartthrob_dance_10.png" id="76_05dlx"]
+[ext_resource type="Texture2D" uid="uid://c85268v3urwcm" path="res://dance_scene/bad_boy/bad_boy_thriller_a_11.png" id="76_twsab"]
 [ext_resource type="Texture2D" uid="uid://dcqfqrpqsqmqk" path="res://encounters/sprites/heartthrob/heartthrob_dance_12.png" id="77_ittnk"]
+[ext_resource type="Texture2D" uid="uid://d0krxgtmaulgm" path="res://dance_scene/bad_boy/bad_boy_thriller_a_13.png" id="77_ychj7"]
 [ext_resource type="Texture2D" uid="uid://daogffy4u8vpp" path="res://encounters/sprites/heartthrob/heartthrob_dance_14.png" id="78_etmuu"]
+[ext_resource type="Texture2D" uid="uid://bvan3et2vb4a8" path="res://dance_scene/bad_boy/bad_boy_thriller_a_15.png" id="78_g0gh6"]
+[ext_resource type="Texture2D" uid="uid://hkrdifp7d5c0" path="res://dance_scene/bad_boy/bad_boy_thriller_a_17.png" id="79_cn8wi"]
 [ext_resource type="Texture2D" uid="uid://dlfb341ncrfqc" path="res://encounters/sprites/heartthrob/heartthrob_dance_16.png" id="79_yr8sm"]
+[ext_resource type="Texture2D" uid="uid://cvx2e7ipx2hd8" path="res://dance_scene/bad_boy/bad_boy_thriller_a_19.png" id="80_1w12j"]
 [ext_resource type="Texture2D" uid="uid://duv4ypo1ufg6f" path="res://encounters/sprites/heartthrob/heartthrob_dance_18.png" id="80_t6b11"]
 [ext_resource type="Texture2D" uid="uid://cqr121frt2uus" path="res://encounters/sprites/heartthrob/heartthrob_dance_20.png" id="81_inxjy"]
+[ext_resource type="Texture2D" uid="uid://d0r2lw8u2he3c" path="res://dance_scene/bad_boy/bad_boy_thriller_a_21.png" id="81_jwg5p"]
 [ext_resource type="Texture2D" uid="uid://cf0618bg335ii" path="res://encounters/sprites/heartthrob/heartthrob_dance_22.png" id="82_3f5x3"]
+[ext_resource type="Texture2D" uid="uid://0cm7yrw05oe6" path="res://dance_scene/bad_boy/bad_boy_thriller_a_23.png" id="82_03s5f"]
 [ext_resource type="Texture2D" uid="uid://2pb0mb78vfxg" path="res://encounters/sprites/heartthrob/heartthrob_dance_24.png" id="83_ff3l2"]
+[ext_resource type="Texture2D" uid="uid://c6tkaqqprcx1d" path="res://dance_scene/bad_boy/bad_boy_thriller_a_25.png" id="83_s0sb6"]
+[ext_resource type="Texture2D" uid="uid://bho7584yme3jh" path="res://dance_scene/bad_boy/bad_boy_thriller_a_27.png" id="84_134bv"]
 [ext_resource type="Texture2D" uid="uid://bb14wx1mutcwb" path="res://encounters/sprites/heartthrob/heartthrob_dance_26.png" id="84_vvbdj"]
+[ext_resource type="Texture2D" uid="uid://wdqki5y5h8ao" path="res://dance_scene/bad_boy/bad_boy_thriller_a_29.png" id="85_3hpls"]
 [ext_resource type="Texture2D" uid="uid://bjfsfdepfx5h4" path="res://encounters/sprites/heartthrob/heartthrob_dance_28.png" id="85_3se4m"]
 [ext_resource type="Texture2D" uid="uid://dsrlvicrnlc6d" path="res://encounters/sprites/heartthrob/heartthrob_dance_30.png" id="86_ir8ek"]
+[ext_resource type="Texture2D" uid="uid://cp5m7kwbs6bge" path="res://dance_scene/bad_boy/bad_boy_thriller_a_31.png" id="86_ryhnw"]
+[ext_resource type="Texture2D" uid="uid://bxytk8l7ba1xu" path="res://dance_scene/bad_boy/bad_boy_thriller_a_33.png" id="87_2sxuc"]
 [ext_resource type="Texture2D" uid="uid://erxrp5amrfvo" path="res://encounters/sprites/heartthrob/heartthrob_dance_32.png" id="87_tl860"]
 [ext_resource type="Texture2D" uid="uid://c4looudbp6jfa" path="res://encounters/sprites/heartthrob/heartthrob_dance_34.png" id="88_2qtyg"]
+[ext_resource type="Texture2D" uid="uid://dd8rgcyqo863k" path="res://dance_scene/bad_boy/bad_boy_thriller_a_35.png" id="88_5u1r0"]
+[ext_resource type="Texture2D" uid="uid://da2uci3vwf4y3" path="res://dance_scene/bad_boy/bad_boy_thriller_a_37.png" id="89_nl7lm"]
 [ext_resource type="Texture2D" uid="uid://x4b42b5cit4j" path="res://encounters/sprites/heartthrob/heartthrob_dance_36.png" id="89_qmto8"]
+[ext_resource type="Texture2D" uid="uid://dov6p5sbyelvj" path="res://dance_scene/bad_boy/bad_boy_thriller_a_39.png" id="90_dfxdq"]
 [ext_resource type="Texture2D" uid="uid://bbmc1vqxiagg8" path="res://encounters/sprites/heartthrob/heartthrob_dance_38.png" id="90_i7vj4"]
 [ext_resource type="Texture2D" uid="uid://bqtovjrc6oo7d" path="res://encounters/sprites/heartthrob/heartthrob_dance_40.png" id="91_uedyh"]
+[ext_resource type="Texture2D" uid="uid://do28t7wa1eu5a" path="res://dance_scene/bad_boy/bad_boy_thriller_a_41.png" id="91_v0k5i"]
+[ext_resource type="Texture2D" uid="uid://cer8lttndmeja" path="res://dance_scene/bad_boy/bad_boy_thriller_a_43.png" id="92_mpta6"]
+[ext_resource type="Texture2D" uid="uid://bumekauq6108f" path="res://dance_scene/bad_boy/bad_boy_thriller_a_45.png" id="93_na7uk"]
+[ext_resource type="Texture2D" uid="uid://srtnpnxk6bxg" path="res://dance_scene/bad_boy/bad_boy_thriller_a_47.png" id="94_r21er"]
+[ext_resource type="Texture2D" uid="uid://c3m3h326efct0" path="res://dance_scene/bad_boy/bad_boy_thriller_a_49.png" id="95_2k3kt"]
+[ext_resource type="Texture2D" uid="uid://cfn0titvqdbps" path="res://dance_scene/bad_boy/bad_boy_thriller_b_01.png" id="96_atj7m"]
+[ext_resource type="Texture2D" uid="uid://bcnocd02dkxrm" path="res://dance_scene/bad_boy/bad_boy_thriller_b_03.png" id="97_gqyc7"]
+[ext_resource type="Texture2D" uid="uid://bqcpbb2vil2pn" path="res://dance_scene/bad_boy/bad_boy_thriller_b_05.png" id="98_bgh23"]
+[ext_resource type="Texture2D" uid="uid://de1dtwsrwp3ua" path="res://dance_scene/bad_boy/bad_boy_thriller_b_07.png" id="99_78lig"]
+[ext_resource type="Texture2D" uid="uid://crfc17wrbtacs" path="res://dance_scene/bad_boy/bad_boy_thriller_b_09.png" id="100_8vv8r"]
+[ext_resource type="Texture2D" uid="uid://c35t4as7lffrp" path="res://dance_scene/bad_boy/bad_boy_thriller_b_11.png" id="101_gl4xy"]
+[ext_resource type="Texture2D" uid="uid://bub3ijlapp3kw" path="res://dance_scene/bad_boy/bad_boy_thriller_b_13.png" id="102_hjt8f"]
+[ext_resource type="Texture2D" uid="uid://cssmtf8ae1otx" path="res://dance_scene/bad_boy/bad_boy_thriller_b_15.png" id="103_qoh3b"]
+[ext_resource type="Texture2D" uid="uid://iit22ldl58p6" path="res://dance_scene/bad_boy/bad_boy_thriller_b_17.png" id="104_gyoxe"]
 [ext_resource type="Texture2D" uid="uid://dcfa0exyqi040" path="res://encounters/sprites/heartthrob/heartthrob_die_13.png" id="105_x3oex"]
+[ext_resource type="Texture2D" uid="uid://6r1fa0ntxy8o" path="res://dance_scene/bad_boy/bad_boy_thriller_b_19.png" id="105_xbn73"]
 [ext_resource type="Texture2D" uid="uid://ct35al3uqmsd2" path="res://encounters/sprites/heartthrob/heartthrob_die_14.png" id="106_1ooy2"]
-[ext_resource type="Texture2D" uid="uid://brtntrx1psid2" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_05.png" id="106_yanoe"]
+[ext_resource type="Texture2D" uid="uid://d3a7ijuqecute" path="res://dance_scene/bad_boy/bad_boy_thriller_b_21.png" id="106_80w5l"]
 [ext_resource type="Texture2D" uid="uid://br8xwnw22ik6e" path="res://encounters/sprites/heartthrob/heartthrob_die_15.png" id="107_esvoa"]
-[ext_resource type="Texture2D" uid="uid://cgtj1r84m0vv0" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_13.png" id="107_ji0ij"]
-[ext_resource type="Texture2D" uid="uid://bql7vb1p4dyq1" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_21.png" id="108_ejcc8"]
+[ext_resource type="Texture2D" uid="uid://c17ujnhdeqy61" path="res://dance_scene/bad_boy/bad_boy_thriller_b_23.png" id="107_gchiw"]
+[ext_resource type="Texture2D" uid="uid://cyfmc1ho2owg" path="res://dance_scene/bad_boy/bad_boy_thriller_b_25.png" id="108_pup8x"]
 [ext_resource type="Texture2D" uid="uid://baqd4hkme6x7h" path="res://encounters/sprites/heartthrob/heartthrob_die_16.png" id="108_vmwme"]
+[ext_resource type="Texture2D" uid="uid://b2wp0f60ywwp1" path="res://dance_scene/bad_boy/bad_boy_thriller_b_27.png" id="109_2o1h0"]
 [ext_resource type="Texture2D" uid="uid://jaddtel8g284" path="res://encounters/sprites/heartthrob/heartthrob_die_17.png" id="109_b2468"]
-[ext_resource type="Texture2D" uid="uid://bmdg1o3qs40t3" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_29.png" id="109_x7sgg"]
 [ext_resource type="Texture2D" uid="uid://dss2ia84epap0" path="res://encounters/sprites/heartthrob/heartthrob_die_18.png" id="110_mvr4h"]
-[ext_resource type="Texture2D" uid="uid://b3yu3kk0xn7ng" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_37.png" id="110_ol12x"]
-[ext_resource type="Texture2D" uid="uid://bupxfxlly0mc5" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_45.png" id="111_7au3k"]
+[ext_resource type="Texture2D" uid="uid://c1a1dijig82a2" path="res://dance_scene/bad_boy/bad_boy_thriller_b_29.png" id="110_x3kd1"]
 [ext_resource type="Texture2D" uid="uid://bj7cldr2ywmrr" path="res://encounters/sprites/heartthrob/heartthrob_die_19.png" id="111_cjucg"]
+[ext_resource type="Texture2D" uid="uid://civglhek6q1so" path="res://dance_scene/bad_boy/bad_boy_thriller_b_31.png" id="111_p2bvj"]
 [ext_resource type="Texture2D" uid="uid://bsis0mtwsa10h" path="res://encounters/sprites/heartthrob/heartthrob_die_20.png" id="112_hd3ff"]
-[ext_resource type="Texture2D" uid="uid://b3dbtnl0owlmt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_53.png" id="112_lghs3"]
-[ext_resource type="Texture2D" uid="uid://q7edpb7ancdu" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_61.png" id="113_qncj8"]
+[ext_resource type="Texture2D" uid="uid://bfxoppy5wt1lw" path="res://dance_scene/bad_boy/bad_boy_thriller_b_33.png" id="112_meojl"]
 [ext_resource type="Texture2D" uid="uid://ddw1ng4eedjhf" path="res://encounters/sprites/heartthrob/heartthrob_die_21.png" id="113_wp0qt"]
-[ext_resource type="Texture2D" uid="uid://bfdyifpcoo3gt" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_69.png" id="114_33eo1"]
+[ext_resource type="Texture2D" uid="uid://c1u04t17mmcvd" path="res://dance_scene/bad_boy/bad_boy_thriller_b_35.png" id="113_ys5da"]
 [ext_resource type="Texture2D" uid="uid://cyao7x8ou1yw0" path="res://encounters/sprites/heartthrob/heartthrob_die_22.png" id="114_68xmb"]
+[ext_resource type="Texture2D" uid="uid://vp11o2jdnh35" path="res://dance_scene/bad_boy/bad_boy_thriller_b_37.png" id="114_yogjp"]
 [ext_resource type="Texture2D" uid="uid://4688sia3rnix" path="res://encounters/sprites/heartthrob/heartthrob_die_23.png" id="115_8xydp"]
-[ext_resource type="Texture2D" uid="uid://qrxn2hjvo854" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_77.png" id="115_nyb3f"]
-[ext_resource type="Texture2D" uid="uid://bccagweacv6u8" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_85.png" id="116_yb2ks"]
+[ext_resource type="Texture2D" uid="uid://bh2ivlg7b6k83" path="res://dance_scene/bad_boy/bad_boy_thriller_b_39.png" id="115_a1sae"]
+[ext_resource type="Texture2D" uid="uid://d04ok2wwmnxn5" path="res://dance_scene/bad_boy/bad_boy_thriller_b_41.png" id="116_ef8q0"]
 [ext_resource type="Texture2D" uid="uid://bhim480bt36wa" path="res://encounters/sprites/heartthrob/heartthrob_die_24.png" id="116_yhc2m"]
-[ext_resource type="Texture2D" uid="uid://b40bhed2t04sf" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_93.png" id="117_ckplb"]
+[ext_resource type="Texture2D" uid="uid://cmj5q62uu81fk" path="res://dance_scene/bad_boy/bad_boy_thriller_b_43.png" id="117_7sy5p"]
 [ext_resource type="Texture2D" uid="uid://c6iknpij40b2j" path="res://encounters/sprites/heartthrob/heartthrob_die_25.png" id="117_rvnpp"]
 [ext_resource type="Texture2D" uid="uid://ceemh1kx8ywnx" path="res://encounters/sprites/heartthrob/heartthrob_die_26.png" id="118_gabbd"]
-[ext_resource type="Texture2D" uid="uid://bdfi74r12pbsc" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_101.png" id="118_r7sjy"]
-[ext_resource type="Texture2D" uid="uid://ciuye8xrg17rw" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_109.png" id="119_i5bgc"]
+[ext_resource type="Texture2D" uid="uid://dj1u1kwecujxc" path="res://dance_scene/bad_boy/bad_boy_thriller_b_45.png" id="118_wb5c8"]
+[ext_resource type="Texture2D" uid="uid://ddd6q3uy5fl4m" path="res://dance_scene/bad_boy/bad_boy_thriller_b_47.png" id="119_dp8u3"]
 [ext_resource type="Texture2D" uid="uid://b8tqp8ofyxge5" path="res://encounters/sprites/heartthrob/heartthrob_die_27.png" id="119_mg833"]
-[ext_resource type="Texture2D" uid="uid://daj0boxpd17yh" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_117.png" id="120_pc2nr"]
+[ext_resource type="Texture2D" uid="uid://dkxih4isvyli0" path="res://dance_scene/bad_boy/bad_boy_thriller_b_49.png" id="120_j2vek"]
 [ext_resource type="Texture2D" uid="uid://bmt5uj48qlf3j" path="res://encounters/sprites/heartthrob/heartthrob_die_28.png" id="120_qqr7s"]
-[ext_resource type="Texture2D" uid="uid://cn8bthxn0c3ol" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_125.png" id="121_6yby8"]
 [ext_resource type="Texture2D" uid="uid://cmfbtpt2fld3l" path="res://encounters/sprites/heartthrob/heartthrob_die_29.png" id="121_80ar7"]
-[ext_resource type="Texture2D" uid="uid://d0erqe1qc7a17" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_133.png" id="122_7isbx"]
+[ext_resource type="Texture2D" uid="uid://isvfqwym0s6f" path="res://dance_scene/bad_boy/bad_boy_thriller_b_51.png" id="121_qqsbt"]
+[ext_resource type="Texture2D" uid="uid://rw0b6s7s6j0n" path="res://dance_scene/bad_boy/bad_boy_thriller_b_53.png" id="122_fya6g"]
 [ext_resource type="Texture2D" uid="uid://cphh11nh2tynq" path="res://encounters/sprites/heartthrob/heartthrob_die_30.png" id="122_npfq0"]
 [ext_resource type="Texture2D" uid="uid://digd0k54yuhiq" path="res://encounters/sprites/heartthrob/heartthrob_die_31.png" id="123_1ejl8"]
-[ext_resource type="Texture2D" uid="uid://bv57uj3nk1en8" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_141.png" id="123_47nxo"]
-[ext_resource type="Texture2D" uid="uid://xqghoo6k0yh6" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_149.png" id="124_edj74"]
+[ext_resource type="Texture2D" uid="uid://c2v2bf26oy2m2" path="res://dance_scene/bad_boy/bad_boy_thriller_b_55.png" id="123_excxa"]
+[ext_resource type="Texture2D" uid="uid://cpqpo7sp1xujl" path="res://dance_scene/bad_boy/bad_boy_thriller_b_57.png" id="124_dwmx6"]
 [ext_resource type="Texture2D" uid="uid://bhv760e6nkh06" path="res://encounters/sprites/heartthrob/heartthrob_die_32.png" id="124_s70n1"]
-[ext_resource type="Texture2D" uid="uid://dy6tvigcn5vr" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_157.png" id="125_4aupb"]
-[ext_resource type="Texture2D" uid="uid://crer4quqt2mr1" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_165.png" id="126_emnkt"]
 [ext_resource type="Texture2D" uid="uid://b3stxili3jh71" path="res://encounters/sprites/cute_one/cute_one_idle_00.png" id="126_f3c6r"]
-[ext_resource type="Texture2D" uid="uid://rlafmgqrgvbg" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_173.png" id="127_g5wkc"]
-[ext_resource type="Texture2D" uid="uid://qwu5omo6a6bo" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_181.png" id="128_vdsh4"]
-[ext_resource type="Texture2D" uid="uid://crlnwqxngpb3b" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_189.png" id="129_7sr8b"]
 [ext_resource type="Texture2D" uid="uid://cyh4xnl27c2fw" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_01.png" id="129_l30qm"]
 [ext_resource type="Texture2D" uid="uid://cm15p8tyijh8e" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_02.png" id="130_dkerg"]
-[ext_resource type="Texture2D" uid="uid://baklv260of36b" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_197.png" id="130_tg8la"]
 [ext_resource type="Texture2D" uid="uid://dxkmx1noenaq3" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_03.png" id="131_bn00r"]
-[ext_resource type="Texture2D" uid="uid://d4kf8eelyvi2a" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_205.png" id="131_sy81c"]
-[ext_resource type="Texture2D" uid="uid://d1hsgn6pmni4h" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_213.png" id="132_nseqc"]
 [ext_resource type="Texture2D" uid="uid://bsdwsq31mawir" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_04.png" id="132_v1ikn"]
 [ext_resource type="Texture2D" uid="uid://cbqyeyp0qwixi" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_05.png" id="133_5u75x"]
-[ext_resource type="Texture2D" uid="uid://bbob1cmxn5vii" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_221.png" id="133_ucv12"]
-[ext_resource type="Texture2D" uid="uid://gi0prln68r1" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_229.png" id="134_pdxhw"]
 [ext_resource type="Texture2D" uid="uid://cd04b7uxyklge" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_06.png" id="134_x1tyq"]
 [ext_resource type="Texture2D" uid="uid://c24nfwefdwylq" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_07.png" id="135_1majf"]
-[ext_resource type="Texture2D" uid="uid://bxstvxrdqwvvm" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_237.png" id="135_ltsf4"]
-[ext_resource type="Texture2D" uid="uid://d23vgp3mav4ow" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_245.png" id="136_3j5ra"]
 [ext_resource type="Texture2D" uid="uid://wgqam1j0nat6" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_08.png" id="136_88mmd"]
-[ext_resource type="Texture2D" uid="uid://bjlweoiu67sxy" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_253.png" id="137_erlqr"]
 [ext_resource type="Texture2D" uid="uid://d1vq1qcb7ro6y" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_09.png" id="137_l5mqq"]
-[ext_resource type="Texture2D" uid="uid://ho4ni01l4u7" path="res://encounters/sprites/bad_boy/more_dancing/bad_boy_dance_a_261.png" id="138_4q6ho"]
 [ext_resource type="Texture2D" uid="uid://bjwn7juy5tug2" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_10.png" id="138_umlwq"]
 [ext_resource type="Texture2D" uid="uid://bt0xtscsavrlg" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_11.png" id="139_i2bui"]
-[ext_resource type="Texture2D" uid="uid://b0e6vhdqa6y6r" path="res://encounters/sprites/bad_boy/bad_boy_dance_00.png" id="139_l81s8"]
-[ext_resource type="Texture2D" uid="uid://bmqv00b5p2yss" path="res://encounters/sprites/bad_boy/bad_boy_dance_02.png" id="140_hieyn"]
 [ext_resource type="Texture2D" uid="uid://bidm3cudw7up2" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_12.png" id="140_v5ge4"]
 [ext_resource type="Texture2D" uid="uid://xouao6pk80oo" path="res://encounters/sprites/cute_one/cute_one_dance_00.png" id="141_7ptdp"]
-[ext_resource type="Texture2D" uid="uid://crmlkwxunqjea" path="res://encounters/sprites/bad_boy/bad_boy_dance_04.png" id="141_btfgr"]
 [ext_resource type="Texture2D" uid="uid://60rnr66t3lcs" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_13.png" id="141_fb15d"]
 [ext_resource type="Texture2D" uid="uid://dk3p4fjwrfha" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_14.png" id="142_2wv82"]
-[ext_resource type="Texture2D" uid="uid://cubi8j6xglfkq" path="res://encounters/sprites/bad_boy/bad_boy_dance_06.png" id="142_7qy0j"]
 [ext_resource type="Texture2D" uid="uid://bsy5ypiu064g7" path="res://encounters/sprites/cute_one/cute_one_dance_02.png" id="142_rhyma"]
 [ext_resource type="Texture2D" uid="uid://dlrhftrdw6l0" path="res://encounters/sprites/cute_one/cropped_square/cute_one_attack2_15.png" id="143_jb32l"]
-[ext_resource type="Texture2D" uid="uid://6blwcgurnwto" path="res://encounters/sprites/bad_boy/bad_boy_dance_08.png" id="143_tp4wt"]
 [ext_resource type="Texture2D" uid="uid://cxfnhg010ru0e" path="res://encounters/sprites/cute_one/cute_one_dance_04.png" id="143_yj2dj"]
 [ext_resource type="Texture2D" uid="uid://bv05qurymkfgx" path="res://encounters/sprites/cute_one/cute_one_dance_06.png" id="144_a1tm6"]
-[ext_resource type="Texture2D" uid="uid://bv350jwq1u0m" path="res://encounters/sprites/bad_boy/bad_boy_dance_10.png" id="144_ym5eq"]
-[ext_resource type="Texture2D" uid="uid://c8ldt06f2iw82" path="res://encounters/sprites/bad_boy/bad_boy_dance_12.png" id="145_erlha"]
 [ext_resource type="Texture2D" uid="uid://4q3mg7r10mtd" path="res://encounters/sprites/cute_one/cute_one_dance_08.png" id="145_hwfpa"]
-[ext_resource type="Texture2D" uid="uid://f1af7ueim4q0" path="res://encounters/sprites/bad_boy/bad_boy_dance_14.png" id="146_vt1kb"]
 [ext_resource type="Texture2D" uid="uid://da08btwsd4ydc" path="res://encounters/sprites/cute_one/cute_one_dance_10.png" id="146_wwji8"]
 [ext_resource type="Texture2D" uid="uid://cogoyfn6tum5s" path="res://encounters/sprites/cute_one/cute_one_dance_12.png" id="147_6jrfw"]
-[ext_resource type="Texture2D" uid="uid://dst775l0e72um" path="res://encounters/sprites/bad_boy/bad_boy_dance_16.png" id="147_kuyh3"]
-[ext_resource type="Texture2D" uid="uid://bebt5ss556l7g" path="res://encounters/sprites/bad_boy/bad_boy_dance_18.png" id="148_gaxkf"]
 [ext_resource type="Texture2D" uid="uid://eu8osh8ga73s" path="res://encounters/sprites/cute_one/cute_one_dance_14.png" id="148_xv8vf"]
 [ext_resource type="Texture2D" uid="uid://cjg4btg3ovs0v" path="res://encounters/sprites/cute_one/cute_one_dance_16.png" id="149_jkf3l"]
-[ext_resource type="Texture2D" uid="uid://btqeevtxea03e" path="res://encounters/sprites/bad_boy/bad_boy_dance_20.png" id="149_q6q31"]
-[ext_resource type="Texture2D" uid="uid://dhfhd03ke4gkk" path="res://encounters/sprites/bad_boy/bad_boy_dance_22.png" id="150_at8y6"]
 [ext_resource type="Texture2D" uid="uid://c15p7hkbus4tq" path="res://encounters/sprites/cute_one/cute_one_dance_18.png" id="150_diim7"]
 [ext_resource type="Texture2D" uid="uid://cyhi5bb4nis8s" path="res://encounters/sprites/cute_one/cute_one_dance_20.png" id="151_mj024"]
-[ext_resource type="Texture2D" uid="uid://dhqj1vntguogq" path="res://encounters/sprites/bad_boy/bad_boy_dance_24.png" id="151_shwm5"]
-[ext_resource type="Texture2D" uid="uid://b2sgn00uxck5j" path="res://encounters/sprites/bad_boy/bad_boy_dance_26.png" id="152_dt243"]
 [ext_resource type="Texture2D" uid="uid://d06eysuy8cb0r" path="res://encounters/sprites/cute_one/cute_one_dance_22.png" id="152_v46io"]
 [ext_resource type="Texture2D" uid="uid://bft45gk5pt4em" path="res://encounters/sprites/cute_one/cute_one_dance_24.png" id="153_b4x4t"]
-[ext_resource type="Texture2D" uid="uid://dhkvbbk88gnyc" path="res://encounters/sprites/bad_boy/bad_boy_dance_28.png" id="153_m6d6k"]
 [ext_resource type="Texture2D" uid="uid://dssm4jx55dwmm" path="res://encounters/sprites/cute_one/cute_one_dance_26.png" id="154_mbnem"]
-[ext_resource type="Texture2D" uid="uid://bv47y8v36vd13" path="res://encounters/sprites/bad_boy/bad_boy_dance_30.png" id="154_ptmcw"]
-[ext_resource type="Texture2D" uid="uid://dnor7wd6accou" path="res://encounters/sprites/bad_boy/bad_boy_dance_32.png" id="155_qo082"]
 [ext_resource type="Texture2D" uid="uid://dkkprdalxbdms" path="res://encounters/sprites/cute_one/cute_one_dance_28.png" id="155_yacmp"]
 [ext_resource type="Texture2D" uid="uid://c2he0cu0mknyl" path="res://encounters/sprites/cute_one/cute_one_dance_30.png" id="156_coc72"]
-[ext_resource type="Texture2D" uid="uid://bas2rogsxrcr" path="res://encounters/sprites/bad_boy/bad_boy_dance_34.png" id="156_tlyei"]
-[ext_resource type="Texture2D" uid="uid://dd1e4t1gu8qft" path="res://encounters/sprites/bad_boy/bad_boy_dance_36.png" id="157_qf5y1"]
 [ext_resource type="Texture2D" uid="uid://brnppttfomplb" path="res://encounters/sprites/cute_one/cute_one_dance_32.png" id="157_wvg02"]
 [ext_resource type="Texture2D" uid="uid://bbx1t22dw4uxf" path="res://encounters/sprites/cute_one/cute_one_dance_34.png" id="158_exy2m"]
-[ext_resource type="Texture2D" uid="uid://o0qav0q24v70" path="res://encounters/sprites/bad_boy/bad_boy_dance_38.png" id="158_h31h4"]
-[ext_resource type="Texture2D" uid="uid://qd57pn5ib55l" path="res://encounters/sprites/bad_boy/bad_boy_dance_40.png" id="159_btq2u"]
 [ext_resource type="Texture2D" uid="uid://bdakg7gg5x1r2" path="res://encounters/sprites/cute_one/cute_one_dance_36.png" id="159_jlpd3"]
 [ext_resource type="Texture2D" uid="uid://ckh2tr4rg0g1l" path="res://encounters/sprites/cute_one/cute_one_dance_38.png" id="160_qy1xi"]
 [ext_resource type="Texture2D" uid="uid://vk32mbh3mce0" path="res://encounters/sprites/cute_one/cute_one_dance_40.png" id="161_kc4l2"]
@@ -850,297 +863,336 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("19_dsecb")
+"texture": ExtResource("19_wb54f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_qyi8f")
+"texture": ExtResource("20_a2qv2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_jtdaq")
+"texture": ExtResource("21_amn20")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_ocbmb")
+"texture": ExtResource("22_axb8v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_25ewu")
+"texture": ExtResource("23_bhvyq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_3hoog")
+"texture": ExtResource("24_454ny")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_08wuy")
+"texture": ExtResource("25_rogmh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_6nmoq")
+"texture": ExtResource("26_g3epx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_dqj2u")
+"texture": ExtResource("27_b2j1t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_g6jyf")
+"texture": ExtResource("28_qfvkg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_rheu3")
+"texture": ExtResource("29_33dts")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_64qop")
+"texture": ExtResource("30_avkgf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_dhlvk")
+"texture": ExtResource("31_6x16o")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_q6q2y")
+"texture": ExtResource("32_17fks")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_ucwn8")
+"texture": ExtResource("33_ekesn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_21sgs")
+"texture": ExtResource("34_3qr3r")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_guxbx")
+"texture": ExtResource("35_tpaiu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_f8xm4")
+"texture": ExtResource("36_r8vtj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_xguq2")
+"texture": ExtResource("37_71des")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_caim4")
+"texture": ExtResource("38_gus6p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("39_u3ocg")
+"texture": ExtResource("39_oovip")
 }, {
 "duration": 1.0,
-"texture": ExtResource("40_0g2st")
+"texture": ExtResource("40_61pdv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("41_54guv")
+"texture": ExtResource("41_eqexy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("42_1uwdu")
+"texture": ExtResource("42_v0l8e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("43_2l1k8")
+"texture": ExtResource("43_5j5td")
 }, {
 "duration": 1.0,
-"texture": ExtResource("44_1odwy")
+"texture": ExtResource("44_bgh3j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("45_ksre1")
+"texture": ExtResource("45_qgjow")
 }, {
 "duration": 1.0,
-"texture": ExtResource("46_r7grc")
+"texture": ExtResource("46_6lg07")
 }, {
 "duration": 1.0,
-"texture": ExtResource("47_lpcq0")
+"texture": ExtResource("47_xyy80")
 }, {
 "duration": 1.0,
-"texture": ExtResource("48_pifbv")
+"texture": ExtResource("48_cqisc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("49_x6uqm")
+"texture": ExtResource("49_dcmi2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("50_nn7yl")
+"texture": ExtResource("50_rnvll")
 }, {
 "duration": 1.0,
-"texture": ExtResource("51_4fsbp")
+"texture": ExtResource("51_3re4w")
 }, {
 "duration": 1.0,
-"texture": ExtResource("52_2t534")
+"texture": ExtResource("52_1rfhw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("53_lgovl")
+"texture": ExtResource("53_2b66b")
 }, {
 "duration": 1.0,
-"texture": ExtResource("54_dbnqk")
+"texture": ExtResource("54_g6yo3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("55_534fv")
+"texture": ExtResource("55_s1fa0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("56_od8ah")
+"texture": ExtResource("56_cgxdt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("57_wbiyl")
+"texture": ExtResource("57_1ynyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_h3ua1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_vkj41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_fo83o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_2pdhh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_pa0ts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_hebp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_8uhgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_302rx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_sggfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_lxh2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_oiv8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_ols1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_5ep1c")
 }],
 "loop": true,
 "name": &"dance1",
-"speed": 6.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("106_yanoe")
+"texture": ExtResource("71_fai6f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("107_ji0ij")
+"texture": ExtResource("72_3hu0c")
 }, {
 "duration": 1.0,
-"texture": ExtResource("108_ejcc8")
+"texture": ExtResource("73_q0ngp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("109_x7sgg")
+"texture": ExtResource("74_86mt5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("110_ol12x")
+"texture": ExtResource("75_gkexm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("111_7au3k")
+"texture": ExtResource("76_twsab")
 }, {
 "duration": 1.0,
-"texture": ExtResource("112_lghs3")
+"texture": ExtResource("77_ychj7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("113_qncj8")
+"texture": ExtResource("78_g0gh6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("114_33eo1")
+"texture": ExtResource("79_cn8wi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("115_nyb3f")
+"texture": ExtResource("80_1w12j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("116_yb2ks")
+"texture": ExtResource("81_jwg5p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("117_ckplb")
+"texture": ExtResource("82_03s5f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("118_r7sjy")
+"texture": ExtResource("83_s0sb6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("119_i5bgc")
+"texture": ExtResource("84_134bv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("120_pc2nr")
+"texture": ExtResource("85_3hpls")
 }, {
 "duration": 1.0,
-"texture": ExtResource("121_6yby8")
+"texture": ExtResource("86_ryhnw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("122_7isbx")
+"texture": ExtResource("87_2sxuc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("123_47nxo")
+"texture": ExtResource("88_5u1r0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("124_edj74")
+"texture": ExtResource("89_nl7lm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("125_4aupb")
+"texture": ExtResource("90_dfxdq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("126_emnkt")
+"texture": ExtResource("91_v0k5i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("127_g5wkc")
+"texture": ExtResource("92_mpta6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("128_vdsh4")
+"texture": ExtResource("93_na7uk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("129_7sr8b")
+"texture": ExtResource("94_r21er")
 }, {
 "duration": 1.0,
-"texture": ExtResource("130_tg8la")
-}, {
-"duration": 1.0,
-"texture": ExtResource("131_sy81c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("132_nseqc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("133_ucv12")
-}, {
-"duration": 1.0,
-"texture": ExtResource("134_pdxhw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("135_ltsf4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("136_3j5ra")
-}, {
-"duration": 1.0,
-"texture": ExtResource("137_erlqr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("138_4q6ho")
+"texture": ExtResource("95_2k3kt")
 }],
 "loop": true,
 "name": &"dance2",
-"speed": 6.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("139_l81s8")
+"texture": ExtResource("96_atj7m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("140_hieyn")
+"texture": ExtResource("97_gqyc7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("141_btfgr")
+"texture": ExtResource("98_bgh23")
 }, {
 "duration": 1.0,
-"texture": ExtResource("142_7qy0j")
+"texture": ExtResource("99_78lig")
 }, {
 "duration": 1.0,
-"texture": ExtResource("143_tp4wt")
+"texture": ExtResource("100_8vv8r")
 }, {
 "duration": 1.0,
-"texture": ExtResource("144_ym5eq")
+"texture": ExtResource("101_gl4xy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("145_erlha")
+"texture": ExtResource("102_hjt8f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("146_vt1kb")
+"texture": ExtResource("103_qoh3b")
 }, {
 "duration": 1.0,
-"texture": ExtResource("147_kuyh3")
+"texture": ExtResource("104_gyoxe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("148_gaxkf")
+"texture": ExtResource("105_xbn73")
 }, {
 "duration": 1.0,
-"texture": ExtResource("149_q6q31")
+"texture": ExtResource("106_80w5l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("150_at8y6")
+"texture": ExtResource("107_gchiw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("151_shwm5")
+"texture": ExtResource("108_pup8x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("152_dt243")
+"texture": ExtResource("109_2o1h0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("153_m6d6k")
+"texture": ExtResource("110_x3kd1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("154_ptmcw")
+"texture": ExtResource("111_p2bvj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("155_qo082")
+"texture": ExtResource("112_meojl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("156_tlyei")
+"texture": ExtResource("113_ys5da")
 }, {
 "duration": 1.0,
-"texture": ExtResource("157_qf5y1")
+"texture": ExtResource("114_yogjp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("158_h31h4")
+"texture": ExtResource("115_a1sae")
 }, {
 "duration": 1.0,
-"texture": ExtResource("159_btq2u")
+"texture": ExtResource("116_ef8q0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_7sy5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_wb5c8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_dp8u3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_j2vek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_qqsbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_fya6g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_excxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_dwmx6")
 }],
 "loop": true,
 "name": &"dance3",
-"speed": 8.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -4104,8 +4156,9 @@ material = SubResource("ShaderMaterial_gq0bb")
 position = Vector2(0, -325)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_70kts")
-animation = &"tie3"
+animation = &"dance4"
 autoplay = "idle"
+frame_progress = 0.706466
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/BadBoySprite"]
 position = Vector2(210, -26)

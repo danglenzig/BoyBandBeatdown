@@ -38,6 +38,7 @@ func on_dialogue_ended(_resource: DialogueResource)->void:
 	
 	if dialogue_states.running_away:
 		dialogue_states.running_away = false
+		dialogue_states.dialogue_active = false
 		start_cooldown_timer()
 		return
 	

@@ -37,7 +37,26 @@ Nora: So be cautious with your Heartthrob cards!
 - Run away
 	=> RUN_AWAY
 
+~ tammy_challenge
+# show tammy portrait
+set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/tammy_portrait.png"
+do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
 
+Tammy: Your very existence brings shame upon your ancestors!
+
+# show nora portrait
+set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
+do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+
+Nora: That's Tammy.
+Nora: Um...good luck...
+- Start the battle
+	=> START_BATTLE
+- Review the rules
+	do help_manager.show_match_tutorial()
+	=> START_BATTLE
+- Run away
+	=> RUN_AWAY
 
 ~ gretchen_challenge
 

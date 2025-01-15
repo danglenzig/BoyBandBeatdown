@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=36 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
 [ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_26yqy"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://mc8wh7gomyal" path="res://dialogue/dialogue_trigger_area.tscn" id="13_jqwix"]
 [ext_resource type="Script" path="res://environments/npc_spawner.gd" id="14_71uiw"]
 [ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="15_neqai"]
+[ext_resource type="PackedScene" uid="uid://33rho0ehl6wp" path="res://npcs/tammy/tammy_sprite.tscn" id="16_imgy8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hau2o"]
 size = Vector2(914, 26)
@@ -240,7 +241,7 @@ debug_color = Color(0.663075, 0.512889, 0.0136903, 0.42)
 
 [node name="NpcSpawner" type="Node" parent="."]
 script = ExtResource("14_71uiw")
-npc_scenes = Array[PackedScene]([ExtResource("15_neqai")])
+npc_scenes = Array[PackedScene]([ExtResource("15_neqai"), ExtResource("16_imgy8")])
 
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 

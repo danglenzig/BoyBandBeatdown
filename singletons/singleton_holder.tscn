@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dlaoxsh4nrl4r"]
+[gd_scene load_steps=27 format=3 uid="uid://dlaoxsh4nrl4r"]
 
 [ext_resource type="Script" path="res://singletons/singleton_holder.gd" id="1_4ae2a"]
 [ext_resource type="Script" path="res://singletons/misc_tools.gd" id="1_ji376"]
@@ -24,6 +24,8 @@
 [ext_resource type="AudioStream" uid="uid://cxkdf063okeur" path="res://audio/assets/music/bbb overworld.mp3" id="20_r065e"]
 [ext_resource type="Script" path="res://singletons/cross_fader.gd" id="21_ju0ja"]
 [ext_resource type="AudioStream" uid="uid://csytnllk1xihk" path="res://audio/assets/music/bbb overworld_2.mp3" id="23_am2o8"]
+[ext_resource type="Script" path="res://singletons/dialogue_states.gd" id="25_mp0t5"]
+[ext_resource type="Script" path="res://singletons/help_manager.gd" id="26_myuyd"]
 
 [node name="SingletonHolder" type="Node"]
 script = ExtResource("1_4ae2a")
@@ -105,3 +107,9 @@ bus = &"StartMenuMusic"
 
 [node name="CrossFader" type="Node" parent="MusicManager"]
 script = ExtResource("21_ju0ja")
+
+[node name="DialogueStates" type="Node" parent="."]
+script = ExtResource("25_mp0t5")
+
+[node name="HelpManager" type="Node" parent="."]
+script = ExtResource("26_myuyd")

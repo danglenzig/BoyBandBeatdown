@@ -1,7 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=12 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
-[ext_resource type="Texture2D" uid="uid://3s7kjfqf8ai8" path="res://dialogue/portraits/player_portrait.png" id="2_673os"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
 [ext_resource type="FontFile" uid="uid://baihxtltbmli8" path="res://fonts/VIPNAGORGIALLA RG.OTF" id="3_nv6qu"]
@@ -202,7 +201,6 @@ theme = SubResource("Theme_qq3yp")
 material = SubResource("ShaderMaterial_lmcwg")
 position = Vector2(1145, 544)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_673os")
 
 [node name="Panel" type="Panel" parent="Balloon"]
 clip_children = 2

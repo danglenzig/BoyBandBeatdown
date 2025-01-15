@@ -1,6 +1,8 @@
 extends Area2D
 class_name DialogueTriggerArea
 
+var dialogue_states: DialogueStates
+
 @export var dialogue_resource_string: String 	= ""
 @export var start_dialogue_tag: String 			= ""
 @export var speaker_portrait_resource: String 	= ""
@@ -18,17 +20,26 @@ func _ready():
 	var misc: MiscTools = SingletonHolder.get_node("MiscTools")
 	dialogue_uuid = misc.get_uuid()
 	DialogueManager.dialogue_ended.connect(on_dialogue_ended)
+	
+	dialogue_states = SingletonHolder.get_node("DialogueStates")
 
 func on_dialogue_ended(_resource: DialogueResource)->void:
 	#if not resource.resource_path == dialogue_resource_string:
 	#	return
 	
 	var misc: MiscTools = SingletonHolder.get_node("MiscTools")
-	if misc.current_dialog != dialogue_uuid:
+	if dialogue_states.current_dialog != dialogue_uuid:
+		
+		print_debug(dialogue_states.current_dialog)
+		
 		return
 	on_cooldown = true
-	misc.dialogue_active = false
-	misc.current_dialog = ""
+	#misc.dialogue_active = false
+	#misc.current_dialog = ""
+	
+	#dialogue_states.dialogue_active = false
+	#dialogue_states.current_dialog = ""
+	
 	var player: Player = misc.current_player
 	player.player_state_chart.send_event("to_idle_event")
 	
@@ -40,14 +51,23 @@ func on_dialogue_ended(_resource: DialogueResource)->void:
 
 func _on_body_entered(body):
 	var misc: MiscTools = SingletonHolder.get_node("MiscTools")
-	if not body.is_in_group(triggering_body_group) or misc.dialogue_active or on_cooldown:
+	if not body.is_in_group(triggering_body_group) or dialogue_states.dialogue_active or on_cooldown:
 		return
 	match triggering_body_group:
 		"Player":
 			var player: Player = body
 			player.player_state_chart.send_event("to_dialogue_event")
-			misc.dialogue_active = true
-			misc.current_dialog = dialogue_uuid
+			#misc.dialogue_active = true
+			#misc.current_dialog = dialogue_uuid
+			
+			dialogue_states.dialogue_active = true
+			dialogue_states.current_dialog = dialogue_uuid
+			
 			DialogueManager.show_example_dialogue_balloon(load(dialogue_resource_string), start_dialogue_tag)
-			var baloon: DialogueManagerExampleBalloon = misc.main.get_node("ExampleBalloon")
-			baloon.set_speaker_portrait_texture(speaker_portrait_resource)
+			#var baloon: DialogueManagerExampleBalloon = misc.main.get_node("ExampleBalloon")
+			#baloon.set_speaker_portrait_texture(speaker_portrait_resource)
+			"""
+			if dialogue_states.current_speaker_portrait_resource != "":
+				var portrait_resource: String = dialogue_states.current_speaker_portrait_resource
+				dialogue_states.set_dialogue_portrait(baloon)
+			"""

@@ -17,6 +17,7 @@ var player_inside_detect_radius = false
 
 var misc_tools: MiscTools
 var encounter_events: EncounterEvents
+var dialogue_states: DialogueStates
 
 var npc_dialogue: NpcDialogue
 var npc_sprite_uuid = ""
@@ -27,6 +28,7 @@ var npc_sprite_uuid = ""
 func _ready():
 	misc_tools = SingletonHolder.get_node("MiscTools")
 	encounter_events = SingletonHolder.get_node("EncounterEvents")
+	dialogue_states = SingletonHolder.get_node("DialogueStates")
 	npc_sprite_uuid = misc_tools.get_uuid()
 	
 	#name = str(name,"_",npc_sprite_uuid)
@@ -47,35 +49,19 @@ func _process(_delta):
 	handle_layering()
 	
 func _physics_process(_delta):
-	if not misc_tools.dialogue_active and not npc_dialogue.on_cooldown:
+	if not dialogue_states.dialogue_active and not npc_dialogue.on_cooldown:
 		handle_dialogue_detect()
 	#handle_ui()
 
 func handle_dialogue_detect()->void:
+	var player: Player = misc_tools.current_player
+	if not is_player_inside_detect_radius():
+		return
+	npc_dialogue.on_cooldown = true
+	npc_dialogue.start_dialogue()
 	
-	if is_player_inside_detect_radius():
-		npc_dialogue.start_dialogue()
 
-"""
-func handle_ui()->void:
-	if is_player_inside_detect_radius():
-		if $EncounterUI/StartEncounterLabel.visible:
-			return
-		$EncounterUI/LevelLabel.visible 			= false
-		$EncounterUI/StartEncounterLabel.visible 	= true
-		
-		#var my_mat: ShaderMaterial = $AnimatedSprite2D.material
-		#my_mat.set_shader_parameter("BORDERNOISE_active", true)
-		
-	else:
-		if not $EncounterUI/StartEncounterLabel.visible:
-			return
-		$EncounterUI/LevelLabel.visible 			= true
-		$EncounterUI/StartEncounterLabel.visible 	= false
-		
-		#var my_mat: ShaderMaterial = $AnimatedSprite2D.material
-		#my_mat.set_shader_parameter("BORDERNOISE_active", false)
-"""
+
 	
 func is_player_inside_detect_radius() -> bool:
 	var player: Player = misc_tools.current_player

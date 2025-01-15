@@ -101,7 +101,10 @@ func _ready() -> void:
 	speaker_portrait = $Balloon/SpeakerPortrait
 
 func set_speaker_portrait_texture(resource_string):
-	speaker_portrait.texture = load(resource_string)
+	if resource_string == "":
+		speaker_portrait.texture = null
+	else:
+		speaker_portrait.texture = load(resource_string)
 
 func _unhandled_input(_event: InputEvent) -> void:
 	# Only the balloon is allowed to handle input while it's showing

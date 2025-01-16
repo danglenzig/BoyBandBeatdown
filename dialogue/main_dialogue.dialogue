@@ -65,6 +65,22 @@ if not dialogue_states.introduced["GRETCHEN"]:
 	Nora: Your best bet is to do the same.
 => BATTLE_OPTIONS
 
+~ kaci_challenge
+# show kacien portrait
+set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/kaci_portrait.png"
+do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+
+Kaci: (concstruction noise)
+
+if not dialogue_states.introduced["KACI"]:
+	set dialogue_states.introduced["KACI"] = true
+	# show nora portrait
+	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
+	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+	Nora: That's Kaci. She loves the Shy One (obviously).
+	Nora: You should probably prefer the Older Brother over the Cute One.
+=> BATTLE_OPTIONS
+
 ##########################################################
 
 ~ START_BATTLE

@@ -286,7 +286,3 @@ script = ExtResource("4_5bh7o")
 dialogue_resource_string = "res://dialogue/main_dialogue.dialogue"
 start_dialogue_tag = "gretchen_challenge"
 speaker_portrait_resource = "res://dialogue/portraits/gretchen_portrait.png"
-
-[connection signal="mouse_entered" from="EncounterUI/StartEncounterLabel/Button" to="." method="_on_button_mouse_entered"]
-[connection signal="mouse_exited" from="EncounterUI/StartEncounterLabel/Button" to="." method="_on_button_mouse_exited"]
-[connection signal="pressed" from="EncounterUI/StartEncounterLabel/Button" to="." method="_on_button_pressed"]

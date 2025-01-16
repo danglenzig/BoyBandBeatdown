@@ -13,6 +13,7 @@ var introduced = {
 	MARCIE = false,
 	GRETCHEN = false,
 	TAMMY = false,
+	KACI = false,
 	
 }
 

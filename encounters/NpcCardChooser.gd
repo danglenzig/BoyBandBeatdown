@@ -12,6 +12,8 @@ var play_styles = [
 	"FAVOR_FIRE", 
 	# choose randomly from highest ranked water suit cards, else BASIC_2 behavior
 	"FAVOR_WATER",
+	
+	"FAVOR_SHY_ONE",
 ]
 
 func choose_card(cards: Array[Card], play_style)->String:
@@ -37,10 +39,15 @@ func choose_card(cards: Array[Card], play_style)->String:
 				if card.suit_name == "BAD_BOY":
 					return card.card_uuid
 					break
-			
 			var a_rando = randi_range(0,cards.size()-1)
 			return cards[a_rando].card_uuid
-	
+		"FAVOR_SHY_ONE":
+			for card:Card in cards:
+				if card.suit_name == "SHY_ONE":
+					return card.card_uuid
+					break
+			var a_rando = randi_range(0,cards.size()-1)
+			return cards[a_rando].card_uuid
 	
 	var chosen_card_uuid: String = ""
 	

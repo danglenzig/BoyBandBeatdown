@@ -3,6 +3,7 @@ class_name NpcDialogue
 
 var misc: MiscTools
 var dialogue_states: DialogueStates
+var encounter_events: EncounterEvents
 
 @export var dialogue_resource_string: String 	= ""
 @export var start_dialogue_tag: String 			= ""
@@ -17,12 +18,14 @@ var dialogue_uuid = ""
 func _ready():
 	misc = SingletonHolder.get_node("MiscTools")
 	dialogue_states = SingletonHolder.get_node("DialogueStates")
+	encounter_events = SingletonHolder.get_node("EncounterEvents")
 	dialogue_uuid = misc.get_uuid()
 	DialogueManager.dialogue_ended.connect(on_dialogue_ended)
 	
 	var my_npc: NpcSprite = get_parent()
 	cooldown = my_npc.encounter_cooldown
 	
+	encounter_events.review_rules_finished.connect(on_review_rules_finished)
 	
 
 func on_dialogue_ended(_resource: DialogueResource)->void:
@@ -41,12 +44,40 @@ func on_dialogue_ended(_resource: DialogueResource)->void:
 		dialogue_states.dialogue_active = false
 		start_cooldown_timer()
 		return
+		
+	if dialogue_states.showing_help:
+		dialogue_states.showing_help = false
+		dialogue_states.dialogue_active = false
+		
+		var new_fucking_canvas_layer: CanvasLayer = CanvasLayer.new()
+		var fucking_help: TutorialSequenceDeck = misc.main.deck_tutorial_scene.instantiate()
+		fucking_help.current_dialogue = dialogue_uuid
+		new_fucking_canvas_layer.call_deferred("add_child", fucking_help)
+		new_fucking_canvas_layer.layer = 10
+		fucking_help.called_from = fucking_help.enum_called_from.ENVIRONMENT
+		
+		var fucking_texture: TextureRect = fucking_help.get_node("TextureRect")
+		fucking_texture.self_modulate = Color(1,1,1,0.9)
+		
+		misc.main.call_deferred("add_child", new_fucking_canvas_layer)
+		print_debug(fucking_help.called_from)
+		
+		# show the fucking help
+		# start the cooldown timer
+		
+		return
 	
 	var my_npc: NpcSprite = get_parent()
 	my_npc.begin_encounter()
 	
 	#await get_tree().create_timer(cooldown).timeout
 	#on_cooldown = false
+
+func on_review_rules_finished(uuid: String):
+	if uuid == dialogue_uuid:
+		print_debug("FUCK_YOU")
+		var my_npc: NpcSprite = get_parent()
+		my_npc.begin_encounter()
 
 func start_cooldown_timer()-> void:
 	await get_tree().create_timer(cooldown).timeout

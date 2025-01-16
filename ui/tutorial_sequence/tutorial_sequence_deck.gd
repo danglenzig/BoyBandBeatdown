@@ -16,6 +16,7 @@ var countinue_button_armed: bool = true
 
 enum enum_called_from {START, ENVIRONMENT, ENCOUNTER, NONE}
 var called_from: enum_called_from = enum_called_from.NONE
+var current_dialogue = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -283,6 +284,14 @@ func _on_continue_button_pressed():
 		# TODO: fix this
 		var continute_button: Button = $RootPanel/ContinueButton
 		continute_button.visible = false
+		
+		if called_from == enum_called_from.ENVIRONMENT:
+			var encounter_events: EncounterEvents = SingletonHolder.get_node("EncounterEvents")
+			encounter_events.review_rules_finished.emit(current_dialogue)
+			get_parent().call_deferred("queue_free")
+			return
+		
+		
 		
 		return
 		

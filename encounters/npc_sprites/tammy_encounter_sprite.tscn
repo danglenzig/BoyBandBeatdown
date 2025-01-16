@@ -1,6 +1,686 @@
-[gd_scene load_steps=2 format=3 uid="uid://g558chvughdr"]
+[gd_scene load_steps=100 format=3 uid="uid://g558chvughdr"]
 
 [ext_resource type="Script" path="res://encounters/encounter_sprite.gd" id="1_rv175"]
+[ext_resource type="Texture2D" uid="uid://co25tm10kbv7d" path="res://encounters/sprites/tammy/tammy_attack_00.png" id="1_whtx4"]
+[ext_resource type="Texture2D" uid="uid://vddd4hiafyil" path="res://encounters/sprites/tammy/tammy_attack_01.png" id="2_wkg8b"]
+[ext_resource type="Texture2D" uid="uid://dex3toh316fp8" path="res://encounters/sprites/tammy/tammy_attack_02.png" id="3_nejfd"]
+[ext_resource type="Texture2D" uid="uid://cfbvvcyu2u0vt" path="res://encounters/sprites/tammy/tammy_attack_03.png" id="4_g4w7d"]
+[ext_resource type="Texture2D" uid="uid://db4n8rhtn7i1d" path="res://encounters/sprites/tammy/tammy_attack_04.png" id="5_pd3wo"]
+[ext_resource type="Texture2D" uid="uid://djqsqgiv75k85" path="res://encounters/sprites/tammy/tammy_attack_05.png" id="6_w8lh0"]
+[ext_resource type="Texture2D" uid="uid://crxte7w7v2hu2" path="res://encounters/sprites/tammy/tammy_attack_06.png" id="7_pdsks"]
+[ext_resource type="Texture2D" uid="uid://ctlp2dtim7ccb" path="res://encounters/sprites/tammy/tammy_attack_07.png" id="8_5dht3"]
+[ext_resource type="Texture2D" uid="uid://diu6uhfgbrmmr" path="res://encounters/sprites/tammy/tammy_attack_08.png" id="9_0l70i"]
+[ext_resource type="Texture2D" uid="uid://bhp5gyybheejr" path="res://encounters/sprites/tammy/tammy_attack_09.png" id="10_y2odx"]
+[ext_resource type="Texture2D" uid="uid://bi15dadychlah" path="res://encounters/sprites/tammy/tammy_attack_10.png" id="11_kqr83"]
+[ext_resource type="Texture2D" uid="uid://vd1iao2i8uqk" path="res://encounters/sprites/tammy/tammy_attack_11.png" id="12_4swj4"]
+[ext_resource type="Texture2D" uid="uid://b5s4pfmrstcfy" path="res://encounters/sprites/tammy/tammy_attack_12.png" id="13_c1kin"]
+[ext_resource type="Texture2D" uid="uid://chl1mecdm2l2d" path="res://encounters/sprites/tammy/tammy_attack_13.png" id="14_jr8ad"]
+[ext_resource type="Texture2D" uid="uid://c45wtg1lgxqbg" path="res://encounters/sprites/tammy/tammy_attack_14.png" id="15_6fxav"]
+[ext_resource type="Texture2D" uid="uid://b6fnxwsaq70lk" path="res://encounters/sprites/tammy/tammy_attack_15.png" id="16_s7f5i"]
+[ext_resource type="Texture2D" uid="uid://ubpfudhvkmcm" path="res://encounters/sprites/tammy/tammy_attack_16.png" id="17_l2ofm"]
+[ext_resource type="Texture2D" uid="uid://vemlifpftdw" path="res://encounters/sprites/tammy/tammy_attack_17.png" id="18_iq5bg"]
+[ext_resource type="Texture2D" uid="uid://pjrqxk47asj0" path="res://encounters/sprites/tammy/tammy_attack_18.png" id="19_6fthf"]
+[ext_resource type="Texture2D" uid="uid://c1d70pilwq36g" path="res://encounters/sprites/tammy/tammy_attack_19.png" id="20_dk8au"]
+[ext_resource type="Texture2D" uid="uid://dodh24fd0ct6k" path="res://encounters/sprites/tammy/tammy_attack_20.png" id="21_m5nrv"]
+[ext_resource type="Texture2D" uid="uid://dt0the34gaftx" path="res://encounters/sprites/tammy/tammy_attack_21.png" id="22_25673"]
+[ext_resource type="Texture2D" uid="uid://wbn0olqok5uo" path="res://encounters/sprites/tammy/tammy_attack_22.png" id="23_e7hnm"]
+[ext_resource type="Texture2D" uid="uid://c4wam7xae0rm5" path="res://encounters/sprites/tammy/tammy_attack_23.png" id="24_jdcy7"]
+[ext_resource type="Texture2D" uid="uid://c3vct12di8gxk" path="res://encounters/sprites/tammy/tammy_attack_24.png" id="25_a4sli"]
+[ext_resource type="Texture2D" uid="uid://cj7qe15bbq8u8" path="res://encounters/sprites/tammy/tammy_attack_25.png" id="26_fm1hh"]
+[ext_resource type="Texture2D" uid="uid://cyxn1dvkh0qw8" path="res://encounters/sprites/tammy/tammy_attack_26.png" id="27_utw1s"]
+[ext_resource type="Texture2D" uid="uid://3d3slf5h4yxe" path="res://encounters/sprites/tammy/tammy_attack_27.png" id="28_pavtq"]
+[ext_resource type="Texture2D" uid="uid://c8dwfc4u0xfoa" path="res://encounters/sprites/tammy/tammy_attack_28.png" id="29_nyj7i"]
+[ext_resource type="Texture2D" uid="uid://db0edngv0pkj3" path="res://encounters/sprites/tammy/tammy_attack_29.png" id="30_dxvbu"]
+[ext_resource type="Texture2D" uid="uid://mlv22csma3nk" path="res://encounters/sprites/tammy/tammy_lose_00.png" id="31_o7el0"]
+[ext_resource type="Texture2D" uid="uid://rlvintnsn8v0" path="res://encounters/sprites/tammy/tammy_lose_01.png" id="32_0qi78"]
+[ext_resource type="Texture2D" uid="uid://dhhwnj3ys6kcr" path="res://encounters/sprites/tammy/tammy_lose_02.png" id="33_oida8"]
+[ext_resource type="Texture2D" uid="uid://dmfwttmh47tmn" path="res://encounters/sprites/tammy/tammy_lose_03.png" id="34_w4714"]
+[ext_resource type="Texture2D" uid="uid://cth8s8p6iu82k" path="res://encounters/sprites/tammy/tammy_lose_04.png" id="35_fippt"]
+[ext_resource type="Texture2D" uid="uid://by5o5adqedsik" path="res://encounters/sprites/tammy/tammy_lose_05.png" id="36_pegg1"]
+[ext_resource type="Texture2D" uid="uid://djmwopunysupo" path="res://encounters/sprites/tammy/tammy_lose_06.png" id="37_ey4ce"]
+[ext_resource type="Texture2D" uid="uid://f41rg6gt4axm" path="res://encounters/sprites/tammy/tammy_lose_07.png" id="38_tfvhy"]
+[ext_resource type="Texture2D" uid="uid://5bvqgqdp8u5k" path="res://encounters/sprites/tammy/tammy_lose_08.png" id="39_p3nq2"]
+[ext_resource type="Texture2D" uid="uid://ba47h636g6c7k" path="res://encounters/sprites/tammy/tammy_lose_09.png" id="40_g0axx"]
+[ext_resource type="Texture2D" uid="uid://dc2x5q831okrn" path="res://encounters/sprites/tammy/tammy_lose_10.png" id="41_d8dw6"]
+[ext_resource type="Texture2D" uid="uid://bfa5fpveta1sv" path="res://encounters/sprites/tammy/tammy_lose_11.png" id="42_7i0pe"]
+[ext_resource type="Texture2D" uid="uid://chr0omesay6em" path="res://encounters/sprites/tammy/tammy_lose_12.png" id="43_8vr0s"]
+[ext_resource type="Texture2D" uid="uid://cacxjcg2txvef" path="res://encounters/sprites/tammy/tammy_lose_13.png" id="44_osxpy"]
+[ext_resource type="Texture2D" uid="uid://dt8rscqx0hsrc" path="res://encounters/sprites/tammy/tammy_lose_14.png" id="45_l62v4"]
+[ext_resource type="Texture2D" uid="uid://wyfuhts3rgy4" path="res://encounters/sprites/tammy/tammy_lose_15.png" id="46_vm6im"]
+[ext_resource type="Texture2D" uid="uid://cxwmbye5xmi82" path="res://encounters/sprites/tammy/tammy_lose_16.png" id="47_558ra"]
+[ext_resource type="Texture2D" uid="uid://i5nbiu6uxlsi" path="res://encounters/sprites/tammy/tammy_lose_17.png" id="48_tmem1"]
+[ext_resource type="Texture2D" uid="uid://fa8t5e5h0t8o" path="res://encounters/sprites/tammy/tammy_lose_18.png" id="49_2inyj"]
+[ext_resource type="Texture2D" uid="uid://56ycs0t7i7sg" path="res://encounters/sprites/tammy/tammy_lose_19.png" id="50_0dpdx"]
+[ext_resource type="Texture2D" uid="uid://cnr72qnyepxip" path="res://encounters/sprites/tammy/tammy_lose_20.png" id="51_5xibd"]
+[ext_resource type="Texture2D" uid="uid://rebt0b56kfdt" path="res://encounters/sprites/tammy/tammy_lose_21.png" id="52_qmdfj"]
+[ext_resource type="Texture2D" uid="uid://d2jsev5l1nsl4" path="res://encounters/sprites/tammy/tammy_lose_22.png" id="53_ejdpb"]
+[ext_resource type="Texture2D" uid="uid://bvqiapd1ifbh6" path="res://encounters/sprites/tammy/tammy_lose_23.png" id="54_gtd1q"]
+[ext_resource type="Texture2D" uid="uid://co8txgkbj5r62" path="res://encounters/sprites/tammy/tammy_lose_24.png" id="55_c4iu7"]
+[ext_resource type="Texture2D" uid="uid://dee7fidfeu3f6" path="res://encounters/sprites/tammy/tammy_lose_25.png" id="56_yh38m"]
+[ext_resource type="Texture2D" uid="uid://b1gtevx5frk1a" path="res://encounters/sprites/tammy/tammy_lose_26.png" id="57_sn0wm"]
+[ext_resource type="Texture2D" uid="uid://caqda281cw45" path="res://encounters/sprites/tammy/tammy_lose_27.png" id="58_7fp04"]
+[ext_resource type="Texture2D" uid="uid://3x64g8asqy4g" path="res://encounters/sprites/tammy/tammy_lose_28.png" id="59_d4abw"]
+[ext_resource type="Texture2D" uid="uid://dfrcyqb6078ug" path="res://encounters/sprites/tammy/tammy_lose_29.png" id="60_dybn6"]
+[ext_resource type="Texture2D" uid="uid://cb5dquayr0kch" path="res://encounters/sprites/tammy/tammy_lose_30.png" id="61_cbn47"]
+[ext_resource type="Texture2D" uid="uid://o8p6ha0l8dmr" path="res://encounters/sprites/tammy/tammy_lose_31.png" id="62_hqrh4"]
+[ext_resource type="Texture2D" uid="uid://b0xti5pwujt08" path="res://encounters/sprites/tammy/tammy_lose_32.png" id="63_pkxir"]
+[ext_resource type="Texture2D" uid="uid://cqywv8y7tfch1" path="res://encounters/sprites/tammy/tammy_lose_33.png" id="64_m110f"]
+[ext_resource type="Texture2D" uid="uid://c2sptjtlag3cr" path="res://encounters/sprites/tammy/tammy_win_00.png" id="65_psfsn"]
+[ext_resource type="Texture2D" uid="uid://chhb65au5hwcr" path="res://encounters/sprites/tammy/tammy_win_01.png" id="66_ib3eu"]
+[ext_resource type="Texture2D" uid="uid://mqbp418yb6l6" path="res://encounters/sprites/tammy/tammy_win_02.png" id="67_tnd4k"]
+[ext_resource type="Texture2D" uid="uid://bgq40lbev6ux" path="res://encounters/sprites/tammy/tammy_win_03.png" id="68_teov4"]
+[ext_resource type="Texture2D" uid="uid://cpq6l2sk12u0n" path="res://encounters/sprites/tammy/tammy_win_04.png" id="69_p0t0l"]
+[ext_resource type="Texture2D" uid="uid://c34s11h10hopr" path="res://encounters/sprites/tammy/tammy_win_05.png" id="70_r8k77"]
+[ext_resource type="Texture2D" uid="uid://c40lnxq46d6mj" path="res://encounters/sprites/tammy/tammy_win_06.png" id="71_wvykn"]
+[ext_resource type="Texture2D" uid="uid://0ctv6mbf5xl7" path="res://encounters/sprites/tammy/tammy_win_07.png" id="72_bes7m"]
+[ext_resource type="Texture2D" uid="uid://0ix5x621lnhv" path="res://encounters/sprites/tammy/tammy_win_08.png" id="73_p1vo6"]
+[ext_resource type="Texture2D" uid="uid://d0mcj4tkivqtf" path="res://encounters/sprites/tammy/tammy_win_09.png" id="74_gjumu"]
+[ext_resource type="Texture2D" uid="uid://ct7knmbnj6ma4" path="res://encounters/sprites/tammy/tammy_win_10.png" id="75_n2d4u"]
+[ext_resource type="Texture2D" uid="uid://ga1wg6ew5217" path="res://encounters/sprites/tammy/tammy_win_11.png" id="76_1c7mo"]
+[ext_resource type="Texture2D" uid="uid://d2wt60t2kmsrl" path="res://encounters/sprites/tammy/tammy_win_12.png" id="77_dlv4h"]
+[ext_resource type="Texture2D" uid="uid://ukee068aa4lv" path="res://encounters/sprites/tammy/tammy_win_13.png" id="78_kxppo"]
+[ext_resource type="Texture2D" uid="uid://b3qe1mdik8q5s" path="res://encounters/sprites/tammy/tammy_win_14.png" id="79_86w6f"]
+[ext_resource type="Texture2D" uid="uid://cwgj81anqa52j" path="res://encounters/sprites/tammy/tammy_win_15.png" id="80_w5qin"]
+[ext_resource type="Texture2D" uid="uid://bnfu4tfe1llg4" path="res://encounters/sprites/tammy/tammy_win_16.png" id="81_s636g"]
+[ext_resource type="Texture2D" uid="uid://pran2mvxpjsu" path="res://encounters/sprites/tammy/tammy_win_17.png" id="82_0bj04"]
+[ext_resource type="Texture2D" uid="uid://bkv11lr1k6dmj" path="res://encounters/sprites/tammy/tammy_win_18.png" id="83_ccn04"]
+[ext_resource type="Texture2D" uid="uid://boyedbua3j6lh" path="res://encounters/sprites/tammy/tammy_win_19.png" id="84_34w2t"]
+[ext_resource type="Texture2D" uid="uid://b4ytaolj5t0db" path="res://encounters/sprites/tammy/tammy_win_20.png" id="85_nl3k7"]
+[ext_resource type="Texture2D" uid="uid://bjydc4na3il7d" path="res://encounters/sprites/tammy/tammy_win_21.png" id="86_0ju2p"]
+[ext_resource type="Texture2D" uid="uid://co4kx5aawksbn" path="res://encounters/sprites/tammy/tammy_win_22.png" id="87_lrwoq"]
+[ext_resource type="Texture2D" uid="uid://dycnxeojuwxws" path="res://encounters/sprites/tammy/tammy_win_23.png" id="88_1uu8t"]
+[ext_resource type="Texture2D" uid="uid://cmf4pfpmn2jar" path="res://encounters/sprites/tammy/tammy_win_24.png" id="89_5x27l"]
+[ext_resource type="Texture2D" uid="uid://ctcuvsj3tis3m" path="res://encounters/sprites/tammy/tammy_win_25.png" id="90_6hmko"]
+[ext_resource type="Texture2D" uid="uid://bohu84i0ov5in" path="res://encounters/sprites/tammy/tammy_win_26.png" id="91_pdlqi"]
+[ext_resource type="Texture2D" uid="uid://3gf4gj10fgrw" path="res://ui/assets/flash-light-effect-free-png.png" id="93_s8d7o"]
+[ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="94_7oxht"]
+
+[sub_resource type="Shader" id="Shader_1wa22"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Color Manipulator,Outline,Border Noise,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cb37g"]
+shader = SubResource("Shader_1wa22")
+shader_parameter/opacity = 1.0
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = 4.75e-08
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_active = false
+shader_parameter/BORDERNOISE_max_line_width = 0.0
+shader_parameter/BORDERNOISE_min_line_width = 121.0
+shader_parameter/BORDERNOISE_freq = 1.0
+shader_parameter/BORDERNOISE_block_size = 21.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(1, 1, 0, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cvkju"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_whtx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wkg8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nejfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g4w7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pd3wo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_w8lh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_pdsks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5dht3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0l70i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_y2odx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kqr83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4swj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_c1kin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_jr8ad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6fxav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_s7f5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_l2ofm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_iq5bg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6fthf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_dk8au")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_m5nrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_25673")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_e7hnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_jdcy7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_a4sli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_fm1hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_utw1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_pavtq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_nyj7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_dxvbu")
+}],
+"loop": false,
+"name": &"attack_1",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_whtx4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_o7el0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_0qi78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_oida8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_w4714")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_fippt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_pegg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ey4ce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_tfvhy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_p3nq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_g0axx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_d8dw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_7i0pe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_8vr0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_osxpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_l62v4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_vm6im")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_558ra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_tmem1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_2inyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_0dpdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_5xibd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_qmdfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_ejdpb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_gtd1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_c4iu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_yh38m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_sn0wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_7fp04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_d4abw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_dybn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_cbn47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_hqrh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_pkxir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_m110f")
+}],
+"loop": false,
+"name": &"lose",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_p3nq2")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("65_psfsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_ib3eu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_tnd4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_teov4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_p0t0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_r8k77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_wvykn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_bes7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_p1vo6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_gjumu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_n2d4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_1c7mo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_dlv4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_kxppo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_86w6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_w5qin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_s636g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_0bj04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ccn04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_34w2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_nl3k7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_0ju2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_lrwoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_1uu8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_5x27l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_6hmko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_pdlqi")
+}],
+"loop": false,
+"name": &"win",
+"speed": 30.0
+}]
+
+[sub_resource type="Shader" id="Shader_5fi0f"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Pulse,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool PULSE_active = true; //activation
+uniform vec4 PULSE_shine_color : source_color = vec4(1.0); //Shine color
+uniform float PULSE_alpha_limit : hint_range(0.0, 1.0, 0.1) = 0.0; //Alpha color limit to apply the shine, for example, if you won't to apply the shine to semi-transparent pixels
+uniform float PULSE_cycle_speed : hint_range(0.0, 100.0, 0.1) = 1.0; //Pulse cycle speed
+uniform bool PULSE_full_pulse_cycle = false; //[False = Do the effect and make a pause] [True = Do the effect continuosly]
+void pulse(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color)
+{
+	//Check the pixel alpha value
+	if (color.a >= PULSE_alpha_limit)
+	{
+		float cycle = sin(TIME * PULSE_cycle_speed);
+		color.rgb = mix(color.rgb, PULSE_shine_color.rgb, (((cycle >= 0.0) || (PULSE_full_pulse_cycle)) ? abs(cycle) : 0.0) * PULSE_shine_color.a);
+	}
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(PULSE_active) pulse(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n5yuu"]
+shader = SubResource("Shader_5fi0f")
+shader_parameter/opacity = 1.0
+shader_parameter/PULSE_active = true
+shader_parameter/PULSE_shine_color = Color(0, 0.647059, 1, 1)
+shader_parameter/PULSE_alpha_limit = 0.0
+shader_parameter/PULSE_cycle_speed = 22.0
+shader_parameter/PULSE_full_pulse_cycle = true
 
 [node name="TammyEncounterSprite" type="AnimatedSprite2D"]
+material = SubResource("ShaderMaterial_cb37g")
+sprite_frames = SubResource("SpriteFrames_cvkju")
+animation = &"win"
+autoplay = "idle"
+frame = 26
+frame_progress = 1.0
 script = ExtResource("1_rv175")
+impact_frame_number = 12
+
+[node name="FlashEffectSprite" type="Sprite2D" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_n5yuu")
+position = Vector2(-3, -255)
+scale = Vector2(1.342, 0.49)
+texture = ExtResource("93_s8d7o")
+
+[node name="RoundsWonLabel" type="Label" parent="."]
+offset_left = -150.0
+offset_top = -272.0
+offset_right = 158.0
+offset_bottom = -235.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("94_7oxht")
+theme_override_font_sizes/font_size = 30
+text = "Rounds Won: N"

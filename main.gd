@@ -8,6 +8,7 @@ var misc_tools: MiscTools
 @export var environment_scenes: Array[PackedScene]
 #@export var tutorial_scene: PackedScene
 @export var tutorial_canvas_scene: PackedScene
+@export var deck_tutorial_scene: PackedScene
 @export var splash_screen_scene: PackedScene
 var splash_screen: Control = null
 
@@ -120,8 +121,9 @@ func load_environment(scene_name: String, start_marker_name: String):
 	
 func start_tutorial_sequence(called_from: String):
 	#var tutorial_sequence: TutorialSequenceDeck = tutorial_scene.instantiate()
-	var tutorial_canvas: TutorialCanvas = tutorial_canvas_scene.instantiate()
-	hud_panel.visible = false
+	
+	#var tutorial_canvas: TutorialCanvas = tutorial_canvas_scene.instantiate()
+	#hud_panel.visible = false
 	match called_from:
 		"START":
 			# old:
@@ -131,12 +133,17 @@ func start_tutorial_sequence(called_from: String):
 			tutorial_sequence.called_from = tutorial_sequence.enum_called_from.START
 			call_deferred("add_child", tutorial_sequence)
 			"""
+			
+			var tutorial_canvas: TutorialCanvas = tutorial_canvas_scene.instantiate()
+			hud_panel.visible = false
+			
 			var start_menu: StartMenu = get_node("StartMenu")
 			start_menu.call_deferred("queue_free")
 			tutorial_canvas.called_from = tutorial_canvas.enum_called_from.START
 			call_deferred("add_child", tutorial_canvas)
+		"ENVIRONMENT":
 			
-			
+			pass
 			
 		"ENVIRONMENT":
 			pass

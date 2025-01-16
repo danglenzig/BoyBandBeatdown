@@ -23,19 +23,14 @@ do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
 
 Marcie: You ready to throw down, NEW GIRL?
 
-# show nora portrait
-set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
-do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
-
-Nora: That's Marcie. She's obsessed with the Bad Boy and tends to overplay him.
-Nora: So be cautious with your Heartthrob cards!
-- Start the battle
-	=> START_BATTLE
-- Review the rules
-	do help_manager.show_match_tutorial()
-	=> START_BATTLE
-- Run away
-	=> RUN_AWAY
+if not dialogue_states.introduced["MARCIE"]:
+	set dialogue_states.introduced["MARCIE"] = true
+	# show nora portrait
+	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
+	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+	Nora: That's Marcie. She's obsessed with the Bad Boy and tends to overplay him.
+	Nora: So be cautious with your Heartthrob cards!
+=> BATTLE_OPTIONS
 
 ~ tammy_challenge
 # show tammy portrait
@@ -44,19 +39,14 @@ do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
 
 Tammy: Your very existence brings shame upon your ancestors!
 
-# show nora portrait
-set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
-do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
-
-Nora: That's Tammy.
-Nora: Um...good luck...
-- Start the battle
-	=> START_BATTLE
-- Review the rules
-	do help_manager.show_match_tutorial()
-	=> START_BATTLE
-- Run away
-	=> RUN_AWAY
+if not dialogue_states.introduced["TAMMY"]:
+	set dialogue_states.introduced["TAMMY"] = true
+	# show nora portrait
+	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
+	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+	Nora: That's Tammy.
+	Nora: Um...good luck...
+=> BATTLE_OPTIONS
 
 ~ gretchen_challenge
 
@@ -66,36 +56,37 @@ do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
 
 Gretchen: (snarls menacingly...)
 
-# show nora portrait
-set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
-do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+if not dialogue_states.introduced["GRETCHEN"]:
+	set dialogue_states.introduced["GRETCHEN"] = true
+	# show nora portrait
+	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
+	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+	Nora: Gretchen is a very unpredictable player.
+	Nora: Your best bet is to do the same.
+=> BATTLE_OPTIONS
 
-Nora: Gretchen is a very unpredictable player.
-Nora: Your best bet is to do the same.
-- Start the battle
-	=> START_BATTLE
-- Review the rules
-	do help_manager.show_match_tutorial()
-	=> START_BATTLE
-- Run away
-	=> RUN_AWAY
-
-
+##########################################################
 
 ~ START_BATTLE
 # clear speaker portrait
 set dialogue_states.current_speaker_portrait_resource = ""
 do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
-
 # clean up
 set dialogue_states.dialogue_active = false
-
 => END
 
 ~ RUN_AWAY
-
 set dialogue_states.running_away = true
-
-
-
 => END
+
+~ REVIEW_RULES
+set dialogue_states.showing_help = true
+=> END
+
+~ BATTLE_OPTIONS
+- Start the battle
+	=> START_BATTLE
+- Review the rules
+	=> REVIEW_RULES
+- Run away
+	=> RUN_AWAY

@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://bnc0he5ytku37"]
+[gd_scene load_steps=36 format=3 uid="uid://bnc0he5ytku37"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
 [ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/env_01.png" id="2_it8mk"]
@@ -63,6 +63,11 @@ size = Vector2(34.9677, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vpugc"]
 size = Vector2(20, 6.91199)
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_r2f3n"]
+vertices = PackedVector2Array(1731.97, 666.828, 1695.94, 1030.92, 122.492, 1018.08, 133.57, 788.977, 1279.49, 660)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(124, 780, 112, 1028, 1705, 1041, 1743, 657, 1279, 650)])
+
 [node name="Environment_01" type="Node2D"]
 script = ExtResource("1_4h4a2")
 camera_upper_y = 720
@@ -119,6 +124,8 @@ position = Vector2(808, 680)
 
 [node name="WestExitPlaceholderMarker05" type="Marker2D" parent="."]
 position = Vector2(1132, 648)
+
+[node name="AllyHolder" type="Node2D" parent="."]
 
 [node name="NpcHolder" type="Node2D" parent="."]
 
@@ -298,6 +305,12 @@ position = Vector2(847, 685)
 
 [node name="Marker2D4" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
 position = Vector2(1218, 679)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_r2f3n")
+
+[node name="CenterMarker" type="Marker2D" parent="NavigationRegion2D"]
+position = Vector2(956, 814)
 
 [connection signal="body_entered" from="ExitTriggerHolder/EastExitTrigger" to="ExitTriggerHolder/EastExitTrigger" method="_on_body_entered"]
 [connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_01" to="ExitTriggerHolder/WestExitTrigger_01" method="_on_body_entered"]

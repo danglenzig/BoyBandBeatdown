@@ -1,0 +1,86 @@
+[gd_scene load_steps=10 format=3 uid="uid://deajnmcnxl33u"]
+
+[ext_resource type="Script" path="res://environments/environment.gd" id="1_jswqj"]
+[ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_mwjok"]
+[ext_resource type="Texture2D" uid="uid://bll0o37o62qoc" path="res://environments/assets/env_05.png" id="3_l1k02"]
+[ext_resource type="Script" path="res://environments/game_camera.gd" id="4_7hlkm"]
+[ext_resource type="Script" path="res://environments/z_scaler.gd" id="5_q0r1f"]
+[ext_resource type="Script" path="res://environments/npc_spawner.gd" id="6_xxwgs"]
+[ext_resource type="PackedScene" uid="uid://tlcdwevu6gdm" path="res://npcs/kaci/kaci_sprite.tscn" id="7_glnlj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hhbmd"]
+size = Vector2(1983, 114)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_uvwes"]
+vertices = PackedVector2Array(1878.91, 698.43, 1876.1, 964.852, 188.609, 940.461, 691.094, 608.938, 1277.28, 597.008)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(688, 599, 156, 950, 1886, 975, 1889, 690, 1278, 587)])
+
+[node name="Environment_05" type="Node2D"]
+script = ExtResource("1_jswqj")
+camera_upper_y = 388
+camera_lower_y = 692
+camera_left_x = 687
+camera_right_x = 1234
+encounter_scene = ExtResource("2_mwjok")
+environment_background_filename = "env_05.png"
+encounter_background_filename = "00.png"
+is_indoor = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_l1k02")
+
+[node name="GameCamera" type="Camera2D" parent="."]
+position = Vector2(1234, 692)
+process_callback = 0
+script = ExtResource("4_7hlkm")
+
+[node name="ZScaler" type="Node2D" parent="." node_paths=PackedStringArray("top_marker", "bottom_marker")]
+script = ExtResource("5_q0r1f")
+top_marker = NodePath("../TopMarker")
+bottom_marker = NodePath("../BottomMarker")
+scale_at_top = 0.2
+scale_at_bottom = 1.7
+
+[node name="TopMarker" type="Marker2D" parent="."]
+position = Vector2(968, 578)
+
+[node name="BottomMarker" type="Marker2D" parent="."]
+position = Vector2(899, 1068)
+
+[node name="NorthPlayerStart" type="Marker2D" parent="."]
+position = Vector2(1096, 623)
+
+[node name="AllyHolder" type="Node2D" parent="."]
+
+[node name="NpcHolder" type="Node2D" parent="."]
+
+[node name="PropHolder" type="Node2D" parent="."]
+
+[node name="EnvironmentBlockers" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(954.5, 1051)
+shape = SubResource("RectangleShape2D_hhbmd")
+
+[node name="ExitTriggerHolder" type="Node2D" parent="."]
+
+[node name="NpcSpawner" type="Node" parent="."]
+script = ExtResource("6_xxwgs")
+npc_scenes = Array[PackedScene]([ExtResource("7_glnlj")])
+
+[node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
+
+[node name="Marker2D" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(623, 721)
+
+[node name="Marker2D2" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(1679, 766)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_uvwes")
+
+[node name="CenterMarker" type="Marker2D" parent="NavigationRegion2D"]
+position = Vector2(1104, 728)

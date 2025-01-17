@@ -62,7 +62,7 @@ func spawn_ally()->void:
 		return
 	var center_marker: Marker2D = main.current_environment.get_node("NavigationRegion2D").get_node("CenterMarker")
 	var direction: Vector2 = (center_marker.global_position - global_position).normalized()
-	var spawn_pos = global_position + direction * ally_spawn_distance
+	var spawn_pos = global_position + (direction * ally_spawn_distance * scale.length())
 	
 	var new_ally: NpcAlly = ally_scene.instantiate()
 	new_ally.visible = false

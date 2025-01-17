@@ -648,10 +648,9 @@ animations = [{
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 2147483649
 script = ExtResource("1_eq5ms")
-move_speed = 700.0
 footstep_frames = Array[int]([1, 12])
 ally_scene = ExtResource("2_8tf0t")
-ally_spawn_distance = 70
+ally_spawn_distance = 80
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0)

@@ -425,7 +425,6 @@ animations = [{
 }]
 
 [node name="Nora" type="CharacterBody2D"]
-collision_layer = 0
 script = ExtResource("1_ortcr")
 move_speed = 200.0
 follow_activation_distance = 100

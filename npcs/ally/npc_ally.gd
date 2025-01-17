@@ -65,10 +65,10 @@ func handle_follow_activation()->void:
 	
 	match current_state:
 		"IDLE":
-			if player_distance >= follow_activation_distance:
+			if player_distance >= follow_activation_distance * scale.length():
 				npc_state_chart.send_event("to_follow_event")
 		"FOLLOW":
-			if player_distance < follow_activation_distance * 0.8:
+			if player_distance < follow_activation_distance * 0.8 * scale.length():
 				npc_state_chart.send_event("to_idle_event")
 
 func handle_movement(delta)->void:

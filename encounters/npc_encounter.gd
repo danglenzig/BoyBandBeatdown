@@ -51,6 +51,7 @@ func spawn_player_sprite() -> void:
 	player_sprite = new_player_sprite
 
 func spawn_opponent_sprite(opponent_name) -> void:
+	
 	var scene_to_instantiate: PackedScene = null
 	var resource_string = str(opponent_name,"_encounter_sprite.tscn")
 	var resource_path_string = str("res://encounters/npc_sprites/",resource_string)
@@ -187,6 +188,9 @@ func reset_encounter_sprites()->void:
 	opponent_sprite.attack_signal_sent 	= false
 	
 func update_sprites_rounds_won(player_rounds_won: int, opponent_rounds_won: int, winner: String)->void:
+	
+	print_debug(opponent_sprite.name)
+	
 	var player_rounds_won_string = str("Rounds Won: ",str(player_rounds_won))
 	var opponent_rounds_won_string = str("Rounds Won: ", str(opponent_rounds_won))
 	player_sprite.rounds_won_label.text = player_rounds_won_string

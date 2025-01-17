@@ -1,0 +1,604 @@
+[gd_scene load_steps=80 format=3 uid="uid://kqq5weo8i710"]
+
+[ext_resource type="Script" path="res://encounters/encounter_sprite.gd" id="1_08n0f"]
+[ext_resource type="Texture2D" uid="uid://bg2kylpgmqrsu" path="res://encounters/sprites/dana/dana_attack_00.png" id="1_iidex"]
+[ext_resource type="Texture2D" uid="uid://bluw8rhg1s3fp" path="res://encounters/sprites/dana/dana_attack_01.png" id="2_1a8w1"]
+[ext_resource type="Texture2D" uid="uid://i5up5ako1uha" path="res://encounters/sprites/dana/dana_attack_02.png" id="3_jidn4"]
+[ext_resource type="Texture2D" uid="uid://dy2j4f26brtg5" path="res://encounters/sprites/dana/dana_attack_03.png" id="4_541kx"]
+[ext_resource type="Texture2D" uid="uid://b0orxqba2wvbf" path="res://encounters/sprites/dana/dana_attack_04.png" id="5_pu25q"]
+[ext_resource type="Texture2D" uid="uid://88t0o2l4mpb8" path="res://encounters/sprites/dana/dana_attack_05.png" id="6_5rp05"]
+[ext_resource type="Texture2D" uid="uid://x02m2jdg3ofa" path="res://encounters/sprites/dana/dana_attack_06.png" id="7_yworr"]
+[ext_resource type="Texture2D" uid="uid://b0djhgy1q1eyh" path="res://encounters/sprites/dana/dana_attack_07.png" id="8_epnhn"]
+[ext_resource type="Texture2D" uid="uid://dv4ett3s760d2" path="res://encounters/sprites/dana/dana_attack_08.png" id="9_5t568"]
+[ext_resource type="Texture2D" uid="uid://btb8mw8o1t8ea" path="res://encounters/sprites/dana/dana_attack_09.png" id="10_q6f6o"]
+[ext_resource type="Texture2D" uid="uid://dxt8bydrfoeyp" path="res://encounters/sprites/dana/dana_attack_10.png" id="11_uwvxd"]
+[ext_resource type="Texture2D" uid="uid://7cfx7y30pbah" path="res://encounters/sprites/dana/dana_attack_11.png" id="12_ygpmo"]
+[ext_resource type="Texture2D" uid="uid://brfycgx608not" path="res://encounters/sprites/dana/dana_attack_12.png" id="13_eunlh"]
+[ext_resource type="Texture2D" uid="uid://cedvfne3msgeo" path="res://encounters/sprites/dana/dana_attack_13.png" id="14_0bl0m"]
+[ext_resource type="Texture2D" uid="uid://dm3dbpwovy2ux" path="res://encounters/sprites/dana/dana_attack_14.png" id="15_hscdb"]
+[ext_resource type="Texture2D" uid="uid://bbymt2rqe2cv7" path="res://encounters/sprites/dana/dana_attack_15.png" id="16_h3fsc"]
+[ext_resource type="Texture2D" uid="uid://bhx8nqihb42k4" path="res://encounters/sprites/dana/dana_attack_16.png" id="17_tbs2q"]
+[ext_resource type="Texture2D" uid="uid://du6d2pr12olxd" path="res://encounters/sprites/dana/dana_attack_17.png" id="18_ps8xf"]
+[ext_resource type="Texture2D" uid="uid://dn5kt1w7mysfg" path="res://encounters/sprites/dana/dana_attack_18.png" id="19_6n24p"]
+[ext_resource type="Texture2D" uid="uid://b0jr7np0qeddw" path="res://encounters/sprites/dana/dana_attack_19.png" id="20_w7ucn"]
+[ext_resource type="Texture2D" uid="uid://cjpeicli4ecwc" path="res://encounters/sprites/dana/dana_attack_20.png" id="21_8k8re"]
+[ext_resource type="Texture2D" uid="uid://b4jauthgxgb7i" path="res://encounters/sprites/dana/dana_attack_21.png" id="22_y4f42"]
+[ext_resource type="Texture2D" uid="uid://c3iluxhed6fqc" path="res://encounters/sprites/dana/dana_attack_22.png" id="23_is5tk"]
+[ext_resource type="Texture2D" uid="uid://dxh305k8xmtln" path="res://encounters/sprites/dana/dana_attack_23.png" id="24_db8jt"]
+[ext_resource type="Texture2D" uid="uid://b7atneqkiv3o" path="res://encounters/sprites/dana/dana_attack_24.png" id="25_r5ea1"]
+[ext_resource type="Texture2D" uid="uid://dr2n1hrpa1x4k" path="res://encounters/sprites/dana/dana_attack_25.png" id="26_mkrsc"]
+[ext_resource type="Texture2D" uid="uid://dclf3o0q8u01m" path="res://encounters/sprites/dana/dana_attack_26.png" id="27_xy3ev"]
+[ext_resource type="Texture2D" uid="uid://do8lsuyp03tti" path="res://encounters/sprites/dana/dana_idle_00.png" id="28_4xuek"]
+[ext_resource type="Texture2D" uid="uid://2chomv8cwylt" path="res://encounters/sprites/dana/dana_lose00.png" id="29_yykgn"]
+[ext_resource type="Texture2D" uid="uid://bbvl635i5pgnw" path="res://encounters/sprites/dana/dana_lose01.png" id="30_xo03d"]
+[ext_resource type="Texture2D" uid="uid://c8j2i0ohpdwt0" path="res://encounters/sprites/dana/dana_lose02.png" id="31_llbq1"]
+[ext_resource type="Texture2D" uid="uid://dq20kung8q1cs" path="res://encounters/sprites/dana/dana_lose03.png" id="32_8cewg"]
+[ext_resource type="Texture2D" uid="uid://ch3blqdmiw2rn" path="res://encounters/sprites/dana/dana_lose04.png" id="33_lcy8p"]
+[ext_resource type="Texture2D" uid="uid://btjost8mjch3q" path="res://encounters/sprites/dana/dana_lose05.png" id="34_6iob0"]
+[ext_resource type="Texture2D" uid="uid://ku7npuy2pqva" path="res://encounters/sprites/dana/dana_lose06.png" id="35_0drcu"]
+[ext_resource type="Texture2D" uid="uid://uak43xl3ervb" path="res://encounters/sprites/dana/dana_lose07.png" id="36_grmeu"]
+[ext_resource type="Texture2D" uid="uid://c338ruwb7yv01" path="res://encounters/sprites/dana/dana_lose08.png" id="37_gs0re"]
+[ext_resource type="Texture2D" uid="uid://dwh02hf4cmpy5" path="res://encounters/sprites/dana/dana_lose09.png" id="38_t1leb"]
+[ext_resource type="Texture2D" uid="uid://dr1xwhycb6xor" path="res://encounters/sprites/dana/dana_lose10.png" id="39_nilse"]
+[ext_resource type="Texture2D" uid="uid://rbaf8x14ylxk" path="res://encounters/sprites/dana/dana_lose11.png" id="40_iny8q"]
+[ext_resource type="Texture2D" uid="uid://bciqa5cmqvqax" path="res://encounters/sprites/dana/dana_lose12.png" id="41_615yd"]
+[ext_resource type="Texture2D" uid="uid://bc585sxrx056u" path="res://encounters/sprites/dana/dana_lose13.png" id="42_yxffa"]
+[ext_resource type="Texture2D" uid="uid://brqxia3xkqcof" path="res://encounters/sprites/dana/dana_lose14.png" id="43_idkxy"]
+[ext_resource type="Texture2D" uid="uid://boxp6o58nrtil" path="res://encounters/sprites/dana/dana_lose15.png" id="44_bpejv"]
+[ext_resource type="Texture2D" uid="uid://cifppj5dawu78" path="res://encounters/sprites/dana/dana_lose16.png" id="45_oq1re"]
+[ext_resource type="Texture2D" uid="uid://cj6fd4eumbmpn" path="res://encounters/sprites/dana/dana_lose17.png" id="46_r3a3j"]
+[ext_resource type="Texture2D" uid="uid://dgucp48eqx5wj" path="res://encounters/sprites/dana/dana_lose18.png" id="47_tbnt3"]
+[ext_resource type="Texture2D" uid="uid://b03wcvr7ktjl8" path="res://encounters/sprites/dana/dana_lose19.png" id="48_8m2e2"]
+[ext_resource type="Texture2D" uid="uid://dak6cuvlbe20f" path="res://encounters/sprites/dana/dana_lose20.png" id="49_25fx5"]
+[ext_resource type="Texture2D" uid="uid://3q13gcvj1x1l" path="res://encounters/sprites/dana/dana_lose21.png" id="50_7shty"]
+[ext_resource type="Texture2D" uid="uid://ddbf7ikowg6gd" path="res://encounters/sprites/dana/dana_lose22.png" id="51_ujkq2"]
+[ext_resource type="Texture2D" uid="uid://6b687bvhk5nl" path="res://encounters/sprites/dana/dana_lose23.png" id="52_p5xma"]
+[ext_resource type="Texture2D" uid="uid://b5tevj8giut7s" path="res://encounters/sprites/dana/dana_lose24.png" id="53_eoem3"]
+[ext_resource type="Texture2D" uid="uid://dpyjokh5i8tts" path="res://encounters/sprites/dana/dana_lose25.png" id="54_yf0p7"]
+[ext_resource type="Texture2D" uid="uid://dua04wyybf5dh" path="res://encounters/sprites/dana/dana_lose26.png" id="55_555cg"]
+[ext_resource type="Texture2D" uid="uid://bvghtr0yrvogn" path="res://encounters/sprites/dana/dana_win_01.png" id="56_c1haf"]
+[ext_resource type="Texture2D" uid="uid://4d8582spoiwp" path="res://encounters/sprites/dana/dana_win_02.png" id="57_enmhp"]
+[ext_resource type="Texture2D" uid="uid://bscshc6n6pmpj" path="res://encounters/sprites/dana/dana_win_03.png" id="58_nso1n"]
+[ext_resource type="Texture2D" uid="uid://cd8v7wha8lvmj" path="res://encounters/sprites/dana/dana_win_04.png" id="59_qpfjg"]
+[ext_resource type="Texture2D" uid="uid://hv7cmxh2ndfs" path="res://encounters/sprites/dana/dana_win_05.png" id="60_1821l"]
+[ext_resource type="Texture2D" uid="uid://b3eh3bw6va6m7" path="res://encounters/sprites/dana/dana_win_06.png" id="61_eii6v"]
+[ext_resource type="Texture2D" uid="uid://dmw87iic1grw6" path="res://encounters/sprites/dana/dana_win_07.png" id="62_2ufmi"]
+[ext_resource type="Texture2D" uid="uid://bekn5nyl85kix" path="res://encounters/sprites/dana/dana_win_08.png" id="63_5n5rq"]
+[ext_resource type="Texture2D" uid="uid://dmkxibpkdnj2r" path="res://encounters/sprites/dana/dana_win_09.png" id="64_7ca15"]
+[ext_resource type="Texture2D" uid="uid://dkn5ao8udqn1q" path="res://encounters/sprites/dana/dana_win_10.png" id="65_hidvc"]
+[ext_resource type="Texture2D" uid="uid://dwqxvcdr7ei3p" path="res://encounters/sprites/dana/dana_win_11.png" id="66_l51u4"]
+[ext_resource type="Texture2D" uid="uid://jcsgamt8355k" path="res://encounters/sprites/dana/dana_win_12.png" id="67_7ic5f"]
+[ext_resource type="Texture2D" uid="uid://bksa8kac74f2n" path="res://encounters/sprites/dana/dana_win_13.png" id="68_cu4lo"]
+[ext_resource type="Texture2D" uid="uid://ce5f2vktmjrhu" path="res://encounters/sprites/dana/dana_win_14.png" id="69_6dead"]
+[ext_resource type="Texture2D" uid="uid://b2cgjfyg66taj" path="res://encounters/sprites/dana/dana_win_15.png" id="70_eir36"]
+[ext_resource type="Texture2D" uid="uid://blbm8bilknp4f" path="res://encounters/sprites/dana/dana_win_16.png" id="71_00vnc"]
+[ext_resource type="Texture2D" uid="uid://3gf4gj10fgrw" path="res://ui/assets/flash-light-effect-free-png.png" id="73_yiax5"]
+[ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="74_b0grf"]
+
+[sub_resource type="Shader" id="Shader_q8xtf"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Color Manipulator,Outline,Border Noise,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_42lfw"]
+shader = SubResource("Shader_q8xtf")
+shader_parameter/opacity = 1.0
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_active = false
+shader_parameter/BORDERNOISE_max_line_width = 0.0
+shader_parameter/BORDERNOISE_min_line_width = 127.1
+shader_parameter/BORDERNOISE_freq = 1.0
+shader_parameter/BORDERNOISE_block_size = 21.4
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(1, 1, 0, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_okbmg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_iidex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1a8w1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jidn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_541kx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pu25q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5rp05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yworr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_epnhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5t568")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_q6f6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_uwvxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ygpmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_eunlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0bl0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hscdb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_h3fsc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tbs2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ps8xf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6n24p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_w7ucn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8k8re")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_y4f42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_is5tk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_db8jt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_r5ea1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_mkrsc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_xy3ev")
+}],
+"loop": false,
+"name": &"attack_1",
+"speed": 32.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_iidex")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_4xuek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_yykgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_xo03d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_llbq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_8cewg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_lcy8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_6iob0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_0drcu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_grmeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_gs0re")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_t1leb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_nilse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_iny8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_615yd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_yxffa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_idkxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_bpejv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_oq1re")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_r3a3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_tbnt3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_8m2e2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_25fx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_7shty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ujkq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_p5xma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_eoem3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_yf0p7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_555cg")
+}],
+"loop": false,
+"name": &"lose",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("54_yf0p7")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_c1haf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_enmhp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_nso1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_qpfjg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_1821l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_eii6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_2ufmi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_5n5rq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_7ca15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_hidvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_l51u4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_7ic5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_cu4lo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_6dead")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_eir36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_00vnc")
+}],
+"loop": false,
+"name": &"win",
+"speed": 24.0
+}]
+
+[sub_resource type="Shader" id="Shader_7h0cv"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Pulse,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool PULSE_active = true; //activation
+uniform vec4 PULSE_shine_color : source_color = vec4(1.0); //Shine color
+uniform float PULSE_alpha_limit : hint_range(0.0, 1.0, 0.1) = 0.0; //Alpha color limit to apply the shine, for example, if you won't to apply the shine to semi-transparent pixels
+uniform float PULSE_cycle_speed : hint_range(0.0, 100.0, 0.1) = 1.0; //Pulse cycle speed
+uniform bool PULSE_full_pulse_cycle = false; //[False = Do the effect and make a pause] [True = Do the effect continuosly]
+void pulse(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color)
+{
+	//Check the pixel alpha value
+	if (color.a >= PULSE_alpha_limit)
+	{
+		float cycle = sin(TIME * PULSE_cycle_speed);
+		color.rgb = mix(color.rgb, PULSE_shine_color.rgb, (((cycle >= 0.0) || (PULSE_full_pulse_cycle)) ? abs(cycle) : 0.0) * PULSE_shine_color.a);
+	}
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(PULSE_active) pulse(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jgnuy"]
+shader = SubResource("Shader_7h0cv")
+shader_parameter/opacity = 1.0
+shader_parameter/PULSE_active = true
+shader_parameter/PULSE_shine_color = Color(0, 0.647059, 1, 1)
+shader_parameter/PULSE_alpha_limit = 0.0
+shader_parameter/PULSE_cycle_speed = 22.0
+shader_parameter/PULSE_full_pulse_cycle = true
+
+[node name="DanaEncounterSprite" type="AnimatedSprite2D"]
+material = SubResource("ShaderMaterial_42lfw")
+position = Vector2(0, -334)
+sprite_frames = SubResource("SpriteFrames_okbmg")
+animation = &"attack_1"
+autoplay = "idle"
+script = ExtResource("1_08n0f")
+impact_frame_number = 9
+
+[node name="FlashEffectSprite" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_jgnuy")
+position = Vector2(-18.6, -297)
+scale = Vector2(1.342, 0.49)
+texture = ExtResource("73_yiax5")
+
+[node name="RoundsWonLabel" type="Label" parent="."]
+offset_left = -157.6
+offset_top = -316.0
+offset_right = 150.4
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("74_b0grf")
+theme_override_font_sizes/font_size = 30
+text = "Rounds Won: N"

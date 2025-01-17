@@ -10,15 +10,16 @@ var showing_help 						= false
 
 var introduced = {
 	
-	MARCIE = false,
-	GRETCHEN = false,
-	TAMMY = false,
-	KACI = false,
+	MARCIE 		= false,
+	GRETCHEN 	= false,
+	TAMMY 		= false,
+	KACI 		= false,
+	DANA 		= false
 	
 }
 
 func set_dialogue_portrait(baloon: DialogueManagerExampleBalloon):
 	baloon.set_speaker_portrait_texture(current_speaker_portrait_resource)
 
-var dialogue_active = false
-var current_dialog: String = ""
+var dialogue_active 		= false
+var current_dialog: String 	= ""

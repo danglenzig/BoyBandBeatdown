@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://bnc0he5ytku37"]
+[gd_scene load_steps=38 format=3 uid="uid://bnc0he5ytku37"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
 [ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/env_01.png" id="2_it8mk"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bakgo3hlf5dh0" path="res://environments/prop_scenes/environment_01_bush_04_prop.tscn" id="16_bvwmp"]
 [ext_resource type="PackedScene" uid="uid://bvj7m38twjg61" path="res://environments/prop_scenes/environment_01_bush_05.tscn" id="17_jkyb5"]
 [ext_resource type="Script" path="res://environments/npc_spawner.gd" id="20_q08xd"]
+[ext_resource type="PackedScene" uid="uid://bcsqeqj7mqw3j" path="res://npcs/dana/dana_sprite.tscn" id="21_5k5xt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wegb6"]
 size = Vector2(165, 50.5)
@@ -62,6 +63,9 @@ size = Vector2(34.9677, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vpugc"]
 size = Vector2(20, 6.91199)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g17l1"]
+size = Vector2(367.516, 20)
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_r2f3n"]
 vertices = PackedVector2Array(1731.97, 666.828, 1695.94, 1030.92, 122.492, 1018.08, 133.57, 788.977, 1279.49, 660)
@@ -128,14 +132,6 @@ position = Vector2(1132, 648)
 [node name="AllyHolder" type="Node2D" parent="."]
 
 [node name="NpcHolder" type="Node2D" parent="."]
-
-[node name="MarcieSprite" parent="NpcHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("5_lb3wf")]
-position = Vector2(1137, 831)
-z_scaler = NodePath("../../ZScaler")
-
-[node name="GretchenSprite" parent="NpcHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("7_4t4tq")]
-position = Vector2(1347, 730)
-z_scaler = NodePath("../../ZScaler")
 
 [node name="PropHolder" type="Node2D" parent="."]
 
@@ -206,7 +202,7 @@ debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 position = Vector2(1529.82, 619.964)
 rotation = 0.0418879
 shape = SubResource("RectangleShape2D_6ao37")
-debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
+debug_color = Color(0.666667, 0.294118, 0.678431, 0.898039)
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
 position = Vector2(1552, 662.5)
@@ -288,9 +284,19 @@ position = Vector2(1127.68, 638.508)
 rotation = -0.10472
 shape = SubResource("RectangleShape2D_vpugc")
 
+[node name="NorthExitTrigger" type="Area2D" parent="ExitTriggerHolder"]
+script = ExtResource("7_n6j3s")
+exit_to_scene_name = "environment_06.tscn"
+player_start_name = "NorthPlayerStart"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger"]
+position = Vector2(1565.62, 648.211)
+rotation = 0.0418879
+shape = SubResource("RectangleShape2D_g17l1")
+
 [node name="NpcSpawner" type="Node" parent="."]
 script = ExtResource("20_q08xd")
-npc_scenes = Array[PackedScene]([ExtResource("7_4t4tq"), ExtResource("5_lb3wf")])
+npc_scenes = Array[PackedScene]([ExtResource("7_4t4tq"), ExtResource("5_lb3wf"), ExtResource("21_5k5xt")])
 
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 
@@ -318,3 +324,4 @@ position = Vector2(956, 814)
 [connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_03" to="ExitTriggerHolder/WestExitTrigger_03" method="_on_body_entered"]
 [connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_04" to="ExitTriggerHolder/WestExitTrigger_04" method="_on_body_entered"]
 [connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_05" to="ExitTriggerHolder/WestExitTrigger_05" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger" to="ExitTriggerHolder/NorthExitTrigger" method="_on_body_entered"]

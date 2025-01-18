@@ -1,4 +1,4 @@
-[gd_scene load_steps=729 format=3 uid="uid://cte5fobhra3n3"]
+[gd_scene load_steps=731 format=3 uid="uid://cte5fobhra3n3"]
 
 [ext_resource type="Script" path="res://encounters/sprites/cards/card_sprite.gd" id="1_o7xgx"]
 [ext_resource type="Texture2D" uid="uid://434cpa8ycimd" path="res://encounters/sprites/cards/Screenshot 2024-12-27 100031.png" id="2_7twdo"]
@@ -713,6 +713,8 @@
 [ext_resource type="Texture2D" uid="uid://b7hx06rbm1fo8" path="res://encounters/sprites/older_brother/shorungs/older_brother_shrug_c_09.png" id="693_wh8ka"]
 [ext_resource type="Texture2D" uid="uid://ictdhos118y7" path="res://encounters/sprites/older_brother/shorungs/older_brother_shrug_c_10.png" id="694_qtv37"]
 [ext_resource type="Texture2D" uid="uid://inunky7t88se" path="res://encounters/sprites/older_brother/shorungs/older_brother_shrug_c_11.png" id="695_k5erb"]
+[ext_resource type="FontFile" uid="uid://cqiahbdvg1ynh" path="res://fonts/VIPNAGORGIALLA RG IT.OTF" id="714_5m7ya"]
+[ext_resource type="FontFile" uid="uid://baihxtltbmli8" path="res://fonts/VIPNAGORGIALLA RG.OTF" id="714_t0yi6"]
 
 [sub_resource type="Shader" id="Shader_jwvby"]
 code = "//ATTENTION:
@@ -4344,6 +4346,52 @@ offset_left = -495.0
 offset_top = -955.0
 offset_right = 505.0
 offset_bottom = 545.0
+
+[node name="HoverHelpPanel" type="Panel" parent="."]
+self_modulate = Color(0, 0, 1, 1)
+offset_left = -540.0
+offset_top = -1400.0
+offset_right = 535.0
+offset_bottom = -1030.0
+
+[node name="TitleLabel" type="Label" parent="HoverHelpPanel"]
+layout_mode = 1
+offset_left = 185.0
+offset_top = 15.0
+offset_right = 900.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("714_5m7ya")
+theme_override_font_sizes/font_size = 74
+text = "Wins against:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContentLabel" type="Label" parent="HoverHelpPanel"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 110.0
+offset_right = 1035.0
+offset_bottom = 355.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("714_t0yi6")
+theme_override_font_sizes/font_size = 60
+text = "The Shy One
+Older Brother
+The Cute One"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [connection signal="state_entered" from="StateChart/Root/Idle" to="." method="on_atomic_state_entered" binds= ["IDLE"]]
 [connection signal="state_entered" from="StateChart/Root/Dance" to="." method="on_atomic_state_entered" binds= ["DANCE"]]

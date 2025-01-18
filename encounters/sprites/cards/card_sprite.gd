@@ -52,6 +52,8 @@ func _ready():
 	card_clicker 			= $Button
 	sprites 				= $SpriteHolder.get_children()
 	
+	$HoverHelpPanel.visible = false
+	
 	for sprite:AnimatedSprite2D in sprites:
 		sprite.visible = false
 		
@@ -116,17 +118,24 @@ func activate_sprite(suit_name) -> void :
 		push_error("Invalid suit name")
 		return
 	var sprite_name = ""
+	var hover_help_label: Label = $HoverHelpPanel/ContentLabel
+	hover_help_label.text = ""
 	match suit_name:
 		"HEARTTHROB":
 			sprite_name = "HeartthrobSprite"
+			hover_help_label.text = str("The Shy One\nOlder Brother\nThe Cute One")
 		"BAD_BOY":
 			sprite_name = "BadBoySprite"
+			hover_help_label.text = str("The Heartthrob")
 		"CUTE_ONE":
 			sprite_name = "CuteOneSprite"
+			hover_help_label.text = str("Older Brother\nThe Bad Boy")
 		"SHY_ONE":
 			sprite_name = "ShyOneSprite"
+			hover_help_label.text = str("The Cute One\nThe Bad Boy")
 		"OLDER_BROTHER":
 			sprite_name = "OlderBrotherSprite"
+			hover_help_label.text = str("The Shy One\nThe Bad Boy")
 	for sprite: AnimatedSprite2D in sprites:
 		if sprite.name == sprite_name:
 			sprite.visible = true
@@ -134,6 +143,7 @@ func activate_sprite(suit_name) -> void :
 		else:
 			sprite.visible = false
 			sprite.queue_free()
+	
 
 func setup_card(card_data: Card) -> void:
 	suit_label.text = card_data.suit_display_name
@@ -198,10 +208,12 @@ func card_face_down(the_bool: bool) ->void:
 
 
 func _on_button_mouse_entered():
+	$HoverHelpPanel.visible = true
 	position = Vector2(my_pos.x, my_pos.y - 30)
 	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
 	ui_sounds.card_hover.play()
 
 
 func _on_button_mouse_exited():
+	$HoverHelpPanel.visible = false
 	position = my_pos

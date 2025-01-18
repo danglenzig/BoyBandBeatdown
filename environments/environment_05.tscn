@@ -1,15 +1,35 @@
-[gd_scene load_steps=10 format=3 uid="uid://deajnmcnxl33u"]
+[gd_scene load_steps=18 format=3 uid="uid://deajnmcnxl33u"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_jswqj"]
 [ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_mwjok"]
 [ext_resource type="Texture2D" uid="uid://bll0o37o62qoc" path="res://environments/assets/env_05.png" id="3_l1k02"]
 [ext_resource type="Script" path="res://environments/game_camera.gd" id="4_7hlkm"]
 [ext_resource type="Script" path="res://environments/z_scaler.gd" id="5_q0r1f"]
+[ext_resource type="Script" path="res://environments/exit_trigger.gd" id="6_j0qnk"]
 [ext_resource type="Script" path="res://environments/npc_spawner.gd" id="6_xxwgs"]
 [ext_resource type="PackedScene" uid="uid://tlcdwevu6gdm" path="res://npcs/kaci/kaci_sprite.tscn" id="7_glnlj"]
+[ext_resource type="PackedScene" uid="uid://bcsqeqj7mqw3j" path="res://npcs/dana/dana_sprite.tscn" id="9_xi2mc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hhbmd"]
 size = Vector2(1983, 114)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kd87y"]
+size = Vector2(655, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_53tax"]
+size = Vector2(788.705, 44.0828)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xnk0a"]
+size = Vector2(55, 276)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uao2t"]
+size = Vector2(138, 558.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_402tf"]
+size = Vector2(719.999, 22.2473)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7w2kf"]
+radius = 60.0083
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_uvwes"]
 vertices = PackedVector2Array(1878.91, 698.43, 1876.1, 964.852, 188.609, 940.461, 691.094, 608.938, 1277.28, 597.008)
@@ -51,7 +71,7 @@ position = Vector2(968, 578)
 position = Vector2(899, 1068)
 
 [node name="NorthPlayerStart" type="Marker2D" parent="."]
-position = Vector2(1243, 603)
+position = Vector2(1238, 607)
 
 [node name="AllyHolder" type="Node2D" parent="."]
 
@@ -65,11 +85,43 @@ position = Vector2(1243, 603)
 position = Vector2(954.5, 1051)
 shape = SubResource("RectangleShape2D_hhbmd")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(893.5, 578.5)
+shape = SubResource("RectangleShape2D_kd87y")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(326.152, 717.148)
+rotation = -0.39968
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_53tax")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(-36.5, 947)
+shape = SubResource("RectangleShape2D_xnk0a")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1969, 823.25)
+shape = SubResource("RectangleShape2D_uao2t")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1627, 608)
+rotation = 0.101229
+shape = SubResource("RectangleShape2D_402tf")
+
 [node name="ExitTriggerHolder" type="Node2D" parent="."]
+
+[node name="ExitTrigger" type="Area2D" parent="ExitTriggerHolder"]
+script = ExtResource("6_j0qnk")
+exit_to_scene_name = "environment_02.tscn"
+player_start_name = "WestPlayerStart"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/ExitTrigger"]
+position = Vector2(1242, 531)
+shape = SubResource("CircleShape2D_7w2kf")
 
 [node name="NpcSpawner" type="Node" parent="."]
 script = ExtResource("6_xxwgs")
-npc_scenes = Array[PackedScene]([ExtResource("7_glnlj")])
+npc_scenes = Array[PackedScene]([ExtResource("7_glnlj"), ExtResource("9_xi2mc")])
 
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 
@@ -84,3 +136,5 @@ navigation_polygon = SubResource("NavigationPolygon_uvwes")
 
 [node name="CenterMarker" type="Marker2D" parent="NavigationRegion2D"]
 position = Vector2(1104, 728)
+
+[connection signal="body_entered" from="ExitTriggerHolder/ExitTrigger" to="ExitTriggerHolder/ExitTrigger" method="_on_body_entered"]

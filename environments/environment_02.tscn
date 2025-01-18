@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b05i67tp5inti"]
+[gd_scene load_steps=21 format=3 uid="uid://b05i67tp5inti"]
 
 [ext_resource type="Texture2D" uid="uid://bt2onc7k5tskk" path="res://environments/assets/env_03.png" id="1_06u37"]
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_lxl3m"]
@@ -9,6 +9,30 @@
 [ext_resource type="Script" path="res://environments/exit_trigger.gd" id="7_cobnl"]
 [ext_resource type="Script" path="res://environments/npc_spawner.gd" id="8_ejrya"]
 [ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="9_fkg1w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_48wd4"]
+size = Vector2(736.087, 138.372)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xoebj"]
+size = Vector2(104, 345)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ecici"]
+size = Vector2(167.5, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sxdnm"]
+size = Vector2(173, 61)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sonuw"]
+size = Vector2(274, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y4l3q"]
+size = Vector2(107, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1clnj"]
+size = Vector2(634.206, 74.8383)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0q1ox"]
+size = Vector2(101, 283)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4yfy4"]
 size = Vector2(1681, 122)
@@ -61,13 +85,51 @@ position = Vector2(968, 797)
 [node name="SouthPlayerStart" type="Marker2D" parent="."]
 position = Vector2(626, 1207)
 
+[node name="WestPlayerStart" type="Marker2D" parent="."]
+position = Vector2(859, 831)
+
+[node name="EnvironmentBlockers" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(255.989, 949.929)
+rotation = -0.50091
+shape = SubResource("RectangleShape2D_48wd4")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(-38, 1229.5)
+shape = SubResource("RectangleShape2D_xoebj")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(731.25, 719)
+shape = SubResource("RectangleShape2D_ecici")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(875, 660)
+rotation = -0.50091
+shape = SubResource("RectangleShape2D_sxdnm")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1086, 638)
+shape = SubResource("RectangleShape2D_sonuw")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1209.5, 677)
+shape = SubResource("RectangleShape2D_y4l3q")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1482.03, 926.012)
+rotation = 0.84823
+shape = SubResource("RectangleShape2D_1clnj")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1666, 1257.5)
+shape = SubResource("RectangleShape2D_0q1ox")
+
 [node name="AllyHolder" type="Node2D" parent="."]
 
 [node name="NpcHolder" type="Node2D" parent="."]
 
 [node name="PropHolder" type="Node2D" parent="."]
-
-[node name="EnvironmentBlockers" type="Node2D" parent="."]
 
 [node name="ExitTriggerHolder" type="Node2D" parent="."]
 
@@ -79,6 +141,7 @@ player_start_name = "WestExitPlaceholderMarker"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/ExitTrigger"]
 position = Vector2(821, 1339)
 shape = SubResource("RectangleShape2D_4yfy4")
+debug_color = Color(0.952136, 6.73831e-07, 0.560163, 0.42)
 
 [node name="ExitTrigger2" type="Area2D" parent="ExitTriggerHolder"]
 script = ExtResource("7_cobnl")
@@ -88,6 +151,7 @@ player_start_name = "NorthPlayerStart"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/ExitTrigger2"]
 position = Vector2(613, 677)
 shape = SubResource("CircleShape2D_a0opc")
+debug_color = Color(0.952136, 6.73831e-07, 0.560163, 0.42)
 
 [node name="NpcSpawner" type="Node" parent="."]
 script = ExtResource("8_ejrya")
@@ -96,16 +160,16 @@ npc_scenes = Array[PackedScene]([ExtResource("9_fkg1w"), ExtResource("6_rig6d")]
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 
 [node name="Marker2D" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(679, 747)
+position = Vector2(421, 1002)
 
 [node name="Marker2D2" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(1289, 946)
+position = Vector2(1293, 828)
 
 [node name="Marker2D3" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(1121, 677)
+position = Vector2(995, 702)
 
 [node name="Marker2D4" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(496, 917)
+position = Vector2(1071, 786)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_br120")

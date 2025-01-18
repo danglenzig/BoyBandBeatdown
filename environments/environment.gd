@@ -127,3 +127,7 @@ func on_end_encounter(opponent_uuid: String):
 	
 	# if so, do the level up stuff
 	
+
+
+func _on_exit_trigger_body_entered(body):
+	pass # Replace with function body.

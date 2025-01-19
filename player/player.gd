@@ -24,7 +24,11 @@ var player_state_chart: StateChart 	= null
 var current_state: String 	= ""
 var previous_state: String 	= ""
 
+
+
 func _ready():
+	misc.player_on_exit_cooldown = true
+	misc.start_exit_cooldown()
 	input_handler 		= SingletonHolder.get_node("InputHandler")
 	footstep_player 	= SingletonHolder.get_node("FootstepPlayer")
 	player_sprite 		= $AnimatedSprite2D
@@ -32,7 +36,6 @@ func _ready():
 	adjusted_move_speed = move_speed
 	
 	await get_tree().create_timer(0.1).timeout
-	
 	spawn_ally()
 	
 

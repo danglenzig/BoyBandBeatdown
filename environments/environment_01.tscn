@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://bnc0he5ytku37"]
+[gd_scene load_steps=39 format=3 uid="uid://bnc0he5ytku37"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
 [ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/env_01.png" id="2_it8mk"]
@@ -26,7 +26,7 @@
 size = Vector2(165, 50.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u2cs8"]
-size = Vector2(174, 688)
+size = Vector2(174, 729)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_silrh"]
 size = Vector2(1812, 85)
@@ -47,7 +47,7 @@ size = Vector2(68, 23)
 size = Vector2(130.898, 10.3912)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3gjf"]
-size = Vector2(171, 433)
+size = Vector2(171, 373.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_21fdk"]
 size = Vector2(75.7794, 30.7749)
@@ -65,7 +65,10 @@ size = Vector2(34.9677, 20)
 size = Vector2(20, 6.91199)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g17l1"]
-size = Vector2(367.516, 20)
+size = Vector2(221.47, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nqnr2"]
+size = Vector2(149.303, 31.1637)
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_r2f3n"]
 vertices = PackedVector2Array(1731.97, 666.828, 1695.94, 1030.92, 122.492, 1018.08, 133.57, 788.977, 1279.49, 660)
@@ -129,6 +132,12 @@ position = Vector2(808, 680)
 [node name="WestExitPlaceholderMarker05" type="Marker2D" parent="."]
 position = Vector2(1132, 648)
 
+[node name="NorthExitPlaceholdrMarker01" type="Marker2D" parent="."]
+position = Vector2(1365, 669)
+
+[node name="NorthExitPlaceholdrMarker02" type="Marker2D" parent="."]
+position = Vector2(1665, 687)
+
 [node name="AllyHolder" type="Node2D" parent="."]
 
 [node name="NpcHolder" type="Node2D" parent="."]
@@ -178,7 +187,7 @@ shape = SubResource("RectangleShape2D_wegb6")
 debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="EnvironmentBlockers/StaticBody2D"]
-position = Vector2(1851, 335)
+position = Vector2(1851, 355.5)
 shape = SubResource("RectangleShape2D_u2cs8")
 debug_color = Color(0.666345, 0.295626, 0.680353, 0.419608)
 
@@ -224,6 +233,7 @@ exit_to_scene_name = "environment_00.tscn"
 player_start_name = "StairsPlayerStart"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/EastExitTrigger"]
+position = Vector2(0, 31)
 shape = SubResource("RectangleShape2D_e3gjf")
 
 [node name="WestExitTrigger_01" type="Area2D" parent="ExitTriggerHolder" node_paths=PackedStringArray("exit_placeholder_marker")]
@@ -284,15 +294,25 @@ position = Vector2(1127.68, 638.508)
 rotation = -0.10472
 shape = SubResource("RectangleShape2D_vpugc")
 
-[node name="NorthExitTrigger" type="Area2D" parent="ExitTriggerHolder"]
+[node name="NorthExitTrigger01" type="Area2D" parent="ExitTriggerHolder"]
 script = ExtResource("7_n6j3s")
 exit_to_scene_name = "environment_06.tscn"
-player_start_name = "NorthPlayerStart"
+player_start_name = "NorthPlayerStart01"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger"]
-position = Vector2(1565.62, 648.211)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger01"]
+position = Vector2(1406, 645)
 rotation = 0.0418879
 shape = SubResource("RectangleShape2D_g17l1")
+
+[node name="NorthExitTrigger02" type="Area2D" parent="ExitTriggerHolder"]
+script = ExtResource("7_n6j3s")
+exit_to_scene_name = "environment_06.tscn"
+player_start_name = "NorthPlayerStart02"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger02"]
+position = Vector2(1665.06, 656.364)
+rotation = 0.0418879
+shape = SubResource("RectangleShape2D_nqnr2")
 
 [node name="NpcSpawner" type="Node" parent="."]
 script = ExtResource("20_q08xd")
@@ -324,4 +344,5 @@ position = Vector2(956, 814)
 [connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_03" to="ExitTriggerHolder/WestExitTrigger_03" method="_on_body_entered"]
 [connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_04" to="ExitTriggerHolder/WestExitTrigger_04" method="_on_body_entered"]
 [connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_05" to="ExitTriggerHolder/WestExitTrigger_05" method="_on_body_entered"]
-[connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger" to="ExitTriggerHolder/NorthExitTrigger" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger01" to="ExitTriggerHolder/NorthExitTrigger01" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger02" to="ExitTriggerHolder/NorthExitTrigger02" method="_on_body_entered"]

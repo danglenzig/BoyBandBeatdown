@@ -16,6 +16,8 @@ var main: Main = null
 #var current_dialog: String = ""
 
 const uuid_util = preload('res://uuid.gd')
+const EXIT_COOLDOWN = 1.5
+var player_on_exit_cooldown = false
 
 func _ready():
 	pass
@@ -23,3 +25,7 @@ func _ready():
 	
 func get_uuid() -> String:
 	return uuid_util.v4()
+	
+func start_exit_cooldown()->void:
+	await get_tree().create_timer(EXIT_COOLDOWN).timeout
+	player_on_exit_cooldown = false

@@ -159,7 +159,7 @@ func play_battle_animations(result_string: String, reason_string: String, player
 		opponent_card_sprite.card_sprite_state_chart.send_event("to_tie_event")
 		player_card_sprite.card_sprite_state_chart.send_event("to_tie_event")
 	
-	print_debug("TODO: PLAYING BATTLE ANIMATIONS")
+	#print_debug("TODO: PLAYING BATTLE ANIMATIONS")
 	
 	await get_tree().create_timer(temp_battle_scene_duration).timeout
 	display_result_panel(result_string, reason_string)
@@ -189,7 +189,7 @@ func reset_encounter_sprites()->void:
 	
 func update_sprites_rounds_won(player_rounds_won: int, opponent_rounds_won: int, winner: String)->void:
 	
-	print_debug(opponent_sprite.name)
+	#print_debug(opponent_sprite.name)
 	
 	var player_rounds_won_string = str("Rounds Won: ",str(player_rounds_won))
 	var opponent_rounds_won_string = str("Rounds Won: ", str(opponent_rounds_won))

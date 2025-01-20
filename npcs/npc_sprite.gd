@@ -47,24 +47,34 @@ func _process(_delta):
 	handle_scaling()
 	handle_facing()
 	handle_layering()
-	
+
+
+
+var ta = 0.1
+var ui = 0.0
 func _physics_process(_delta):
 	if not dialogue_states.dialogue_active and not npc_dialogue.on_cooldown:
 		handle_dialogue_detect()
+	
+	
+	
 	#handle_ui()
 
 func handle_dialogue_detect()->void:
 	var player: Player = misc_tools.current_player
-	if not is_player_inside_detect_radius():
+	if not is_player_inside_detect_radius(player):
 		return
+		
+	print_debug("Player_detected!")
+		
 	npc_dialogue.on_cooldown = true
 	npc_dialogue.start_dialogue()
 	
 
 
 	
-func is_player_inside_detect_radius() -> bool:
-	var player: Player = misc_tools.current_player
+func is_player_inside_detect_radius(player: Player) -> bool:
+	#var player: Player = misc_tools.current_player
 	var player_pos: Vector2 = player.global_position
 	var distance_to_player = global_position.distance_to(player_pos)
 	return distance_to_player <= player_detect_radius and player_pos.y >= global_position.y -20
@@ -93,7 +103,7 @@ func handle_scaling() -> void:
 	scale = Vector2(adjusted_scale, adjusted_scale)
 	
 func begin_encounter() -> void:
-	print_debug("Begin?")
+	#print_debug("Begin?")
 	
 	encounter_events.begin_npc_encounter.emit(npc_name,npc_display_name, npc_power, play_style, npc_sprite_uuid)
 	

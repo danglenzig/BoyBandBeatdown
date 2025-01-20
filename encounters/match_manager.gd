@@ -176,7 +176,7 @@ func decide_winner()->void:
 	var reason_string: String = round_result[1]
 	
 	if result_string == "":
-		print_debug("TODO, see error...")
+		#print_debug("TODO, see error...")
 		push_error("No round result from RulesConfig singleton")
 		return
 		
@@ -214,11 +214,11 @@ func on_round_over()->void:
 	# TODO: either the match is over, or play another round
 	var encounter_manager: NpcEncounter = get_parent()
 	
-	print_debug("TODO: either the match is over, or play another round")
-	print("Player rounds won: ", player_rounds_won,"\nOpponent rounds won: ", opponent_rounds_won)
+	#print_debug("TODO: either the match is over, or play another round")
+	#print("Player rounds won: ", player_rounds_won,"\nOpponent rounds won: ", opponent_rounds_won)
 	
 	if not (player_rounds_won >= rounds_to_win or opponent_rounds_won >= rounds_to_win):
-		print_debug("No winner yet -- playing the next round")
+		#print_debug("No winner yet -- playing the next round")
 		next_round()
 	elif player_rounds_won >= rounds_to_win:
 		
@@ -226,7 +226,7 @@ func on_round_over()->void:
 		in_play_panel.visible = false
 		
 		# TODO move all this to a better place
-		print_debug("Player wins this match")
+		#print_debug("Player wins this match")
 		var results_panel:Panel = encounter_manager.get_node("CanvasLayer/RoundResultPanel")
 		results_panel.visible = false
 		encounter_manager.player_sprite.play("win")
@@ -247,7 +247,7 @@ func on_round_over()->void:
 		in_play_panel.visible = false
 		
 		# TODO move all this to a better place
-		print_debug("Opponent wins this match")
+		#print_debug("Opponent wins this match")
 		var results_panel:Panel = encounter_manager.get_node("CanvasLayer/RoundResultPanel")
 		results_panel.visible = false
 		encounter_manager.player_sprite.play("lose")

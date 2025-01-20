@@ -22,4 +22,4 @@ func update_card_history(played_suit: String)->void:
 	if player_cards_played.size() > 3:
 		player_cards_played.pop_back()
 		
-	print_debug(player_cards_played)
+	#print_debug(player_cards_played)

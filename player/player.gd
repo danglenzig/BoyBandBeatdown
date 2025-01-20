@@ -29,6 +29,7 @@ var previous_state: String 	= ""
 func _ready():
 	misc.player_on_exit_cooldown = true
 	misc.start_exit_cooldown()
+	misc.current_player = self
 	input_handler 		= SingletonHolder.get_node("InputHandler")
 	footstep_player 	= SingletonHolder.get_node("FootstepPlayer")
 	player_sprite 		= $AnimatedSprite2D

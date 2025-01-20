@@ -47,6 +47,7 @@ func _on_main_menu_button_pressed():
 	if get_parent().get_parent().name != "Main":
 		return
 	var main: Main = get_parent().get_parent()
+	
 	main.display_start_menu()
 	
 

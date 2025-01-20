@@ -121,7 +121,7 @@ func fade_to_start_menu_music(indoor_tween: Tween, outdoor_tween: Tween, battle_
 	battle_tween.tween_callback(on_tween_complete)
 
 func fade_to_music(bus_name: String)->void:
-	print_debug("Fading to music bus: ", bus_name)
+	#print_debug("Fading to music bus: ", bus_name)
 	
 	# ignore if we're already tweening this tween
 	if bus_name == current_music:

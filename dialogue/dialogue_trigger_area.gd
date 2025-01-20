@@ -22,6 +22,9 @@ func _ready():
 	DialogueManager.dialogue_ended.connect(on_dialogue_ended)
 	
 	dialogue_states = SingletonHolder.get_node("DialogueStates")
+	
+	if start_dialogue_tag == "environment_00_00" and dialogue_states.environment_00_00_seen:
+		call_deferred("queue_free")
 
 func on_dialogue_ended(_resource: DialogueResource)->void:
 	#if not resource.resource_path == dialogue_resource_string:

@@ -68,7 +68,7 @@ func display_start_menu():
 	call_deferred("add_child", start_menu)
 	
 	await get_tree().create_timer(1).timeout
-	print_debug(get_children())
+	#print_debug(get_children())
 	
 
 
@@ -94,7 +94,7 @@ func load_environment(scene_name: String, start_marker_name: String):
 	# deal with the Environment_01 situation (multiple exits got to the same place)
 	if new_environment.name == "Environment_01":
 		
-		print_debug(environment_01_exit_placeholder_marker_name)
+		#print_debug(environment_01_exit_placeholder_marker_name)
 		
 		if environment_01_exit_placeholder_marker_name != "":
 			new_environment.start_marker_name = environment_01_exit_placeholder_marker_name
@@ -153,7 +153,7 @@ func start_tutorial_sequence(called_from: String):
 	
 	
 func start_new_game():
-	print_debug("Starting new game")
+	#print_debug("Starting new game")
 	var start_menu: StartMenu = get_node("StartMenu")
 	start_menu.call_deferred("queue_free")	
 	load_environment(start_scene_name, "DefaultPlayerStart")

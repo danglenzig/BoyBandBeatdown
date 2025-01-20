@@ -60,7 +60,7 @@ func on_dialogue_ended(_resource: DialogueResource)->void:
 		fucking_texture.self_modulate = Color(1,1,1,0.9)
 		
 		misc.main.call_deferred("add_child", new_fucking_canvas_layer)
-		print_debug(fucking_help.called_from)
+		#print_debug(fucking_help.called_from)
 		
 		# show the fucking help
 		# start the cooldown timer
@@ -75,7 +75,7 @@ func on_dialogue_ended(_resource: DialogueResource)->void:
 
 func on_review_rules_finished(uuid: String):
 	if uuid == dialogue_uuid:
-		print_debug("FUCK_YOU")
+		#print_debug("FUCK_YOU")
 		var my_npc: NpcSprite = get_parent()
 		my_npc.begin_encounter()
 
@@ -84,7 +84,7 @@ func start_cooldown_timer()-> void:
 	on_cooldown = false
 
 func start_dialogue():
-	print_debug("Starting dialogue")
+	#print_debug("Starting dialogue")
 	if dialogue_states.dialogue_active:
 		return
 		

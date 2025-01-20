@@ -25,28 +25,28 @@ func choose_card(cards: Array[Card], play_style)->String:
 	
 	match  npc_play_style:
 		"BASIC_1":
-			print_debug("Choosing a random card")
+			#print_debug("Choosing a random card")
 			chosen_card_uuid = basic_1(cards)
 		"BASIC_2":
 			# TODO: figure this out later. It is unused for now
 			pass
 		"FAVOR_HEARTTHROB":
-			print_debug("Favoring Heartthrob")
+			#print_debug("Favoring Heartthrob")
 			chosen_card_uuid = favor_heartthrob(cards)
 		"FAVOR_BAD_BOY":
-			print_debug("Favoring Bad Boy")
+			#print_debug("Favoring Bad Boy")
 			chosen_card_uuid = favor_bad_boy(cards)
 		"FAVOR_SHY_ONE":
-			print_debug("Favoring Shy One")
+			#print_debug("Favoring Shy One")
 			chosen_card_uuid = favor_shy_one(cards)
 		"FAVOR_OLDER_BROTHER":
-			print_debug("Favoring Older Brother")
+			#print_debug("Favoring Older Brother")
 			chosen_card_uuid = favor_older_brother(cards)
 		"FAVOR_CUTE_ONE":
-			print_debug("Favoring Cute One")
+			#print_debug("Favoring Cute One")
 			chosen_card_uuid = favor_cute_one(cards)
 		"ANTICIPATE_PLAYER":
-			print_debug("Anticipating player behavior")
+			#print_debug("Anticipating player behavior")
 			chosen_card_uuid = anticipate_player(cards)
 	return chosen_card_uuid
 	
@@ -55,7 +55,7 @@ func anticipate_player(cards: Array[Card])->String:
 	var card_uuid: String = ""
 	var player_card_history = SingletonHolder.encounter_tools.player_cards_played
 	if player_card_history.is_empty():
-		print_debug("No player card history...chosing a random card")
+		#print_debug("No player card history...chosing a random card")
 		var a_rando = randi_range(0,cards.size()-1)
 		card_uuid = cards[a_rando].card_uuid
 	else:
@@ -78,7 +78,7 @@ func anticipate_player(cards: Array[Card])->String:
 			suit_weights[suit] = suit_weights.get(suit, 0) + weight
 			total_weight += weight
 		
-		print_debug(suit_weights)
+		#print_debug(suit_weights)
 			
 		var max_weight = -1
 		for suit in suit_weights.keys():
@@ -86,7 +86,7 @@ func anticipate_player(cards: Array[Card])->String:
 				max_weight = suit_weights[suit]
 				predicted_suit = suit
 		
-		print_debug("Predicted suit: ", predicted_suit)
+		#print_debug("Predicted suit: ", predicted_suit)
 		
 		match predicted_suit:
 			"HEARTTHROB":

@@ -57,7 +57,7 @@ func highlight_portraits(portrait_strings: Array[String]):
 		var shader_mat: ShaderMaterial = portrait.material
 		shader_mat.set_shader_parameter("PULSE_active", false)
 	if portrait_strings[0] == "NONE":
-		print_debug("No portraits highlighted")
+		#print_debug("No portraits highlighted")
 		return
 	
 	for portrait_string: String in portrait_strings:
@@ -79,7 +79,7 @@ func highlight_arrows(arrow_strings: Array[String]):
 		# set self-modulate on this arrow to grey
 		arrow.self_modulate = Color(0.5,0.5,0.5,.5)
 	if arrow_strings[0] == "NONE":
-		print_debug("No arrows highlighted")
+		#print_debug("No arrows highlighted")
 		return
 	for arrow_string: String in arrow_strings:
 		if not arrows_holder.has_node(arrow_string):
@@ -279,7 +279,7 @@ func _on_continue_button_pressed():
 	ui_sounds.card_select.play()
 	
 	if current_step  + 1 > last_step:
-		print_debug("There are no more steps")
+		#print_debug("There are no more steps")
 		
 		# TODO: fix this
 		var continute_button: Button = $RootPanel/ContinueButton

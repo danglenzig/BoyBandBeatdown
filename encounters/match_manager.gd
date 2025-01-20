@@ -72,6 +72,9 @@ func on_card_selected(uuid_string: String):
 	for card:Card in player_deck.cards_in_hand:
 		if card.card_uuid == uuid_string:
 			card_to_play = card
+			
+			encounter_events.pending_suit = card_to_play.suit_name
+			
 			break
 	if not card_to_play:
 		push_error("Something weird happened")
@@ -128,6 +131,9 @@ func on_playerAttack_anim_impact(is_player)->void:
 		if not opponent_card_in_play:
 			push_error("Something weird happened")
 		opponent_deck = deck_tools.put_card_in_play(opponent_deck, opponent_card_in_play)
+		
+		encounter_events.update_card_history(encounter_events.pending_suit)
+		encounter_events.pending_suit = ""
 		
 		# put the chosen opponent card in the in play area
 		# first spawn a card sprite
@@ -198,6 +204,8 @@ func end_match(winner: String):
 	var progression_manager: ProgressionManager = SingletonHolder.get_node("ProgressionManager")
 	var _player_power = progression_manager.player_power
 	
+	encounter_events.pending_suit = ""
+	encounter_events.player_cards_played = []
 	# award xp:
 	progression_manager.player_current_xp += progression_manager.calculate_match_xp_award(winner, opponent_power_level)
 	encounter_manager.end_match()

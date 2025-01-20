@@ -3,8 +3,9 @@ class_name NpcCardChooser
 
 var play_styles = [
 	"BASIC_1",
-	"BASIC_2",
-	"FAVOR_HEARTTHROB", 
+	"BASIC_RANK_AWARE",
+	"FAVOR_HEARTTHROB",
+	"FAVOR_HEARTTHROB_RANK_AWARE",
 	"FAVOR_BAD_BOY",
 	"FAVOR_SHY_ONE",
 	"FAVOR_OLDER_BROTHER",
@@ -25,28 +26,22 @@ func choose_card(cards: Array[Card], play_style)->String:
 	
 	match  npc_play_style:
 		"BASIC_1":
-			#print_debug("Choosing a random card")
 			chosen_card_uuid = basic_1(cards)
-		"BASIC_2":
-			# TODO: figure this out later. It is unused for now
-			pass
+		"BASIC_RANK_AWARE":
+			chosen_card_uuid = basic_rank_aware(cards)
 		"FAVOR_HEARTTHROB":
-			#print_debug("Favoring Heartthrob")
 			chosen_card_uuid = favor_heartthrob(cards)
+		"FAVOR_HEARTTHROB_RANK_AWARE":
+			chosen_card_uuid = favor_heartthrob_rank_aware(cards)
 		"FAVOR_BAD_BOY":
-			#print_debug("Favoring Bad Boy")
 			chosen_card_uuid = favor_bad_boy(cards)
 		"FAVOR_SHY_ONE":
-			#print_debug("Favoring Shy One")
 			chosen_card_uuid = favor_shy_one(cards)
 		"FAVOR_OLDER_BROTHER":
-			#print_debug("Favoring Older Brother")
 			chosen_card_uuid = favor_older_brother(cards)
 		"FAVOR_CUTE_ONE":
-			#print_debug("Favoring Cute One")
 			chosen_card_uuid = favor_cute_one(cards)
 		"ANTICIPATE_PLAYER":
-			#print_debug("Anticipating player behavior")
 			chosen_card_uuid = anticipate_player(cards)
 	return chosen_card_uuid
 	
@@ -122,6 +117,16 @@ func basic_1(cards: Array[Card])->String:
 	var a_rando = randi_range(0,cards.size()-1)
 	return cards[a_rando].card_uuid
 	
+func basic_rank_aware(cards: Array[Card])->String:
+	var card_uuid: String = ""
+	var highest_rank = 0
+	for card: Card in cards:
+		if card.card_rank > highest_rank:
+			highest_rank = card.card_rank
+			card_uuid = card.card_uuid
+			print_debug(highest_rank)
+	return card_uuid
+	
 func favor_heartthrob(cards: Array[Card])->String:
 	for card:Card in cards:
 		if card.suit_name == "HEARTTHROB":
@@ -129,6 +134,22 @@ func favor_heartthrob(cards: Array[Card])->String:
 			break
 	var a_rando = randi_range(0,cards.size()-1)
 	return cards[a_rando].card_uuid
+	
+func favor_heartthrob_rank_aware(cards: Array[Card])->String:
+	var card_uuid = ""
+	var heartthrob_cards: Array[Card] = []
+	for card:Card in cards:
+		if card.suit_name == "HEARTTHROB":
+			heartthrob_cards.append(card)
+	if heartthrob_cards.is_empty():
+		print_debug("No heartthrob cards")
+		return basic_rank_aware(cards)
+	print_debug("Geeting highest heartthrob card")
+	return basic_rank_aware(heartthrob_cards)
+		
+	# TODO: finish
+	
+	return card_uuid
 	
 func favor_bad_boy(cards: Array[Card])->String:
 	for card:Card in cards:

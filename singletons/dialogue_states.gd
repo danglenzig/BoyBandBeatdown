@@ -14,7 +14,8 @@ var introduced = {
 	GRETCHEN 	= false,
 	TAMMY 		= false,
 	KACI 		= false,
-	DANA 		= false
+	DANA 		= false,
+	HEATHER		= false
 	
 }
 

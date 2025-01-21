@@ -98,7 +98,21 @@ if not dialogue_states.introduced["DANA"]:
 	Nora: Blah blah blah.
 => BATTLE_OPTIONS
 
+~ heather_challenge
+# show heather portrait
+set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/heather_portrait.png"
+do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
 
+Heather: (concstruction noise)
+
+if not dialogue_states.introduced["HEATHER"]:
+	set dialogue_states.introduced["HEATHER"] = true
+	# show nora portrait
+	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
+	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+	Nora: That's Heather.
+	Nora: Blah blah blah.
+=> BATTLE_OPTIONS
 ##########################################################
 
 ~ START_BATTLE

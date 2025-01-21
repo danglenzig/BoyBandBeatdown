@@ -1,0 +1,661 @@
+[gd_scene load_steps=94 format=3 uid="uid://detffcfr633o3"]
+
+[ext_resource type="Texture2D" uid="uid://dydp1kvm5kxb6" path="res://encounters/sprites/heather/heather_attack_01.png" id="1_yu37a"]
+[ext_resource type="Texture2D" uid="uid://da5qa14sins3l" path="res://encounters/sprites/heather/heather_attack_03.png" id="2_bjgjl"]
+[ext_resource type="Texture2D" uid="uid://y37amc0ohtpj" path="res://encounters/sprites/heather/heather_attack_05.png" id="3_vrkf7"]
+[ext_resource type="Texture2D" uid="uid://d18m6yjl8s2tw" path="res://encounters/sprites/heather/heather_attack_07.png" id="4_l45em"]
+[ext_resource type="Texture2D" uid="uid://cdmxwt237wgy0" path="res://encounters/sprites/heather/heather_attack_09.png" id="5_6f282"]
+[ext_resource type="Texture2D" uid="uid://3wgwoxc7ojn8" path="res://encounters/sprites/heather/heather_attack_11.png" id="6_out88"]
+[ext_resource type="Texture2D" uid="uid://dvbvfsrf4mb27" path="res://encounters/sprites/heather/heather_attack_13.png" id="7_gk2ki"]
+[ext_resource type="Texture2D" uid="uid://c008wr5q2vclv" path="res://encounters/sprites/heather/heather_attack_15.png" id="8_bmdje"]
+[ext_resource type="Texture2D" uid="uid://kqqxsd15heh" path="res://encounters/sprites/heather/heather_attack_17.png" id="9_d3a06"]
+[ext_resource type="Texture2D" uid="uid://0qqalxyovsvy" path="res://encounters/sprites/heather/heather_attack_19.png" id="10_e0wri"]
+[ext_resource type="Texture2D" uid="uid://cghsabmxer7v8" path="res://encounters/sprites/heather/heather_attack_21.png" id="11_y3ymp"]
+[ext_resource type="Texture2D" uid="uid://dexqp4afdii25" path="res://encounters/sprites/heather/heather_attack_23.png" id="12_xec3c"]
+[ext_resource type="Texture2D" uid="uid://daxithdjtyaww" path="res://encounters/sprites/heather/heather_attack_25.png" id="13_f550l"]
+[ext_resource type="Texture2D" uid="uid://bv0r6uadkufix" path="res://encounters/sprites/heather/heather_attack_27.png" id="14_gjrbp"]
+[ext_resource type="Texture2D" uid="uid://dvi40kh2uk3mr" path="res://encounters/sprites/heather/heather_attack_29.png" id="15_baxwr"]
+[ext_resource type="Texture2D" uid="uid://bax2e7nvgg6av" path="res://encounters/sprites/heather/heather_attack_31.png" id="16_wiypi"]
+[ext_resource type="Texture2D" uid="uid://trqyxap4aray" path="res://encounters/sprites/heather/heather_attack_33.png" id="17_8jcf6"]
+[ext_resource type="Texture2D" uid="uid://grl32o5hbpth" path="res://encounters/sprites/heather/heather_attack_35.png" id="18_yyofe"]
+[ext_resource type="Texture2D" uid="uid://creopthja10jq" path="res://encounters/sprites/heather/heather_attack_37.png" id="19_l777t"]
+[ext_resource type="Texture2D" uid="uid://c5q5nq1150evo" path="res://encounters/sprites/heather/heather_attack_39.png" id="20_htwfc"]
+[ext_resource type="Texture2D" uid="uid://d2yr1a2smocv8" path="res://encounters/sprites/heather/heather_attack_41.png" id="21_s64rs"]
+[ext_resource type="Texture2D" uid="uid://drfyycbdfdvx8" path="res://encounters/sprites/heather/heather_attack_43.png" id="22_ufun5"]
+[ext_resource type="Texture2D" uid="uid://b4knqxlimx4il" path="res://encounters/sprites/heather/heather_attack_45.png" id="23_l6qcp"]
+[ext_resource type="Texture2D" uid="uid://cq08rv6x66j6j" path="res://encounters/sprites/heather/heather_attack_47.png" id="24_ddvik"]
+[ext_resource type="Texture2D" uid="uid://cqkfrjrgksdxc" path="res://encounters/sprites/heather/heather_attack_49.png" id="25_0o24m"]
+[ext_resource type="Texture2D" uid="uid://51rw2ulxfxim" path="res://encounters/sprites/heather/heather_attack_51.png" id="26_uw8wy"]
+[ext_resource type="Texture2D" uid="uid://rscmcndykjv5" path="res://encounters/sprites/heather/heather_attack_53.png" id="27_v82du"]
+[ext_resource type="Texture2D" uid="uid://s12drnfknfer" path="res://encounters/sprites/heather/heather_attack_55.png" id="28_segdg"]
+[ext_resource type="Texture2D" uid="uid://dlfv2hj5apql7" path="res://encounters/sprites/heather/heather_attack_57.png" id="29_d8o22"]
+[ext_resource type="Texture2D" uid="uid://ckan5i7uaf3d5" path="res://encounters/sprites/heather/heather_attack_59.png" id="30_vq7ft"]
+[ext_resource type="Texture2D" uid="uid://87dtmgrd5pwk" path="res://encounters/sprites/heather/heather_attack_61.png" id="31_u463c"]
+[ext_resource type="Texture2D" uid="uid://gtttffh3pktr" path="res://encounters/sprites/heather/heather_lose_00.png" id="32_wx3l3"]
+[ext_resource type="Texture2D" uid="uid://ct2dwdmsggvuy" path="res://encounters/sprites/heather/heather_lose_01.png" id="33_8fney"]
+[ext_resource type="Texture2D" uid="uid://biq5c2wour2dx" path="res://encounters/sprites/heather/heather_lose_02.png" id="34_0clbg"]
+[ext_resource type="Texture2D" uid="uid://bji0dhle5nl5y" path="res://encounters/sprites/heather/heather_lose_03.png" id="35_6g5sh"]
+[ext_resource type="Texture2D" uid="uid://cvks4ib23as1e" path="res://encounters/sprites/heather/heather_lose_04.png" id="36_bueoj"]
+[ext_resource type="Texture2D" uid="uid://fu4lwj71c7" path="res://encounters/sprites/heather/heather_lose_05.png" id="37_hfmrj"]
+[ext_resource type="Texture2D" uid="uid://cu8mp7rwrbwxo" path="res://encounters/sprites/heather/heather_lose_06.png" id="38_kmqqi"]
+[ext_resource type="Texture2D" uid="uid://7yqh38crjgiy" path="res://encounters/sprites/heather/heather_lose_07.png" id="39_4xgm0"]
+[ext_resource type="Texture2D" uid="uid://cuymoxqapo3vx" path="res://encounters/sprites/heather/heather_lose_08.png" id="40_htsyx"]
+[ext_resource type="Texture2D" uid="uid://cpw5ebctjfwmx" path="res://encounters/sprites/heather/heather_lose_09.png" id="41_e6bjf"]
+[ext_resource type="Texture2D" uid="uid://b5cs6g4py6gn1" path="res://encounters/sprites/heather/heather_lose_10.png" id="42_ehn2c"]
+[ext_resource type="Texture2D" uid="uid://cctxyuvy0kcfa" path="res://encounters/sprites/heather/heather_lose_11.png" id="43_0n00i"]
+[ext_resource type="Texture2D" uid="uid://dnndfo5k4trxs" path="res://encounters/sprites/heather/heather_lose_12.png" id="44_ur4qk"]
+[ext_resource type="Texture2D" uid="uid://dipwiwgudb8kg" path="res://encounters/sprites/heather/heather_lose_13.png" id="45_ye4ei"]
+[ext_resource type="Texture2D" uid="uid://vpyirtttpah4" path="res://encounters/sprites/heather/heather_lose_14.png" id="46_cdgg7"]
+[ext_resource type="Texture2D" uid="uid://bnaoiu28ycxnu" path="res://encounters/sprites/heather/heather_lose_15.png" id="47_cgcvl"]
+[ext_resource type="Texture2D" uid="uid://cdy3qtnu8y08l" path="res://encounters/sprites/heather/heather_lose_16.png" id="48_tficq"]
+[ext_resource type="Texture2D" uid="uid://dx2e0byt6335r" path="res://encounters/sprites/heather/heather_lose_17.png" id="49_bs0c5"]
+[ext_resource type="Texture2D" uid="uid://bl1pcykuvvla7" path="res://encounters/sprites/heather/heather_lose_18.png" id="50_gx1av"]
+[ext_resource type="Texture2D" uid="uid://b61y6dxvg4ava" path="res://encounters/sprites/heather/heather_lose_19.png" id="51_ow2er"]
+[ext_resource type="Texture2D" uid="uid://cb87bigxfmh5s" path="res://encounters/sprites/heather/heather_lose_20.png" id="52_ohgrk"]
+[ext_resource type="Texture2D" uid="uid://komns2qpy8md" path="res://encounters/sprites/heather/heather_lose_21.png" id="53_u8o41"]
+[ext_resource type="Texture2D" uid="uid://bvbqd4fl0gmk2" path="res://encounters/sprites/heather/heather_lose_22.png" id="54_swpwk"]
+[ext_resource type="Texture2D" uid="uid://degd41p4c1w3" path="res://encounters/sprites/heather/heather_win_00.png" id="55_6hlqg"]
+[ext_resource type="Texture2D" uid="uid://1yg2t8uch4n7" path="res://encounters/sprites/heather/heather_win_01.png" id="56_h67ny"]
+[ext_resource type="Texture2D" uid="uid://l7n1mxmd73wf" path="res://encounters/sprites/heather/heather_win_02.png" id="57_r8fj3"]
+[ext_resource type="Texture2D" uid="uid://cppsxnjy7d0x1" path="res://encounters/sprites/heather/heather_win_03.png" id="58_aof22"]
+[ext_resource type="Texture2D" uid="uid://d301hudcbmeq0" path="res://encounters/sprites/heather/heather_win_04.png" id="59_2vdjo"]
+[ext_resource type="Texture2D" uid="uid://bvqdy2egatpr2" path="res://encounters/sprites/heather/heather_win_05.png" id="60_gkb3q"]
+[ext_resource type="Texture2D" uid="uid://daqa1prfnttqs" path="res://encounters/sprites/heather/heather_win_06.png" id="61_xdinh"]
+[ext_resource type="Texture2D" uid="uid://c053wh52mah8w" path="res://encounters/sprites/heather/heather_win_07.png" id="62_2nfuy"]
+[ext_resource type="Texture2D" uid="uid://cf7p81vs732f1" path="res://encounters/sprites/heather/heather_win_08.png" id="63_ycot5"]
+[ext_resource type="Texture2D" uid="uid://cywqxnlsle7gi" path="res://encounters/sprites/heather/heather_win_09.png" id="64_2eomp"]
+[ext_resource type="Texture2D" uid="uid://cov24d8nmbdt0" path="res://encounters/sprites/heather/heather_win_10.png" id="65_d0kcq"]
+[ext_resource type="Texture2D" uid="uid://ba1tkiwlwr82o" path="res://encounters/sprites/heather/heather_win_11.png" id="66_sjvu1"]
+[ext_resource type="Texture2D" uid="uid://b84swru3337km" path="res://encounters/sprites/heather/heather_win_12.png" id="67_bj5hh"]
+[ext_resource type="Texture2D" uid="uid://cvw4ua724gw5p" path="res://encounters/sprites/heather/heather_win_13.png" id="68_40gsx"]
+[ext_resource type="Texture2D" uid="uid://b0w0ugyi4cavu" path="res://encounters/sprites/heather/heather_win_14.png" id="69_oe4b8"]
+[ext_resource type="Texture2D" uid="uid://dfgwdcl5avrv2" path="res://encounters/sprites/heather/heather_win_15.png" id="70_caay4"]
+[ext_resource type="Texture2D" uid="uid://cilbhcnhkqm2j" path="res://encounters/sprites/heather/heather_win_16.png" id="71_arlg5"]
+[ext_resource type="Texture2D" uid="uid://cf6yal3awt8kg" path="res://encounters/sprites/heather/heather_win_17.png" id="72_pyvxw"]
+[ext_resource type="Texture2D" uid="uid://c7y3g8jyv4ipc" path="res://encounters/sprites/heather/heather_win_18.png" id="73_a5ahu"]
+[ext_resource type="Texture2D" uid="uid://dh0rwjve52rjd" path="res://encounters/sprites/heather/heather_win_19.png" id="74_hnfcq"]
+[ext_resource type="Texture2D" uid="uid://b3tg1dvylii4u" path="res://encounters/sprites/heather/heather_win_20.png" id="75_ucn4g"]
+[ext_resource type="Texture2D" uid="uid://rky8fxlf0ys6" path="res://encounters/sprites/heather/heather_win_21.png" id="76_m05x0"]
+[ext_resource type="Texture2D" uid="uid://bb71corkjnla5" path="res://encounters/sprites/heather/heather_win_22.png" id="77_fbhvd"]
+[ext_resource type="Texture2D" uid="uid://cm8roh8r5dtt3" path="res://encounters/sprites/heather/heather_win_23.png" id="78_gmv6h"]
+[ext_resource type="Texture2D" uid="uid://bllsuv157gbc7" path="res://encounters/sprites/heather/heather_win_24.png" id="79_c7ri1"]
+[ext_resource type="Texture2D" uid="uid://8fk1b8ofiirt" path="res://encounters/sprites/heather/heather_win_25.png" id="80_a5dtv"]
+[ext_resource type="Texture2D" uid="uid://cstilsdjmcd0w" path="res://encounters/sprites/heather/heather_win_26.png" id="81_revcw"]
+[ext_resource type="Texture2D" uid="uid://bc70v87irmpg4" path="res://encounters/sprites/heather/heather_win_27.png" id="82_k0j2p"]
+[ext_resource type="Texture2D" uid="uid://btbr0jnajwcbw" path="res://encounters/sprites/heather/heather_win_28.png" id="83_nkfq4"]
+[ext_resource type="Texture2D" uid="uid://bes2sh74qhwlq" path="res://encounters/sprites/heather/heather_win_29.png" id="84_p50e6"]
+[ext_resource type="Texture2D" uid="uid://b4j0mn2h6srgk" path="res://encounters/sprites/heather/heather_win_30.png" id="85_xieh2"]
+[ext_resource type="Script" path="res://encounters/encounter_sprite.gd" id="86_l353t"]
+[ext_resource type="Texture2D" uid="uid://3gf4gj10fgrw" path="res://ui/assets/flash-light-effect-free-png.png" id="87_cb1tm"]
+[ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="88_t45pg"]
+
+[sub_resource type="Shader" id="Shader_q54eu"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Color Manipulator,Outline,Border Noise,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rn0wh"]
+shader = SubResource("Shader_q54eu")
+shader_parameter/opacity = 1.0
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_active = false
+shader_parameter/BORDERNOISE_max_line_width = 0.0
+shader_parameter/BORDERNOISE_min_line_width = 127.0
+shader_parameter/BORDERNOISE_freq = 1.0
+shader_parameter/BORDERNOISE_block_size = 21.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(1, 1, 0, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r5tr2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yu37a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_bjgjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vrkf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_l45em")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6f282")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_out88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gk2ki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bmdje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_d3a06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_e0wri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_y3ymp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_xec3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_f550l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gjrbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_baxwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_wiypi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8jcf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_yyofe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_l777t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_htwfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_s64rs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ufun5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_l6qcp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ddvik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_0o24m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_uw8wy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_v82du")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_segdg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_d8o22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_vq7ft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_u463c")
+}],
+"loop": false,
+"name": &"attack_1",
+"speed": 32.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_0o24m")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_wx3l3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_8fney")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_0clbg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_6g5sh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_bueoj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_hfmrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_kmqqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_4xgm0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_htsyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_e6bjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_ehn2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_0n00i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_ur4qk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_ye4ei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_cdgg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_cgcvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_tficq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_bs0c5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_gx1av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ow2er")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ohgrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_u8o41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_swpwk")
+}],
+"loop": false,
+"name": &"lose",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("49_bs0c5")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("55_6hlqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_h67ny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_r8fj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_aof22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_2vdjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_gkb3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_xdinh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_2nfuy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_ycot5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_2eomp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_d0kcq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_sjvu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_bj5hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_40gsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_oe4b8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_caay4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_arlg5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_pyvxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_a5ahu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_hnfcq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_ucn4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_m05x0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_fbhvd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_gmv6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_c7ri1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_a5dtv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_revcw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_k0j2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_nkfq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_p50e6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_xieh2")
+}],
+"loop": true,
+"name": &"win",
+"speed": 16.0
+}]
+
+[sub_resource type="Shader" id="Shader_7h0cv"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Pulse,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool PULSE_active = true; //activation
+uniform vec4 PULSE_shine_color : source_color = vec4(1.0); //Shine color
+uniform float PULSE_alpha_limit : hint_range(0.0, 1.0, 0.1) = 0.0; //Alpha color limit to apply the shine, for example, if you won't to apply the shine to semi-transparent pixels
+uniform float PULSE_cycle_speed : hint_range(0.0, 100.0, 0.1) = 1.0; //Pulse cycle speed
+uniform bool PULSE_full_pulse_cycle = false; //[False = Do the effect and make a pause] [True = Do the effect continuosly]
+void pulse(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color)
+{
+	//Check the pixel alpha value
+	if (color.a >= PULSE_alpha_limit)
+	{
+		float cycle = sin(TIME * PULSE_cycle_speed);
+		color.rgb = mix(color.rgb, PULSE_shine_color.rgb, (((cycle >= 0.0) || (PULSE_full_pulse_cycle)) ? abs(cycle) : 0.0) * PULSE_shine_color.a);
+	}
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(PULSE_active) pulse(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k25dt"]
+shader = SubResource("Shader_7h0cv")
+shader_parameter/opacity = 1.0
+shader_parameter/PULSE_active = true
+shader_parameter/PULSE_shine_color = Color(0, 0.647059, 1, 1)
+shader_parameter/PULSE_alpha_limit = 0.0
+shader_parameter/PULSE_cycle_speed = 22.0
+shader_parameter/PULSE_full_pulse_cycle = true
+
+[node name="HeatherEncounterSprite" type="AnimatedSprite2D"]
+material = SubResource("ShaderMaterial_rn0wh")
+position = Vector2(0, -333)
+sprite_frames = SubResource("SpriteFrames_r5tr2")
+animation = &"win"
+autoplay = "idle"
+frame = 21
+frame_progress = 0.516885
+script = ExtResource("86_l353t")
+
+[node name="FlashEffectSprite" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_k25dt")
+position = Vector2(-18.6, -297)
+scale = Vector2(1.342, 0.49)
+texture = ExtResource("87_cb1tm")
+
+[node name="RoundsWonLabel" type="Label" parent="."]
+offset_left = -157.6
+offset_top = -316.0
+offset_right = 150.4
+offset_bottom = -279.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("88_t45pg")
+theme_override_font_sizes/font_size = 30
+text = "Rounds Won: N"

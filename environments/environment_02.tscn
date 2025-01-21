@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dp3xm2qtpej40" path="res://environments/assets/etc/MM_1.png" id="10_e3anp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_48wd4"]
-size = Vector2(736.087, 138.372)
+size = Vector2(789.068, 138.372)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xoebj"]
 size = Vector2(104, 345)
@@ -186,7 +186,7 @@ position = Vector2(859, 831)
 [node name="EnvironmentBlockers" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnvironmentBlockers"]
-position = Vector2(255.989, 949.929)
+position = Vector2(279.225, 937.208)
 rotation = -0.50091
 shape = SubResource("RectangleShape2D_48wd4")
 

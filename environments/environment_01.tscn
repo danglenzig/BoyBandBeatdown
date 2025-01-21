@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://bnc0he5ytku37"]
+[gd_scene load_steps=40 format=3 uid="uid://bnc0he5ytku37"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
 [ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/env_01.png" id="2_it8mk"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://bvj7m38twjg61" path="res://environments/prop_scenes/environment_01_bush_05.tscn" id="17_jkyb5"]
 [ext_resource type="Script" path="res://environments/npc_spawner.gd" id="20_q08xd"]
 [ext_resource type="PackedScene" uid="uid://bcsqeqj7mqw3j" path="res://npcs/dana/dana_sprite.tscn" id="21_5k5xt"]
+[ext_resource type="PackedScene" uid="uid://dlr0dc5072t10" path="res://npcs/heather/heather_sprite.tscn" id="22_wodhg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wegb6"]
 size = Vector2(165, 50.5)
@@ -316,7 +317,7 @@ shape = SubResource("RectangleShape2D_nqnr2")
 
 [node name="NpcSpawner" type="Node" parent="."]
 script = ExtResource("20_q08xd")
-npc_scenes = Array[PackedScene]([ExtResource("7_4t4tq"), ExtResource("5_lb3wf"), ExtResource("21_5k5xt")])
+npc_scenes = Array[PackedScene]([ExtResource("7_4t4tq"), ExtResource("5_lb3wf"), ExtResource("21_5k5xt"), ExtResource("22_wodhg")])
 
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 

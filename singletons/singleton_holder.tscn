@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://dlaoxsh4nrl4r"]
+[gd_scene load_steps=32 format=3 uid="uid://dlaoxsh4nrl4r"]
 
 [ext_resource type="Script" path="res://singletons/singleton_holder.gd" id="1_4ae2a"]
 [ext_resource type="Script" path="res://singletons/misc_tools.gd" id="1_ji376"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://kqq5weo8i710" path="res://encounters/npc_sprites/dana_encounter_sprite.tscn" id="12_hkn2e"]
 [ext_resource type="Script" path="res://singletons/ui_sound_manager.gd" id="12_xm623"]
 [ext_resource type="AudioStream" uid="uid://c1l4704riw5jy" path="res://audio/assets/ui/GUI_Cancel_7.wav" id="13_es2g3"]
+[ext_resource type="PackedScene" uid="uid://detffcfr633o3" path="res://encounters/npc_sprites/heather_encounter_sprite.tscn" id="13_kmwt3"]
 [ext_resource type="AudioStream" uid="uid://b88pdad0a4lbl" path="res://audio/assets/ui/GUI_Cancel_4.wav" id="13_psm8y"]
 [ext_resource type="Script" path="res://singletons/encounter_sound_manager.gd" id="15_dnmvw"]
 [ext_resource type="AudioStream" uid="uid://b3yleeglgjs41" path="res://audio/assets/ui/GUI_Scroll_Short_11.wav" id="15_eb3nk"]
@@ -49,7 +50,7 @@ script = ExtResource("5_0x11e")
 
 [node name="NpcEncounterSpriteScenes" type="Node" parent="."]
 script = ExtResource("6_hlet4")
-npc_encounter_sprite_scenes = Array[PackedScene]([ExtResource("7_qgeg1"), ExtResource("9_rx8br"), ExtResource("10_8tbmm"), ExtResource("11_jbocf"), ExtResource("12_hkn2e")])
+npc_encounter_sprite_scenes = Array[PackedScene]([ExtResource("7_qgeg1"), ExtResource("9_rx8br"), ExtResource("10_8tbmm"), ExtResource("11_jbocf"), ExtResource("12_hkn2e"), ExtResource("13_kmwt3")])
 
 [node name="ProgressionManager" type="Node" parent="."]
 script = ExtResource("8_nwdj1")

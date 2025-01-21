@@ -3,10 +3,12 @@ class_name FootstepPlayer
 
 # Preload the audio streams
 var footstep_sounds = [
-	preload("res://audio/assets/fs_1.wav"),
-	preload("res://audio/assets/fs_2.wav"),
-	preload("res://audio/assets/fs_3.wav"),
-	preload("res://audio/assets/fs_4.wav")
+	preload("res://audio/assets/footsteps/footstep dirt 1.wav"),
+	preload("res://audio/assets/footsteps/footstep dirt 5.wav"),
+	preload("res://audio/assets/footsteps/footstep dirt 9.wav"),
+	preload("res://audio/assets/footsteps/footstep dirt 14.wav"),
+	preload("res://audio/assets/footsteps/footstep dirt 17.wav"),
+	preload("res://audio/assets/footsteps/footstep dirt 28.wav")
 ]
 
 func play_random_footstep_sound():

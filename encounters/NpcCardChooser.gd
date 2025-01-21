@@ -4,13 +4,24 @@ class_name NpcCardChooser
 var play_styles = [
 	"BASIC_1",
 	"BASIC_RANK_AWARE",
+	
 	"FAVOR_HEARTTHROB",
 	"FAVOR_HEARTTHROB_RANK_AWARE",
+	
 	"FAVOR_BAD_BOY",
+	"FAVOR_BAD_BOY_RANK_AWARE",
+	
 	"FAVOR_SHY_ONE",
+	"FAVOR_SHY_ONE_RANK_AWARE",
+	
 	"FAVOR_OLDER_BROTHER",
+	"FAVOR_OLDER_BROTHER_RANK_AWARE",
+	
 	"FAVOR_CUTE_ONE",
-	"ANTICIPATE_PLAYER"
+	"FAVOR_CUTE_ONE_RANK_AWARE",
+	
+	"ANTICIPATE_PLAYER",
+	"ANTICIPATE_PLAYER_RANK_AWARE",
 ]
 
 func choose_card(cards: Array[Card], play_style)->String:
@@ -137,15 +148,15 @@ func favor_heartthrob(cards: Array[Card])->String:
 	
 func favor_heartthrob_rank_aware(cards: Array[Card])->String:
 	var card_uuid = ""
-	var heartthrob_cards: Array[Card] = []
+	var candidate_cards: Array[Card] = []
 	for card:Card in cards:
 		if card.suit_name == "HEARTTHROB":
-			heartthrob_cards.append(card)
-	if heartthrob_cards.is_empty():
+			candidate_cards.append(card)
+	if candidate_cards.is_empty():
 		print_debug("No heartthrob cards")
 		return basic_rank_aware(cards)
 	print_debug("Geeting highest heartthrob card")
-	return basic_rank_aware(heartthrob_cards)
+	return basic_rank_aware(candidate_cards)
 		
 	# TODO: finish
 	
@@ -159,6 +170,18 @@ func favor_bad_boy(cards: Array[Card])->String:
 	var a_rando = randi_range(0,cards.size()-1)
 	return cards[a_rando].card_uuid
 	
+func favor_bad_boy_rank_aware(cards: Array[Card])->String:
+	var card_uuid = ""
+	var candidate_cards: Array[Card] = []
+	for card:Card in cards:
+		if card.suit_name == "BAD_BOY":
+			candidate_cards.append(card)
+	if candidate_cards.is_empty():
+		print_debug("No bad boy cards")
+		return basic_rank_aware(cards)
+	print_debug("Getting highest bad boy card")
+	return basic_rank_aware(candidate_cards)
+	
 func favor_shy_one(cards: Array[Card])->String:
 	for card:Card in cards:
 		if card.suit_name == "SHY_ONE":
@@ -166,6 +189,20 @@ func favor_shy_one(cards: Array[Card])->String:
 			break
 	var a_rando = randi_range(0,cards.size()-1)
 	return cards[a_rando].card_uuid
+	
+func favor_shy_one_rank_aware(cards: Array[Card])->String:
+	var card_uuid = ""
+	var candidate_cards: Array[Card] = []
+	for card:Card in cards:
+		if card.suit_name == "SHY_ONE":
+			candidate_cards.append(card)
+	if candidate_cards.is_empty():
+		print_debug("No shy one cards")
+		return basic_rank_aware(cards)
+	print_debug("Getting highest shy one card")
+	return basic_rank_aware(candidate_cards)
+	
+
 	
 func favor_older_brother(cards: Array[Card])->String:
 	for card:Card in cards:
@@ -175,6 +212,18 @@ func favor_older_brother(cards: Array[Card])->String:
 	var a_rando = randi_range(0,cards.size()-1)
 	return cards[a_rando].card_uuid
 	
+func favor_older_brother_rank_aware(cards: Array[Card])->String:
+	var card_uuid = ""
+	var candidate_cards: Array[Card] = []
+	for card:Card in cards:
+		if card.suit_name == "OLDER_BROTHER":
+			candidate_cards.append(card)
+	if candidate_cards.is_empty():
+		print_debug("No older brother cards")
+		return basic_rank_aware(cards)
+	print_debug("Getting highest older brother card")
+	return basic_rank_aware(candidate_cards)
+	
 func favor_cute_one(cards: Array[Card])->String:
 	for card:Card in cards:
 		if card.suit_name == "CUTE_ONE":
@@ -182,3 +231,15 @@ func favor_cute_one(cards: Array[Card])->String:
 			break
 	var a_rando = randi_range(0,cards.size()-1)
 	return cards[a_rando].card_uuid
+	
+func favor_cute_one_rank_aware(cards: Array[Card])->String:
+	var card_uuid = ""
+	var candidate_cards: Array[Card] = []
+	for card:Card in cards:
+		if card.suit_name == "CUTE_ONE":
+			candidate_cards.append(card)
+	if candidate_cards.is_empty():
+		print_debug("No cute one cards")
+		return basic_rank_aware(cards)
+	print_debug("Getting highest cute one card")
+	return basic_rank_aware(candidate_cards)

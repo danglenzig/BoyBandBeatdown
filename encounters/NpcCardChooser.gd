@@ -22,6 +22,8 @@ var play_styles = [
 	
 	"ANTICIPATE_PLAYER",
 	"ANTICIPATE_PLAYER_RANK_AWARE",
+	
+	"OPTIMAL"
 ]
 
 func choose_card(cards: Array[Card], play_style)->String:
@@ -54,6 +56,8 @@ func choose_card(cards: Array[Card], play_style)->String:
 			chosen_card_uuid = favor_cute_one(cards)
 		"ANTICIPATE_PLAYER":
 			chosen_card_uuid = anticipate_player(cards)
+		"OPTIMAL":
+			chosen_card_uuid = optimal(cards)
 	return chosen_card_uuid
 	
 	
@@ -135,7 +139,7 @@ func basic_rank_aware(cards: Array[Card])->String:
 		if card.card_rank > highest_rank:
 			highest_rank = card.card_rank
 			card_uuid = card.card_uuid
-			print_debug(highest_rank)
+			#print_debug(highest_rank)
 	return card_uuid
 	
 func favor_heartthrob(cards: Array[Card])->String:
@@ -243,3 +247,57 @@ func favor_cute_one_rank_aware(cards: Array[Card])->String:
 		return basic_rank_aware(cards)
 	print_debug("Getting highest cute one card")
 	return basic_rank_aware(candidate_cards)
+	
+	
+func optimal(cards: Array[Card])->String:
+	var card_uuid: String = ""
+	
+	# base probabilities
+	var base_weights = {
+		"CUTE_ONE"		: 1/9.0,
+		"SHY_ONE"		: 1/9.0,
+		"OLDER_BROTHER"	: 1/9.0,
+		"HEARTTHROB"	: 1/3.0,
+		"BAD_BOY"		: 1/3.0
+	}
+	
+	# filter for available suits in current hand
+	var available_suits = {}
+	for card: Card in cards:
+		available_suits[card.suit_name] = true
+	
+	# adjust weights for available suits
+	var total_weight 		= 0.0
+	var adjusted_weights 	= {}
+	for suit: String in base_weights.keys():
+		if suit in available_suits.keys():
+			adjusted_weights[suit] = base_weights[suit]
+			total_weight += base_weights[suit]
+			
+	# normalize weights so they add up to 1.0
+	for suit in adjusted_weights.keys():
+		adjusted_weights[suit] /= total_weight
+		
+	print_debug(adjusted_weights)
+		
+	# perform weighted random selection
+	var rando_float = randf()
+	var cumulative_weight = 0.0
+	
+	
+	var candidate_cards: Array[Card]
+	
+	for suit in adjusted_weights.keys():
+		cumulative_weight += adjusted_weights[suit]
+		if rando_float <= adjusted_weights[suit]:
+			for card: Card in cards:
+				if card.suit_name == suit:
+					candidate_cards.append(card)
+	
+	if not candidate_cards.is_empty():
+		card_uuid = basic_rank_aware(candidate_cards)
+	else:
+		card_uuid = basic_rank_aware(cards)
+	
+	
+	return card_uuid

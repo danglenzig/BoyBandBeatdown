@@ -54,6 +54,7 @@ npc_encounter_sprite_scenes = Array[PackedScene]([ExtResource("7_qgeg1"), ExtRes
 
 [node name="ProgressionManager" type="Node" parent="."]
 script = ExtResource("8_nwdj1")
+xp_win_against_lower = 35
 
 [node name="GameSettings" type="Node" parent="."]
 script = ExtResource("9_jnmea")

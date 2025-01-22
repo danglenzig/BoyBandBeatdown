@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dood73hahpch1"]
+[gd_scene load_steps=5 format=3 uid="uid://dood73hahpch1"]
 
 [ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="1_bcjhm"]
 [ext_resource type="Script" path="res://ui/help_tabs.gd" id="1_dlae7"]
 [ext_resource type="PackedScene" uid="uid://c0etkvben6vtp" path="res://ui/tutorial_sequence/tutorial_sequence_deck.tscn" id="1_inu5r"]
-[ext_resource type="PackedScene" uid="uid://c5esr8tgpc6nq" path="res://ui/tutorial_sequence/tutorial_sequence_encounter.tscn" id="1_ojub6"]
 [ext_resource type="PackedScene" uid="uid://c17sym1qo6kdr" path="res://ui/tutorial_sequence/tutorial_sequence_exploration.tscn" id="2_20m7n"]
 
 [node name="HelpTabs" type="Control"]
@@ -33,21 +32,9 @@ metadata/_tab_index = 0
 
 [node name="TutorialSequenceExploration" parent="TabContainer/Exploration" instance=ExtResource("2_20m7n")]
 
-[node name="Encounters" type="TabBar" parent="TabContainer"]
+[node name="Rules" type="TabBar" parent="TabContainer"]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="TutorialSequenceEncounter" parent="TabContainer/Encounters" instance=ExtResource("1_ojub6")]
-
-[node name="Rules" type="TabBar" parent="TabContainer"]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 2
-
 [node name="TutorialSequenceDeck" parent="TabContainer/Rules" instance=ExtResource("1_inu5r")]
-
-[node name="Progression" type="TabBar" parent="TabContainer"]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 3

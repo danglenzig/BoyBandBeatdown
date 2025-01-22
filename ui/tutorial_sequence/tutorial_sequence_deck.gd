@@ -233,13 +233,39 @@ func step_13():
 	await get_tree().create_timer(1.0).timeout
 	diagram_panel.visible = false
 	await get_tree().create_timer(0.5).timeout
+	
+	var left_card_sprite: CardSprite 	= cards_panel.get_node("LeftCardSprite")
+	var right_card_sprite: CardSprite 	= cards_panel.get_node("RightCardSprite")
+	var left_card:Card = Card.new()
+	var right_card: Card = Card.new()
+	
+	left_card.make_card("BAD_BOY", 3)
+	right_card.make_card("BAD_BOY", 2)
+	
+	left_card_sprite.setup_card(left_card)
+	right_card_sprite.setup_card(right_card)
+	
+	left_card_sprite.get_node("Button").call_deferred("queue_free")
+	right_card_sprite.get_node("Button").call_deferred("queue_free")
+	right_card_sprite.active_sprite.flip_h = true
+	
 	cards_panel.visible = true
 	show_step_caption(13)
+	
+	await get_tree().create_timer(1.0).timeout
+	
+	left_card_sprite.active_sprite.play("attack")
+	left_card_sprite.launch_fireball()
+	right_card_sprite.active_sprite.play("die")
 	
 	countinue_button_armed = true
 	
 func step_14():
 	countinue_button_armed = false
+	
+	var left_card_sprite: CardSprite = cards_panel.get_node("LeftCardSprite")
+	left_card_sprite.active_sprite.play("dance2")
+	
 	show_step_caption(14)
 	
 func play_step(step_number: int):

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c0etkvben6vtp"]
+[gd_scene load_steps=23 format=3 uid="uid://c0etkvben6vtp"]
 
 [ext_resource type="Script" path="res://ui/tutorial_sequence/tutorial_sequence_deck.gd" id="1_vkuta"]
 [ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="2_2itq6"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://q8ighcf0dnym" path="res://ui/tutorial_sequence/OlderBrotherPortrait.png" id="7_0f40m"]
 [ext_resource type="Texture2D" uid="uid://i3ch74j41xou" path="res://ui/tutorial_sequence/arrow.png" id="8_ku3iw"]
 [ext_resource type="Texture2D" uid="uid://c1il42xf7gbbh" path="res://ui/tutorial_sequence/Screenshot 2025-01-03 183027.png" id="10_w7gxw"]
+[ext_resource type="PackedScene" uid="uid://cte5fobhra3n3" path="res://encounters/sprites/cards/card_sprite.tscn" id="12_253lc"]
 
 [sub_resource type="Shader" id="Shader_2a1ia"]
 code = "//ATTENTION:
@@ -795,16 +796,22 @@ theme_override_font_sizes/font_size = 16
 text = "Continue"
 
 [node name="CardsPanel" type="Panel" parent="RootPanel"]
-visible = false
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="TieSprite" type="Sprite2D" parent="RootPanel/CardsPanel"]
+visible = false
 position = Vector2(691, 367)
 scale = Vector2(0.9, 0.9)
 texture = ExtResource("10_w7gxw")
+
+[node name="LeftCardSprite" parent="RootPanel/CardsPanel" instance=ExtResource("12_253lc")]
+position = Vector2(543, 400)
+
+[node name="RightCardSprite" parent="RootPanel/CardsPanel" instance=ExtResource("12_253lc")]
+position = Vector2(895, 402)
 
 [connection signal="mouse_entered" from="RootPanel/ContinueButton" to="." method="_on_continue_button_mouse_entered"]
 [connection signal="pressed" from="RootPanel/ContinueButton" to="." method="_on_continue_button_pressed"]

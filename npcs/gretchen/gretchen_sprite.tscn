@@ -365,6 +365,7 @@ size = Vector2(91, 16)
 [node name="GretchenSprite" type="Node2D"]
 script = ExtResource("1_j7l1i")
 npc_power = 3
+player_detect_radius = 100
 play_style = "ANTICIPATE_PLAYER"
 npc_name = "gretchen"
 npc_display_name = "Gretchen"

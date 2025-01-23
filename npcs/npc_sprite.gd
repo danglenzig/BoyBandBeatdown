@@ -77,7 +77,7 @@ func is_player_inside_detect_radius(player: Player) -> bool:
 	#var player: Player = misc_tools.current_player
 	var player_pos: Vector2 = player.global_position
 	var distance_to_player = global_position.distance_to(player_pos)
-	return distance_to_player <= player_detect_radius and player_pos.y >= global_position.y -20
+	return distance_to_player <= player_detect_radius * scale.y and player_pos.y >= global_position.y -20
 	
 func handle_layering():
 	z_index = int(global_position.y / 10)

@@ -12,6 +12,7 @@ var start_button_panel: Panel
 var howto_button_panel: Panel
 var about_button_panel: Panel
 var quit_button_panel: 	Panel
+var dance_scene: 		DanceScene
 
 var start_button_armed = 	false
 var howto_button_armed = 	false
@@ -19,6 +20,15 @@ var about_button_armed = 	false
 var quit_button_armed = 	false
 
 var main: Main = null
+
+var environment_textures = [
+	preload("res://environments/assets/env_00.png"),
+	preload("res://environments/assets/env_01.png"),
+	preload("res://environments/assets/env_03_alt.png"),
+	preload("res://environments/assets/env_06.png"),
+	preload("res://environments/assets/env_05.png"),
+]
+var current_background_texture_index = 1
 
 
 
@@ -33,6 +43,8 @@ func _ready():
 	howto_button_panel 	= $CanvasLayer/Panel/HowToButtonPanel
 	about_button_panel 	= $CanvasLayer/Panel/AboutButtonPanel
 	quit_button_panel	= $CanvasLayer/Panel/QuitButtonPanel
+	dance_scene 		= $CanvasLayer/Panel/DanceScene
+	dance_scene.change_it_up.connect(on_change_it_up)
 
 	var music_manager: MusicManager = SingletonHolder.get_node("MusicManager")
 	music_manager.play_music("StartMenuMusic")
@@ -48,7 +60,13 @@ func _ready():
 	do_about_button_tween()
 	await  get_tree().create_timer(0.1).timeout
 	do_quit_button_tween()
-	
+
+func on_change_it_up()->void:
+	var background_sprite: Sprite2D = $CanvasLayer/Panel/BackgroundSprite
+	current_background_texture_index += 1
+	current_background_texture_index = current_background_texture_index % environment_textures.size()
+	background_sprite.texture = environment_textures[current_background_texture_index]
+
 func do_title_tween():
 	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
 	ui_sounds.slide_sound.play()
@@ -104,6 +122,12 @@ func play_tutorial_from_start_menu():
 		return
 	main.howto_button_pressed.emit("START")
 	
+func show_about_from_start_menu()->void:
+	if not main:
+		return
+	main.about_button_pressed.emit()
+	
+	
 func play_card_hover_sound():
 	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
 	ui_sounds.card_hover.play()
@@ -125,7 +149,8 @@ func on_menu_button_pressed(button_string: String):
 			if not about_button_armed:
 				return
 			ui_sounds.card_select.play()
-			print("ABOUT")
+			show_about_from_start_menu()
+			
 		"QUIT":
 			if not quit_button_armed:
 				return

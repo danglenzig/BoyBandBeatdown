@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://b243as163oakm"]
+[gd_scene load_steps=7 format=3 uid="uid://b243as163oakm"]
 
 [ext_resource type="Script" path="res://ui/start_menu.gd" id="1_eq3g7"]
 [ext_resource type="Texture2D" uid="uid://cppecdseuwynr" path="res://encounters/encounter_backgrounds/00.png" id="2_b0ggh"]
+[ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_dh5ye"]
 [ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="2_yqx8s"]
 [ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="4_dgc4o"]
+[ext_resource type="PackedScene" uid="uid://cnfyr6mfcpn86" path="res://dance_scene/dance_scene.tscn" id="5_sjn37"]
 
 [node name="StartMenu" type="Node2D"]
 script = ExtResource("1_eq3g7")
@@ -15,7 +17,13 @@ self_modulate = Color(1, 1, 1, 0)
 offset_right = 1366.0
 offset_bottom = 768.0
 
+[node name="BackgroundSprite" type="Sprite2D" parent="CanvasLayer/Panel"]
+position = Vector2(692, 385)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_dh5ye")
+
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel"]
+self_modulate = Color(1, 1, 1, 0.784314)
 layout_mode = 0
 offset_left = -57.0
 offset_top = -51.0
@@ -30,8 +38,8 @@ offset_bottom = 365.0
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 20
-theme_override_constants/shadow_offset_y = 20
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_yqx8s")
 theme_override_font_sizes/font_size = 150
@@ -39,6 +47,8 @@ text = "Boy Band Beatdown!"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
+
+[node name="DanceScene" parent="CanvasLayer/Panel" instance=ExtResource("5_sjn37")]
 
 [node name="StartButtonPanel" type="Panel" parent="CanvasLayer/Panel"]
 self_modulate = Color(1, 1, 1, 0)

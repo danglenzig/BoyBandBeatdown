@@ -30,7 +30,7 @@
 [ext_resource type="AudioStream" uid="uid://5llfmah2xsta" path="res://audio/assets/music/newer/bbb overworld 2.mp3" id="25_o1dky"]
 [ext_resource type="AudioStream" uid="uid://1kvjj5485oiw" path="res://audio/assets/music/bbb battle music (2).mp3" id="26_0w3k2"]
 [ext_resource type="Script" path="res://singletons/help_manager.gd" id="26_myuyd"]
-[ext_resource type="AudioStream" uid="uid://dlhvfoxrg32vl" path="res://audio/assets/music/newer/bbb title theme.mp3" id="27_w0bp4"]
+[ext_resource type="AudioStream" uid="uid://ddbxk7ulbpjpe" path="res://audio/assets/music/newer/bbb title theme (1).mp3" id="28_esoxq"]
 
 [node name="SingletonHolder" type="Node"]
 script = ExtResource("1_4ae2a")
@@ -108,7 +108,7 @@ stream = ExtResource("26_0w3k2")
 bus = &"BattleMusic"
 
 [node name="start_menu_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
-stream = ExtResource("27_w0bp4")
+stream = ExtResource("28_esoxq")
 bus = &"StartMenuMusic"
 
 [node name="CrossFader" type="Node" parent="MusicManager"]

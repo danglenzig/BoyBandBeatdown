@@ -1,0 +1,2859 @@
+[gd_scene load_steps=137 format=3 uid="uid://cnfyr6mfcpn86"]
+
+[ext_resource type="Script" path="res://dance_scene/dance_scene.gd" id="1_abug7"]
+[ext_resource type="Texture2D" uid="uid://b0e6vhdqa6y6r" path="res://encounters/sprites/bad_boy/bad_boy_dance_00.png" id="2_4g5nw"]
+[ext_resource type="Texture2D" uid="uid://bmqv00b5p2yss" path="res://encounters/sprites/bad_boy/bad_boy_dance_02.png" id="3_jqm00"]
+[ext_resource type="Texture2D" uid="uid://crmlkwxunqjea" path="res://encounters/sprites/bad_boy/bad_boy_dance_04.png" id="4_8f4dy"]
+[ext_resource type="Texture2D" uid="uid://cubi8j6xglfkq" path="res://encounters/sprites/bad_boy/bad_boy_dance_06.png" id="5_q0ji8"]
+[ext_resource type="Texture2D" uid="uid://6blwcgurnwto" path="res://encounters/sprites/bad_boy/bad_boy_dance_08.png" id="6_f8gly"]
+[ext_resource type="Texture2D" uid="uid://bv350jwq1u0m" path="res://encounters/sprites/bad_boy/bad_boy_dance_10.png" id="7_fp0fh"]
+[ext_resource type="Texture2D" uid="uid://c8ldt06f2iw82" path="res://encounters/sprites/bad_boy/bad_boy_dance_12.png" id="8_gdhm8"]
+[ext_resource type="Texture2D" uid="uid://f1af7ueim4q0" path="res://encounters/sprites/bad_boy/bad_boy_dance_14.png" id="9_ydlwe"]
+[ext_resource type="Texture2D" uid="uid://dst775l0e72um" path="res://encounters/sprites/bad_boy/bad_boy_dance_16.png" id="10_wuuf5"]
+[ext_resource type="Texture2D" uid="uid://bebt5ss556l7g" path="res://encounters/sprites/bad_boy/bad_boy_dance_18.png" id="11_mtwm4"]
+[ext_resource type="Texture2D" uid="uid://btqeevtxea03e" path="res://encounters/sprites/bad_boy/bad_boy_dance_20.png" id="12_jftlr"]
+[ext_resource type="Texture2D" uid="uid://dhfhd03ke4gkk" path="res://encounters/sprites/bad_boy/bad_boy_dance_22.png" id="13_pjkfj"]
+[ext_resource type="Texture2D" uid="uid://dhqj1vntguogq" path="res://encounters/sprites/bad_boy/bad_boy_dance_24.png" id="14_7xcn4"]
+[ext_resource type="Texture2D" uid="uid://b2sgn00uxck5j" path="res://encounters/sprites/bad_boy/bad_boy_dance_26.png" id="15_jg6vd"]
+[ext_resource type="Texture2D" uid="uid://dhkvbbk88gnyc" path="res://encounters/sprites/bad_boy/bad_boy_dance_28.png" id="16_sybee"]
+[ext_resource type="Texture2D" uid="uid://bv47y8v36vd13" path="res://encounters/sprites/bad_boy/bad_boy_dance_30.png" id="17_hdp52"]
+[ext_resource type="Texture2D" uid="uid://dnor7wd6accou" path="res://encounters/sprites/bad_boy/bad_boy_dance_32.png" id="18_emypc"]
+[ext_resource type="Texture2D" uid="uid://bas2rogsxrcr" path="res://encounters/sprites/bad_boy/bad_boy_dance_34.png" id="19_5t7pt"]
+[ext_resource type="Texture2D" uid="uid://dd1e4t1gu8qft" path="res://encounters/sprites/bad_boy/bad_boy_dance_36.png" id="20_d2t8l"]
+[ext_resource type="Texture2D" uid="uid://o0qav0q24v70" path="res://encounters/sprites/bad_boy/bad_boy_dance_38.png" id="21_8ymd0"]
+[ext_resource type="Texture2D" uid="uid://qd57pn5ib55l" path="res://encounters/sprites/bad_boy/bad_boy_dance_40.png" id="22_65c2l"]
+[ext_resource type="Texture2D" uid="uid://xouao6pk80oo" path="res://encounters/sprites/cute_one/cute_one_dance_00.png" id="23_0ovgg"]
+[ext_resource type="Texture2D" uid="uid://bsy5ypiu064g7" path="res://encounters/sprites/cute_one/cute_one_dance_02.png" id="24_dsb2b"]
+[ext_resource type="Texture2D" uid="uid://cxfnhg010ru0e" path="res://encounters/sprites/cute_one/cute_one_dance_04.png" id="25_w1mpd"]
+[ext_resource type="Texture2D" uid="uid://bv05qurymkfgx" path="res://encounters/sprites/cute_one/cute_one_dance_06.png" id="26_ntd8s"]
+[ext_resource type="Texture2D" uid="uid://4q3mg7r10mtd" path="res://encounters/sprites/cute_one/cute_one_dance_08.png" id="27_mvrjj"]
+[ext_resource type="Texture2D" uid="uid://da08btwsd4ydc" path="res://encounters/sprites/cute_one/cute_one_dance_10.png" id="28_6a2fn"]
+[ext_resource type="Texture2D" uid="uid://cogoyfn6tum5s" path="res://encounters/sprites/cute_one/cute_one_dance_12.png" id="29_8sv4w"]
+[ext_resource type="Texture2D" uid="uid://eu8osh8ga73s" path="res://encounters/sprites/cute_one/cute_one_dance_14.png" id="30_p3oel"]
+[ext_resource type="Texture2D" uid="uid://cjg4btg3ovs0v" path="res://encounters/sprites/cute_one/cute_one_dance_16.png" id="31_bvj66"]
+[ext_resource type="Texture2D" uid="uid://c15p7hkbus4tq" path="res://encounters/sprites/cute_one/cute_one_dance_18.png" id="32_587xi"]
+[ext_resource type="Texture2D" uid="uid://cyhi5bb4nis8s" path="res://encounters/sprites/cute_one/cute_one_dance_20.png" id="33_ohrm3"]
+[ext_resource type="Texture2D" uid="uid://d06eysuy8cb0r" path="res://encounters/sprites/cute_one/cute_one_dance_22.png" id="34_0wdvo"]
+[ext_resource type="Texture2D" uid="uid://bft45gk5pt4em" path="res://encounters/sprites/cute_one/cute_one_dance_24.png" id="35_ykt53"]
+[ext_resource type="Texture2D" uid="uid://dssm4jx55dwmm" path="res://encounters/sprites/cute_one/cute_one_dance_26.png" id="36_vpyl7"]
+[ext_resource type="Texture2D" uid="uid://dkkprdalxbdms" path="res://encounters/sprites/cute_one/cute_one_dance_28.png" id="37_ec7gy"]
+[ext_resource type="Texture2D" uid="uid://c2he0cu0mknyl" path="res://encounters/sprites/cute_one/cute_one_dance_30.png" id="38_7ytwr"]
+[ext_resource type="Texture2D" uid="uid://brnppttfomplb" path="res://encounters/sprites/cute_one/cute_one_dance_32.png" id="39_yghr4"]
+[ext_resource type="Texture2D" uid="uid://bbx1t22dw4uxf" path="res://encounters/sprites/cute_one/cute_one_dance_34.png" id="40_su8oi"]
+[ext_resource type="Texture2D" uid="uid://bdakg7gg5x1r2" path="res://encounters/sprites/cute_one/cute_one_dance_36.png" id="41_ll6fj"]
+[ext_resource type="Texture2D" uid="uid://ckh2tr4rg0g1l" path="res://encounters/sprites/cute_one/cute_one_dance_38.png" id="42_7h7dg"]
+[ext_resource type="Texture2D" uid="uid://vk32mbh3mce0" path="res://encounters/sprites/cute_one/cute_one_dance_40.png" id="43_uxx60"]
+[ext_resource type="Texture2D" uid="uid://ckamvyv6o282n" path="res://encounters/sprites/heartthrob/heartthrob_dance_00.png" id="44_poc14"]
+[ext_resource type="Texture2D" uid="uid://c5f2ocf1r4d8c" path="res://encounters/sprites/heartthrob/heartthrob_dance_02.png" id="45_6os6n"]
+[ext_resource type="Texture2D" uid="uid://b4whhj2jj4fld" path="res://encounters/sprites/heartthrob/heartthrob_dance_04.png" id="46_mogm2"]
+[ext_resource type="Texture2D" uid="uid://c2554hr5jonq1" path="res://encounters/sprites/heartthrob/heartthrob_dance_06.png" id="47_lnicc"]
+[ext_resource type="Texture2D" uid="uid://bdwp7bkqt4e8o" path="res://encounters/sprites/heartthrob/heartthrob_dance_08.png" id="48_lrevj"]
+[ext_resource type="Texture2D" uid="uid://c38okj2tusris" path="res://encounters/sprites/heartthrob/heartthrob_dance_10.png" id="49_tbehg"]
+[ext_resource type="Texture2D" uid="uid://dcqfqrpqsqmqk" path="res://encounters/sprites/heartthrob/heartthrob_dance_12.png" id="50_cc55u"]
+[ext_resource type="Texture2D" uid="uid://daogffy4u8vpp" path="res://encounters/sprites/heartthrob/heartthrob_dance_14.png" id="51_ks1b7"]
+[ext_resource type="Texture2D" uid="uid://dlfb341ncrfqc" path="res://encounters/sprites/heartthrob/heartthrob_dance_16.png" id="52_aftun"]
+[ext_resource type="Texture2D" uid="uid://duv4ypo1ufg6f" path="res://encounters/sprites/heartthrob/heartthrob_dance_18.png" id="53_ofe56"]
+[ext_resource type="Texture2D" uid="uid://cqr121frt2uus" path="res://encounters/sprites/heartthrob/heartthrob_dance_20.png" id="54_daxjp"]
+[ext_resource type="Texture2D" uid="uid://cf0618bg335ii" path="res://encounters/sprites/heartthrob/heartthrob_dance_22.png" id="55_nnsof"]
+[ext_resource type="Texture2D" uid="uid://2pb0mb78vfxg" path="res://encounters/sprites/heartthrob/heartthrob_dance_24.png" id="56_m0rtv"]
+[ext_resource type="Texture2D" uid="uid://bb14wx1mutcwb" path="res://encounters/sprites/heartthrob/heartthrob_dance_26.png" id="57_7r3ra"]
+[ext_resource type="Texture2D" uid="uid://bjfsfdepfx5h4" path="res://encounters/sprites/heartthrob/heartthrob_dance_28.png" id="58_buj3d"]
+[ext_resource type="Texture2D" uid="uid://dsrlvicrnlc6d" path="res://encounters/sprites/heartthrob/heartthrob_dance_30.png" id="59_q4t6s"]
+[ext_resource type="Texture2D" uid="uid://erxrp5amrfvo" path="res://encounters/sprites/heartthrob/heartthrob_dance_32.png" id="60_4kis7"]
+[ext_resource type="Texture2D" uid="uid://c4looudbp6jfa" path="res://encounters/sprites/heartthrob/heartthrob_dance_34.png" id="61_tb2v3"]
+[ext_resource type="Texture2D" uid="uid://x4b42b5cit4j" path="res://encounters/sprites/heartthrob/heartthrob_dance_36.png" id="62_yxugv"]
+[ext_resource type="Texture2D" uid="uid://bbmc1vqxiagg8" path="res://encounters/sprites/heartthrob/heartthrob_dance_38.png" id="63_w5a88"]
+[ext_resource type="Texture2D" uid="uid://bqtovjrc6oo7d" path="res://encounters/sprites/heartthrob/heartthrob_dance_40.png" id="64_mbggt"]
+[ext_resource type="Texture2D" uid="uid://qvj6xu4eduv1" path="res://encounters/sprites/older_brother/older_brother_dance_00.png" id="65_5pq8k"]
+[ext_resource type="Texture2D" uid="uid://dd54ojvvtinpu" path="res://encounters/sprites/older_brother/older_brother_dance_02.png" id="66_5wuuv"]
+[ext_resource type="Texture2D" uid="uid://blemnww3dmubm" path="res://encounters/sprites/older_brother/older_brother_dance_04.png" id="67_qh067"]
+[ext_resource type="Texture2D" uid="uid://bi7c8tcncgtgw" path="res://encounters/sprites/older_brother/older_brother_dance_06.png" id="68_0bmyg"]
+[ext_resource type="Texture2D" uid="uid://d08vow7g1sicm" path="res://encounters/sprites/older_brother/older_brother_dance_08.png" id="69_1omqq"]
+[ext_resource type="Texture2D" uid="uid://bkcup6m3381ev" path="res://encounters/sprites/older_brother/older_brother_dance_10.png" id="70_dsn8j"]
+[ext_resource type="Texture2D" uid="uid://vufojl2d7y6m" path="res://encounters/sprites/older_brother/older_brother_dance_12.png" id="71_gdq7e"]
+[ext_resource type="Texture2D" uid="uid://capeyvkpnf3sq" path="res://encounters/sprites/older_brother/older_brother_dance_14.png" id="72_q067t"]
+[ext_resource type="Texture2D" uid="uid://c1440cp52hknb" path="res://encounters/sprites/older_brother/older_brother_dance_16.png" id="73_gjww8"]
+[ext_resource type="Texture2D" uid="uid://cv58xdp8kxbd2" path="res://encounters/sprites/older_brother/older_brother_dance_18.png" id="74_nfjwm"]
+[ext_resource type="Texture2D" uid="uid://dqwp4mn8rlf0c" path="res://encounters/sprites/older_brother/older_brother_dance_20.png" id="75_wtew3"]
+[ext_resource type="Texture2D" uid="uid://de57j04b3ge86" path="res://encounters/sprites/older_brother/older_brother_dance_22.png" id="76_05x64"]
+[ext_resource type="Texture2D" uid="uid://dhvtyx0ybjrbm" path="res://encounters/sprites/older_brother/older_brother_dance_24.png" id="77_s58mr"]
+[ext_resource type="Texture2D" uid="uid://bxvjb5x1o601b" path="res://encounters/sprites/older_brother/older_brother_dance_26.png" id="78_hdy71"]
+[ext_resource type="Texture2D" uid="uid://bw32otyyrc3fo" path="res://encounters/sprites/older_brother/older_brother_dance_28.png" id="79_ddavd"]
+[ext_resource type="Texture2D" uid="uid://snqwvce1bgra" path="res://encounters/sprites/older_brother/older_brother_dance_30.png" id="80_pu3ae"]
+[ext_resource type="Texture2D" uid="uid://br5u8fyyqfh34" path="res://encounters/sprites/older_brother/older_brother_dance_32.png" id="81_le4dp"]
+[ext_resource type="Texture2D" uid="uid://dri2sxf81jlus" path="res://encounters/sprites/older_brother/older_brother_dance_34.png" id="82_ins2e"]
+[ext_resource type="Texture2D" uid="uid://cr2g6p0rrjutu" path="res://encounters/sprites/older_brother/older_brother_dance_36.png" id="83_bml7o"]
+[ext_resource type="Texture2D" uid="uid://br318uogksa6i" path="res://encounters/sprites/older_brother/older_brother_dance_38.png" id="84_5fcjq"]
+[ext_resource type="Texture2D" uid="uid://dfif2masd1cjo" path="res://encounters/sprites/older_brother/older_brother_dance_40.png" id="85_p73tj"]
+[ext_resource type="Texture2D" uid="uid://bmjkkh4rg8ngj" path="res://encounters/sprites/shy_one/shy_one_dance_00.png" id="86_y7plg"]
+[ext_resource type="Texture2D" uid="uid://c8vbwrbqij4k7" path="res://encounters/sprites/shy_one/shy_one_dance_02.png" id="87_p121d"]
+[ext_resource type="Texture2D" uid="uid://c70nxh57kfq2q" path="res://encounters/sprites/shy_one/shy_one_dance_04.png" id="88_5s5he"]
+[ext_resource type="Texture2D" uid="uid://b5q304w33krej" path="res://encounters/sprites/shy_one/shy_one_dance_06.png" id="89_40n81"]
+[ext_resource type="Texture2D" uid="uid://dq8mi76pglj1t" path="res://encounters/sprites/shy_one/shy_one_dance_08.png" id="90_17cx4"]
+[ext_resource type="Texture2D" uid="uid://c8c51qnif2iaa" path="res://encounters/sprites/shy_one/shy_one_dance_10.png" id="91_k2ycv"]
+[ext_resource type="Texture2D" uid="uid://j3766h7epv5g" path="res://encounters/sprites/shy_one/shy_one_dance_12.png" id="92_qvbmp"]
+[ext_resource type="Texture2D" uid="uid://dk4c1t2exvjg2" path="res://encounters/sprites/shy_one/shy_one_dance_14.png" id="93_wdjah"]
+[ext_resource type="Texture2D" uid="uid://dn6hrui5trdaq" path="res://encounters/sprites/shy_one/shy_one_dance_16.png" id="94_gdqnr"]
+[ext_resource type="Texture2D" uid="uid://cjqj51ooetrot" path="res://encounters/sprites/shy_one/shy_one_dance_18.png" id="95_pvh8v"]
+[ext_resource type="Texture2D" uid="uid://bv23xk1jg4wf5" path="res://encounters/sprites/shy_one/shy_one_dance_20.png" id="96_p4kgm"]
+[ext_resource type="Texture2D" uid="uid://dcgf6w2a7auft" path="res://encounters/sprites/shy_one/shy_one_dance_22.png" id="97_8lowx"]
+[ext_resource type="Texture2D" uid="uid://dqygdccsyx7hi" path="res://encounters/sprites/shy_one/shy_one_dance_24.png" id="98_31hfx"]
+[ext_resource type="Texture2D" uid="uid://bmjcpdbd8elkk" path="res://encounters/sprites/shy_one/shy_one_dance_26.png" id="99_ua60d"]
+[ext_resource type="Texture2D" uid="uid://ielkj143hpjm" path="res://encounters/sprites/shy_one/shy_one_dance_28.png" id="100_f0e8k"]
+[ext_resource type="Texture2D" uid="uid://b1nhlp0lqd23j" path="res://encounters/sprites/shy_one/shy_one_dance_30.png" id="101_sm8vv"]
+[ext_resource type="Texture2D" uid="uid://b70axqmklfbwn" path="res://encounters/sprites/shy_one/shy_one_dance_32.png" id="102_m0yfb"]
+[ext_resource type="Texture2D" uid="uid://b7iqtfm5v60gh" path="res://encounters/sprites/shy_one/shy_one_dance_34.png" id="103_eux8w"]
+[ext_resource type="Texture2D" uid="uid://0pnn2vb8nbda" path="res://encounters/sprites/shy_one/shy_one_dance_36.png" id="104_myirj"]
+[ext_resource type="Texture2D" uid="uid://dolrb8li21tct" path="res://encounters/sprites/shy_one/shy_one_dance_38.png" id="105_t70rr"]
+[ext_resource type="Texture2D" uid="uid://dc7xboerh60iu" path="res://encounters/sprites/shy_one/shy_one_dance_40.png" id="106_1p5rk"]
+
+[sub_resource type="Shader" id="Shader_raufn"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Border Noise,Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mdkyd"]
+shader = SubResource("Shader_raufn")
+shader_parameter/opacity = 1.0
+shader_parameter/BORDERNOISE_active = true
+shader_parameter/BORDERNOISE_max_line_width = 10.0
+shader_parameter/BORDERNOISE_min_line_width = 100.0
+shader_parameter/BORDERNOISE_freq = 12.0
+shader_parameter/BORDERNOISE_block_size = 20.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(0, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7n0u0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4g5nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jqm00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8f4dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_q0ji8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f8gly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fp0fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gdhm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ydlwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wuuf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mtwm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_jftlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pjkfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_7xcn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jg6vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_sybee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hdp52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_emypc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_5t7pt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_d2t8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8ymd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_65c2l")
+}],
+"loop": true,
+"name": &"dance1",
+"speed": 8.0
+}]
+
+[sub_resource type="Shader" id="Shader_6djqg"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Border Noise,Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vgbp6"]
+shader = SubResource("Shader_6djqg")
+shader_parameter/opacity = 1.0
+shader_parameter/BORDERNOISE_active = true
+shader_parameter/BORDERNOISE_max_line_width = 10.0
+shader_parameter/BORDERNOISE_min_line_width = 100.0
+shader_parameter/BORDERNOISE_freq = 12.0
+shader_parameter/BORDERNOISE_block_size = 20.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(0, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5url6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_0ovgg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_dsb2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_w1mpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ntd8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_mvrjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6a2fn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_8sv4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_p3oel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_bvj66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_587xi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ohrm3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_0wdvo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ykt53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_vpyl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ec7gy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_7ytwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_yghr4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_su8oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_ll6fj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_7h7dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uxx60")
+}],
+"loop": true,
+"name": &"dance1",
+"speed": 8.0
+}]
+
+[sub_resource type="Shader" id="Shader_o3hr6"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Border Noise,Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qeisb"]
+shader = SubResource("Shader_o3hr6")
+shader_parameter/opacity = 1.0
+shader_parameter/BORDERNOISE_active = true
+shader_parameter/BORDERNOISE_max_line_width = 10.0
+shader_parameter/BORDERNOISE_min_line_width = 100.0
+shader_parameter/BORDERNOISE_freq = 12.0
+shader_parameter/BORDERNOISE_block_size = 20.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(0, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nw8v7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_poc14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_6os6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_mogm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_lnicc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_lrevj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_tbehg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_cc55u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ks1b7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_aftun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_ofe56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_daxjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_nnsof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_m0rtv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_7r3ra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_buj3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_q4t6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_4kis7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_tb2v3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_yxugv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_w5a88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_mbggt")
+}],
+"loop": true,
+"name": &"dance1",
+"speed": 8.0
+}]
+
+[sub_resource type="Shader" id="Shader_n6exj"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Border Noise,Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_brcgh"]
+shader = SubResource("Shader_n6exj")
+shader_parameter/opacity = 1.0
+shader_parameter/BORDERNOISE_active = true
+shader_parameter/BORDERNOISE_max_line_width = 10.0
+shader_parameter/BORDERNOISE_min_line_width = 100.0
+shader_parameter/BORDERNOISE_freq = 12.0
+shader_parameter/BORDERNOISE_block_size = 20.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(0, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bqd80"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("65_5pq8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_5wuuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_qh067")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_0bmyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_1omqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_dsn8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_gdq7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_q067t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_gjww8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_nfjwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_wtew3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_05x64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_s58mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_hdy71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_ddavd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_pu3ae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_le4dp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_ins2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_bml7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_5fcjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_p73tj")
+}],
+"loop": true,
+"name": &"dance1",
+"speed": 8.0
+}]
+
+[sub_resource type="Shader" id="Shader_mq3dk"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Border Noise,Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kyonr"]
+shader = SubResource("Shader_mq3dk")
+shader_parameter/opacity = 1.0
+shader_parameter/BORDERNOISE_active = true
+shader_parameter/BORDERNOISE_max_line_width = 10.0
+shader_parameter/BORDERNOISE_min_line_width = 100.0
+shader_parameter/BORDERNOISE_freq = 12.0
+shader_parameter/BORDERNOISE_block_size = 20.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(0, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q7lol"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("86_y7plg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_p121d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_5s5he")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_40n81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_17cx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_k2ycv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_qvbmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_wdjah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_gdqnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_pvh8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_p4kgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_8lowx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_31hfx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_ua60d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_f0e8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_sm8vv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_m0yfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_eux8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_myirj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_t70rr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_1p5rk")
+}],
+"loop": true,
+"name": &"dance1",
+"speed": 8.0
+}]
+
+[sub_resource type="Shader" id="Shader_xhq5p"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Border Noise,Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6i5ni"]
+shader = SubResource("Shader_xhq5p")
+shader_parameter/opacity = 1.0
+shader_parameter/BORDERNOISE_active = true
+shader_parameter/BORDERNOISE_max_line_width = 10.0
+shader_parameter/BORDERNOISE_min_line_width = 100.0
+shader_parameter/BORDERNOISE_freq = 12.0
+shader_parameter/BORDERNOISE_block_size = 20.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(0, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_76q72"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4g5nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jqm00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8f4dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_q0ji8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f8gly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fp0fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gdhm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ydlwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wuuf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mtwm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_jftlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pjkfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_7xcn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jg6vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_sybee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hdp52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_emypc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_5t7pt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_d2t8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8ymd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_65c2l")
+}],
+"loop": true,
+"name": &"dance1",
+"speed": 8.0
+}]
+
+[sub_resource type="Shader" id="Shader_6htus"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Border Noise,Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_baowb"]
+shader = SubResource("Shader_6htus")
+shader_parameter/opacity = 1.0
+shader_parameter/BORDERNOISE_active = true
+shader_parameter/BORDERNOISE_max_line_width = 10.0
+shader_parameter/BORDERNOISE_min_line_width = 100.0
+shader_parameter/BORDERNOISE_freq = 12.0
+shader_parameter/BORDERNOISE_block_size = 20.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(0, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_revii"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_0ovgg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_dsb2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_w1mpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ntd8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_mvrjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6a2fn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_8sv4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_p3oel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_bvj66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_587xi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ohrm3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_0wdvo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ykt53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_vpyl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ec7gy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_7ytwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_yghr4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_su8oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_ll6fj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_7h7dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uxx60")
+}],
+"loop": true,
+"name": &"dance1",
+"speed": 8.0
+}]
+
+[sub_resource type="Shader" id="Shader_0tcmo"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Border Noise,Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_04gq5"]
+shader = SubResource("Shader_0tcmo")
+shader_parameter/opacity = 1.0
+shader_parameter/BORDERNOISE_active = true
+shader_parameter/BORDERNOISE_max_line_width = 10.0
+shader_parameter/BORDERNOISE_min_line_width = 100.0
+shader_parameter/BORDERNOISE_freq = 12.0
+shader_parameter/BORDERNOISE_block_size = 20.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(0, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_udiv5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_poc14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_6os6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_mogm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_lnicc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_lrevj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_tbehg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_cc55u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ks1b7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_aftun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_ofe56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_daxjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_nnsof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_m0rtv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_7r3ra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_buj3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_q4t6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_4kis7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_tb2v3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_yxugv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_w5a88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_mbggt")
+}],
+"loop": true,
+"name": &"dance1",
+"speed": 8.0
+}]
+
+[sub_resource type="Shader" id="Shader_wdrgq"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Border Noise,Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ghbrx"]
+shader = SubResource("Shader_wdrgq")
+shader_parameter/opacity = 1.0
+shader_parameter/BORDERNOISE_active = true
+shader_parameter/BORDERNOISE_max_line_width = 10.0
+shader_parameter/BORDERNOISE_min_line_width = 100.0
+shader_parameter/BORDERNOISE_freq = 12.0
+shader_parameter/BORDERNOISE_block_size = 20.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(0, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_17j7x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("65_5pq8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_5wuuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_qh067")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_0bmyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_1omqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_dsn8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_gdq7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_q067t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_gjww8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_nfjwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_wtew3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_05x64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_s58mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_hdy71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_ddavd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_pu3ae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_le4dp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_ins2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_bml7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_5fcjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_p73tj")
+}],
+"loop": true,
+"name": &"dance1",
+"speed": 8.0
+}]
+
+[sub_resource type="Shader" id="Shader_t7yc1"]
+code = "//ATTENTION:
+//  THIS IS SHADE AUTOGENERATED BY
+//  THE ADDON SPRITE-SHADER-MIXER
+//  ANY MANUAL CHANGES WILL BE REMOVED WHEN THE ADDON
+//  UPDATES THIS SHADER.
+//  ANYWAY, YOU CAN SAVE THE CURRENT VERSION AS A RESOURCE FILE.
+//SHADERS:Border Noise,Color Manipulator,Outline,
+shader_type canvas_item;
+
+uniform float opacity:hint_range(0.0, 1.0, 0.01)=1.;
+
+	
+uniform bool BORDERNOISE_active = true;
+uniform float BORDERNOISE_max_line_width:hint_range(0.0, 50.0, 0.1) = 10.0;
+uniform float BORDERNOISE_min_line_width:hint_range(0.0, 1000.0, 0.1) = 88.0;
+uniform float BORDERNOISE_freq:hint_range(0.0, 12.0, 0.1) = 1.0;
+uniform float BORDERNOISE_block_size:hint_range(0.0, 100.0, 0.1) = 20.0;
+uniform vec4 BORDERNOISE_starting_colour : source_color= vec4(0,0,0,1);
+uniform vec4 BORDERNOISE_ending_colour: source_color = vec4(1,0,0,1);
+const float BORDERNOISE_pi = 3.1415;
+const int BORDERNOISE_ang_res = 16;
+const int BORDERNOISE_grad_res = 8;
+float BORDERNOISE_hash(vec2 p, float s) {
+	return fract(35.1 * sin(dot(vec3(112.3, 459.2, 753.2), vec3(p, s))));
+}
+float BORDERNOISE_noise(vec2 p, float s) {
+	vec2 d = vec2(0, 1)*sin(TIME);
+	vec2 b = floor(p)*sin(TIME);
+	vec2 f = fract(p);
+	return mix(
+		mix(BORDERNOISE_hash(b + d.xx, s), BORDERNOISE_hash(b + d.yx, s), f.x),
+		mix(BORDERNOISE_hash(b + d.xy, s), BORDERNOISE_hash(b + d.yy, s), f.x), f.y);
+}
+float BORDERNOISE_getLineWidth(vec2 p, float s) {
+	p /= BORDERNOISE_block_size;
+	float w = 0.0;
+	float intensity = 1.0;
+	for (int i = 0; i < 3; i++) {
+		w = mix(w, BORDERNOISE_noise(p, s), intensity);
+		p /= 2.0;
+		intensity /= 2.0;
+	}
+	
+	return mix(BORDERNOISE_max_line_width, BORDERNOISE_min_line_width, w);
+}
+bool BORDERNOISE_pixelInRange(sampler2D text, vec2 uv, vec2 dist) {
+	float alpha = 0.0;
+	for (int i = 0; i < BORDERNOISE_ang_res; i++) {
+		float angle = 2.0 * BORDERNOISE_pi * float(i) / float(BORDERNOISE_ang_res);
+		vec2 disp = dist * vec2(cos(angle), sin(angle));
+		if (texture(text, uv + disp).a > 0.0) return true;
+	}
+	return false;
+}
+float BORDERNOISE_getClosestDistance(sampler2D text, vec2 uv, vec2 maxDist) {
+	if (!BORDERNOISE_pixelInRange(text, uv, maxDist)) return -1.0;
+	
+	float hi = 1.0; float lo = 0.0;
+	
+	for (int i = 1; i <= BORDERNOISE_grad_res; i++) {
+		float curr = (hi + lo) / 2.0;
+		if (BORDERNOISE_pixelInRange(text, uv, curr * maxDist)) {
+			hi = curr;
+		}
+		else {
+			lo = curr;
+		}
+	}
+	return hi;
+	
+}
+void borderNoise(in vec2 uv, in sampler2D txt, vec2 size, vec2 pixelSize, inout vec4 color){
+	float timeStep = floor(BORDERNOISE_freq * TIME);
+	vec2 scaledDist = pixelSize;
+	scaledDist *= BORDERNOISE_getLineWidth(uv / pixelSize, timeStep);
+	float w = BORDERNOISE_getClosestDistance(txt, uv, scaledDist);
+	
+	if (( w > 0.0) && (texture(txt, uv).a < 0.2)) {
+		color = mix(BORDERNOISE_starting_colour, BORDERNOISE_ending_colour, tanh(3.0*w));
+	}
+}
+//COLORMANIPULATOR
+uniform bool COLORMANIPULATOR_active = true;
+uniform float COLORMANIPULATOR_brightness : hint_range(-1, 1) = -1.0;
+uniform float COLORMANIPULATOR_contrast : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_saturation : hint_range(0, 3) = 3.0;
+uniform float COLORMANIPULATOR_redVal : hint_range(0, 1) = 1.0;
+uniform float COLORMANIPULATOR_greenVal : hint_range(0, 1) = 0.5;
+uniform float COLORMANIPULATOR_blueVal : hint_range(0, 1) = 1.0;
+uniform vec4 COLORMANIPULATOR_tint_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
+uniform float COLORMANIPULATOR_tint_effect_factor : hint_range(0, 1) = 0.0;
+//---------------------------------------------
+//CONTRAST
+//---------------------------------------------
+mat4 COLORMANIPULATOR_contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+//---------------------------------------------
+//BRIGHTNESS
+//---------------------------------------------
+mat4 COLORMANIPULATOR_brightnessMatrix( float _brightness ){
+    return mat4( vec4(1, 0, 0, 0),
+                 vec4(0, 1, 0, 0),
+                 vec4(0, 0, 1, 0),
+                 vec4(_brightness, _brightness, _brightness, 1));
+}
+//---------------------------------------------
+//SATURATION
+//---------------------------------------------
+mat4 COLORMANIPULATOR_saturationMatrix( float _saturation ){
+    vec3 luminance = vec3( 0.3086, 0.6094, 0.0820 );
+    float oneMinusSat = 1.0 - _saturation;
+	
+    vec3 red = vec3( luminance.x * oneMinusSat );
+    red+= vec3(_saturation, 0, 0)*COLORMANIPULATOR_redVal;
+    vec3 green = vec3( luminance.y * oneMinusSat );
+    green += vec3( 0,_saturation, 0 )*COLORMANIPULATOR_greenVal;
+    vec3 blue = vec3( luminance.z * oneMinusSat );
+    blue += vec3( 0, 0,_saturation )*COLORMANIPULATOR_blueVal;
+	
+    return mat4(vec4(red, 0),vec4(green,0),vec4(blue,0),vec4(0, 0, 0, 1));
+}
+void colorManipulator(in vec2 uv, in sampler2D sampler, vec2 size, vec2 pixelSize, inout vec4 color){
+	vec4 c2 = color * COLORMANIPULATOR_tint_color;
+	color = COLORMANIPULATOR_brightnessMatrix( COLORMANIPULATOR_brightness ) * COLORMANIPULATOR_contrastMatrix( COLORMANIPULATOR_contrast ) * COLORMANIPULATOR_saturationMatrix( COLORMANIPULATOR_saturation ) * mix(color, c2, COLORMANIPULATOR_tint_effect_factor);
+}
+//OUTLINE
+uniform bool  OUTLINE_active  = true;
+uniform float OUTLINE_thickness : hint_range(0, 30) = 20.0;
+uniform vec4  OUTLINE_color : source_color = vec4(1,0,0,1);
+void outline(in vec2 uv, in sampler2D tex, in vec2 spriteSize, in vec2 pixelSize, inout vec4 color) {
+    vec2 size = vec2(OUTLINE_thickness) / spriteSize;
+	   
+    float alpha = color.a;
+    alpha += texture(tex, uv + vec2(0.0, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, -size.y)).a;
+    alpha += texture(tex, uv + vec2(size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(0.0, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, size.y)).a;
+    alpha += texture(tex, uv + vec2(-size.x, 0.0)).a;
+    alpha += texture(tex, uv + vec2(-size.x, -size.y)).a;
+   
+    vec3 final_color = mix(OUTLINE_color.rgb, color.rgb, color.a);
+    color = vec4(final_color, clamp(alpha, 0.0, 1.0));
+}
+
+void fragment() {
+	vec4 color = texture(TEXTURE, UV);
+	vec2 size = vec2(textureSize(TEXTURE, 0));
+	vec2 uv = UV;
+	vec2 screen_uv = SCREEN_UV;
+
+	if(BORDERNOISE_active) borderNoise(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(COLORMANIPULATOR_active) colorManipulator(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+	if(OUTLINE_active) outline(uv, TEXTURE, size, TEXTURE_PIXEL_SIZE, color);
+
+
+	color.a*=opacity;
+	COLOR=color;
+}
+
+void vertex() {
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lk46i"]
+shader = SubResource("Shader_t7yc1")
+shader_parameter/opacity = 1.0
+shader_parameter/BORDERNOISE_active = true
+shader_parameter/BORDERNOISE_max_line_width = 10.0
+shader_parameter/BORDERNOISE_min_line_width = 100.0
+shader_parameter/BORDERNOISE_freq = 12.0
+shader_parameter/BORDERNOISE_block_size = 20.0
+shader_parameter/BORDERNOISE_starting_colour = Color(0, 0, 0, 1)
+shader_parameter/BORDERNOISE_ending_colour = Color(0, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_active = true
+shader_parameter/COLORMANIPULATOR_brightness = -0.075
+shader_parameter/COLORMANIPULATOR_contrast = 1.5
+shader_parameter/COLORMANIPULATOR_saturation = 1.0
+shader_parameter/COLORMANIPULATOR_redVal = 1.0
+shader_parameter/COLORMANIPULATOR_greenVal = 1.0
+shader_parameter/COLORMANIPULATOR_blueVal = 1.0
+shader_parameter/COLORMANIPULATOR_tint_color = Color(1, 1, 1, 1)
+shader_parameter/COLORMANIPULATOR_tint_effect_factor = 0.0
+shader_parameter/OUTLINE_active = true
+shader_parameter/OUTLINE_thickness = 2.0
+shader_parameter/OUTLINE_color = Color(0.196078, 0.196078, 0.196078, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_64l8c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("86_y7plg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_p121d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_5s5he")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_40n81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_17cx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_k2ycv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_qvbmp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_wdjah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_gdqnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_pvh8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_p4kgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_8lowx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_31hfx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_ua60d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_f0e8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_sm8vv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_m0yfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_eux8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_myirj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_t70rr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_1p5rk")
+}],
+"loop": true,
+"name": &"dance1",
+"speed": 8.0
+}]
+
+[node name="DanceScene" type="Node2D"]
+script = ExtResource("1_abug7")
+
+[node name="RightDancer" type="Node2D" parent="."]
+position = Vector2(1116, 681)
+scale = Vector2(1.5, 1.5)
+
+[node name="BadBoy" type="AnimatedSprite2D" parent="RightDancer"]
+material = SubResource("ShaderMaterial_mdkyd")
+sprite_frames = SubResource("SpriteFrames_7n0u0")
+animation = &"dance1"
+autoplay = "dance1"
+
+[node name="CuteOne" type="AnimatedSprite2D" parent="RightDancer"]
+visible = false
+material = SubResource("ShaderMaterial_vgbp6")
+sprite_frames = SubResource("SpriteFrames_5url6")
+animation = &"dance1"
+autoplay = "dance1"
+
+[node name="Heartthrob" type="AnimatedSprite2D" parent="RightDancer"]
+visible = false
+material = SubResource("ShaderMaterial_qeisb")
+sprite_frames = SubResource("SpriteFrames_nw8v7")
+animation = &"dance1"
+autoplay = "dance1"
+
+[node name="OlderBrother" type="AnimatedSprite2D" parent="RightDancer"]
+visible = false
+material = SubResource("ShaderMaterial_brcgh")
+sprite_frames = SubResource("SpriteFrames_bqd80")
+animation = &"dance1"
+autoplay = "dance1"
+
+[node name="ShyOne" type="AnimatedSprite2D" parent="RightDancer"]
+visible = false
+material = SubResource("ShaderMaterial_kyonr")
+sprite_frames = SubResource("SpriteFrames_q7lol")
+animation = &"dance1"
+autoplay = "dance1"
+
+[node name="LeftDancer" type="Node2D" parent="."]
+position = Vector2(203, 663)
+scale = Vector2(1.5, 1.5)
+
+[node name="BadBoy" type="AnimatedSprite2D" parent="LeftDancer"]
+visible = false
+material = SubResource("ShaderMaterial_6i5ni")
+sprite_frames = SubResource("SpriteFrames_76q72")
+animation = &"dance1"
+autoplay = "dance1"
+
+[node name="CuteOne" type="AnimatedSprite2D" parent="LeftDancer"]
+visible = false
+material = SubResource("ShaderMaterial_baowb")
+sprite_frames = SubResource("SpriteFrames_revii")
+animation = &"dance1"
+autoplay = "dance1"
+
+[node name="Heartthrob" type="AnimatedSprite2D" parent="LeftDancer"]
+visible = false
+material = SubResource("ShaderMaterial_04gq5")
+sprite_frames = SubResource("SpriteFrames_udiv5")
+animation = &"dance1"
+autoplay = "dance1"
+
+[node name="OlderBrother" type="AnimatedSprite2D" parent="LeftDancer"]
+visible = false
+material = SubResource("ShaderMaterial_ghbrx")
+sprite_frames = SubResource("SpriteFrames_17j7x")
+animation = &"dance1"
+autoplay = "dance1"
+
+[node name="ShyOne" type="AnimatedSprite2D" parent="LeftDancer"]
+material = SubResource("ShaderMaterial_lk46i")
+sprite_frames = SubResource("SpriteFrames_64l8c")
+animation = &"dance1"
+autoplay = "dance1"
+frame = 12
+frame_progress = 0.254157

@@ -1,0 +1,319 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6nt17rtl6lt4"]
+
+[ext_resource type="Script" path="res://ui/about/about_canvas.gd" id="1_jki0g"]
+[ext_resource type="Texture2D" uid="uid://6mn5a1s4p8u7" path="res://encounters/encounter_backgrounds/01.png" id="1_uo5wo"]
+[ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="2_k7o4a"]
+[ext_resource type="FontFile" uid="uid://baihxtltbmli8" path="res://fonts/VIPNAGORGIALLA RG.OTF" id="3_l88dv"]
+[ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="5_3qxpa"]
+
+[node name="AboutCanvas" type="Node2D"]
+script = ExtResource("1_jki0g")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_uo5wo")
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+self_modulate = Color(0, 0, 0, 1)
+offset_right = 1366.0
+offset_bottom = 768.0
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -201.5
+offset_top = 60.0
+offset_right = 201.5
+offset_bottom = 181.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_k7o4a")
+theme_override_font_sizes/font_size = 100
+text = "About"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="LeftPanel" type="Panel" parent="CanvasLayer/Panel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -100.0
+offset_top = 210.0
+offset_right = 583.0
+offset_bottom = 794.0
+
+[node name="CreatorsTitleLabel" type="Label" parent="CanvasLayer/Panel/LeftPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Created by:"
+horizontal_alignment = 2
+
+[node name="JamTitleLabel" type="Label" parent="CanvasLayer/Panel/LeftPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -230.0
+offset_top = 55.0
+offset_bottom = 92.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Created for:"
+horizontal_alignment = 2
+
+[node name="ToolsTitleLabel" type="Label" parent="CanvasLayer/Panel/LeftPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -255.0
+offset_top = 110.0
+offset_bottom = 147.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Created in:"
+horizontal_alignment = 2
+
+[node name="CharacterAssetsTitleLabel" type="Label" parent="CanvasLayer/Panel/LeftPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -351.0
+offset_top = 165.0
+offset_bottom = 202.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Character Assets:"
+horizontal_alignment = 2
+
+[node name="EnvironmentAssetsTitleLabel" type="Label" parent="CanvasLayer/Panel/LeftPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -404.0
+offset_top = 220.0
+offset_bottom = 257.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Environment Assets:"
+horizontal_alignment = 2
+
+[node name="ImageManipulationTitleLabel" type="Label" parent="CanvasLayer/Panel/LeftPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -404.0
+offset_top = 275.0
+offset_bottom = 312.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Image Manipulation:"
+horizontal_alignment = 2
+
+[node name="SoundTitleLabel" type="Label" parent="CanvasLayer/Panel/LeftPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -404.0
+offset_top = 330.0
+offset_bottom = 367.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Sound & Music:"
+horizontal_alignment = 2
+
+[node name="RightPanel" type="Panel" parent="CanvasLayer/Panel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 603.0
+offset_top = 210.0
+offset_right = 1286.0
+offset_bottom = 794.0
+
+[node name="CratorsValueLabel" type="Label" parent="CanvasLayer/Panel/RightPanel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.617176, 1, 0.995675, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Alex K. Masse & Brad Neal"
+
+[node name="JamValueLabel" type="Label" parent="CanvasLayer/Panel/RightPanel"]
+layout_mode = 0
+offset_top = 55.0
+offset_right = 282.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(0.617176, 1, 0.995675, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "GlamJam 2025"
+
+[node name="ToolsValueLabel" type="Label" parent="CanvasLayer/Panel/RightPanel"]
+layout_mode = 0
+offset_top = 110.0
+offset_right = 282.0
+offset_bottom = 147.0
+theme_override_colors/font_color = Color(0.617176, 1, 0.995675, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Godot Engine 4.3"
+
+[node name="CharacterAssetsValueLabel" type="Label" parent="CanvasLayer/Panel/RightPanel"]
+layout_mode = 0
+offset_top = 165.0
+offset_right = 416.0
+offset_bottom = 202.0
+theme_override_colors/font_color = Color(0.617176, 1, 0.995675, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Adobe Fuse & Mixamo"
+
+[node name="EnvironmentAssetsValueLabel" type="Label" parent="CanvasLayer/Panel/RightPanel"]
+layout_mode = 0
+offset_top = 220.0
+offset_right = 652.0
+offset_bottom = 257.0
+theme_override_colors/font_color = Color(0.617176, 1, 0.995675, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Sourced from Stock Photography"
+
+[node name="ImageManipulationValueLabel" type="Label" parent="CanvasLayer/Panel/RightPanel"]
+layout_mode = 0
+offset_top = 275.0
+offset_right = 652.0
+offset_bottom = 312.0
+theme_override_colors/font_color = Color(0.617176, 1, 0.995675, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "GIMP"
+
+[node name="SoundValueLabel" type="Label" parent="CanvasLayer/Panel/RightPanel"]
+layout_mode = 0
+offset_top = 330.0
+offset_right = 652.0
+offset_bottom = 367.0
+theme_override_colors/font_color = Color(0.617176, 1, 0.995675, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_l88dv")
+theme_override_font_sizes/font_size = 30
+text = "Audacity(??)
+(What Else?)"
+
+[node name="SkipButton" type="Button" parent="CanvasLayer"]
+offset_left = 1242.0
+offset_top = 63.0
+offset_right = 1335.0
+offset_bottom = 111.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("5_3qxpa")
+theme_override_font_sizes/font_size = 12
+text = "Exit
+About"
+
+[connection signal="pressed" from="CanvasLayer/SkipButton" to="." method="_on_skip_button_pressed"]

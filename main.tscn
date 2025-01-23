@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://pfkhviqoewvu"]
+[gd_scene load_steps=19 format=3 uid="uid://pfkhviqoewvu"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_dohkk"]
 [ext_resource type="PackedScene" uid="uid://b243as163oakm" path="res://ui/start_menu.tscn" id="2_io0c7"]
@@ -15,6 +15,7 @@
 [ext_resource type="FontFile" uid="uid://c4myb8bqhxmi8" path="res://fonts/VIPNAGORGIALLA BD IT.OTF" id="8_ahwc8"]
 [ext_resource type="Script" path="res://ui/level_up_alert_node.gd" id="8_n1g8s"]
 [ext_resource type="Texture2D" uid="uid://3gf4gj10fgrw" path="res://ui/assets/flash-light-effect-free-png.png" id="8_rhnxp"]
+[ext_resource type="PackedScene" uid="uid://b6nt17rtl6lt4" path="res://ui/about/about_canvas.tscn" id="9_5w1gm"]
 
 [sub_resource type="Shader" id="Shader_r7w82"]
 code = "//ATTENTION:
@@ -76,9 +77,11 @@ script = ExtResource("1_dohkk")
 start_menu_scene = ExtResource("2_io0c7")
 environment_scenes = Array[PackedScene]([ExtResource("2_k7bvf"), ExtResource("3_df7po"), ExtResource("5_lrfvk"), ExtResource("6_yl0d2"), ExtResource("7_4gt60")])
 tutorial_canvas_scene = ExtResource("6_ppfua")
+about_canvas_scene = ExtResource("9_5w1gm")
 deck_tutorial_scene = ExtResource("7_vkm1r")
 splash_screen_scene = ExtResource("7_qpj5w")
 start_scene_name = "environment_00.tscn"
+start_with_splash = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2

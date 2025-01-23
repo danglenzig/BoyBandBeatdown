@@ -8,6 +8,7 @@ var misc_tools: MiscTools
 @export var environment_scenes: Array[PackedScene]
 #@export var tutorial_scene: PackedScene
 @export var tutorial_canvas_scene: PackedScene
+@export var about_canvas_scene: PackedScene
 @export var deck_tutorial_scene: PackedScene
 @export var splash_screen_scene: PackedScene
 var splash_screen: Control = null
@@ -22,6 +23,7 @@ var hud_panel: HudPanel
 signal change_scene()
 signal start_button_pressed()
 signal howto_button_pressed()
+signal about_button_pressed()
 
 var environment_01_exit_placeholder_marker_name = ""
 
@@ -41,6 +43,7 @@ func _ready():
 	change_scene.connect(load_environment)
 	start_button_pressed.connect(start_new_game)
 	howto_button_pressed.connect(start_tutorial_sequence)
+	about_button_pressed.connect(display_about)
 	
 	if start_with_splash:
 		splash_screen = splash_screen_scene.instantiate()
@@ -150,6 +153,12 @@ func start_tutorial_sequence(called_from: String):
 		"ENCOUNTER":
 			pass
 	
+func display_about()->void:
+	var about_canvas: AboutCanvas = about_canvas_scene.instantiate()
+	hud_panel.visible = false
+	var start_menu: StartMenu = get_node("StartMenu")
+	start_menu.call_deferred("queue_free")
+	call_deferred("add_child", about_canvas)
 	
 	
 func start_new_game():

@@ -633,11 +633,10 @@ shader_parameter/PULSE_full_pulse_cycle = true
 material = SubResource("ShaderMaterial_rn0wh")
 position = Vector2(0, -333)
 sprite_frames = SubResource("SpriteFrames_r5tr2")
-animation = &"win"
+animation = &"attack_1"
 autoplay = "idle"
-frame = 21
-frame_progress = 0.516885
 script = ExtResource("86_l353t")
+impact_frame_number = 11
 
 [node name="FlashEffectSprite" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_k25dt")

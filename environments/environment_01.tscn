@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_mlaec"]
 [ext_resource type="Script" path="res://environments/game_camera.gd" id="3_3hvqu"]
 [ext_resource type="Script" path="res://environments/z_scaler.gd" id="4_jwenf"]
-[ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="5_lb3wf"]
 [ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="7_4t4tq"]
 [ext_resource type="Script" path="res://environments/exit_trigger.gd" id="7_n6j3s"]
 [ext_resource type="PackedScene" uid="uid://o24c0cdr71es" path="res://environments/prop_scenes/environment_01_basketball_hoop_prop.tscn" id="7_w26um"]
@@ -21,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bvj7m38twjg61" path="res://environments/prop_scenes/environment_01_bush_05.tscn" id="17_jkyb5"]
 [ext_resource type="Script" path="res://environments/npc_spawner.gd" id="20_q08xd"]
 [ext_resource type="PackedScene" uid="uid://bcsqeqj7mqw3j" path="res://npcs/dana/dana_sprite.tscn" id="21_5k5xt"]
+[ext_resource type="PackedScene" uid="uid://tlcdwevu6gdm" path="res://npcs/kaci/kaci_sprite.tscn" id="22_deqt8"]
 [ext_resource type="PackedScene" uid="uid://dlr0dc5072t10" path="res://npcs/heather/heather_sprite.tscn" id="22_wodhg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wegb6"]
@@ -317,7 +317,7 @@ shape = SubResource("RectangleShape2D_nqnr2")
 
 [node name="NpcSpawner" type="Node" parent="."]
 script = ExtResource("20_q08xd")
-npc_scenes = Array[PackedScene]([ExtResource("7_4t4tq"), ExtResource("5_lb3wf"), ExtResource("21_5k5xt"), ExtResource("22_wodhg")])
+npc_scenes = Array[PackedScene]([ExtResource("7_4t4tq"), ExtResource("21_5k5xt"), ExtResource("22_wodhg"), ExtResource("22_deqt8")])
 
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 

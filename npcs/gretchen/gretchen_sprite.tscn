@@ -1,9 +1,39 @@
-[gd_scene load_steps=9 format=3 uid="uid://bihf2ljwlb42y"]
+[gd_scene load_steps=39 format=3 uid="uid://bihf2ljwlb42y"]
 
 [ext_resource type="Script" path="res://npcs/npc_sprite.gd" id="1_j7l1i"]
-[ext_resource type="Texture2D" uid="uid://btyesdgflvt74" path="res://npcs/gretchen/gretchen_idle_100.png" id="2_qgkpn"]
+[ext_resource type="Texture2D" uid="uid://drkc827je8xrs" path="res://npcs/new_idles/gretchen_new_idle_01.png" id="2_pfima"]
 [ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="3_0shs6"]
+[ext_resource type="Texture2D" uid="uid://b6gth5wx4i4rb" path="res://npcs/new_idles/gretchen_new_idle_03.png" id="3_ci3ss"]
 [ext_resource type="Script" path="res://dialogue/npc_dialogue.gd" id="4_5bh7o"]
+[ext_resource type="Texture2D" uid="uid://bur0silrbks6s" path="res://npcs/new_idles/gretchen_new_idle_05.png" id="4_ds5vb"]
+[ext_resource type="Texture2D" uid="uid://02x28b8fbe1n" path="res://npcs/new_idles/gretchen_new_idle_07.png" id="5_xr4yw"]
+[ext_resource type="Texture2D" uid="uid://bb77hsshqqmrb" path="res://npcs/new_idles/gretchen_new_idle_09.png" id="6_6ykjd"]
+[ext_resource type="Texture2D" uid="uid://gywkuncwlc5n" path="res://npcs/new_idles/gretchen_new_idle_11.png" id="7_nb1d3"]
+[ext_resource type="Texture2D" uid="uid://4g1iwl5etfii" path="res://npcs/new_idles/gretchen_new_idle_13.png" id="8_swyvp"]
+[ext_resource type="Texture2D" uid="uid://chj1oys215eb1" path="res://npcs/new_idles/gretchen_new_idle_15.png" id="9_4p421"]
+[ext_resource type="Texture2D" uid="uid://c7ydumvquijpu" path="res://npcs/new_idles/gretchen_new_idle_17.png" id="10_ehvmx"]
+[ext_resource type="Texture2D" uid="uid://b5u3ej6jd8ini" path="res://npcs/new_idles/gretchen_new_idle_19.png" id="11_7yf1l"]
+[ext_resource type="Texture2D" uid="uid://ca5n015ufl7ym" path="res://npcs/new_idles/gretchen_new_idle_21.png" id="12_jfmcn"]
+[ext_resource type="Texture2D" uid="uid://beu35jrxuwxda" path="res://npcs/new_idles/gretchen_new_idle_23.png" id="13_8tqpq"]
+[ext_resource type="Texture2D" uid="uid://d0u0tiwhun6vl" path="res://npcs/new_idles/gretchen_new_idle_25.png" id="14_r0bbb"]
+[ext_resource type="Texture2D" uid="uid://ch23s1tg03m15" path="res://npcs/new_idles/gretchen_new_idle_27.png" id="15_qvsc5"]
+[ext_resource type="Texture2D" uid="uid://elaedo8cy3u0" path="res://npcs/new_idles/gretchen_new_idle_29.png" id="16_5f12l"]
+[ext_resource type="Texture2D" uid="uid://0ypp54800w6h" path="res://npcs/new_idles/gretchen_new_idle_31.png" id="17_mbsea"]
+[ext_resource type="Texture2D" uid="uid://db6twfdl3sxk1" path="res://npcs/new_idles/gretchen_new_idle_33.png" id="18_t7lg7"]
+[ext_resource type="Texture2D" uid="uid://bfqgfheekp3lt" path="res://npcs/new_idles/gretchen_new_idle_35.png" id="19_hlmly"]
+[ext_resource type="Texture2D" uid="uid://w7cdaqsmnrud" path="res://npcs/new_idles/gretchen_new_idle_37.png" id="20_olenr"]
+[ext_resource type="Texture2D" uid="uid://y025nf5p5pnl" path="res://npcs/new_idles/gretchen_new_idle_39.png" id="21_m8pay"]
+[ext_resource type="Texture2D" uid="uid://26n3v0nfhs1v" path="res://npcs/new_idles/gretchen_new_idle_41.png" id="22_1q0kg"]
+[ext_resource type="Texture2D" uid="uid://b41btorjhjil4" path="res://npcs/new_idles/gretchen_new_idle_43.png" id="23_d55ie"]
+[ext_resource type="Texture2D" uid="uid://n5vp5r6mihi4" path="res://npcs/new_idles/gretchen_new_idle_45.png" id="24_ja10d"]
+[ext_resource type="Texture2D" uid="uid://b7soe7jvl2d61" path="res://npcs/new_idles/gretchen_new_idle_47.png" id="25_3kpfp"]
+[ext_resource type="Texture2D" uid="uid://chjcftwrb5n8g" path="res://npcs/new_idles/gretchen_new_idle_49.png" id="26_p41b3"]
+[ext_resource type="Texture2D" uid="uid://bwbnlfrkxnynk" path="res://npcs/new_idles/gretchen_new_idle_51.png" id="27_vhs1h"]
+[ext_resource type="Texture2D" uid="uid://yalcy54rol6l" path="res://npcs/new_idles/gretchen_new_idle_53.png" id="28_wt4hv"]
+[ext_resource type="Texture2D" uid="uid://c22ps51kd3tpr" path="res://npcs/new_idles/gretchen_new_idle_55.png" id="29_dg0k0"]
+[ext_resource type="Texture2D" uid="uid://bl8owl2r8vy7f" path="res://npcs/new_idles/gretchen_new_idle_57.png" id="30_u7807"]
+[ext_resource type="Texture2D" uid="uid://bnyuceocekkvv" path="res://npcs/new_idles/gretchen_new_idle_59.png" id="31_wq5qy"]
+[ext_resource type="Texture2D" uid="uid://doxvj8wninwoy" path="res://npcs/new_idles/gretchen_new_idle_61.png" id="32_f57yy"]
 
 [sub_resource type="Shader" id="Shader_macnj"]
 code = "//ATTENTION:
@@ -232,11 +262,101 @@ shader_parameter/SHADOW_mix = 0.66
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_qgkpn")
+"texture": ExtResource("2_pfima")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ci3ss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ds5vb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xr4yw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6ykjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nb1d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_swyvp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4p421")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ehvmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7yf1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_jfmcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8tqpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_r0bbb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_qvsc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_5f12l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mbsea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_t7lg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_hlmly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_olenr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_m8pay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_1q0kg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_d55ie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ja10d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3kpfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_p41b3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_vhs1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_wt4hv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_dg0k0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_u7807")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_wq5qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_f57yy")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kr2rl"]
@@ -256,6 +376,9 @@ material = SubResource("ShaderMaterial_5x018")
 position = Vector2(0, -155)
 sprite_frames = SubResource("SpriteFrames_4x16k")
 animation = &"idle"
+autoplay = "idle"
+frame = 3
+frame_progress = 0.994475
 
 [node name="EncounterUI" type="Node2D" parent="."]
 position = Vector2(0, -169)

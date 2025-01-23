@@ -24,7 +24,7 @@ var player_state_chart: StateChart 	= null
 var current_state: String 	= ""
 var previous_state: String 	= ""
 
-
+var can_move = false
 
 func _ready():
 	misc.player_on_exit_cooldown = true
@@ -38,6 +38,10 @@ func _ready():
 	
 	await get_tree().create_timer(0.1).timeout
 	spawn_ally()
+	
+	while input_handler.move_input.length() != 0:
+		await get_tree().create_timer(0.05).timeout
+	can_move = true
 	
 
 func _process(_delta):
@@ -97,7 +101,7 @@ func _physics_process(_delta):
 	
 	match current_state:
 		"IDLE":
-			if input_handler.move_input != Vector2.ZERO:
+			if input_handler.move_input != Vector2.ZERO and can_move:
 				player_state_chart.send_event("to_moving_event")
 				return
 		"MOVING":

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp6jsha8uwmkc"]
+
+[ext_resource type="Script" path="res://environments/prop_sprite.gd" id="1_7alwg"]
+[ext_resource type="Texture2D" uid="uid://uxa1em8xboig" path="res://npcs/dana/dana_idle_00.png" id="2_7maw2"]
+
+[node name="DanaProp" type="Node2D"]
+script = ExtResource("1_7alwg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -167)
+texture = ExtResource("2_7maw2")

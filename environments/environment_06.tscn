@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cu0n05p4spkcb"]
+[gd_scene load_steps=28 format=3 uid="uid://cu0n05p4spkcb"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_6g3cj"]
 [ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_dt8cx"]
@@ -7,6 +7,8 @@
 [ext_resource type="Script" path="res://environments/z_scaler.gd" id="5_ah76c"]
 [ext_resource type="Script" path="res://environments/npc_spawner.gd" id="6_ba4bq"]
 [ext_resource type="Script" path="res://environments/exit_trigger.gd" id="6_c0g33"]
+[ext_resource type="PackedScene" uid="uid://dp6jsha8uwmkc" path="res://environments/prop_scenes/dana_prop.tscn" id="6_rn3ox"]
+[ext_resource type="PackedScene" uid="uid://dx32fgnld1aj1" path="res://environments/prop_scenes/kaci_prop.tscn" id="7_fssxo"]
 [ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="7_svbhx"]
 [ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="8_2fw8y"]
 [ext_resource type="PackedScene" uid="uid://33rho0ehl6wp" path="res://npcs/tammy/tammy_sprite.tscn" id="10_u4etd"]
@@ -101,6 +103,14 @@ position = Vector2(413, 693)
 
 [node name="PropHolder" type="Node2D" parent="."]
 
+[node name="DanaProp" parent="PropHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("6_rn3ox")]
+position = Vector2(1150, 651)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="KaciProp" parent="PropHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("7_fssxo")]
+position = Vector2(1036, 637)
+z_scaler = NodePath("../../ZScaler")
+
 [node name="EnvironmentBlockers" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnvironmentBlockers"]
@@ -129,7 +139,6 @@ shape = SubResource("RectangleShape2D_roq84")
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="EnvironmentBlockers"]
 position = Vector2(281.136, 651.59)
 rotation = 0.0698131
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_gfjmn")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="EnvironmentBlockers"]

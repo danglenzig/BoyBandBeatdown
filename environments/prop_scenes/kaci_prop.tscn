@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dx32fgnld1aj1"]
+
+[ext_resource type="Script" path="res://environments/prop_sprite.gd" id="1_yvo0v"]
+[ext_resource type="Texture2D" uid="uid://ceufo0qdp1t2u" path="res://npcs/new_idles/kaci_new_idle_01.png" id="2_l66nc"]
+
+[node name="KaciProp" type="Node2D"]
+script = ExtResource("1_yvo0v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -174)
+texture = ExtResource("2_l66nc")

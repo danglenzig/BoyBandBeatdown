@@ -1,9 +1,39 @@
-[gd_scene load_steps=9 format=3 uid="uid://draw6d8dxgu4k"]
+[gd_scene load_steps=39 format=3 uid="uid://draw6d8dxgu4k"]
 
-[ext_resource type="Texture2D" uid="uid://deu6jxy01sir1" path="res://npcs/marcie/marcie_explore_idle_00.png" id="1_ohqcv"]
 [ext_resource type="Script" path="res://npcs/npc_sprite.gd" id="2_0fk45"]
+[ext_resource type="Texture2D" uid="uid://dstkxjdwmn6jw" path="res://npcs/new_idles/marcie_new_idle_01.png" id="2_1trk3"]
 [ext_resource type="FontFile" uid="uid://dwswy8wy1p2tm" path="res://fonts/VIPNAGORGIALLA BD.OTF" id="3_yfalk"]
+[ext_resource type="Texture2D" uid="uid://bbxisq78dubt8" path="res://npcs/new_idles/marcie_new_idle_03.png" id="3_yoivx"]
+[ext_resource type="Texture2D" uid="uid://1fdurnarg2ho" path="res://npcs/new_idles/marcie_new_idle_05.png" id="4_g15tb"]
 [ext_resource type="Script" path="res://dialogue/npc_dialogue.gd" id="4_yejwd"]
+[ext_resource type="Texture2D" uid="uid://bwh8o74buce6s" path="res://npcs/new_idles/marcie_new_idle_07.png" id="5_t7bsm"]
+[ext_resource type="Texture2D" uid="uid://bojbenr6brib6" path="res://npcs/new_idles/marcie_new_idle_09.png" id="6_cei2y"]
+[ext_resource type="Texture2D" uid="uid://bswe4yvqvqupk" path="res://npcs/new_idles/marcie_new_idle_11.png" id="7_6xjes"]
+[ext_resource type="Texture2D" uid="uid://dive6u0t8vmyx" path="res://npcs/new_idles/marcie_new_idle_13.png" id="8_85yho"]
+[ext_resource type="Texture2D" uid="uid://bkwjsm2c0ox54" path="res://npcs/new_idles/marcie_new_idle_15.png" id="9_i1jdr"]
+[ext_resource type="Texture2D" uid="uid://cyx48ftgmeo1n" path="res://npcs/new_idles/marcie_new_idle_17.png" id="10_eqvo5"]
+[ext_resource type="Texture2D" uid="uid://di7xr7nykxpdx" path="res://npcs/new_idles/marcie_new_idle_19.png" id="11_spnco"]
+[ext_resource type="Texture2D" uid="uid://l7fm68g5keed" path="res://npcs/new_idles/marcie_new_idle_21.png" id="12_47kgs"]
+[ext_resource type="Texture2D" uid="uid://basdcei3lwsqp" path="res://npcs/new_idles/marcie_new_idle_23.png" id="13_qnjjt"]
+[ext_resource type="Texture2D" uid="uid://ooy4kgqx86xj" path="res://npcs/new_idles/marcie_new_idle_25.png" id="14_i2om1"]
+[ext_resource type="Texture2D" uid="uid://dnw2uw7egyu2d" path="res://npcs/new_idles/marcie_new_idle_27.png" id="15_yt5ef"]
+[ext_resource type="Texture2D" uid="uid://dyv6k6pt8lt31" path="res://npcs/new_idles/marcie_new_idle_29.png" id="16_j4y1r"]
+[ext_resource type="Texture2D" uid="uid://dndakcwxld5v5" path="res://npcs/new_idles/marcie_new_idle_31.png" id="17_os5h1"]
+[ext_resource type="Texture2D" uid="uid://crwgjcyegyifp" path="res://npcs/new_idles/marcie_new_idle_33.png" id="18_sr5b8"]
+[ext_resource type="Texture2D" uid="uid://cvpccid54pss3" path="res://npcs/new_idles/marcie_new_idle_35.png" id="19_u8s4f"]
+[ext_resource type="Texture2D" uid="uid://m6suueo63gu7" path="res://npcs/new_idles/marcie_new_idle_37.png" id="20_fht7w"]
+[ext_resource type="Texture2D" uid="uid://bce5mq6a8xq6c" path="res://npcs/new_idles/marcie_new_idle_39.png" id="21_teqat"]
+[ext_resource type="Texture2D" uid="uid://ch81h6o3ykixa" path="res://npcs/new_idles/marcie_new_idle_41.png" id="22_5omlo"]
+[ext_resource type="Texture2D" uid="uid://bd6ais1u0u6ds" path="res://npcs/new_idles/marcie_new_idle_43.png" id="23_ta1ce"]
+[ext_resource type="Texture2D" uid="uid://dr7mq27445y20" path="res://npcs/new_idles/marcie_new_idle_45.png" id="24_vlvb6"]
+[ext_resource type="Texture2D" uid="uid://cy32djmvpkjrb" path="res://npcs/new_idles/marcie_new_idle_47.png" id="25_qfycu"]
+[ext_resource type="Texture2D" uid="uid://c1lgtxmftfmbj" path="res://npcs/new_idles/marcie_new_idle_49.png" id="26_yf826"]
+[ext_resource type="Texture2D" uid="uid://djfrr5is8tr8m" path="res://npcs/new_idles/marcie_new_idle_51.png" id="27_agx5j"]
+[ext_resource type="Texture2D" uid="uid://nsat2vfc6bwd" path="res://npcs/new_idles/marcie_new_idle_53.png" id="28_jivmv"]
+[ext_resource type="Texture2D" uid="uid://c2irobn2e6g5j" path="res://npcs/new_idles/marcie_new_idle_55.png" id="29_uosiw"]
+[ext_resource type="Texture2D" uid="uid://b0neenbc34q00" path="res://npcs/new_idles/marcie_new_idle_57.png" id="30_r5rso"]
+[ext_resource type="Texture2D" uid="uid://cr3qkplvp88bk" path="res://npcs/new_idles/marcie_new_idle_59.png" id="31_qe41b"]
+[ext_resource type="Texture2D" uid="uid://mp0scbdufy4t" path="res://npcs/new_idles/marcie_new_idle_61.png" id="32_w28rw"]
 
 [sub_resource type="Shader" id="Shader_ulj4k"]
 code = "//ATTENTION:
@@ -232,11 +262,101 @@ shader_parameter/SHADOW_mix = 0.66
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_ohqcv")
+"texture": ExtResource("2_1trk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yoivx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_g15tb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_t7bsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cei2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_6xjes")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_85yho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_i1jdr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_eqvo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_spnco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_47kgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qnjjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_i2om1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_yt5ef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_j4y1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_os5h1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_sr5b8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_u8s4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_fht7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_teqat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_5omlo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ta1ce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_vlvb6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qfycu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_yf826")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_agx5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_jivmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_uosiw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_r5rso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_qe41b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_w28rw")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xj3kx"]
@@ -253,6 +373,9 @@ material = SubResource("ShaderMaterial_l6sjs")
 position = Vector2(0, -161)
 sprite_frames = SubResource("SpriteFrames_3lblo")
 animation = &"idle"
+autoplay = "idle"
+frame = 13
+frame_progress = 0.999001
 
 [node name="EncounterUI" type="Node2D" parent="."]
 position = Vector2(0, -169)

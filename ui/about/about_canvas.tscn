@@ -300,8 +300,7 @@ theme_override_constants/shadow_offset_y = 2
 theme_override_constants/outline_size = 1
 theme_override_fonts/font = ExtResource("3_l88dv")
 theme_override_font_sizes/font_size = 30
-text = "Audacity(??)
-(What Else?)"
+text = "FL Studio"
 
 [node name="SkipButton" type="Button" parent="CanvasLayer"]
 offset_left = 1242.0

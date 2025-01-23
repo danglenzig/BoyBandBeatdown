@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://djftx5y2gjs82"]
+
+[ext_resource type="Script" path="res://environments/prop_sprite.gd" id="1_wmklc"]
+[ext_resource type="Texture2D" uid="uid://ccdbmq4cwmwl2" path="res://environments/assets/props/environment_03_column.png" id="2_0xgi4"]
+
+[node name="environment_03_column" type="Node2D"]
+script = ExtResource("1_wmklc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -294)
+texture = ExtResource("2_0xgi4")

@@ -19,6 +19,7 @@ var player: Player 			= null
 
 #var start_marker: Marker2D  = null
 var start_marker_name: String = ""
+var ally_marker_name: String = ""
 
 # child nodes
 var z_scaler: ZScaler 		= null

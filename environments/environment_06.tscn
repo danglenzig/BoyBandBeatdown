@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cu0n05p4spkcb"]
+[gd_scene load_steps=26 format=3 uid="uid://cu0n05p4spkcb"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_6g3cj"]
 [ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_dt8cx"]
@@ -9,20 +9,49 @@
 [ext_resource type="Script" path="res://environments/exit_trigger.gd" id="6_c0g33"]
 [ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="7_svbhx"]
 [ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="8_2fw8y"]
+[ext_resource type="PackedScene" uid="uid://33rho0ehl6wp" path="res://npcs/tammy/tammy_sprite.tscn" id="10_u4etd"]
+[ext_resource type="PackedScene" uid="uid://dlr0dc5072t10" path="res://npcs/heather/heather_sprite.tscn" id="11_bhcfv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uqedg"]
 size = Vector2(1988, 76)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_33mcg"]
+size = Vector2(762.201, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_krutc"]
+size = Vector2(600, 60)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_srjl0"]
+size = Vector2(22, 59)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_roq84"]
+size = Vector2(190.268, 15.8499)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfjmn"]
+size = Vector2(641.822, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_706tf"]
+size = Vector2(116, 582)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgb6j"]
+size = Vector2(218, 264)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7jkws"]
-size = Vector2(207.374, 58.4548)
+size = Vector2(233.291, 58.4548)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h4t0b"]
-size = Vector2(233.688, 45)
+size = Vector2(254.19, 45)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_esaiv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lh0x3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t4amm"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_wkrmp"]
-vertices = PackedVector2Array(1573.42, 845.883, 1582.48, 1026.95, 25.0781, 1021.03, 27.9063, 681.953, 247.43, 681)
+vertices = PackedVector2Array(1660.17, 854.359, 1770.49, 1022.97, 25.0781, 1021.01, 27.9063, 681.953, 247.367, 681)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(248, 671, 1583, 837, 1593, 1037, 15, 1031, 18, 672)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(248, 671, 1666, 845, 1789, 1033, 15, 1031, 18, 672)])
 
 [node name="Environment_06" type="Node2D"]
 script = ExtResource("1_6g3cj")
@@ -63,6 +92,9 @@ position = Vector2(1073, 720)
 [node name="NorthPlayerStart02" type="Marker2D" parent="."]
 position = Vector2(795, 682)
 
+[node name="NorthPlayerStart03" type="Marker2D" parent="."]
+position = Vector2(413, 693)
+
 [node name="AllyHolder" type="Node2D" parent="."]
 
 [node name="NpcHolder" type="Node2D" parent="."]
@@ -75,6 +107,39 @@ position = Vector2(795, 682)
 position = Vector2(967, 1091)
 shape = SubResource("RectangleShape2D_uqedg")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1070.81, 669.961)
+rotation = 0.0872664
+shape = SubResource("RectangleShape2D_33mcg")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1676.37, 800.98)
+rotation = 0.113446
+shape = SubResource("RectangleShape2D_krutc")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1392, 731)
+shape = SubResource("RectangleShape2D_srjl0")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(686.736, 657.445)
+rotation = -0.226893
+shape = SubResource("RectangleShape2D_roq84")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(281.136, 651.59)
+rotation = 0.0698131
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_gfjmn")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(-48, 866)
+shape = SubResource("RectangleShape2D_706tf")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1910, 939)
+shape = SubResource("RectangleShape2D_kgb6j")
+
 [node name="ExitTriggerHolder" type="Node2D" parent="."]
 
 [node name="NorthExitTrigger01" type="Area2D" parent="ExitTriggerHolder"]
@@ -83,9 +148,10 @@ exit_to_scene_name = "environment_01.tscn"
 player_start_name = "NorthExitPlaceholdrMarker02"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger01"]
-position = Vector2(822.331, 639.176)
+position = Vector2(835.248, 640.215)
 rotation = 0.0802851
 shape = SubResource("RectangleShape2D_7jkws")
+debug_color = Color(0.831321, 0.277881, 0.698879, 0.42)
 
 [node name="NorthExitTrigger02" type="Area2D" parent="ExitTriggerHolder"]
 script = ExtResource("6_c0g33")
@@ -93,13 +159,51 @@ exit_to_scene_name = "environment_01.tscn"
 player_start_name = "NorthExitPlaceholdrMarker01"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger02"]
-position = Vector2(1095.14, 667.08)
+position = Vector2(1084.92, 666.258)
 rotation = 0.0802851
 shape = SubResource("RectangleShape2D_h4t0b")
+debug_color = Color(0.831321, 0.277881, 0.698879, 0.42)
+
+[node name="NorthExitTrigger03" type="Area2D" parent="ExitTriggerHolder"]
+script = ExtResource("6_c0g33")
+exit_to_scene_name = "environment_01.tscn"
+player_start_name = "NorthExitPlaceholdrMarker01"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger03"]
+position = Vector2(1330, 699)
+rotation = 0.0575959
+scale = Vector2(6.615, 1)
+shape = SubResource("CircleShape2D_esaiv")
+debug_color = Color(0.831321, 0.277881, 0.698879, 0.42)
+
+[node name="NorthExitTrigger04" type="Area2D" parent="ExitTriggerHolder"]
+script = ExtResource("6_c0g33")
+exit_to_scene_name = "environment_05.tscn"
+player_start_name = "NorthPlayerStart"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger04"]
+position = Vector2(425, 668)
+rotation = 0.0575959
+scale = Vector2(5.235, 1)
+shape = SubResource("CircleShape2D_lh0x3")
+debug_color = Color(0.831321, 0.277881, 0.698879, 0.42)
+
+[node name="NorthExitTrigger05" type="Area2D" parent="ExitTriggerHolder"]
+script = ExtResource("6_c0g33")
+exit_to_scene_name = "environment_00.tscn"
+player_start_name = "WallPlayerStart"
+ally_start_name = "BackupAllyStart"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger05"]
+position = Vector2(220, 652)
+rotation = 0.0575959
+scale = Vector2(7.36, 1)
+shape = SubResource("CircleShape2D_t4amm")
+debug_color = Color(0.831321, 0.277881, 0.698879, 0.42)
 
 [node name="NpcSpawner" type="Node" parent="."]
 script = ExtResource("6_ba4bq")
-npc_scenes = Array[PackedScene]([ExtResource("7_svbhx"), ExtResource("8_2fw8y")])
+npc_scenes = Array[PackedScene]([ExtResource("7_svbhx"), ExtResource("8_2fw8y"), ExtResource("10_u4etd"), ExtResource("11_bhcfv")])
 
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 
@@ -107,10 +211,13 @@ npc_scenes = Array[PackedScene]([ExtResource("7_svbhx"), ExtResource("8_2fw8y")]
 position = Vector2(151, 834)
 
 [node name="Marker2D2" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(1484, 978)
+position = Vector2(530, 849)
 
 [node name="Marker2D3" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(462, 990)
+position = Vector2(1091, 831)
+
+[node name="Marker2D4" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
+position = Vector2(217, 987)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_wkrmp")
@@ -120,3 +227,6 @@ position = Vector2(674, 856)
 
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger01" to="ExitTriggerHolder/NorthExitTrigger01" method="_on_body_entered"]
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger02" to="ExitTriggerHolder/NorthExitTrigger02" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger03" to="ExitTriggerHolder/NorthExitTrigger03" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger04" to="ExitTriggerHolder/NorthExitTrigger04" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger05" to="ExitTriggerHolder/NorthExitTrigger05" method="_on_body_entered"]

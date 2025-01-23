@@ -1,11 +1,10 @@
-[gd_scene load_steps=38 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=37 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
 [ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_26yqy"]
 [ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_27gv0"]
 [ext_resource type="Script" path="res://environments/game_camera.gd" id="3_4x8bs"]
 [ext_resource type="Script" path="res://environments/z_scaler.gd" id="4_w8wgp"]
-[ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="5_l8edr"]
 [ext_resource type="PackedScene" uid="uid://bml4x556hxm2o" path="res://environments/prop_scenes/walk_sign_prop.tscn" id="7_0uwxj"]
 [ext_resource type="PackedScene" uid="uid://yqws4qxfvbnv" path="res://environments/prop_scenes/street_light_prop.tscn" id="8_pn5p6"]
 [ext_resource type="PackedScene" uid="uid://cj6egg8wsaeb7" path="res://environments/prop_scenes/environment_00_east_wall_prop.tscn" id="9_o3bbv"]
@@ -122,13 +121,12 @@ position = Vector2(1457, 888)
 [node name="StairsPlayerStart" type="Marker2D" parent="."]
 position = Vector2(906, 730)
 
+[node name="WallPlayerStart" type="Marker2D" parent="."]
+position = Vector2(1219, 714)
+
 [node name="AllyHolder" type="Node2D" parent="."]
 
 [node name="NpcHolder" type="Node2D" parent="."]
-
-[node name="MarcieSprite" parent="NpcHolder" node_paths=PackedStringArray("z_scaler") instance=ExtResource("5_l8edr")]
-position = Vector2(1011, 834)
-z_scaler = NodePath("../../ZScaler")
 
 [node name="PropHolder" type="Node2D" parent="."]
 
@@ -248,22 +246,25 @@ npc_scenes = Array[PackedScene]([ExtResource("15_neqai"), ExtResource("16_imgy8"
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 
 [node name="Marker2D" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(864, 808)
+position = Vector2(736, 690)
 
 [node name="Marker2D2" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
 position = Vector2(749, 807)
 
 [node name="Marker2D3" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(621, 806)
+position = Vector2(1101, 793)
 
 [node name="Marker2D4" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(487, 808)
+position = Vector2(953, 692)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_dbjcs")
 
 [node name="CenterMarker" type="Marker2D" parent="NavigationRegion2D"]
-position = Vector2(925, 948)
+position = Vector2(904, 881)
+
+[node name="BackupAllyStart" type="Marker2D" parent="NavigationRegion2D"]
+position = Vector2(934, 801)
 
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger" to="ExitTriggerHolder/NorthExitTrigger" method="_on_body_entered"]
 [connection signal="body_entered" from="DialogueTriggerHolder/environment_00_00" to="DialogueTriggerHolder/environment_00_00" method="_on_body_entered"]

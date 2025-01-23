@@ -71,7 +71,12 @@ func spawn_ally()->void:
 	var new_ally: NpcAlly = ally_scene.instantiate()
 	new_ally.visible = false
 	await get_tree().create_timer(0.1).timeout
-	new_ally.global_position = spawn_pos
+	
+	if main.current_environment.ally_marker_name != "":
+		var ally_marker: Marker2D = main.current_environment.get_node("NavigationRegion2D").get_node("BackupAllyStart")
+		new_ally.global_position = ally_marker.global_position
+	else:
+		new_ally.global_position = spawn_pos
 	main.current_environment.get_node("AllyHolder").call_deferred("add_child", new_ally)
 	
 	while not new_ally.first_scaling:

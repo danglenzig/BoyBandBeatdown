@@ -78,7 +78,11 @@ func display_start_menu():
 func fucking_test(test_1: String, test_2: String):
 	print(test_1," -- ", test_2)
 
-func load_environment(scene_name: String, start_marker_name: String):
+func load_environment(scene_name: String, start_marker_name: String, ally_start_name: String = ""):
+	
+	
+	if ally_start_name != "":
+		print_debug(ally_start_name)
 	
 	var resource_path_string: String = str("res://environments/",scene_name)
 	var scene_to_instantiate: PackedScene = null
@@ -106,6 +110,8 @@ func load_environment(scene_name: String, start_marker_name: String):
 			new_environment.start_marker_name = start_marker_name
 	else:
 		new_environment.start_marker_name = start_marker_name
+		
+	new_environment.ally_marker_name = ally_start_name
 	
 		
 	call_deferred("add_child", new_environment)

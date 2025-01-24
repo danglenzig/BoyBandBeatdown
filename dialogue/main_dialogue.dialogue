@@ -28,6 +28,7 @@ if not dialogue_states.introduced["MARCIE"]:
 	# show nora portrait
 	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
 	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+	
 	Nora: That's Marcie. She's obsessed with the Bad Boy and tends to overplay him.
 	Nora: So be cautious with your Heartthrob cards!
 => BATTLE_OPTIONS

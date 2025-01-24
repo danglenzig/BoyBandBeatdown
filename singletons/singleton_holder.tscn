@@ -24,10 +24,10 @@
 [ext_resource type="AudioStream" uid="uid://b3yleeglgjs41" path="res://audio/assets/ui/GUI_Scroll_Short_11.wav" id="15_eb3nk"]
 [ext_resource type="AudioStream" uid="uid://be50paww2jfnk" path="res://audio/assets/encounter/slap.wav" id="16_0082g"]
 [ext_resource type="Script" path="res://singletons/music_manager.gd" id="19_2q3lk"]
-[ext_resource type="AudioStream" uid="uid://ntjc7b3rt87x" path="res://audio/assets/music/bbb overworld_1.mp3" id="20_2sb3k"]
 [ext_resource type="Script" path="res://singletons/cross_fader.gd" id="21_ju0ja"]
 [ext_resource type="Script" path="res://singletons/dialogue_states.gd" id="25_mp0t5"]
 [ext_resource type="AudioStream" uid="uid://5llfmah2xsta" path="res://audio/assets/music/newer/bbb overworld 2.mp3" id="25_o1dky"]
+[ext_resource type="AudioStream" uid="uid://c7b6hfablkcpn" path="res://audio/assets/music/newer/bbb overworld latest.mp3" id="25_wmph0"]
 [ext_resource type="AudioStream" uid="uid://1kvjj5485oiw" path="res://audio/assets/music/bbb battle music (2).mp3" id="26_0w3k2"]
 [ext_resource type="Script" path="res://singletons/help_manager.gd" id="26_myuyd"]
 [ext_resource type="AudioStream" uid="uid://ddbxk7ulbpjpe" path="res://audio/assets/music/newer/bbb title theme (1).mp3" id="28_esoxq"]
@@ -96,7 +96,7 @@ script = ExtResource("19_2q3lk")
 [node name="AudioStreamPlayers" type="Node" parent="MusicManager"]
 
 [node name="overworld_outdoor_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]
-stream = ExtResource("20_2sb3k")
+stream = ExtResource("25_wmph0")
 bus = &"OutdoorMusic"
 
 [node name="overworld_indoor_theme" type="AudioStreamPlayer" parent="MusicManager/AudioStreamPlayers"]

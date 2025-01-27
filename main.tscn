@@ -81,6 +81,7 @@ about_canvas_scene = ExtResource("9_5w1gm")
 deck_tutorial_scene = ExtResource("7_vkm1r")
 splash_screen_scene = ExtResource("7_qpj5w")
 start_scene_name = "environment_00.tscn"
+start_with_splash = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2

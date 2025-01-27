@@ -28,6 +28,11 @@ if not dialogue_states.environment_00_00_seen
 	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
 	
 	Nora: You have your Boy Band Beatdown deck? Good! This is the most important part of the day.
+	Nora: You can just walk up to any of the girls to challenge them to a match.
+	Nora: They all have different play styles and strategies.
+	Nora: Some are more predictable than others. I'll help prepare for each match as best as I can.
+	Nora: And if you want to review the rules, just let me know at the start of your match!
+	
 	
 	set dialogue_states.current_speaker_portrait_resource = ""
 	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))

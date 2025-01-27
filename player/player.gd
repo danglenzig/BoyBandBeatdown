@@ -36,6 +36,9 @@ func _ready():
 	player_state_chart 	= $StateChart
 	adjusted_move_speed = move_speed
 	
+	if misc.wasd_introduced:
+		$WasdSprite.call_deferred("queue_free")
+	
 	await get_tree().create_timer(0.1).timeout
 	spawn_ally()
 	
@@ -85,7 +88,9 @@ func spawn_ally()->void:
 	
 	while not new_ally.first_scaling:
 		await get_tree().create_timer(0.1).timeout
-	new_ally.visible = true
+	var dialog_helper: DialogueStates = SingletonHolder.get_node("DialogueStates")
+	if dialog_helper.nora_introduced:
+		new_ally.visible = true
 	
 	
 	
@@ -166,7 +171,9 @@ func on_atomic_state_entered(new_state: String):
 			if use_z_scaling:
 				handle_scaling()
 		"MOVING":
-			pass
+			if not misc.wasd_introduced:
+				misc.wasd_introduced = true
+				$WasdSprite.call_deferred("queue_free")
 		"ENCOUNTER":
 			player_sprite.visible = false
 		"DIALOGUE":

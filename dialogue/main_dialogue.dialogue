@@ -8,7 +8,26 @@ if not dialogue_states.environment_00_00_seen
 	
 	:Well, I've almost made it through my entire first day as the "new girl" at Max Martin High School, Anywhere, USA.
 	:Almost. Class might be over, but after school is when everybody plays BOY BAND BEATDOWN.
-	:If I don't want to spend the whole year as a total outcast, I need to dominate the BBB scene. 
+	:If I don't want to spend the whole year as a total outcast, I need to dominate the BBB scene.
+	:I've made one friend at least. Here comes NORA from the student welcoming committee...
+	:She's been following me around all day.
+	
+	
+	do dialogue_states.set_nora_visibility.emit(true)
+	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
+	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+	
+	Nora: (out of breath) Sorry I'm late! My student council meeting ran long.
+	
+	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/player_portrait.png"
+	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+	
+	:Uh, you're not late. We weren't planning to meet.
+	
+	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
+	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+	
+	Nora: You have your Boy Band Beatdown deck? Good! This is the most important part of the day.
 	
 	set dialogue_states.current_speaker_portrait_resource = ""
 	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
@@ -28,7 +47,7 @@ if not dialogue_states.introduced["MARCIE"]:
 	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
 	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
 	
-	Nora: That's Marcie. She's obsessed with the Bad Boy and tends to overplay him.
+	Nora: That's MARCIE. She's obsessed with the Bad Boy and tends to overplay him.
 	Nora: Be cautious with your Heartthrob cards!
 => BATTLE_OPTIONS
 
@@ -44,7 +63,7 @@ if not dialogue_states.introduced["TAMMY"]:
 	# show nora portrait
 	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
 	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
-	Nora: That's Tammy.
+	Nora: That's TAMMY.
 	Nora: Um...good luck...
 => BATTLE_OPTIONS
 
@@ -61,7 +80,7 @@ if not dialogue_states.introduced["GRETCHEN"]:
 	# show nora portrait
 	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
 	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
-	Nora: Gretchen is a very unpredictable player.
+	Nora: GRETCHEN is a very unpredictable player.
 	Nora: Your best bet is to do the same.
 => BATTLE_OPTIONS
 
@@ -77,7 +96,7 @@ if not dialogue_states.introduced["KACI"]:
 	# show nora portrait
 	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
 	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
-	Nora: That's Kaci. She loves the Shy One (obviously).
+	Nora: That's KACI. She loves the Shy One (obviously).
 	Nora: You should probably pick the Older Brother over, like, the Cute One.
 => BATTLE_OPTIONS
 
@@ -94,7 +113,7 @@ if not dialogue_states.introduced["DANA"]:
 	# show nora portrait
 	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
 	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
-	Nora: That's Dana.
+	Nora: That's DANA.
 	Nora: Blah blah blah.
 => BATTLE_OPTIONS
 
@@ -110,10 +129,29 @@ if not dialogue_states.introduced["HEATHER"]:
 	# show nora portrait
 	set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
 	do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
-	Nora: That's Heather.
+	Nora: That's HEATHER.
 	Nora: Blah blah blah.
 => BATTLE_OPTIONS
 ##########################################################
+# Nora help dialogue
+~ nora_help_step_0
+set dialogue_states.current_speaker_portrait_resource = "res://dialogue/portraits/nora_portrait.png"
+do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+Nora: Here's an overview of the rules to BOY BAND BEATDOWN!
+		(left click to continue)
+=> END_NORA_HELP
+
+
+
+#########################################################
+
+~ END_NORA_HELP
+# clear speaker portrait
+set dialogue_states.current_speaker_portrait_resource = ""
+do dialogue_states.set_dialogue_portrait(misc.main.get_node("ExampleBalloon"))
+# clean up
+set dialogue_states.dialogue_active = false
+=> END
 
 ~ START_BATTLE
 # clear speaker portrait

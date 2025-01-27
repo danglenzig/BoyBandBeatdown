@@ -11,6 +11,7 @@ var diagram_panel: 		Panel
 var cards_panel: 		Panel
 var portraits_holder: 	Node2D
 var arrows_holder: 		Node2D
+var nora_help_dialogue: NorHelpDialogue
 
 var countinue_button_armed: bool = true
 
@@ -20,6 +21,7 @@ var current_dialogue = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	nora_help_dialogue 	= $NorHelpDialogue
 	
 	captions_panel 		= $RootPanel/CaptionsPanel
 	diagram_panel 		= $RootPanel/DiagramPanel
@@ -90,7 +92,19 @@ func highlight_arrows(arrow_strings: Array[String]):
 
 func step_0():
 	countinue_button_armed = false
+	diagram_panel.visible = true
+	highlight_portraits([
+		"ShyOneSprite",
+		"CuteOneSprite",
+		"OlderBrotherSprite",
+		"HeartthrobSprite",
+		"BadBoySprite"
+	])
 	show_step_caption(0)
+	
+	if called_from == 1:
+		nora_help_dialogue.show_nora_help_dialogue("nora_help_step_0")
+	
 	countinue_button_armed = true
 	
 func step_1():
@@ -353,3 +367,6 @@ func _on_skip_button_pressed():
 func _on_continue_button_mouse_entered():
 	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")
 	ui_sounds.card_hover.play()
+	
+func get_self()->TutorialSequenceDeck:
+	return self

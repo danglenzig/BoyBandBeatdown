@@ -1,7 +1,8 @@
 extends Node
 class_name DialogueStates
 
-
+signal set_nora_visibility()
+var nora_introduced = false
 
 var environment_00_00_seen 				= false
 var current_speaker_portrait_resource 	= ""

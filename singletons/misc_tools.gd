@@ -19,6 +19,8 @@ const uuid_util = preload('res://uuid.gd')
 const EXIT_COOLDOWN = 1.5
 var player_on_exit_cooldown = false
 
+var wasd_introduced = false
+
 func _ready():
 	pass
 	

@@ -33,6 +33,14 @@ func _ready():
 	await get_tree().physics_frame
 	set_physics_process(true)
 	
+	var dialogue_helper: DialogueStates = SingletonHolder.get_node("DialogueStates")
+	dialogue_helper.set_nora_visibility.connect(on_set_visibility_signel)
+
+
+func on_set_visibility_signel(the_bool: bool):
+	var dialogue_helper: DialogueStates = SingletonHolder.get_node("DialogueStates")
+	dialogue_helper.nora_introduced = true
+	visible = the_bool
 	
 func _physics_process(delta):
 	

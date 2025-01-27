@@ -150,6 +150,9 @@ func start_tutorial_sequence(called_from: String):
 			start_menu.call_deferred("queue_free")
 			tutorial_canvas.called_from = tutorial_canvas.enum_called_from.START
 			call_deferred("add_child", tutorial_canvas)
+			
+			
+			
 		"ENVIRONMENT":
 			
 			pass

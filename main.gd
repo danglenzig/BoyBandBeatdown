@@ -178,3 +178,7 @@ func start_new_game():
 	
 func get_hud_panel()->HudPanel:
 	return hud_panel
+
+
+func _on_toggle_nav_prompts_button_pressed():
+	misc_tools.toggle_nav_prompts.emit()

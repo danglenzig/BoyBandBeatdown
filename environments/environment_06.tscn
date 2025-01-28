@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://cu0n05p4spkcb"]
+[gd_scene load_steps=29 format=3 uid="uid://cu0n05p4spkcb"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_6g3cj"]
 [ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_dt8cx"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="8_2fw8y"]
 [ext_resource type="PackedScene" uid="uid://33rho0ehl6wp" path="res://npcs/tammy/tammy_sprite.tscn" id="10_u4etd"]
 [ext_resource type="PackedScene" uid="uid://dlr0dc5072t10" path="res://npcs/heather/heather_sprite.tscn" id="11_bhcfv"]
+[ext_resource type="PackedScene" uid="uid://4qtf3cqkpnqt" path="res://ui/nav_prompt.tscn" id="14_ecy67"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uqedg"]
 size = Vector2(1988, 76)
@@ -233,6 +234,24 @@ navigation_polygon = SubResource("NavigationPolygon_wkrmp")
 
 [node name="CenterMarker" type="Marker2D" parent="NavigationRegion2D"]
 position = Vector2(674, 856)
+
+[node name="ArrowPrompts" type="Node2D" parent="."]
+
+[node name="NavPrompt" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("14_ecy67")]
+position = Vector2(789, 670)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="NavPrompt2" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("14_ecy67")]
+position = Vector2(1161, 698)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="NavPrompt3" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("14_ecy67")]
+position = Vector2(424, 681)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="NavPrompt4" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("14_ecy67")]
+position = Vector2(248, 652)
+z_scaler = NodePath("../../ZScaler")
 
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger01" to="ExitTriggerHolder/NorthExitTrigger01" method="_on_body_entered"]
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger02" to="ExitTriggerHolder/NorthExitTrigger02" method="_on_body_entered"]

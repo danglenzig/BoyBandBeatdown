@@ -95,6 +95,21 @@ offset_right = 1366.0
 offset_bottom = 94.0
 script = ExtResource("4_8yxfh")
 
+[node name="ToggleNavPromptsButton" type="Button" parent="CanvasLayer/HudPanel"]
+layout_mode = 0
+offset_left = 1175.0
+offset_top = 32.0
+offset_right = 1321.0
+offset_bottom = 80.0
+theme_override_colors/font_hover_color = Color(1, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 0, 1)
+theme_override_colors/font_color = Color(0.784314, 0.784314, 0.784314, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("4_bj6ew")
+text = "Navigation Prompts"
+autowrap_mode = 2
+
 [node name="MainMenuButton" type="Button" parent="CanvasLayer/HudPanel"]
 layout_mode = 1
 offset_left = 34.0
@@ -197,5 +212,6 @@ theme_override_font_sizes/font_size = 51
 text = "LEVEL UP!!!
 "
 
+[connection signal="pressed" from="CanvasLayer/HudPanel/ToggleNavPromptsButton" to="." method="_on_toggle_nav_prompts_button_pressed"]
 [connection signal="mouse_entered" from="CanvasLayer/HudPanel/MainMenuButton" to="CanvasLayer/HudPanel" method="_on_main_menu_button_mouse_entered"]
 [connection signal="pressed" from="CanvasLayer/HudPanel/MainMenuButton" to="CanvasLayer/HudPanel" method="_on_main_menu_button_pressed"]

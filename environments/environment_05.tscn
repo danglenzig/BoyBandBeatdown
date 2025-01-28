@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://deajnmcnxl33u"]
+[gd_scene load_steps=21 format=3 uid="uid://deajnmcnxl33u"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_jswqj"]
 [ext_resource type="PackedScene" uid="uid://ndpd1xkg8gor" path="res://encounters/npc_encounter.tscn" id="2_mwjok"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bcsqeqj7mqw3j" path="res://npcs/dana/dana_sprite.tscn" id="9_xi2mc"]
 [ext_resource type="PackedScene" uid="uid://33rho0ehl6wp" path="res://npcs/tammy/tammy_sprite.tscn" id="10_uf1os"]
 [ext_resource type="PackedScene" uid="uid://bihf2ljwlb42y" path="res://npcs/gretchen/gretchen_sprite.tscn" id="11_8apj4"]
+[ext_resource type="PackedScene" uid="uid://4qtf3cqkpnqt" path="res://ui/nav_prompt.tscn" id="12_xchux"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hhbmd"]
 size = Vector2(1983, 114)
@@ -60,6 +61,7 @@ process_callback = 0
 script = ExtResource("4_7hlkm")
 
 [node name="ZScaler" type="Node2D" parent="." node_paths=PackedStringArray("top_marker", "bottom_marker")]
+position = Vector2(1, 0)
 script = ExtResource("5_q0r1f")
 top_marker = NodePath("../TopMarker")
 bottom_marker = NodePath("../BottomMarker")
@@ -147,5 +149,12 @@ navigation_polygon = SubResource("NavigationPolygon_uvwes")
 
 [node name="CenterMarker" type="Marker2D" parent="NavigationRegion2D"]
 position = Vector2(1104, 728)
+
+[node name="ArrowPrompts" type="Node2D" parent="."]
+
+[node name="NavPrompt" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("12_xchux")]
+position = Vector2(1259, 634)
+z_scaler = NodePath("../../ZScaler")
+scale_modifier = 2.0
 
 [connection signal="body_entered" from="ExitTriggerHolder/ExitTrigger" to="ExitTriggerHolder/ExitTrigger" method="_on_body_entered"]

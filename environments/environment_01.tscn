@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://bnc0he5ytku37"]
+[gd_scene load_steps=41 format=3 uid="uid://bnc0he5ytku37"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_4h4a2"]
 [ext_resource type="Texture2D" uid="uid://ynnw25wo8noe" path="res://environments/assets/env_01.png" id="2_it8mk"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://bcsqeqj7mqw3j" path="res://npcs/dana/dana_sprite.tscn" id="21_5k5xt"]
 [ext_resource type="PackedScene" uid="uid://tlcdwevu6gdm" path="res://npcs/kaci/kaci_sprite.tscn" id="22_deqt8"]
 [ext_resource type="PackedScene" uid="uid://dlr0dc5072t10" path="res://npcs/heather/heather_sprite.tscn" id="22_wodhg"]
+[ext_resource type="PackedScene" uid="uid://4qtf3cqkpnqt" path="res://ui/nav_prompt.tscn" id="23_sxk5l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wegb6"]
 size = Vector2(165, 50.5)
@@ -344,6 +345,29 @@ navigation_polygon = SubResource("NavigationPolygon_r2f3n")
 
 [node name="CenterMarker" type="Marker2D" parent="NavigationRegion2D"]
 position = Vector2(956, 814)
+
+[node name="ArrowPrompts" type="Node2D" parent="."]
+
+[node name="NavPrompt3" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("23_sxk5l")]
+position = Vector2(711, 691)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="NavPrompt5" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("23_sxk5l")]
+position = Vector2(1130, 656)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="NavPrompt6" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("23_sxk5l")]
+position = Vector2(1404, 635)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="NavPrompt7" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("23_sxk5l")]
+position = Vector2(1655, 634)
+z_scaler = NodePath("../../ZScaler")
+
+[node name="NavPrompt8" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("23_sxk5l")]
+position = Vector2(1676, 994)
+rotation = 0.0
+z_scaler = NodePath("../../ZScaler")
 
 [connection signal="body_entered" from="ExitTriggerHolder/EastExitTrigger" to="ExitTriggerHolder/EastExitTrigger" method="_on_body_entered"]
 [connection signal="body_entered" from="ExitTriggerHolder/WestExitTrigger_01" to="ExitTriggerHolder/WestExitTrigger_01" method="_on_body_entered"]

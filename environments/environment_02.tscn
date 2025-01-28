@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://b05i67tp5inti"]
+[gd_scene load_steps=29 format=3 uid="uid://b05i67tp5inti"]
 
 [ext_resource type="Texture2D" uid="uid://bt2onc7k5tskk" path="res://environments/assets/env_03.png" id="1_06u37"]
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_lxl3m"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bcsqeqj7mqw3j" path="res://npcs/dana/dana_sprite.tscn" id="10_5ysyq"]
 [ext_resource type="Texture2D" uid="uid://dp3xm2qtpej40" path="res://environments/assets/etc/MM_1.png" id="10_e3anp"]
 [ext_resource type="PackedScene" uid="uid://tlcdwevu6gdm" path="res://npcs/kaci/kaci_sprite.tscn" id="11_idyfv"]
+[ext_resource type="PackedScene" uid="uid://4qtf3cqkpnqt" path="res://ui/nav_prompt.tscn" id="14_tynh5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_48wd4"]
 size = Vector2(717.089, 24.5796)
@@ -288,5 +289,12 @@ material = SubResource("ShaderMaterial_242aa")
 position = Vector2(610, 425)
 scale = Vector2(0.075, 0.075)
 texture = ExtResource("10_e3anp")
+
+[node name="ArrowPrompts" type="Node2D" parent="."]
+
+[node name="NavPrompt" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("14_tynh5")]
+position = Vector2(1377, 1003)
+rotation = 1.5708
+z_scaler = NodePath("../../ZScaler")
 
 [connection signal="body_entered" from="ExitTriggerHolder/ExitTrigger" to="ExitTriggerHolder/ExitTrigger" method="_on_body_entered"]

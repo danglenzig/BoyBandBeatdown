@@ -2,7 +2,7 @@ extends Node2D
 class_name TutorialSequenceExploration
 
 var current_step: int 	= 0
-var last_step: int 		= 1
+var last_step: int 		= 2
 
 var continue_button_armed 	= true
 var next_tab_button_armed 	= false
@@ -11,6 +11,7 @@ var looping_step_1 			= false
 var captions_panel: Panel
 var diagram_node_step_0: Node2D
 var diagram_node_step_1: Node2D
+var diagram_node_step_2: Node2D
 var continue_button: Button
 var next_tab_button: Button
 
@@ -19,6 +20,7 @@ func _ready():
 	captions_panel 		= $RootPanel/CaptionsPanel
 	diagram_node_step_0 = $RootPanel/DiagramStep0
 	diagram_node_step_1 = $RootPanel/DiagramStep1
+	diagram_node_step_2 = $RootPanel/DiagramStep2
 	continue_button 	= $RootPanel/ContinueButton
 	next_tab_button 	= $RootPanel/NextTabButton
 	
@@ -38,6 +40,8 @@ func play_step(step_number: int):
 			step_0()
 		1:
 			step_1()
+		2:
+			step_2()
 
 func hide_diagram_panels():
 	diagram_node_step_0.visible = false
@@ -64,19 +68,21 @@ func step_1():
 	var caption_label: Label = captions_panel.get_node("Step1")
 	caption_label.visible 		= true
 	diagram_node_step_1.visible = true
+	continue_button_armed 		= true
+	
+	
+		
+
+func step_2():
+	hide_caption_labels()
+	hide_diagram_panels()
+	continue_button_armed 		= false
+	var caption_label: Label = captions_panel.get_node("Step2")
+	caption_label.visible 		= true
+	diagram_node_step_2.visible = true
 	continue_button.visible 	= false
 	next_tab_button.visible 	= true
 	next_tab_button_armed 		= true
-	
-	var approach_sprite: Sprite2D 	= diagram_node_step_1.get_node("ApproachSprite")
-	var challenge_sprite: Sprite2D 	= diagram_node_step_1.get_node("ChallengeSprite")
-	looping_step_1 = true
-	while looping_step_1:
-		await get_tree().create_timer(1.5).timeout
-		approach_sprite.visible = not approach_sprite.visible
-		challenge_sprite.visible = not challenge_sprite.visible
-		
-	
 	
 func _on_continue_button_pressed():
 	var ui_sounds: UiSoundManager = SingletonHolder.get_node("UiSoundManager")

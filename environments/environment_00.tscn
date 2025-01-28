@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=38 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
 [ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_26yqy"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://33rho0ehl6wp" path="res://npcs/tammy/tammy_sprite.tscn" id="16_imgy8"]
 [ext_resource type="PackedScene" uid="uid://draw6d8dxgu4k" path="res://npcs/marcie/marcie_sprite.tscn" id="17_xois5"]
 [ext_resource type="PackedScene" uid="uid://bcsqeqj7mqw3j" path="res://npcs/dana/dana_sprite.tscn" id="18_8n321"]
+[ext_resource type="PackedScene" uid="uid://4qtf3cqkpnqt" path="res://ui/nav_prompt.tscn" id="18_85fhi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hau2o"]
 size = Vector2(914, 26)
@@ -72,10 +73,10 @@ size = Vector2(193.59, 13)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7m26d"]
 size = Vector2(20, 309)
 
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_dbjcs"]
-vertices = PackedVector2Array(876, 707.758, 939.344, 706.25, 937.359, 738, 876, 801.672, 1159, 739.063, 1159, 719.211, 1237.74, 720.891, 1259.79, 752.133, 1634.08, 1041.9, 112.258, 1028.09, 117.742, 819.789, 716.273, 807, 975.531, 818.023, 1635.91, 817.008, 978.438, 754.07, 978.938, 738)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7), PackedInt32Array(8, 9, 10, 11), PackedInt32Array(8, 11, 3, 12), PackedInt32Array(12, 13, 8), PackedInt32Array(14, 12, 3, 2, 15), PackedInt32Array(7, 14, 15, 4)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(108, 810, 102, 1038, 1644, 1052, 1646, 807, 986, 808, 988, 764, 1279, 762, 1243, 711, 1149, 709, 1149, 729, 979, 728, 948, 728, 950, 696, 866, 698, 866, 792, 716, 797)])
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_gyxqk"]
+vertices = PackedVector2Array(824, 728.961, 824, 703.07, 943.297, 703.93, 944.313, 736, 873, 753.109, 1646, 1041.08, 82.9609, 1053.91, 82.0313, 807.953, 720.477, 804.961, 988, 809.953, 591, 750.102, 591, 729.953, 1646, 812.953, 722.469, 792.938, 873, 791.93, 988, 753, 1151.56, 736, 1284.86, 753, 1245.86, 714, 1152.56, 714)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 7, 8, 9), PackedInt32Array(10, 11, 0, 4), PackedInt32Array(9, 12, 5), PackedInt32Array(9, 8, 13, 14), PackedInt32Array(15, 9, 14, 4, 3), PackedInt32Array(15, 3, 16, 17), PackedInt32Array(18, 17, 16, 19)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(581, 720, 581, 760, 863, 763, 863, 782, 714, 783, 712, 795, 72, 798, 73, 1064, 1656, 1051, 1656, 803, 998, 800, 998, 763, 1300, 763, 1299, 753, 1250, 704, 1143, 704, 1142, 726, 954, 726, 953, 694, 814, 693, 814, 719)])
 
 [node name="Environment_00" type="Node2D"]
 position = Vector2(7, -40)
@@ -258,13 +259,20 @@ position = Vector2(1101, 793)
 position = Vector2(953, 692)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
-navigation_polygon = SubResource("NavigationPolygon_dbjcs")
+navigation_polygon = SubResource("NavigationPolygon_gyxqk")
 
 [node name="CenterMarker" type="Marker2D" parent="NavigationRegion2D"]
 position = Vector2(904, 881)
 
 [node name="BackupAllyStart" type="Marker2D" parent="NavigationRegion2D"]
 position = Vector2(934, 801)
+
+[node name="ArrowPrompts" type="Node2D" parent="."]
+
+[node name="NavPrompt" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("18_85fhi")]
+z_index = 100
+position = Vector2(893, 704)
+z_scaler = NodePath("../../ZScaler")
 
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger" to="ExitTriggerHolder/NorthExitTrigger" method="_on_body_entered"]
 [connection signal="body_entered" from="DialogueTriggerHolder/environment_00_00" to="DialogueTriggerHolder/environment_00_00" method="_on_body_entered"]

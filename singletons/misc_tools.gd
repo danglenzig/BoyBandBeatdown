@@ -21,6 +21,8 @@ var player_on_exit_cooldown = false
 
 var wasd_introduced = false
 
+signal toggle_nav_prompts()
+
 func _ready():
 	pass
 	

@@ -46,8 +46,15 @@ func _ready():
 	game_camera.be_following = true
 	
 	encounter_events.begin_npc_encounter.connect(on_begin_encounter)
+	misc_tools.toggle_nav_prompts.connect(on_toggle_nav_prompts)
 	
-
+	if has_node("ArrowPrompts"):
+		get_node("ArrowPrompts").visible = false
+	
+func on_toggle_nav_prompts()->void:
+	if not has_node("ArrowPrompts"):
+		return
+	get_node("ArrowPrompts").visible = not get_node("ArrowPrompts").visible
 	
 func setup_player() -> void:
 	player = misc_tools.player_scene.instantiate()
@@ -81,6 +88,10 @@ func on_begin_encounter(npc_name: String, _npc_display_name: String, npc_power: 
 	if has_node("AllyHolder"):
 		for ally: NpcAlly in get_node("AllyHolder").get_children():
 			ally.visible = false
+			
+	# hide the fucking arrows
+	if has_node("ArrowPrompts"):
+		get_node("ArrowPrompts").visible = false
 	
 	#	turn off the environment camera
 	game_camera.enabled = false
@@ -109,6 +120,8 @@ func on_end_encounter(opponent_uuid: String):
 	if has_node("AllyHolder"):
 		for ally: NpcAlly in get_node("AllyHolder").get_children():
 			ally.visible = true
+	if has_node("ArrowPrompts"):
+		get_node("ArrowPrompts").visible = true
 	game_camera.enabled = true
 	hud_panel.visible = true
 	"""

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://4qtf3cqkpnqt"]
+
+[ext_resource type="Texture2D" uid="uid://b01pcpmdmfgsh" path="res://ui/arrow-png-images-2.png" id="1_xhkup"]
+[ext_resource type="Script" path="res://ui/nav_prompt.gd" id="2_pymmd"]
+
+[node name="NavPrompt" type="Sprite2D"]
+self_modulate = Color(1, 1, 0, 0.784314)
+z_index = 500
+position = Vector2(6, -50)
+rotation = -1.5708
+texture = ExtResource("1_xhkup")
+script = ExtResource("2_pymmd")

@@ -8,7 +8,7 @@ var current_right: int = -1
 var previous_left: int = -1
 var previous_right: int = -1
 
-@export var interval: float = 1.9
+@export var interval: float = 1.8
 
 signal change_it_up()
 
@@ -63,7 +63,7 @@ func on_interval_timeout()->void:
 	left_sprite.visible 	= true
 	right_sprite.visible 	= true
 	
-	await get_tree().create_timer(0.1).timeout
+	await get_tree().create_timer(0.2).timeout
 	right_mat.set_shader_parameter("BORDERNOISE_active", false)
 	left_mat.set_shader_parameter("BORDERNOISE_active", false)
 	

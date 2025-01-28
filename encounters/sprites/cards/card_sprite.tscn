@@ -3060,7 +3060,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("493_vf0nx")
 }],
-"loop": true,
+"loop": false,
 "name": &"tie1",
 "speed": 5.0
 }, {
@@ -4481,10 +4481,8 @@ material = SubResource("ShaderMaterial_gq0bb")
 position = Vector2(0, -325)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_70kts")
-animation = &"dance2"
+animation = &"tie3"
 autoplay = "idle"
-frame = 14
-frame_progress = 0.0144233
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/BadBoySprite"]
 position = Vector2(210, -26)
@@ -4496,10 +4494,8 @@ material = SubResource("ShaderMaterial_jh27w")
 position = Vector2(-30, -220)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_lrcwh")
-animation = &"dance4"
+animation = &"tie3"
 autoplay = "idle"
-frame = 15
-frame_progress = 0.00808785
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/HeartthrobSprite"]
 position = Vector2(220, -116)
@@ -4511,9 +4507,8 @@ material = SubResource("ShaderMaterial_co05w")
 position = Vector2(0, -250)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_cox0k")
-animation = &"dance1"
+animation = &"tie1"
 autoplay = "idle"
-frame_progress = 0.00832195
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/CuteOneSprite"]
 position = Vector2(200, -74)
@@ -4525,9 +4520,8 @@ material = SubResource("ShaderMaterial_d0wd3")
 position = Vector2(0, -320)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_ph2q0")
-animation = &"dance3"
+animation = &"tie3"
 autoplay = "idle"
-frame_progress = 0.985227
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/ShyOneSprite"]
 position = Vector2(202, -64)
@@ -4539,10 +4533,8 @@ material = SubResource("ShaderMaterial_4s0xf")
 position = Vector2(0, -295)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_6kyhv")
-animation = &"dance4"
+animation = &"tie3"
 autoplay = "idle"
-frame = 14
-frame_progress = 0.844005
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/OlderBrotherSprite"]
 position = Vector2(194, -44)

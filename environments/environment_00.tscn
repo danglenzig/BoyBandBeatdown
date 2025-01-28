@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=39 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
 [ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_26yqy"]
@@ -66,6 +66,9 @@ size = Vector2(20, 84)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iiqmb"]
 size = Vector2(16, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjlwo"]
+size = Vector2(58, 296)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3say"]
 size = Vector2(193.59, 13)
@@ -212,6 +215,10 @@ shape = SubResource("RectangleShape2D_baw0i")
 [node name="CollisionShape2D16" type="CollisionShape2D" parent="EnvironmentBlockers"]
 position = Vector2(965, 711)
 shape = SubResource("RectangleShape2D_iiqmb")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(197, 924)
+shape = SubResource("RectangleShape2D_rjlwo")
 
 [node name="ExitTriggerHolder" type="Node2D" parent="."]
 position = Vector2(906, 689)

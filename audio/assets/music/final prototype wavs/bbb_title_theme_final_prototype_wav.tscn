@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd86h1rrwicjr"]
+
+[ext_resource type="AudioStream" uid="uid://dpc0xqmklanje" path="res://audio/assets/music/final prototype wavs/bbb title theme.wav" id="1_x1orp"]
+
+[node name="BBB Title Theme FINAL PROTOTYPE WAV" type="AudioStreamPlayer"]
+stream = ExtResource("1_x1orp")
+bus = &"StartMenuMusic"

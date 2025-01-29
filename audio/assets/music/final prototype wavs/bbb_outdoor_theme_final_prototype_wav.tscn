@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bupst2gp2xc5e"]
+
+[ext_resource type="AudioStream" uid="uid://cyq5661vni82w" path="res://audio/assets/music/final prototype wavs/bbb overworld.wav" id="1_g2lwf"]
+
+[node name="BBB Outdoor Theme Final Prototype WAV" type="AudioStreamPlayer"]
+stream = ExtResource("1_g2lwf")
+bus = &"OutdoorMusic"

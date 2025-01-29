@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm40dq4ruusl3"]
+
+[ext_resource type="AudioStream" uid="uid://oejiuulpkji6" path="res://audio/assets/music/final prototype wavs/bbb overworld 2.wav" id="1_d36mk"]
+
+[node name="BBB Indoor Theme Final Prototype WAV" type="AudioStreamPlayer"]
+stream = ExtResource("1_d36mk")
+bus = &"IndoorMusic"

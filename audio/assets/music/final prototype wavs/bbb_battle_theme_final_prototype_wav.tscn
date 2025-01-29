@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcu6a01uvmbpf"]
+
+[ext_resource type="AudioStream" uid="uid://843c116i6xom" path="res://audio/assets/music/final prototype wavs/bbb battle music.wav" id="1_3sl6a"]
+
+[node name="BBB Battle Theme FINAL PROTOTYPE WAV" type="AudioStreamPlayer"]
+stream = ExtResource("1_3sl6a")
+bus = &"BattleMusic"

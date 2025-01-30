@@ -16,7 +16,9 @@ func _process(_delta):
 	var move_y = Input.get_axis("move_up","move_down")
 	move_input = Vector2(move_x,move_y).normalized()
 	
+	"""
 	if Input.is_action_just_pressed("dev_quit"):
 		get_tree().quit()
 	if Input.is_action_just_pressed("dev_magic_button"):
 		magic_button_pressed.emit()
+	"""

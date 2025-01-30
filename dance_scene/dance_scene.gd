@@ -23,11 +23,13 @@ func hide_all_sprites()->void:
 	for sprite: AnimatedSprite2D in left_sprites:
 		var mat: ShaderMaterial = sprite.material
 		mat.set_shader_parameter("BORDERNOISE_active", false)
+		mat.set_shader_parameter("FREEZE_active", false)
 		sprite.visible = false
 		sprite.stop()
 	for sprite: AnimatedSprite2D in right_sprites:
 		var mat: ShaderMaterial = sprite.material
 		mat.set_shader_parameter("BORDERNOISE_active", false)
+		mat.set_shader_parameter("FREEZE_active", false)
 		sprite.visible = false
 		sprite.stop()
 
@@ -56,8 +58,11 @@ func on_interval_timeout()->void:
 	
 	var left_mat: ShaderMaterial = left_sprite.material
 	var right_mat: ShaderMaterial = right_sprite.material
+	
 	right_mat.set_shader_parameter("BORDERNOISE_active", true)
+	right_mat.set_shader_parameter("FREEZE_active", true)
 	left_mat.set_shader_parameter("BORDERNOISE_active", true)
+	left_mat.set_shader_parameter("FREEZE_active", true)
 	
 	change_it_up.emit()
 	left_sprite.visible 	= true
@@ -65,6 +70,8 @@ func on_interval_timeout()->void:
 	
 	await get_tree().create_timer(0.2).timeout
 	right_mat.set_shader_parameter("BORDERNOISE_active", false)
+	right_mat.set_shader_parameter("FREEZE_active", false)
 	left_mat.set_shader_parameter("BORDERNOISE_active", false)
+	left_mat.set_shader_parameter("FREEZE_active", false)
 	
 	get_tree().create_timer(interval).timeout.connect(on_interval_timeout)

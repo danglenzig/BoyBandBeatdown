@@ -3,7 +3,7 @@ extends Sprite2D
 @export var z_scaler: ZScaler = null
 @export var scale_modifier = 1.0
 
-const INTERVAL = .66
+const INTERVAL = .33
 var ta = 0.0
 
 var my_tween
@@ -34,12 +34,12 @@ func _process(delta):
 func tween_in()->void:
 	visible = true
 	my_tween = get_tree().create_tween()
-	my_tween.tween_property(self, "self_modulate", Color(1,1,0,0.75), 0.5).set_ease(Tween.EASE_IN)
+	my_tween.tween_property(self, "self_modulate", Color(1,1,0,0.75), 0.2).set_ease(Tween.EASE_IN)
 	my_tween.finished.connect(func(): on_tween_finished(false))
 	
 func tween_out()->void:
 	my_tween = get_tree().create_tween()
-	my_tween.tween_property(self, "self_modulate", Color(1,1,0,0), 0.5).set_ease(Tween.EASE_OUT)
+	my_tween.tween_property(self, "self_modulate", Color(1,1,0,0), 0.2).set_ease(Tween.EASE_OUT)
 	my_tween.finished.connect(func(): on_tween_finished(true))
 	
 func on_tween_finished(hide_me)->void:

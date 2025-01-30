@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cvvkc1okf3ry"]
-
-[ext_resource type="AudioStream" uid="uid://jk48aarkctnq" path="res://audio/assets/Bloody punch.wav" id="1_1ljsk"]
-
-[node name="ExampleSound_BloodyPunch" type="AudioStreamPlayer"]
-stream = ExtResource("1_1ljsk")
-bus = &"SFX"

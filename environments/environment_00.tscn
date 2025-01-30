@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://c57c2dxwox1c4"]
+[gd_scene load_steps=42 format=3 uid="uid://c57c2dxwox1c4"]
 
 [ext_resource type="Script" path="res://environments/environment.gd" id="1_ot0or"]
 [ext_resource type="Texture2D" uid="uid://bv58wdamt1mjy" path="res://environments/assets/env_00.png" id="2_26yqy"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://yqws4qxfvbnv" path="res://environments/prop_scenes/street_light_prop.tscn" id="8_pn5p6"]
 [ext_resource type="PackedScene" uid="uid://cj6egg8wsaeb7" path="res://environments/prop_scenes/environment_00_east_wall_prop.tscn" id="9_o3bbv"]
 [ext_resource type="PackedScene" uid="uid://dpujp5fqkb7na" path="res://environments/prop_scenes/environment_00_west_wall_01.tscn" id="10_m8m0l"]
+[ext_resource type="PackedScene" uid="uid://br1kyn4b1cmyd" path="res://environments/prop_scenes/environment_00_east_wall_alt_prop.tscn" id="11_58pyb"]
 [ext_resource type="PackedScene" uid="uid://daf8pwkm7rt2u" path="res://environments/prop_scenes/environment_00_west_wall_02.tscn" id="11_g6qy6"]
 [ext_resource type="Script" path="res://environments/exit_trigger.gd" id="12_jf4gw"]
 [ext_resource type="PackedScene" uid="uid://mc8wh7gomyal" path="res://dialogue/dialogue_trigger_area.tscn" id="13_jqwix"]
@@ -20,7 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://4qtf3cqkpnqt" path="res://ui/nav_prompt.tscn" id="18_85fhi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hau2o"]
-size = Vector2(914, 26)
+size = Vector2(914, 12)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_or0wh"]
 size = Vector2(710, 26)
@@ -44,13 +45,13 @@ size = Vector2(23, 9)
 size = Vector2(20, 6)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ly12h"]
-size = Vector2(57, 113)
+size = Vector2(57, 124.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cb82b"]
 size = Vector2(406, 34.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r3rvh"]
-size = Vector2(82.0244, 67.2756)
+size = Vector2(78.4861, 65.8649)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_quecn"]
 size = Vector2(137, 41)
@@ -70,16 +71,22 @@ size = Vector2(16, 24)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjlwo"]
 size = Vector2(58, 296)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40nbf"]
+size = Vector2(317, 89.5)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3say"]
 size = Vector2(193.59, 13)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7m26d"]
-size = Vector2(20, 309)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4mv2r"]
+size = Vector2(20, 34)
 
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_gyxqk"]
-vertices = PackedVector2Array(824, 728.961, 824, 703.07, 943.297, 703.93, 944.313, 736, 873, 753.109, 1646, 1041.08, 82.9609, 1053.91, 82.0313, 807.953, 720.477, 804.961, 988, 809.953, 591, 750.102, 591, 729.953, 1646, 812.953, 722.469, 792.938, 873, 791.93, 988, 753, 1151.56, 736, 1284.86, 753, 1245.86, 714, 1152.56, 714)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 7, 8, 9), PackedInt32Array(10, 11, 0, 4), PackedInt32Array(9, 12, 5), PackedInt32Array(9, 8, 13, 14), PackedInt32Array(15, 9, 14, 4, 3), PackedInt32Array(15, 3, 16, 17), PackedInt32Array(18, 17, 16, 19)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(581, 720, 581, 760, 863, 763, 863, 782, 714, 783, 712, 795, 72, 798, 73, 1064, 1656, 1051, 1656, 803, 998, 800, 998, 763, 1300, 763, 1299, 753, 1250, 704, 1143, 704, 1142, 726, 954, 726, 953, 694, 814, 693, 814, 719)])
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7m26d"]
+size = Vector2(20, 294)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_derk3"]
+vertices = PackedVector2Array(1151.4, 739.148, 1150.39, 713, 1248.8, 713, 1296.78, 761.977, 1652.96, 808.961, 1652.03, 1042.05, 246.844, 1049.94, 243.148, 809.93, 719, 806.938, 988.461, 806.969, 874.453, 752.961, 590, 753.961, 590, 730, 822, 730, 822, 704, 944, 704, 944, 734.57, 719, 796.93, 872.578, 795.938, 990.508, 768.031, 998.711, 737, 1555, 762.961, 1555, 766.031)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7, 8, 9), PackedInt32Array(10, 11, 12, 13), PackedInt32Array(10, 13, 14, 15, 16), PackedInt32Array(9, 8, 17, 18), PackedInt32Array(19, 9, 18, 10, 16), PackedInt32Array(19, 16, 20, 3), PackedInt32Array(21, 22, 19, 3), PackedInt32Array(3, 20, 0)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(1663, 799, 1662, 1052, 237, 1060, 233, 800, 709, 797, 709, 787, 863, 786, 864, 763, 580, 764, 580, 720, 812, 720, 812, 694, 954, 694, 954, 725, 999, 727, 1141, 729, 1140, 703, 1253, 703, 1301, 752, 1565, 753, 1565, 776, 1000, 778, 999, 797)])
 
 [node name="Environment_00" type="Node2D"]
 position = Vector2(7, -40)
@@ -126,7 +133,7 @@ position = Vector2(1457, 888)
 position = Vector2(906, 730)
 
 [node name="WallPlayerStart" type="Marker2D" parent="."]
-position = Vector2(1269, 744)
+position = Vector2(1535, 765)
 
 [node name="AllyHolder" type="Node2D" parent="."]
 
@@ -141,6 +148,7 @@ position = Vector2(1395, 847)
 position = Vector2(269, 850)
 
 [node name="Environment_00_EastWallProp" parent="PropHolder" instance=ExtResource("9_o3bbv")]
+visible = false
 position = Vector2(1166, 792)
 
 [node name="Environment_00_WestWall_01" parent="PropHolder" instance=ExtResource("10_m8m0l")]
@@ -149,10 +157,13 @@ position = Vector2(780, 783)
 [node name="Environment_00_WestWall_02" parent="PropHolder" instance=ExtResource("11_g6qy6")]
 position = Vector2(611, 787)
 
+[node name="Environment_00_EastWallAltProp" parent="PropHolder" instance=ExtResource("11_58pyb")]
+position = Vector2(1461, 790)
+
 [node name="EnvironmentBlockers" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnvironmentBlockers"]
-position = Vector2(1460, 781)
+position = Vector2(1460, 788)
 shape = SubResource("RectangleShape2D_hau2o")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="EnvironmentBlockers"]
@@ -184,7 +195,7 @@ position = Vector2(1392, 843)
 shape = SubResource("RectangleShape2D_7c6vy")
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="EnvironmentBlockers"]
-position = Vector2(1333.5, 719.5)
+position = Vector2(1596, 725.75)
 shape = SubResource("RectangleShape2D_ly12h")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="EnvironmentBlockers"]
@@ -192,7 +203,7 @@ position = Vector2(1160, 683.25)
 shape = SubResource("RectangleShape2D_cb82b")
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="EnvironmentBlockers"]
-position = Vector2(1299.29, 698.714)
+position = Vector2(1298.54, 696.964)
 rotation = 0.785398
 shape = SubResource("RectangleShape2D_r3rvh")
 
@@ -220,6 +231,10 @@ shape = SubResource("RectangleShape2D_iiqmb")
 position = Vector2(197, 924)
 shape = SubResource("RectangleShape2D_rjlwo")
 
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="EnvironmentBlockers"]
+position = Vector2(1461, 704)
+shape = SubResource("RectangleShape2D_40nbf")
+
 [node name="ExitTriggerHolder" type="Node2D" parent="."]
 position = Vector2(906, 689)
 scale = Vector2(0.78, 1)
@@ -232,6 +247,18 @@ player_start_name = "EastPlayerStart"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/NorthExitTrigger"]
 position = Vector2(-27.5641, -4.5)
 shape = SubResource("RectangleShape2D_i3say")
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="EastExitTrigger" type="Area2D" parent="ExitTriggerHolder"]
+position = Vector2(839.744, 69)
+script = ExtResource("12_jf4gw")
+exit_to_scene_name = "environment_06.tscn"
+player_start_name = "NorthPlayerStart04"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitTriggerHolder/EastExitTrigger"]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_4mv2r")
+debug_color = Color(1, 0, 0, 0.419608)
 
 [node name="DialogueTriggerHolder" type="Node2D" parent="."]
 
@@ -243,7 +270,7 @@ speaker_portrait_resource = "res://dialogue/portraits/player_portrait.png"
 one_shot = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueTriggerHolder/environment_00_00"]
-position = Vector2(-208, 92.5)
+position = Vector2(-208, 100)
 shape = SubResource("RectangleShape2D_7m26d")
 debug_color = Color(0.663075, 0.512889, 0.0136903, 0.42)
 
@@ -266,7 +293,7 @@ position = Vector2(1101, 793)
 position = Vector2(953, 692)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
-navigation_polygon = SubResource("NavigationPolygon_gyxqk")
+navigation_polygon = SubResource("NavigationPolygon_derk3")
 
 [node name="CenterMarker" type="Marker2D" parent="NavigationRegion2D"]
 position = Vector2(904, 881)
@@ -280,6 +307,14 @@ position = Vector2(934, 801)
 z_index = 100
 position = Vector2(893, 704)
 z_scaler = NodePath("../../ZScaler")
+scale_modifier = 2.0
+
+[node name="NavPrompt2" parent="ArrowPrompts" node_paths=PackedStringArray("z_scaler") instance=ExtResource("18_85fhi")]
+position = Vector2(1513, 683)
+rotation = -0.785398
+z_scaler = NodePath("../../ZScaler")
+scale_modifier = 3.0
 
 [connection signal="body_entered" from="ExitTriggerHolder/NorthExitTrigger" to="ExitTriggerHolder/NorthExitTrigger" method="_on_body_entered"]
+[connection signal="body_entered" from="ExitTriggerHolder/EastExitTrigger" to="ExitTriggerHolder/EastExitTrigger" method="_on_body_entered"]
 [connection signal="body_entered" from="DialogueTriggerHolder/environment_00_00" to="DialogueTriggerHolder/environment_00_00" method="_on_body_entered"]

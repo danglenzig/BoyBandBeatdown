@@ -98,6 +98,9 @@ position = Vector2(795, 682)
 [node name="NorthPlayerStart03" type="Marker2D" parent="."]
 position = Vector2(413, 693)
 
+[node name="NorthPlayerStart04" type="Marker2D" parent="."]
+position = Vector2(215, 683)
+
 [node name="AllyHolder" type="Node2D" parent="."]
 
 [node name="NpcHolder" type="Node2D" parent="."]
@@ -218,7 +221,7 @@ npc_scenes = Array[PackedScene]([ExtResource("7_svbhx"), ExtResource("8_2fw8y"),
 [node name="SpawnMarkers" type="Node2D" parent="NpcSpawner"]
 
 [node name="Marker2D" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
-position = Vector2(151, 834)
+position = Vector2(271, 752)
 
 [node name="Marker2D2" type="Marker2D" parent="NpcSpawner/SpawnMarkers"]
 position = Vector2(530, 849)

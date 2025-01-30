@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://deggigxxtcgit"]
+
+[ext_resource type="Script" path="res://environments/prop_sprite.gd" id="1_funom"]
+[ext_resource type="Texture2D" uid="uid://deu6jxy01sir1" path="res://npcs/marcie/marcie_explore_idle_00.png" id="2_hblkx"]
+
+[node name="MarcieProp" type="Node2D"]
+script = ExtResource("1_funom")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3, -165)
+texture = ExtResource("2_hblkx")

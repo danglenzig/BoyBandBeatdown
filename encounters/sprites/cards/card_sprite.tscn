@@ -4481,7 +4481,7 @@ material = SubResource("ShaderMaterial_gq0bb")
 position = Vector2(0, -325)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_70kts")
-animation = &"tie3"
+animation = &"dance4"
 autoplay = "idle"
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/BadBoySprite"]
@@ -4494,7 +4494,7 @@ material = SubResource("ShaderMaterial_jh27w")
 position = Vector2(-30, -220)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_lrcwh")
-animation = &"tie3"
+animation = &"dance4"
 autoplay = "idle"
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/HeartthrobSprite"]
@@ -4507,7 +4507,7 @@ material = SubResource("ShaderMaterial_co05w")
 position = Vector2(0, -250)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_cox0k")
-animation = &"tie1"
+animation = &"dance4"
 autoplay = "idle"
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/CuteOneSprite"]
@@ -4520,7 +4520,7 @@ material = SubResource("ShaderMaterial_d0wd3")
 position = Vector2(0, -320)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_ph2q0")
-animation = &"tie3"
+animation = &"dance4"
 autoplay = "idle"
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/ShyOneSprite"]
@@ -4533,7 +4533,7 @@ material = SubResource("ShaderMaterial_4s0xf")
 position = Vector2(0, -295)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_6kyhv")
-animation = &"tie3"
+animation = &"dance4"
 autoplay = "idle"
 
 [node name="FireballSourceMarker" type="Marker2D" parent="SpriteHolder/OlderBrotherSprite"]
